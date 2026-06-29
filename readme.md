@@ -1,5 +1,11 @@
 # Azure Hub-Spoke VPN Firewall Network-Lab
 
+## Architecture
+
+![Architecture](D:/Git/labs/Azure-Network/images/arch.jpg)
+
+---
+
 ## Overview
 
 This lab demonstrates the design and implementation of a compact modern enterprise Azure Hub-Spoke cloud network using the following Azure networking, security and identity technologies:
@@ -20,11 +26,18 @@ This lab demonstrates the design and implementation of a compact modern enterpri
 
 ---
 
-## Architecture
+## Documentation
 
-
-
-![Architecture](images/arch.jpg)
+| Document                    | Description                         |
+| --------------------------- | ----------------------------------- |
+| 01 - Hub-Spoke Architecture | Network design and VNet deployment  |
+| 02 - Azure Firewall         | Firewall policy and traffic control |
+| 03 - Azure Bastion          | Secure RDP and SSH administration   |
+| 04 - Microsoft Entra ID     | Identity and RBAC configuration     |
+| 05 - Site-to-Site VPN       | Azure VPN Gateway and RRAS          |
+| 06 - Point-to-Site VPN      | Azure VPN Client configuration      |
+| 07 - UDR and NSG            | Routing and network security        |
+| 08 - Troubleshooting        | Problems encountered and solutions  |
 
 ---
 
@@ -100,21 +113,6 @@ This lab demonstrates the design and implementation of a compact modern enterpri
 - UsingUDR, NSGs for traffic control
 
 - Using Windows Server 2022 RRAS as the on-prem VPN router
-
----
-
-## Documentation
-
-| Document                    | Description                         |
-| --------------------------- | ----------------------------------- |
-| 01 - Hub-Spoke Architecture | Network design and VNet deployment  |
-| 02 - Azure Firewall         | Firewall policy and traffic control |
-| 03 - Azure Bastion          | Secure RDP and SSH administration   |
-| 04 - Microsoft Entra ID     | Identity and RBAC configuration     |
-| 05 - Site-to-Site VPN       | Azure VPN Gateway and RRAS          |
-| 06 - Point-to-Site VPN      | Azure VPN Client configuration      |
-| 07 - UDR and NSG            | Routing and network security        |
-| 08 - Troubleshooting        | Problems encountered and solutions  |
 
 ---
 
