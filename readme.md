@@ -24,7 +24,7 @@ This lab demonstrates the design and implementation of a compact modern enterpri
 
 
 
-![](D:\Git\labs\Azure-Network\images\arch.jpg)
+![Architecture](images/arch.jpg)
 
 ---
 
