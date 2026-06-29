@@ -1,15 +1,8 @@
 # Azure Hub-Spoke VPN Firewall Network-Lab
 
-## Architecture
-
-![Architecture](/images/arch.jpg)
-
----
-
 ## Overview
 
 This lab demonstrates the design and implementation of a compact modern enterprise Azure Hub-Spoke cloud network using the following Azure networking, security and identity technologies:
-
 
 - **Hub-Spoke Vnet** desgin for centralized shared services and departmental network isolation.
 - **VNet peering** for inter-communication between vnets
@@ -23,6 +16,12 @@ This lab demonstrates the design and implementation of a compact modern enterpri
 - **Point-to-Site VPN** providing secure remote access for mobile users.
 - **Gateway Transit** to provide shared VPN Gateway access for spoke VNets.
 - **Windows Server 2022 RRAS** providing the on-premises VPN gateway.
+
+---
+
+## Architecture
+
+![Architecture](/images/arch.jpg)
 
 ---
 
