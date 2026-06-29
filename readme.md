@@ -2,7 +2,7 @@
 
 ## Architecture
 
-![Architecture](D:/Git/labs/Azure-Network/images/arch.jpg)
+![Architecture](/images/arch.jpg)
 
 ---
 
