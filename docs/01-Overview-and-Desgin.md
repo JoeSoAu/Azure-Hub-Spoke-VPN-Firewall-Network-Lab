@@ -14,9 +14,9 @@ The objective of this lab is to demonstrate how enterprise Azure networking can 
 
 ![Architecture](/images/arch2.jpg)
 
----
 
-#### Hub-Spoke Network Design
+
+## Hub-Spoke Network Design
 
 The Azure cloud network is built using a Hub-Spoke topology, a common architecture for medium and large enterprise environments. Instead of connecting every Vnet directly to one another, shared infrastructure and services are centralized in a dedicated Hub VNet, while application VMs are deployed in separate spoke VNets.
 
@@ -26,7 +26,7 @@ This design provides logical network isolation between departments while allowin
 
 By default, vms in one spoke cannot communicate directly with another spoke because VNet peering is not transitive. When inter-department communication is required, traffic is routed through the Hub and can be explicitly permitted by centralized firewall rules. This approach gives administrators full control of which services are allowed to go through while keeping network seperation between departments. 
 
-![Architecture](/images/arch2.jpg)
+![Architecture](/images/arch3.jpg)
 
 ## High-Level Architecture
 
