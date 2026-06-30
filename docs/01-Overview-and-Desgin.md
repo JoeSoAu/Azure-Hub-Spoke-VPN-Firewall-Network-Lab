@@ -2,21 +2,31 @@
 
 ## Architecture Design
 
-This lab builds a compact Azure hybrid cloud network that simulates a typical enterprise Azure cloud + on-premises virtual network.
+This lab builds a compact Azure hybrid cloud network that simulates a typical enterprise **Azure cloud + on-premises** hybrid virtual network.
 
-The Network uses a Hub-Spoke architecture. Shared infrastructure and services are centralized in a Hub VNet, while departmental workloads are deployed in isolated spoke VNets. The lab consists of one Hub VNet and two Spoke VNets representing Finance and HR departments.
+The Network uses a **Hub-Spoke architecture**. Shared infrastructure and services are centralized in a Hub VNet, while departmental workloads are deployed in isolated spoke VNets. The lab consists of one Hub VNet and two Spoke VNets representing Finance and HR departments.
 
-Instead of allowing unrestricte traffic between all virtual networks, each department is logically isolated. Shared services are accessed through the Hub, and any traffic between spokes must be explicitly permitted through centralized firewall rules.
+Instead of allowing unrestricte traffic between all virtual networks, each department is logically isolated. Shared services are accessed through the **central Hub**, and any traffic between spokes must be explicitly permitted through **centralized firewall** rules.
 
-The lab also demonstrates hybrid connectivity by integrating the on-prem network with Azure cloud VNets using Site-to-Site VPN, while roaming users can securely access Azure resources through Point-to-Site VPN. Remote administration is implitented using Azure Bastion technology without exposing VMs directly to the Internet.
+The lab also demonstrates hybrid network connectivity by integrating the on-prem network with Azure cloud VNets using **Site-to-Site VPN**, while roaming users can securely access Azure resources through **Point-to-Site VPN**. Remote administration is implitented using **Azure Bastion** technology without exposing VMs directly to the Internet.
 
-The objective of this lab is to demonstrate how enterprise Azure networking can provide centralized management, network isolation, secure remote access and controlled hybrid connectivity using a compact and practical deployment.
+The objective of this lab is to demonstrate how enterprise Azure networking can provide centralized management, network isolation, secure remote access and controlled hybrid connectivity using a compact and practical lab.
 
 ![Architecture](/images/arch2.jpg)
 
 ---
 
-## 
+#### Hub-Spoke Network Design
+
+The Azure cloud network is built using a Hub-Spoke topology, a common architecture for medium and large enterprise environments. Instead of connecting every Vnet directly to one another, shared infrastructure and services are centralized in a dedicated Hub VNet, while application VMs are deployed in separate spoke VNets.
+
+This lab contains one Hub VNet and two spoke VNets representing different business departments: **Finance** and **HR**. Each spoke has its own address space and subnets and is connected only to the Hub through VNet peering. There is no direct peering between the two spoke networks.
+
+This design provides logical network isolation between departments while allowing shared services delivered from the central hub. Resources such as Azure Firewall, Bastion and the VPN Gateway are deployed only once in the Hub instead of being duplicated in each spoke, reducing management complexity and deployment cost.
+
+By default, vms in one spoke cannot communicate directly with another spoke because VNet peering is not transitive. When inter-department communication is required, traffic is routed through the Hub and can be explicitly permitted by centralized firewall rules. This approach gives administrators full control of which services are allowed to go through while keeping network seperation between departments. 
+
+![Architecture](/images/arch2.jpg)
 
 ## High-Level Architecture
 
