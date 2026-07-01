@@ -74,7 +74,7 @@ This stage includes the following tasks:
    
     vnet-hub: 10.0.0.0/16  
     vnet-spoke-hr: 10.1.0.0/16  
-    vnet-spoke-finance: 10.2.0.0/16
+   vnet-spoke-finance: 10.2.0.0/16
 
 <img title="" src="../screenshots/2Vnet.jpg" alt="" width="60%" data-align="center">
 
@@ -101,7 +101,7 @@ This stage includes the following tasks:
 
     vm-hr-linux1: 10.1.1.4  
 
-vm-fiance-linux: 10.2.1.4
+    vm-fiance-linux: 10.2.1.4
 
 1. Create VNet peering between Hub and Finance Spoke
 
