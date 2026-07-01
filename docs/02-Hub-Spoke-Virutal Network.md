@@ -66,41 +66,45 @@ This stage includes the following tasks:
    
        Azure Portal -> resource group-> create
    
-   <img title="" src="../screenshots/1rg.jpg" alt="" width="60%" data-align="center">
+   <img title="" src="../screenshots/1rg.jpg" alt="" width="80%" data-align="center">
 
-2. Create the Hub VNet / Finance Spoke VNet / Create the HR Spoke VNet
-
-    	Azure Portal-> Virtual Networks -> Create
-        
-	vnet-hub: 10.0.0.0/16  
-	vnet-spoke-hr: 10.1.0.0/16  
-	vnet-spoke-finance: 10.2.0.0/16
+2. **Create the Hub VNet / Finance Spoke VNet / Create the HR Spoke VNet**
+   
+        Azure Portal-> Virtual Networks -> Create
+   
+    vnet-hub: 10.0.0.0/16  
+    vnet-spoke-hr: 10.1.0.0/16  
+    vnet-spoke-finance: 10.2.0.0/16
 
 <img title="" src="../screenshots/2Vnet.jpg" alt="" width="60%" data-align="center">
 
+3. **Create six subnets**
+   
+    subnet-hr-app: 10.1.1.0/24  
+    subnet-hr-data: 10.1.2.0/24
+   
+    subnet-finance -app: 10.2.1.0/24  
+    subnet-finance -data: 10.2.2.0/24  
+   
+   when creating the spoke subnets, remember to tick **enable Private subnet (no default outbound access)**. This removes default outbound Internet access for the subnet. In later stages of this lab, Internet-bound traffic from the spoke subnets will be routed to the Azure Firewall in the Hub VNet, enabling centralized security inspection and policy impplimentation.
+   
+   <img title="" src="../screenshots/3subnet.jpg" alt="" width="60%" data-align="center">
 
-3. Create six subnets
-
-		Azure Portal-> Virtual Networks -> vnet-hub-> subnet-> create 
-    
+4. 
+   
     subnet-mgmt: 10.0.1.0/24  
     subnet-shared: 10.0.2.0/24
 
-	subnet-hr-app: 10.1.1.0/24  
-    subnet-hr-data: 10.1.2.0/24
+5. 
+   
+        Azure Portal-> Virtual Networks -> vnet-hub-> subnet-> create 
 
-	subnet-finance -app: 10.2.1.0/24  
-    subnet-finance -data: 10.2.2.0/24  
-    
-    <img title="" src="../screenshots/3subnet.jpg" alt="" width="70%" data-align="center">
-4. Create three virtual machines
+6. Create three virtual machines
 
-5. Create VNet peering between Hub and Finance Spoke
+7. Create VNet peering between Hub and Finance Spoke
 
-6. Create VNet peering between Hub and HR Spoke
+8. Create VNet peering between Hub and HR Spoke
 
-7. Validate basic private IP connectivity between Hub and each spoke
+9. Validate basic private IP connectivity between Hub and each spoke
 
 At the end of this stage, the base Hub-Spoke network topology is ready. The spoke networks are connected to the Hub, but they are not directly connected to each other.
-
-
