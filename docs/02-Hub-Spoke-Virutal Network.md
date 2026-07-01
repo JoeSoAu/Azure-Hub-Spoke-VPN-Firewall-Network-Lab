@@ -63,8 +63,9 @@ There is no direct VNet peering between the Finance and HR spoke VNets. This kee
 This stage includes the following tasks:
 
 1. **Create the resource group**
-2. in Azure Portal -> resource group-> create
-   <img title="" src="../screenshots/1rg.jpg" alt="" width="70%">
+
+       in Azure Portal -> resource group-> create
+<img title="" src="../screenshots/1rg.jpg" alt="" width="70%">
 
 2. Create the Hub VNet
 
