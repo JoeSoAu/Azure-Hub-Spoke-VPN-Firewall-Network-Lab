@@ -12,9 +12,7 @@ The lab also demonstrates hybrid network connectivity by integrating the on-prem
 
 The objective of this lab is to demonstrate how enterprise Azure networking can provide centralized management, network isolation, secure remote access and controlled hybrid connectivity using a compact and practical lab.
 
-![Architecture](/images/arch2.jpg)
-
-
+<img src="/images/arch1" width="50%" />
 
 ## Hub-Spoke Network Design (VNet Peering)
 
@@ -26,7 +24,7 @@ This design provides logical network isolation between departments while allowin
 
 By default, vms in one spoke cannot communicate directly with another spoke because VNet peering is not transitive. When inter-department communication is required, traffic is routed through the Hub and can be explicitly permitted by centralized firewall rules. This approach gives administrators full control of which services are allowed to go through while keeping network seperation between departments. 
 
-![Architecture](/images/arch3.jpg)
+<img title="" src="file:///images/arch2" alt="" width="">
 
 ## Centralized Network Security (Azure Firewall)
 
@@ -38,7 +36,7 @@ In this lab, the spoke VNets do not have direct Internet access. Outbound traffi
 
 For simplicity, Site-to-Site and Point-to-Site VPN traffic bypasses Azure Firewall in this lab. Routing VPN traffic through the firewall can be achieved in production environments but requires additional complex routing configuration to ensure **return traffic** follows the same inspection path and avoids **asymmetric routing**.
 
-![Architecture](/images/arch4.jpg)
+<img title="" src="file:///images/arch3" alt="" width="">
 
 ## Hybrid Connectivity （Site to Site VPN)
 
@@ -48,7 +46,7 @@ On the on-premises side, Windows Server 2022 RRAS is used as the VPN endpoint. A
 
 Due to the Azure trial subscription being limited to a single public IP address for the VPN Gateway, this lab implements an **active-standby VPN** connection. In production deployments, an **active-active VPN** with two public IP addresses is commonly used to improve availability and better resilience against gateway failures.
 
-![Architecture](/images/arch5.jpg)
+<img title="" src="file:///images/arch4" alt="" width="">
 
 ## Remote User Connectivity (Point to Site VPN)
 
