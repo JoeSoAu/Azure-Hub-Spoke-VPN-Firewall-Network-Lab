@@ -93,7 +93,7 @@ This stage includes the following tasks:
    
    when creating the spoke subnets, remember to tick **enable Private subnet (no default outbound access)**. This removes default outbound Internet access for the subnet. In later stages of this lab, Internet-bound traffic from the spoke subnets will be routed to the Azure Firewall in the Hub VNet, enabling centralized security inspection and policy impplimentation.
    
-   <img title="" src="../screenshots/3subnet.jpg" alt="" width="60%" data-align="center">
+   <img title="" src="../screenshots/3subnets.jpg" alt="" width="80%" data-align="center">
 
 6. Create three virtual machines
 
