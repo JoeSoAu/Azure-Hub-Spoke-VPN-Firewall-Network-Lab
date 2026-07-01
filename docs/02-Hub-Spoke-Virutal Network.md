@@ -4,7 +4,7 @@ This section describes the first stage of the Azure Hub-Spoke Network Lab. The o
 
 This section focuses on the initial network deployment only. Security services such as Azure Firewall, Bastion, VPN Gateway, NSG and routing controls will be configured in later sections.
 
-<img title="" src="../images/arch7.jpg" alt="" width="">
+<img title="" src="../images/arch7.jpg" alt="" width="50%">
 
 ---
 
@@ -67,20 +67,20 @@ This stage includes the following tasks:
 
 2. Create the Hub VNet
 
-3. 
 
-4. Create the Finance Spoke VNet
 
-5. Create the HR Spoke VNet
+1. Create the Finance Spoke VNet
 
-6. Create six subnets
+2. Create the HR Spoke VNet
 
-7. Create three virtual machines
+3. Create six subnets
 
-8. Create VNet peering between Hub and Finance Spoke
+4. Create three virtual machines
 
-9. Create VNet peering between Hub and HR Spoke
+5. Create VNet peering between Hub and Finance Spoke
 
-10. Validate basic private IP connectivity between Hub and each spoke
+6. Create VNet peering between Hub and HR Spoke
+
+7. Validate basic private IP connectivity between Hub and each spoke
 
 At the end of this stage, the base Hub-Spoke network topology is ready. The spoke networks are connected to the Hub, but they are not directly connected to each other.
