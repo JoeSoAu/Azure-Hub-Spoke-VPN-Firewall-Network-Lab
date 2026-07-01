@@ -38,44 +38,9 @@ In this lab, the spoke VNets do not have direct Internet access. Outbound traffi
 
 For simplicity, Site-to-Site and Point-to-Site VPN traffic bypasses Azure Firewall in this lab. Routing VPN traffic through the firewall can be achieved in production environments but requires additional complex routing configuration to ensure **return traffic** follows the same inspection path and avoids **asymmetric routing**.
 
-                         +--------------------+
-                         |      INTERNET      |
-                         +--------------------+
-                                   ▲
-                                   │
-                      Outbound Internet Traffic
-                                   │
-                         +--------------------+
-                         |   AZURE FIREWALL   |
-                         +--------------------+
-                            ▲              ▲
-                            │              │
-                UDR Route   │              │   UDR Route
-                            │              │
-        +-------------------+              +-------------------+
-        |                                      |
+![Architecture](/images/arch4.jpg)
 
-+--------------------+                 +--------------------+
-|   FINANCE SPOKE    |                 |      HR SPOKE      |
-|      Finance VM    |                 |       HR VM        |
-+--------------------+                 +--------------------+
-
-Internet Access
----------------
-
-Finance VM ──► UDR ──► Azure Firewall ──► Internet
-HR VM      ──► UDR ──► Azure Firewall ──► Internet
-
-Inter-Spoke Communication
--------------------------
-
-Finance VM ──► UDR ──► Azure Firewall ──► HR VM
-HR VM      ──► UDR ──► Azure Firewall ──► Finance VM
-
-(Default: Denied)
-(Allowed only when Firewall Policy permits)
-
-## 4. Hybrid Connectivity （Site to Site VPN)
+## Hybrid Connectivity （Site to Site VPN)
 
 To simulate a real enterprise hybrid environment, the on-premises network is connected to Azure cloud Vnets using a **Site-to-Site IPsec VPN**. Rather than putting a VPN gateway in each spoke network, a single Azure VPN Gateway is deployed in the Hub VNet. The spoke VNets use Gateway Transit through VNet peering to share the Hub gateway, providing secure connectivity to the on-premises network while reducing deployment cost and simplifying network management.
 
