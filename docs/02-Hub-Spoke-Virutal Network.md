@@ -79,7 +79,17 @@ This stage includes the following tasks:
 <img title="" src="../screenshots/2Vnet.jpg" alt="" width="60%" data-align="center">
 
 1. Create six subnets
+		Azure Portal-> Virtual Networks -> vnet-hub-> subnet-> create 
+    
+    subnet-mgmt: 10.0.1.0/24  
+    subnet-shared: 10.0.2.0/24
 
+	subnet-hr-app: 10.1.1.0/24  
+    subnet-hr-data: 10.1.2.0/24
+
+	subnet-finance -app: 10.2.1.0/24  
+    subnet-finance -data: 10.2.2.0/24  
+    
 2. Create three virtual machines
 
 3. Create VNet peering between Hub and Finance Spoke
