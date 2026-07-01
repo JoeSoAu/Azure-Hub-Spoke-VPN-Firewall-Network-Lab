@@ -68,20 +68,26 @@ This stage includes the following tasks:
    
    <img title="" src="../screenshots/1rg.jpg" alt="" width="" data-align="center">
 
-2. Create the Hub VNet
+2. Create the Hub VNet / Finance Spoke VNet / Create the HR Spoke VNet
 
-3. Create the Finance Spoke VNet
+    Azure Portal-> Virtual Networks -> Create
 
-4. Create the HR Spoke VNet
+vnet-hub: 10.0.0.0/16
+vnet-spoke-hr: 10.1.0.0/16
+vnet-spoke-finance: 10.2.0.0/16
 
-5. Create six subnets
+<img title="" src="../screenshots/2Vnet.jpg" alt="" width="" data-align="center">
 
-6. Create three virtual machines
+1. Create six subnets
 
-7. Create VNet peering between Hub and Finance Spoke
+2. Create three virtual machines
 
-8. Create VNet peering between Hub and HR Spoke
+3. Create VNet peering between Hub and Finance Spoke
 
-9. Validate basic private IP connectivity between Hub and each spoke
+4. Create VNet peering between Hub and HR Spoke
+
+5. Validate basic private IP connectivity between Hub and each spoke
 
 At the end of this stage, the base Hub-Spoke network topology is ready. The spoke networks are connected to the Hub, but they are not directly connected to each other.
+
+
