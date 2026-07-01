@@ -46,7 +46,7 @@ On the on-premises side, Windows Server 2022 RRAS is used as the VPN endpoint. A
 
 Due to the Azure trial subscription being limited to a single public IP address for the VPN Gateway, this lab implements an **active-standby VPN** connection. In production deployments, an **active-active VPN** with two public IP addresses is commonly used to improve availability and better resilience against gateway failures.
 
-<img title="" src="../images/arch5.jpg" alt="" width="75%">
+<img title="" src="../images/arch5.jpg" alt="" width="65%">
 
 ## Remote User Connectivity (Point to Site VPN)
 
@@ -56,7 +56,7 @@ The Point-to-Site VPN connection connects the same Azure VPN Gateway deployed in
 
 Access can be controlled through VPN configuration, routing, NSG rules and identity-based authentication.
 
-<img title="" src="../images/arch6.jpg" alt="" width="75%">
+<img title="" src="../images/arch6.jpg" alt="" width="60%">
 
 ## Secure Remote Administration (Bastion)
 
