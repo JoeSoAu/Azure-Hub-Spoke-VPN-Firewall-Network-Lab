@@ -65,7 +65,7 @@ This stage includes the following tasks:
 1. **Create the resource group**
 
        in Azure Portal -> resource group-> create
-<img title="" src="../screenshots/1rg.jpg" alt="" width="70%">
+<img title="" src="../screenshots/1rg.jpg" alt="" width="50%">
 
 2. Create the Hub VNet
 
