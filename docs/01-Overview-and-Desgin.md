@@ -46,7 +46,7 @@ On the on-premises side, Windows Server 2022 RRAS is used as the VPN endpoint. A
 
 Due to the Azure trial subscription being limited to a single public IP address for the VPN Gateway, this lab implements an **active-standby VPN** connection. In production deployments, an **active-active VPN** with two public IP addresses is commonly used to improve availability and better resilience against gateway failures.
 
-<img title="" src="../images/arch5.jpg" alt="" width="60%">
+<img title="" src="../images/arch5.jpg" alt="" width="65%">
 
 ## Remote User Connectivity (Point to Site VPN)
 
@@ -66,15 +66,15 @@ With this design, administrators do not need to expose **RDP port 3389** or **SS
 
 The spoke virtual machines are accessed from the Hub through VNet peering. **Routing** and **NSG** rules are used to ensure that Bastion can reach the required private IP addresses while unnecessary inbound access is blocked. This ensur the safety of our private cloud environment compared with assigning public IP addresses directly to each VM.
 
-## Final Design Summary
-
-The final design provides:
+## Design Summary
 
 - One Hub VNet for shared services
 
 - Two isolated Spoke VNets for Finance and HR
 
 - No direct Finance-to-HR peering
+
+- No inter-spoke communication except explicitly permitted
 
 - Controlled Finance-to-HR SSH access only
 
@@ -88,4 +88,4 @@ The final design provides:
 
 - Point-to-Site VPN for remote users
 
-- Shared VPN Gateway access through Gateway Transit
+- Shared VPN Gateway access through Gateway Transit for hub and spoke VNets
