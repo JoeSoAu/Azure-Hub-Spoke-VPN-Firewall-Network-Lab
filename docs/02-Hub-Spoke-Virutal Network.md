@@ -4,7 +4,7 @@ This section describes the first stage of the Azure Hub-Spoke Network Lab. The o
 
 This section focuses on the initial network deployment only. Security services such as Azure Firewall, Bastion, VPN Gateway, NSG and routing controls will be configured in later sections.
 
-<img title="" src="../images/arch7.jpg" alt="" width="50%">
+<img title="" src="../images/arch7.jpg" alt="" width="70%">
 
 ---
 
