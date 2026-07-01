@@ -91,7 +91,7 @@ This stage includes the following tasks:
 
 	subnet-finance -app: 10.2.1.0/24  
     subnet-finance -data: 10.2.2.0/24  
-    <img title="" src="../screenshots/3subnet.jpg" alt="" width="60%" data-align="center">
+    <img title="" src="../screenshots/3subnet.jpg" alt="" width="70%" data-align="center">
 4. Create three virtual machines
 
 5. Create VNet peering between Hub and Finance Spoke
