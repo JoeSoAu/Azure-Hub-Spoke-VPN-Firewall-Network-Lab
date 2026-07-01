@@ -26,24 +26,24 @@ This section focuses on the initial network deployment only. Security services s
 
 ### Subnets
 
-| VNet                 | Subnet Name         | Address       | Purpose                    |
-| -------------------- | ------------------- | ------------- | -------------------------- |
-| `vnet-hub`           | `snet-hub-mgmt`     | `10.0.1.0/24` | Management workload        |
-| `vnet-hub`           | `snet-hub-shared`   | `10.0.2.0/24` | Shared services subnet     |
-| `vnet-spoke-finance` | `snet-finance-app`  | `10.1.1.0/24` | Finance application subnet |
-| `vnet-spoke-finance` | `snet-finance-data` | `10.1.2.0/24` | Finance data subnet        |
-| `vnet-spoke-hr`      | `snet-hr-app`       | `10.2.1.0/24` | HR application subnet      |
-| `vnet-spoke-hr`      | `snet-hr-data`      | `10.2.2.0/24` | HR data subnet             |
+| VNet                 | Subnet Name           | Address       | Purpose                    |
+| -------------------- | --------------------- | ------------- | -------------------------- |
+| `vnet-hub`           | `subnet-hub-mgmt`     | `10.0.1.0/24` | Management workload        |
+| `vnet-hub`           | `subnet-hub-shared`   | `10.0.2.0/24` | Shared services subnet     |
+| `vnet-spoke-finance` | `subnet-finance-app`  | `10.1.1.0/24` | Finance application subnet |
+| `vnet-spoke-finance` | `subnet-finance-data` | `10.1.2.0/24` | Finance data subnet        |
+| `vnet-spoke-hr`      | `subnet-hr-app`       | `10.2.1.0/24` | HR application subnet      |
+| `vnet-spoke-hr`      | `subnet-hr-data`      | `10.2.2.0/24` | HR data subnet             |
 
 ---
 
 ### Virtual Machines
 
-| VM Name            | VNet                 | Subnet             | Private IP | Public IP | Purpose             |
-| ------------------ | -------------------- | ------------------ | ---------- | --------- | ------------------- |
-| `vm-hub-win`       | `vnet-hub`           | `snet-hub-mgmt`    | `10.0.1.4` | No        | Hub management VM   |
-| `vm-finance-linux` | `vnet-spoke-finance` | `snet-finance-app` | `10.1.1.4` | No        | Finance workload VM |
-| `vm-hr-linux`      | `vnet-spoke-hr`      | `snet-hr-app`      | `10.2.1.4` | No        | HR workload VM      |
+| VM Name            | VNet                 | Subnet               | Private IP | Public IP | Purpose             |
+| ------------------ | -------------------- | -------------------- | ---------- | --------- | ------------------- |
+| `vm-hub-win`       | `vnet-hub`           | `subnet-hub-mgmt`    | `10.0.1.4` | No        | Hub management VM   |
+| `vm-finance-linux` | `vnet-spoke-finance` | `subnet-finance-app` | `10.1.1.4` | No        | Finance workload VM |
+| `vm-hr-linux`      | `vnet-spoke-hr`      | `subnet-hr-app`      | `10.2.1.4` | No        | HR workload VM      |
 
 ---
 
@@ -74,8 +74,8 @@ This stage includes the following tasks:
 ```
 
     vnet-hub: 10.0.0.0/16  
-     vnet-spoke-hr: 10.1.0.0/16  
-     vnet-spoke-finance: 10.2.0.0/16
+     vnet-spoke-hr: 10.1.0.0/16 
+     vnet-spoke-finance: 10.2.0.0/16 
 
 <img title="" src="../screenshots/2Vnet.jpg" alt="" width="60%" data-align="center">
 
@@ -98,11 +98,11 @@ This stage includes the following tasks:
 
 4. Create three virtual machine
 
-        vm-hub-win1: 10.0.1.4  
+        vm-hub-win1: 10.0.1.4 (in subnet-hub-mgmt)
 
-        vm-hr-linux1: 10.1.1.4  
+        vm-hr-linux1: 10.1.1.4 (in subnet-hr-app) 
 
-        vm-fiance-linux: 10.2.1.4
+        vm-fiance-linux: 10.2.1.4 (in subnet-finance-app) 
 
 1. Create VNet peering between Hub and Finance Spoke
 
