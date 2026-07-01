@@ -58,7 +58,7 @@ The Point-to-Site VPN connection connects the same Azure VPN Gateway deployed in
 
 Access can be controlled through VPN configuration, routing, NSG rules and identity-based authentication.
 
-
+![Architecture](/images/arch6.jpg)
 
 ## Secure Remote Administration (Bastion)
 
