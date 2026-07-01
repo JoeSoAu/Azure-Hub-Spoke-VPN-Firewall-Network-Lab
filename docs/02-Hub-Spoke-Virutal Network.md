@@ -67,14 +67,14 @@ This stage includes the following tasks:
        Azure Portal -> resource group-> create
    
    <img title="" src="../screenshots/1rg.jpg" alt="" width="80%" data-align="center">
-
-2. **Create the Hub VNet / Finance Spoke VNet / Create the HR Spoke VNet**
    
-        Azure Portal-> Virtual Networks -> Create
-   
-    vnet-hub: 10.0.0.0/16  
-    vnet-spoke-hr: 10.1.0.0/16  
-   vnet-spoke-finance: 10.2.0.0/16
+   1. **Create the Hub VNet / Finance Spoke VNet / Create the HR Spoke VNet**
+      
+           Azure Portal-> Virtual Networks -> Create
+      
+       vnet-hub: 10.0.0.0/16  
+       vnet-spoke-hr: 10.1.0.0/16  
+      vnet-spoke-finance: 10.2.0.0/16
 
 <img title="" src="../screenshots/2Vnet.jpg" alt="" width="60%" data-align="center">
 
@@ -82,14 +82,14 @@ This stage includes the following tasks:
    
            Azure Portal-> Virtual Networks -> vnet-hub-> subnet-> create 
    
-    subnet-hr-app: 10.1.1.0/24  
-    subnet-hr-data: 10.1.2.0/24
+        subnet-hr-app: 10.1.1.0/24  
+        subnet-hr-data: 10.1.2.0/24
    
-    subnet-finance -app: 10.2.1.0/24  
-    subnet-finance -data: 10.2.2.0/24  
+        subnet-finance -app: 10.2.1.0/24  
+        subnet-finance -data: 10.2.2.0/24  
    
-    subnet-mgmt: 10.0.1.0/24  
-    subnet-shared: 10.0.2.0/24
+        subnet-mgmt: 10.0.1.0/24  
+        subnet-shared: 10.0.2.0/24
    
    - when creating the spoke subnets, remember to tick **enable Private subnet (no default outbound access)**. This removes default outbound Internet access for the subnet. In later stages of this lab, Internet-bound traffic from the spoke subnets will be routed to the Azure Firewall in the Hub VNet, enabling centralized security inspection and policy impplimentation.
    
@@ -97,9 +97,9 @@ This stage includes the following tasks:
 
 4. Create three virtual machine
 
-    vm-hub-win1: 10.0.1.4  
+        vm-hub-win1: 10.0.1.4  
 
-    vm-hr-linux1: 10.1.1.4  
+        vm-hr-linux1: 10.1.1.4  
 
     vm-fiance-linux: 10.2.1.4
 
