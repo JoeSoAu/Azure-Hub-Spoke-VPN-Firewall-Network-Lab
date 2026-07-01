@@ -58,19 +58,19 @@ There is no direct VNet peering between the Finance and HR spoke VNets. This kee
 
 ---
 
-## 2.2 Implementation Scope
+## Implementation Procdures
 
 This stage includes the following tasks:
 
 1. **Create the resource group**
    
-       in Azure Portal -> resource group-> create
+       Azure Portal -> resource group-> create
    
-   <img title="" src="../screenshots/1rg.jpg" alt="" width="" data-align="center">
+   <img title="" src="../screenshots/1rg.jpg" alt="" width="60%" data-align="center">
 
 2. Create the Hub VNet / Finance Spoke VNet / Create the HR Spoke VNet
 
-    Azure Portal-> Virtual Networks -> Create
+    	Azure Portal-> Virtual Networks -> Create
 
 vnet-hub: 10.0.0.0/16
 vnet-spoke-hr: 10.1.0.0/16
