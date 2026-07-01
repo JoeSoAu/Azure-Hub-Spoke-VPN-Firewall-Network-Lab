@@ -80,24 +80,20 @@ This stage includes the following tasks:
 
 3. **Create six subnets**
    
+           Azure Portal-> Virtual Networks -> vnet-hub-> subnet-> create 
+           
     subnet-hr-app: 10.1.1.0/24  
     subnet-hr-data: 10.1.2.0/24
    
     subnet-finance -app: 10.2.1.0/24  
     subnet-finance -data: 10.2.2.0/24  
+    
+    subnet-mgmt: 10.0.1.0/24  
+    subnet-shared: 10.0.2.0/24
    
    when creating the spoke subnets, remember to tick **enable Private subnet (no default outbound access)**. This removes default outbound Internet access for the subnet. In later stages of this lab, Internet-bound traffic from the spoke subnets will be routed to the Azure Firewall in the Hub VNet, enabling centralized security inspection and policy impplimentation.
    
    <img title="" src="../screenshots/3subnet.jpg" alt="" width="60%" data-align="center">
-
-4. 
-   
-    subnet-mgmt: 10.0.1.0/24  
-    subnet-shared: 10.0.2.0/24
-
-5. 
-   
-        Azure Portal-> Virtual Networks -> vnet-hub-> subnet-> create 
 
 6. Create three virtual machines
 
