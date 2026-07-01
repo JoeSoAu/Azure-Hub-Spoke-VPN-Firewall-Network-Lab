@@ -63,24 +63,25 @@ There is no direct VNet peering between the Finance and HR spoke VNets. This kee
 This stage includes the following tasks:
 
 1. **Create the resource group**
-
+   
        in Azure Portal -> resource group-> create
-<img title="" src="../screenshots/1rg.jpg" alt="" width="50%">
+   
+   <img title="" src="../screenshots/1rg.jpg" alt="" width="" data-align="center">
 
 2. Create the Hub VNet
 
-1. Create the Finance Spoke VNet
+3. Create the Finance Spoke VNet
 
-2. Create the HR Spoke VNet
+4. Create the HR Spoke VNet
 
-3. Create six subnets
+5. Create six subnets
 
-4. Create three virtual machines
+6. Create three virtual machines
 
-5. Create VNet peering between Hub and Finance Spoke
+7. Create VNet peering between Hub and Finance Spoke
 
-6. Create VNet peering between Hub and HR Spoke
+8. Create VNet peering between Hub and HR Spoke
 
-7. Validate basic private IP connectivity between Hub and each spoke
+9. Validate basic private IP connectivity between Hub and each spoke
 
 At the end of this stage, the base Hub-Spoke network topology is ready. The spoke networks are connected to the Hub, but they are not directly connected to each other.
