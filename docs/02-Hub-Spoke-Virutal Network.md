@@ -95,12 +95,18 @@ This stage includes the following tasks:
    
    <img title="" src="../screenshots/3subnets.jpg" alt="" width="80%" data-align="center">
 
-4. Create three virtual machines
+4. Create three virtual machine
 
-5. Create VNet peering between Hub and Finance Spoke
+    vm-hub-win1: 10.0.1.4  
 
-6. Create VNet peering between Hub and HR Spoke
+    vm-hr-linux1: 10.1.1.4  
 
-7. Validate basic private IP connectivity between Hub and each spoke
+vm-fiance-linux: 10.2.1.4
+
+1. Create VNet peering between Hub and Finance Spoke
+
+2. Create VNet peering between Hub and HR Spoke
+
+3. Validate basic private IP connectivity between Hub and each spoke
 
 At the end of this stage, the base Hub-Spoke network topology is ready. The spoke networks are connected to the Hub, but they are not directly connected to each other.
