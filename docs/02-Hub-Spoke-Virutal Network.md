@@ -72,11 +72,11 @@ This stage includes the following tasks:
 
     	Azure Portal-> Virtual Networks -> Create
         
-vnet-hub: 10.0.0.0/16  
-vnet-spoke-hr: 10.1.0.0/16  
-vnet-spoke-finance: 10.2.0.0/16
+	vnet-hub: 10.0.0.0/16  
+	vnet-spoke-hr: 10.1.0.0/16  
+	vnet-spoke-finance: 10.2.0.0/16
 
-<img title="" src="../screenshots/2Vnet.jpg" alt="" width="" data-align="center">
+<img title="" src="../screenshots/2Vnet.jpg" alt="" width="60%" data-align="center">
 
 1. Create six subnets
 
