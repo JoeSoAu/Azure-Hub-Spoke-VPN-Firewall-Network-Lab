@@ -42,11 +42,13 @@ For simplicity, Site-to-Site and Point-to-Site VPN traffic bypasses Azure Firewa
 
 ## Hybrid Connectivity （Site to Site VPN)
 
-To simulate a real enterprise hybrid environment, the on-premises network is connected to Azure cloud Vnets using a **Site-to-Site IPsec VPN**. Rather than putting a VPN gateway in each spoke network, a single Azure VPN Gateway is deployed in the Hub VNet. The spoke VNets use Gateway Transit through VNet peering to share the Hub gateway, providing secure connectivity to the on-premises network while reducing deployment cost and simplifying network management.
+To simulate a real enterprise hybrid environment, the on-premises network is connected to Azure cloud Vnets using a **Site-to-Site IPsec VPN**. Rather than putting a VPN gateway in each spoke network, a single Azure VPN Gateway is deployed in the Hub VNet. The spoke VNets use **Gateway Transit** through **VNet peering** to share the Hub gateway, providing secure connectivity to the on-premises network while reducing cost and simplifying network management.
 
-On the on-premises side, Windows Server 2022 Routing and Remote Access Service (RRAS) is used as the VPN endpoint. Although production environments typically use dedicated VPN appliances such as Cisco, Fortinet or Palo Alto devices, RRAS provides a practical software-based solution for demonstrating enterprise VPN technologies in a lab environment.
+On the on-premises side, Windows Server 2022 RRAS is used as the VPN endpoint. Although production environments typically use dedicated VPN router, RRAS provides a practical software-based solution for demonstrating enterprise VPN technologies in my lab.
 
-Due to the Azure trial subscription being limited to a single public IP address for the VPN Gateway, this lab implements an active-standby VPN connection. In production deployments, an active-active VPN configuration with two public IP addresses is commonly used to improve availability and provide better resilience against gateway failures.
+Due to the Azure trial subscription being limited to a single public IP address for the VPN Gateway, this lab implements an **active-standby VPN** connection. In production deployments, an **active-active VPN** with two public IP addresses is commonly used to improve availability and better resilience against gateway failures.
+
+![Architecture](/images/arch5.jpg)
 
 ## High-Level Architecture
 
