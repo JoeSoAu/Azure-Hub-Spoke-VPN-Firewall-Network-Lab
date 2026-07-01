@@ -10,9 +10,9 @@ Instead of allowing unrestricte traffic between all virtual networks, each depar
 
 The lab also demonstrates hybrid network connectivity by integrating the on-prem network with Azure cloud VNets using **Site-to-Site VPN**, while roaming users can securely access Azure resources through **Point-to-Site VPN**. Remote administration is implitented using **Azure Bastion** technology without exposing VMs directly to the Internet.
 
-The objective of this lab is to demonstrate how enterprise Azure networking can provide centralized management, network isolation, secure remote access and controlled hybrid connectivity using a compact and practical lab.
+The objective of this lab is to demonstrate how enterprise Azure networking can provide centralized management, n
 
-<img title="" src="file:///images/arch1.jpg" alt="" width="">
+<img title="" src="images/arch2.jpg" alt="" width="">
 
 ## Hub-Spoke Network Design (VNet Peering)
 
