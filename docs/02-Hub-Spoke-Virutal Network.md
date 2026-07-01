@@ -71,7 +71,7 @@ This stage includes the following tasks:
 2. Create the Hub VNet / Finance Spoke VNet / Create the HR Spoke VNet
 
     	Azure Portal-> Virtual Networks -> Create
-
+        
 vnet-hub: 10.0.0.0/16
 vnet-spoke-hr: 10.1.0.0/16
 vnet-spoke-finance: 10.2.0.0/16
