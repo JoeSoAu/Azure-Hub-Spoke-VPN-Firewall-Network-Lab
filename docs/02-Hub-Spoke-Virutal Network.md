@@ -67,18 +67,20 @@ This stage includes the following tasks:
 
 2. Create the Hub VNet
 
-3. Create the Finance Spoke VNet
+3. 
 
-4. Create the HR Spoke VNet
+4. Create the Finance Spoke VNet
 
-5. Create six subnets
+5. Create the HR Spoke VNet
 
-6. Create three virtual machines
+6. Create six subnets
 
-7. Create VNet peering between Hub and Finance Spoke
+7. Create three virtual machines
 
-8. Create VNet peering between Hub and HR Spoke
+8. Create VNet peering between Hub and Finance Spoke
 
-9. Validate basic private IP connectivity between Hub and each spoke
+9. Create VNet peering between Hub and HR Spoke
+
+10. Validate basic private IP connectivity between Hub and each spoke
 
 At the end of this stage, the base Hub-Spoke network topology is ready. The spoke networks are connected to the Hub, but they are not directly connected to each other.
