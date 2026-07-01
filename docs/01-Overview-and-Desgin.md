@@ -1,6 +1,6 @@
 # Overview and Network Design
 
-## Architecture Overview
+## Architecture Overview (Hub-Spoke Hybrid Cloud)
 
 This lab builds a compact Azure hybrid cloud network that simulates a typical enterprise **Azure cloud + on-premises** hybrid virtual network.
 
@@ -16,7 +16,7 @@ The objective of this lab is to demonstrate how enterprise Azure networking can 
 
 
 
-## Hub-Spoke Network Design
+## Hub-Spoke Network Design (VNet Peering)
 
 The Azure cloud network is built using a Hub-Spoke topology, a common architecture for enterprise environments. Instead of connecting every Vnet directly to one another, shared infrastructure and services are centralized in a dedicated Hub VNet, while application VMs are deployed in separate spoke VNets.
 
@@ -28,7 +28,7 @@ By default, vms in one spoke cannot communicate directly with another spoke beca
 
 ![Architecture](/images/arch3.jpg)
 
-## Centralized Network Security
+## Centralized Network Security (Azure Firewall)
 
 To simplify security management, network security is centralized within the Hub VNet rather than configured independently in each spoke VNet. This approach allows security policies to be managed from a single location and keep consistent protection across the entire Azure network.
 
@@ -50,7 +50,23 @@ Due to the Azure trial subscription being limited to a single public IP address 
 
 ![Architecture](/images/arch5.jpg)
 
+## Remote User Connectivity (Point to Site VPN)
 
+For roaming and external users, this lab uses **Point-to-Site VPN** to provide secure remote access into the Azure network. This simulates a common enterprise scenario where laptops or mobile users need to access cloud resources without being physically connected to the office network.
+
+The Point-to-Site VPN connection connects the same Azure VPN Gateway deployed in the Hub VNet. Remote clients use the **Azure VPN Client** to establish an VPN tunnel into Azure. Once connected, the client receives access to the internal Azure address space and can reach permitted resources in the Hub and Spoke VNets through private IP addresses.
+
+Access can be controlled through VPN configuration, routing, NSG rules and identity-based authentication.
+
+
+
+## Secure Remote Administration (Bastion)
+
+VMs in this lab are deployed without public IP addresses. Access is provided through **Azure Bastion**, which is placed in the **Hub VNet** and used as the central entry point for **RDP** and **SSH** access.
+
+With this design, administrators do not need to expose **RDP port 3389** or **SSH port 22** to the public Internet. Instead, traffic enters through Azure Bastion and reaches the target VMs over private network paths.
+
+The spoke virtual machines are accessed from the Hub through VNet peering. **Routing** and **NSG** rules are used to ensure that Bastion can reach the required private IP addresses while unnecessary inbound access is blocked. This ensur the safety of our private cloud environment compared with assigning public IP addresses directly to each VM.
 
 ## Final Design Summary
 
