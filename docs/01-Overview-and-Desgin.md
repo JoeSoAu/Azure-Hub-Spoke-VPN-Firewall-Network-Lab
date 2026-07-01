@@ -12,7 +12,7 @@ The lab also demonstrates hybrid network connectivity by integrating the on-prem
 
 The objective of this lab is to demonstrate how enterprise Azure networking can provide centralized management, n
 
-<img title="" src="file:///images/arch2.jpg" alt="" width="">
+<img title="" src="../images/arch2.jpg" alt="" width="">
 
 ## Hub-Spoke Network Design (VNet Peering)
 
