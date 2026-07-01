@@ -38,7 +38,42 @@ In this lab, the spoke VNets do not have direct Internet access. Outbound traffi
 
 For simplicity, Site-to-Site and Point-to-Site VPN traffic bypasses Azure Firewall in this lab. Routing VPN traffic through the firewall can be achieved in production environments but requires additional complex routing configuration to ensure **return traffic** follows the same inspection path and avoids **asymmetric routing**.
 
-![Architecture](/images/arch4.jpg)
+                         +--------------------+
+                         |      INTERNET      |
+                         +--------------------+
+                                   ▲
+                                   │
+                      Outbound Internet Traffic
+                                   │
+                         +--------------------+
+                         |   AZURE FIREWALL   |
+                         +--------------------+
+                            ▲              ▲
+                            │              │
+                UDR Route   │              │   UDR Route
+                            │              │
+        +-------------------+              +-------------------+
+        |                                      |
+
++--------------------+                 +--------------------+
+|   FINANCE SPOKE    |                 |      HR SPOKE      |
+|      Finance VM    |                 |       HR VM        |
++--------------------+                 +--------------------+
+
+Internet Access
+---------------
+
+Finance VM ──► UDR ──► Azure Firewall ──► Internet
+HR VM      ──► UDR ──► Azure Firewall ──► Internet
+
+Inter-Spoke Communication
+-------------------------
+
+Finance VM ──► UDR ──► Azure Firewall ──► HR VM
+HR VM      ──► UDR ──► Azure Firewall ──► Finance VM
+
+(Default: Denied)
+(Allowed only when Firewall Policy permits)
 
 ## 4. Hybrid Connectivity （Site to Site VPN)
 
