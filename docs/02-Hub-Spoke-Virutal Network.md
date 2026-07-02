@@ -45,6 +45,8 @@ This section focuses on the initial network deployment only. Security services s
 | `vm-finance-linux` | `vnet-spoke-finance` | `subnet-finance-app` | `10.1.1.4` | No        | Finance workload VM |
 | `vm-hr-linux`      | `vnet-spoke-hr`      | `subnet-hr-app`      | `10.2.1.4` | No        | HR workload VM      |
 
+- All vms uses ***Entra ID credential*** for user sign-in
+
 ---
 
 ### VNet Peering
@@ -100,16 +102,27 @@ This stage includes the following tasks:
 4. **Create three virtual machine**
    
         vm-hub-win1: 10.0.1.4 (in subnet-hub-mgmt)
+        OS: Windows 10 enterprice
        
         vm-hr-linux1: 10.1.1.4 (in subnet-hr-app) 
+        OS: Ubuntu Linux
        
         vm-fiance-linux: 10.2.1.4 (in subnet-finance-app) 
+        OS: Ubuntu Linux
+   
+     When VMs were created, traditional authentication methods were selected.
+   
+     The **Linux VMs** were created with **SSH key** authentication,
+     the **Windows 10 VM** was created with a local **username and password**. 
+   
+     This kept the initial deployment simple and ensured that the VMs could be accessed before Microsoft Entra ID login was configured.
+    
 
-5. **Create VNet peering between Hub and Finance Spoke / Hub and hr spoke**
-   
-    Virtual networks-> vnet-hub -> settings-> peering-> add-> choose the remote vnet to peer
-   
-    ->tick `"Allow remote vnet to access local vnet"` and `"Allow local vnet to recrive traffic from remote vent"` to allow mutual way traffic through the peering connection     
+5. **Configure Entra ID sign-in for VMs**
+
+6. 
+
+6. **Create VNet peering between Hub and Finance Spoke / Hub and hr spoke**
 
 <img title="" src="../screenshots/4peer1.jpg" alt="" width="60%" data-align="center">
 
@@ -117,7 +130,7 @@ the status appeared connected after 2 hub-spoke peerings are established
 
 <img title="" src="../screenshots/6peer3.jpg" alt="" width="90%" data-align="center">
 
-6. Validate IP connectivity between Hub and each spoke
+7. Validate IP connectivity between Hub and each spoke
    
    After peering between hub and spoke vnet is established, use the powershell cmdlet ***test-connection*** and ***ping*** in the VMs to validate the peering.
    
