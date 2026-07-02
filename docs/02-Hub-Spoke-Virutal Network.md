@@ -108,15 +108,30 @@ This stage includes the following tasks:
 
     create vnet peering between hub VNet and Finance vnet / hub Vnet and hr vnet.
     
+    	Virtual networks-> vnet-hub -> settings-> peering-> add
+    
+    	-> choose the remote vnet to peer
+        
     <img title="" src="../screenshots/4peer1.jpg" alt="" width="60%">
     
+    	->tick "Allow remote vnet to access local vnet" and "Allow local vnet to recrive traffic from remote vent" to allow mutual way traffic through the peering connection
+        
     <img title="" src="../screenshots/5peer2.jpg" alt="" width="60%">
-
     
+    	-> the status appeared connected after 2 hub-spoke peerings are established
+        
+    <img title="" src="../screenshots/6peer3.jpg" alt="" width="60%">
 
 
 
-1. Validate basic private IP connectivity between Hub and each spoke
+6. Validate IP connectivity between Hub and each spoke
+	after peering between hub and spoke vnet is established, use the powershell cmdlet test-connection in the VMs to validate the peering.
+    
+    from vm-hub-win to vm-hr-linux
+    
+  		test-connection 10.1.1.4 -port 22
+    
+	<img title="" src="../screenshots/7peer4.jpg" alt="" width="60%">
 
 At the end of this stage, the base Hub-Spoke network topology is ready. The spoke networks are connected to the Hub, but they are not directly connected to each other.
 
