@@ -139,7 +139,7 @@ This stage includes the following tasks:
 
     vm-hr-linux1→settings→ Extensions + applications→ Add→ Azure AD Based SSH Login
 
-<img title="" src="../screenshots/8linux.jpg" alt="" width="80%" data-align="center">
+<img title="" src="../screenshots/8linux.jpg" alt="" width="60%" data-align="center">
 
 Owner or Contributor permission does not automatically grant operating system login access to the Linux VM. The VM login role must be assigned separately.
 
