@@ -111,9 +111,9 @@ This stage includes the following tasks:
     
     ->tick "Allow remote vnet to access local vnet" and "Allow local vnet to recrive traffic from remote vent" to allow mutual way traffic through the peering connection     
 
-<img title="" src="../screenshots/4peer1.jpg" alt="" width="70%">
+<img title="" src="../screenshots/4peer1.jpg" alt="" width="70%" data-align="center">
 
-<img title="" src="../screenshots/5peer2.jpg" alt="" width="70%">
+<img title="" src="../screenshots/6peer3.jpg" alt="" width="80%" data-align="center">
 
     -> the status appeared connected after 2 hub-spoke peerings are established
 
@@ -125,6 +125,6 @@ This stage includes the following tasks:
    
          `test-connection 10.1.1.4 -port 22`
    
-   <img title="" src="../screenshots/7peer4.jpg" alt="" width="60%">
+   <img title="" src="../screenshots/7peer4.jpg" alt="" width="60%" data-align="center">
 
 At the end of this stage, the base Hub-Spoke network topology is ready. The spoke networks are connected to the Hub, but they are not directly connected to each other.
