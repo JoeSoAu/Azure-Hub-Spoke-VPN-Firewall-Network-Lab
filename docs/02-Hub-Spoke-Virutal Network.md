@@ -120,7 +120,7 @@ This stage includes the following tasks:
 
 5. **Configure Entra ID sign-in for VMs**
 
-    As metioned above,  both Linux and Windows VMs were initially deployed using     traditional authentication methods. The Linux VMs used SSH key authentication, while the Windows VM used a local administrator account and password.
+    As metioned above,  both Linux and Windows VMs were initially deployed using         traditional authentication methods. The Linux VMs used SSH key authentication, while the Windows VM used a local administrator account and password.
 
 To improve security , user experience and simplify identity management, we change the authentication method to Entra ID
 
