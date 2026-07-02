@@ -111,9 +111,9 @@ This stage includes the following tasks:
    
     ->tick `"Allow remote vnet to access local vnet"` and `"Allow local vnet to recrive traffic from remote vent"` to allow mutual way traffic through the peering connection     
 
-<img title="" src="../screenshots/4peer1.jpg" alt="" width="70%" data-align="center">
+<img title="" src="../screenshots/4peer1.jpg" alt="" width="60%" data-align="center">
 
-<img title="" src="../screenshots/6peer3.jpg" alt="" width="80%" data-align="center">
+<img title="" src="../screenshots/6peer3.jpg" alt="" width="90%" data-align="center">
 
     -> the status appeared connected after 2 hub-spoke peerings are established
 
