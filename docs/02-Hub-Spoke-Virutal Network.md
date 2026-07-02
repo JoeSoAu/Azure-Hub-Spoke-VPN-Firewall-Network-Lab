@@ -73,12 +73,12 @@ This stage includes the following tasks:
 2. **Create the Hub VNet / Finance Spoke VNet / Create the HR Spoke VNet**
 
 ```
- Azure Portal-> Virtual Networks -> Create
+    Azure Portal-> Virtual Networks -> Create
 ```
 
-    vnet-hub: 10.0.0.0/16  
-     vnet-spoke-hr: 10.1.0.0/16 
-     vnet-spoke-finance: 10.2.0.0/16 
+        vnet-hub: 10.0.0.0/16  
+        vnet-spoke-hr: 10.1.0.0/16 
+        vnet-spoke-finance: 10.2.0.0/16 
 
 <img title="" src="../screenshots/2Vnet.jpg" alt="" width="60%" data-align="center">
 
@@ -95,7 +95,7 @@ This stage includes the following tasks:
         subnet-mgmt: 10.0.1.0/24  
         subnet-shared: 10.0.2.0/24
    
-   - when creating the spoke subnets, remember to tick **enable Private subnet (no default outbound access)**. This removes default outbound Internet access for the spoke subnet. In later stages of this lab, Internet-bound traffic from the spoke subnets will be routed to the Azure Firewall in the Hub VNet, enabling centralized security inspection and policy impplimentation.
+   - when creating the **spoke subnets**, remember to tick **enable Private subnet (no default outbound access)**. This removes default outbound Internet access for the spoke subnet. In later stages of this lab, Internet-bound traffic from the spoke subnets will be routed to the Azure Firewall in the Hub VNet, enabling centralized security inspection and policy impplimentation.
    
    <img title="" src="../screenshots/3subnets.jpg" alt="" width="80%" data-align="center">
 
@@ -112,7 +112,7 @@ This stage includes the following tasks:
    
      When VMs were created, traditional authentication methods were selected.
    
-     The **Linux VMs** were created with **SSH key** authentication,
+     The **Linux VMs** were created with **SSH key** authentication  
      the **Windows 10 VM** was created with a local **username and password**. 
    
      This kept the initial deployment simple and ensured that the VMs could be accessed before Microsoft Entra ID login was configured.
@@ -120,7 +120,7 @@ This stage includes the following tasks:
 
 5. **Configure Entra ID sign-in for VMs**
 
-6. 
+
 
 6. **Create VNet peering between Hub and Finance Spoke / Hub and hr spoke**
 
