@@ -106,10 +106,10 @@ This stage includes the following tasks:
         vm-fiance-linux: 10.2.1.4 (in subnet-finance-app) 
 
 5. **Create VNet peering between Hub and Finance Spoke / Hub and hr spoke**
-
+   
     Virtual networks-> vnet-hub -> settings-> peering-> add-> choose the remote vnet to peer
-    
-    ->tick "Allow remote vnet to access local vnet" and "Allow local vnet to recrive traffic from remote vent" to allow mutual way traffic through the peering connection     
+   
+    ->tick `"Allow remote vnet to access local vnet"` and `"Allow local vnet to recrive traffic from remote vent"` to allow mutual way traffic through the peering connection     
 
 <img title="" src="../screenshots/4peer1.jpg" alt="" width="70%" data-align="center">
 
