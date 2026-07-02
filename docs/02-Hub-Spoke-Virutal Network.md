@@ -67,6 +67,7 @@ This stage includes the following tasks:
        Azure Portal -> resource group-> create
    
    <img title="" src="../screenshots/1rg.jpg" alt="" width="80%" data-align="center">
+
 2. **Create the Hub VNet / Finance Spoke VNet / Create the HR Spoke VNet**
 
 ```
@@ -82,13 +83,13 @@ This stage includes the following tasks:
 3. **Create hub and spoke subnets**
    
        Azure Portal-> Virtual Networks -> vnet-hub-> subnet-> create 
-   
+       
         subnet-hr-app: 10.1.1.0/24  
         subnet-hr-data: 10.1.2.0/24
-   
+       
         subnet-finance -app: 10.2.1.0/24  
         subnet-finance -data: 10.2.2.0/24  
-   
+       
         subnet-mgmt: 10.0.1.0/24  
         subnet-shared: 10.0.2.0/24
    
@@ -96,43 +97,34 @@ This stage includes the following tasks:
    
    <img title="" src="../screenshots/3subnets.jpg" alt="" width="80%" data-align="center">
 
-4. Create three virtual machine
-
+4. **Create three virtual machine**
+   
         vm-hub-win1: 10.0.1.4 (in subnet-hub-mgmt)
-
+       
         vm-hr-linux1: 10.1.1.4 (in subnet-hr-app) 
-
+       
         vm-fiance-linux: 10.2.1.4 (in subnet-finance-app) 
 
-5. Create VNet peering between Hub and Finance Spoke / Hub and hr spoke
+5. **Create VNet peering between Hub and Finance Spoke / Hub and hr spoke**
 
-    create vnet peering between hub VNet and Finance vnet / hub Vnet and hr vnet.
+    Virtual networks-> vnet-hub -> settings-> peering-> add-> choose the remote vnet to peer
     
-    	Virtual networks-> vnet-hub -> settings-> peering-> add
-    
-    	-> choose the remote vnet to peer
-        
-    <img title="" src="../screenshots/4peer1.jpg" alt="" width="60%">
-    
-    	->tick "Allow remote vnet to access local vnet" and "Allow local vnet to recrive traffic from remote vent" to allow mutual way traffic through the peering connection
-        
-    <img title="" src="../screenshots/5peer2.jpg" alt="" width="60%">
-    
-    	-> the status appeared connected after 2 hub-spoke peerings are established
-        
-    <img title="" src="../screenshots/6peer3.jpg" alt="" width="60%">
+    ->tick "Allow remote vnet to access local vnet" and "Allow local vnet to recrive traffic from remote vent" to allow mutual way traffic through the peering connection     
 
+<img title="" src="../screenshots/4peer1.jpg" alt="" width="70%">
 
+<img title="" src="../screenshots/5peer2.jpg" alt="" width="70%">
+
+    -> the status appeared connected after 2 hub-spoke peerings are established
 
 6. Validate IP connectivity between Hub and each spoke
-	after peering between hub and spoke vnet is established, use the powershell cmdlet test-connection in the VMs to validate the peering.
-    
-    from vm-hub-win to vm-hr-linux
-    
-  		test-connection 10.1.1.4 -port 22
-    
-	<img title="" src="../screenshots/7peer4.jpg" alt="" width="60%">
+   
+   After peering between hub and spoke vnet is established, use the powershell cmdlet test-connection in the VMs to validate the peering.
+   
+   from vm-hub-win to vm-hr-linux
+   
+         `test-connection 10.1.1.4 -port 22`
+   
+   <img title="" src="../screenshots/7peer4.jpg" alt="" width="60%">
 
 At the end of this stage, the base Hub-Spoke network topology is ready. The spoke networks are connected to the Hub, but they are not directly connected to each other.
-
-
