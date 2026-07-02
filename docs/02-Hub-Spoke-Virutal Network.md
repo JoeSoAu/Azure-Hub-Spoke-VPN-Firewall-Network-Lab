@@ -113,9 +113,9 @@ This stage includes the following tasks:
 
 <img title="" src="../screenshots/4peer1.jpg" alt="" width="60%" data-align="center">
 
-<img title="" src="../screenshots/6peer3.jpg" alt="" width="90%" data-align="center">
-
     -> the status appeared connected after 2 hub-spoke peerings are established
+
+<img title="" src="../screenshots/6peer3.jpg" alt="" width="90%" data-align="center">
 
 6. Validate IP connectivity between Hub and each spoke
    
