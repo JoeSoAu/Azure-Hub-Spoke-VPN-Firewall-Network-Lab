@@ -39,14 +39,14 @@ Azure Firewall is deployed inside the Hub VNet. An Azure Firewall needs a dedica
 | Firewall IP        | 10.10.254.4   |
 | Firewall SKU       | Standard      |
 
-#### 1 Create a Firewall Subnet in Hub VNet
+### 1 Create a Firewall Subnet in Hub VNet
 The first step is to prepare a firewall subnet in Hub Vnet
 
 IP address: 10.0.254.0/16
 
-> <img src="..\screenshots\31firewallnet.jpg" width="90%" />
+> <img src="..\screenshots\31firewallnet.jpg" width="85%" />
 
-#### 2 Create an Azure Firewall (SKU Standard)
+### 2 Create an Azure Firewall (SKU Standard)
 Then create an **Azure firewall** with the parameters shown in the screenshot
 
 > <img src="..\screenshots\32firewall.jpg" width="50%" />
@@ -55,25 +55,41 @@ A **public IP** is created for the firewall: ***pip-firewall-hub***
 
 ><img src="..\screenshots\33ip.jpg" width="70%"/>
 
-
-
-
-
-
 ------------------------------------------------------------------------
 
-## Configure User Defined Routes
+## Configure User Defined Routes(UDR)
 
-By default, Azure routes Internet-bound traffic directly to the
-Internet. To force traffic through Azure Firewall, User Defined Routes
-(UDRs) are created for each spoke subnet.
+By default, Azure routes Internet-bound traffic directly to the Internet. To force traffic from all subnets to through Azure Firewall, We need to create User Defined Routes (UDRs) for each subnet.
 
-Each route table contains a default route (`0.0.0.0/0`) with the next
-hop configured as **Virtual Appliance**, pointing to the private IP
-address of Azure Firewall.
+### 1 create a route table for each subnet
 
-The route tables are then associated with the Finance and HR application
-subnets.
+Virtual networks -> Route Tables -> create 
+
+### 2 Add the Internet-firewall route to the route table
+
+we will add the following route (UDR) to the route table
+
+**Destination**: 0.0.0.0/0
+**Next hop type**: Virtual appliance
+**IP**: 10.0.254.4  
+
+#### Destination: 
+
+We use 0.0.0.0/0 as the destination for traffic to the Internet in this lab, because Azure automatically provides more specific routes for the **local VNet** and **peered VNets**. Therefore, traffic that does not match these internal routes falls to the default route `0.0.0.0/0`, which is typically Internet-bound traffic.
+
+#### Next Hope Type and IP:
+
+By default, Azure routes Internet-bound traffic directly to the Internet using the built-in **Internet** as the next hop type. This means outbound traffic bypasses Azure Firewall, therefore,  we override Azure's default routing by creating  this UDR with next hope type **Virtual appliance** and the **Firewall internal address** 10.0.254.4 as the IP address
+
+><img src="..\screenshots\34route.jpg" width="70%"/>
+
+### 3 Associate the route table to the relevant subnet
+
+Route table is a independent Azure resource, we need to associtate it to the relevant subnet after the creation. 
+```
+Route tables -> subnet -> associate
+```
+<img src="..\screenshots\35associate.jpg" width="50%"/>
 
 Once applied, all outbound traffic from the spoke subnets is redirected
 to Azure Firewall before leaving the virtual network.
