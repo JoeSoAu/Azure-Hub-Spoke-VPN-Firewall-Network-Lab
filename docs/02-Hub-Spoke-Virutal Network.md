@@ -133,7 +133,7 @@ This kept the initial deployment simple and ensured that the VMs could be access
 Azure Portal-> Virtual Networks -> vnet-hub-> Settings-> Peerings-> add 
 ```
 
-<img title="" src="../screenshots/4peer1.jpg" alt="" width="60%" data-align="center">
+<img title="" src="../screenshots/4peer1.jpg" alt="" width="60%" data-align="center"  style="border:1px solid #888;">
 
 remember to tick the following 2 options for the peering
 
