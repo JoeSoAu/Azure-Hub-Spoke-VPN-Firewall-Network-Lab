@@ -4,7 +4,15 @@
 
 After establishing the Hub-Spoke network topology, the next step is to centralize network traffic control and security configuration using **Azure Firewall,** **User Defined Routes (UDR)** and **Network Security Groups (NSG)**.
 
-Rather than allowing each spoke VNet to access the Internet independently, this lab routes outbound traffic through a **centralized Azure Firewall** deployed in the Hub VNet. Additionally, **all inter-spoke VNet traffic** is redirected to the firewall for centralized control and inspection before reaching its destination.
+Rather than allowing each spoke VNet to access the Internet independently, this lab routes outbound traffic through a **centralized Azure Firewall** deployed in the Hub VNet. 
+
+​	Hub subnets => Hub Firewall => Internet
+
+​	Spoke subnets => Hub firewall => Internet
+
+Additionally, **all inter-spoke VNet traffic** is redirected to the firewall for centralized control and inspection before reaching its destination. In this lab, for test purpose, we only allow ***TCP 22*** traffics from finance VNet to HR VNet
+
+​	Finance Spoke VNet => Hub Firewall => HR Spoke VNet
 
 In this chapter, Azure Firewall is deployed in the Hub VNet. **User Defined Routes (UDRs)** are then configured to redirect outbound traffic from the spoke VNets to the firewall. Finally, **Firewall Policies** are
 created to control Internet access and inter-spoke communication.
@@ -73,37 +81,50 @@ we will add the following route (UDR) to the route table
 **Next hop type**: Virtual appliance  
 **IP**: 10.0.254.4  
 
-#### Destination: 
+#### - Destination: 
 We use 0.0.0.0/0 as the destination for traffic to the Internet in this lab, because Azure automatically provides more specific routes for the **local VNet** and **peered VNets**. Therefore, traffic that does not match these internal routes falls to the default route `0.0.0.0/0`, which is typically Internet-bound traffic.
 
-#### Next Hope Type and IP:
+#### - Next Hope Type and IP:
 By default, Azure routes Internet-bound traffic directly to the Internet using the built-in **Internet** as the next hop type. This means outbound traffic bypasses Azure Firewall, therefore,  we override Azure's default routing by creating  this UDR with next hope type **Virtual appliance** and the **Firewall internal address** 10.0.254.4 as the IP address
 
 ><img src="..\screenshots\34route.jpg" width="70%"/>
 
-### 3 Associate the route table to the relevant subnet
+### 3 Add the Inter-spoke route (UDR) to the Route Table of each Spoke subnet
 
-Route table is a independent Azure resource, we need to associtate it to the relevant subnet after the creation. 
+In order to redirect the defined inter-spoke traffics as following to go through Hub Firewall
+
+​	TCP 22 traffic from Finance VNet (10.2.0.0/16) to HR VNet (10.1.0.0/16) 
+
+We need to add a route in the route table of each subnet of Finance VNet
+
+​	**Destination**: 10.1.0.0/16  
+​	**Next hop type**: Virtual appliance  
+​	**IP**: 10.0.254.4  
+
+<img src="..\screenshots\34route2.jpg" width="70%"/>
+
+### 4 Associate the route table to the relevant subnet
+
+Route table is a independent Azure resource, we need to associate it to the relevant subnet after the creation. 
 ```
 Route tables -> subnet -> associate
 ```
 ><img src="..\screenshots\35associate.jpg" width="40%"/>
 
-Once associated, all outbound traffic from the subnet is redirected to Azure Firewall before leaving the virtual network.
+Once associated, all outbound traffic from the subnet is redirected to Azure Firewall in the hub before leaving the virtual network.
 
 ------------------------------------------------------------------------
 
 ## Configure Firewall Policy
 
-After traffic is redirected to Azure Firewall, Firewall Policies
-determine whether the traffic should be permitted or denied.
+After traffic is redirected to Azure Firewall in the hub, we need to create Firewall Policies to determine whether the traffic should be permitted or denied.
 
 This lab uses Network Rule Collections to allow required outbound
 Internet access and selected inter-spoke communication. Future security
 policies can be managed centrally without modifying individual spoke
 VNets.
 
-> **Insert:** Firewall Policy and Rule Collection screenshots
+> 
 
 ------------------------------------------------------------------------
 
