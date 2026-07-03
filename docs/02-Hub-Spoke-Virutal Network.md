@@ -116,36 +116,10 @@ This stage includes the following tasks:
      the **Windows 10 VM** was created with a local **username and password**. 
    
      This kept the initial deployment simple and ensured that the VMs could be accessed before Microsoft Entra ID login was configured.
-    
 
-5. **Configure Entra ID sign-in for VMs**
 
-    As metioned above,  both Linux and Windows VMs were initially deployed using         traditional authentication methods. The Linux VMs used SSH key authentication, while the Windows VM used a local administrator account and password.
 
-    To improve security , user experience and simplify identity management, we change the authentication method to Entra ID
-
-#### Linux VM Entra ID Sign-in Requirements
-
-    To use Entra ID authentication for Linux VM sign-in, the following requirements must be met.
-
-| Area             | Requirement                                                                                                                                 |
-|:---------------- | ------------------------------------------------------------------------------------------------------------------------------------------- |
-| VM Identity      | **System assigned managed identity** must be enabled on the Linux VM.                                                                       |
-| VM Extension     | The `AADSSHLoginForLinux` extension must be installed.                                                                                      |
-| Extension Status | The extension status must show **succeeded**. If the status is `Installing`, `Transitioning` or `Failed`, Entra ID SSH login will not work. |
-| RBAC Role        | The Entra user must be assigned role of either `Virtual Machine Administrator Login` or `Virtual Machine User Login`.                       |
-
-- Install Login Extension for Linux VM
-
-    vm-hr-linux1→settings→ Extensions + applications→ Add→ Azure AD Based SSH Login
-
-<img title="" src="../screenshots/8linux.jpg" alt="" width="60%" data-align="center">
-
-Owner or Contributor permission does not automatically grant operating system login access to the Linux VM. The VM login role must be assigned separately.
-
-In this lab, `Virtual Machine Administrator Login` is assigned to the lab administrator account for testing.
-
-6. **Create VNet peering between Hub and Finance Spoke / Hub and hr spoke**
+5. **Create VNet peering between Hub and Finance Spoke / Hub and hr spoke**
 
 <img title="" src="../screenshots/4peer1.jpg" alt="" width="60%" data-align="center">
 
