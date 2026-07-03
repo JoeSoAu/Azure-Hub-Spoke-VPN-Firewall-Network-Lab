@@ -120,16 +120,12 @@ OS: Ubuntu 24.04 LTS
 10.2.1.4 (in subnet-finance-app) 
 OS: Ubuntu 24.04 LTS 
 
-
-
 When VMs were created, traditional authentication methods were selected.
 
 The **Linux VMs** were created with **SSH key** authentication  
 The **Windows 10 VM** was created with a local **username and password**. 
 
 This kept the initial deployment simple and ensured that the VMs could be accessed before Microsoft Entra ID login was configured.  
-
-
 
 #### 5. Create VNet peering between Hub and Finance Spoke / Hub and hr spoke
 
@@ -138,6 +134,17 @@ Azure Portal-> Virtual Networks -> vnet-hub-> Settings-> Peerings-> add
 ```
 
 <img title="" src="../screenshots/4peer1.jpg" alt="" width="60%" data-align="center">
+
+remember to tick the following 2 options for the peering
+
+```
+Allow peered vnet to access 'vnet-hub'
+Allow 'vnet-hub' to access peered vnet
+```
+
+These options ensure communication go through between both end of the peering
+
+<img title="" src="../screenshots/4peer2.jpg" alt="" width="20%" data-align="center">
 
 The status appeared connected after 2 hub-spoke peerings are established
 
