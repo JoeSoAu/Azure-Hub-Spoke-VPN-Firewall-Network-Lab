@@ -9,6 +9,8 @@ Rather than allowing each spoke VNet to access the Internet independently, this 
 In this chapter, Azure Firewall is deployed in the Hub VNet. **User Defined Routes (UDRs)** are then configured to redirect outbound traffic from the spoke VNets to the firewall. Finally, **Firewall Policies** are
 created to control Internet access and inter-spoke communication.
 
+<img src="..\images\arch8.jpg" style="zoom:67%;" />
+
 ------------------------------------------------------------------------
 
 ## Objectives
