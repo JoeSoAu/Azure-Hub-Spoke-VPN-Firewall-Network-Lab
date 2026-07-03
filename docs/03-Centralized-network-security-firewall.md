@@ -26,21 +26,31 @@ The objectives of this chapter are to:
 
 ------------------------------------------------------------------------
 
-## 3.4 Deploy Azure Firewall
+## Deploy Azure Firewall
 
-Azure Firewall is deployed inside the Hub VNet using the dedicated
-**AzureFirewallSubnet**. A Standard SKU firewall is used in this lab to
-provide centralized network inspection and policy enforcement.
+Azure Firewall is deployed inside the Hub VNet. An Azure Firewall needs a dedicated
+**AzureFirewallSubnet**. Here is the parameters for the Firewall subnet and firewall
 
-A Firewall Policy is created and associated with the firewall.
-Separating the policy from the firewall simplifies management and allows
-firewall rules to be maintained independently of the firewall resource.
+| Firewall Subnet IP | 10.0.254.0/26 |
+| ------------------ | ------------- |
+| Firewall IP        | 10.10.254.4   |
+| Firewall SKU       | Standard      |
 
-> **Insert:** Azure Firewall deployment screenshot
+#### 1 First Create a Firewall Subnet in Hub VNet
+
+> ![](..\screenshots\31firewallnet.jpg)
+
+
+
+#### 2 Create an Azure Firewall
+
+
+
+
 
 ------------------------------------------------------------------------
 
-## 3.5 Configure User Defined Routes
+## Configure User Defined Routes
 
 By default, Azure routes Internet-bound traffic directly to the
 Internet. To force traffic through Azure Firewall, User Defined Routes
@@ -60,7 +70,7 @@ to Azure Firewall before leaving the virtual network.
 
 ------------------------------------------------------------------------
 
-## 3.6 Configure Firewall Policy
+## Configure Firewall Policy
 
 After traffic is redirected to Azure Firewall, Firewall Policies
 determine whether the traffic should be permitted or denied.
@@ -74,7 +84,7 @@ VNets.
 
 ------------------------------------------------------------------------
 
-## 3.7 Validation
+## Validation
 
 After the firewall configuration is completed, verify the following:
 
@@ -88,7 +98,7 @@ inspection are functioning as designed.
 
 ------------------------------------------------------------------------
 
-## 3.8 Summary
+## Summary
 
 Azure Firewall has been deployed as the central security appliance for
 the Hub-Spoke network. User Defined Routes redirect traffic from the
