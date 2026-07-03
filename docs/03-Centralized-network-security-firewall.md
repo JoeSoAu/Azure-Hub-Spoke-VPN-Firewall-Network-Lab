@@ -57,11 +57,13 @@ IP address: 10.0.254.0/16
 ### 2 Create an Azure Firewall (SKU Standard)
 Then create an **Azure firewall** with the parameters shown in the screenshot
 
-> <img src="..\screenshots\32firewall.jpg" width="50%" />
+> <img src="..\screenshots\32firewall.jpg" width="50%" />  
+
+
 
 A **public IP** is created for the firewall: ***pip-firewall-hub***
 
-><img src="..\screenshots\33ip.jpg" width="70%"/>
+><img src="..\screenshots\33ip.jpg" width="70%"/>  
 
 ------------------------------------------------------------------------
 
@@ -164,7 +166,9 @@ Azure Firewall processes Rule Collections from the lowest priority number to the
 2) If not, check whether it is inter-spoke traffic and deny it.
 3) If neither rule matches, allow outbound Internet traffic.
 
-This design ensures that only explicitly permitted inter-spoke communication is allowed, while all other inter-spoke traffic is blocked. At the same time, both spoke VNets keep outbound Internet access through Azure Firewall.
+This design ensures that only explicitly permitted inter-spoke communication is allowed, while all other inter-spoke traffic is blocked. At the same time, both spoke VNets keep outbound Internet access through Azure Firewall.  
+
+
 
 ><img src="..\screenshots\36policy.jpg" width="80%"/>
 
