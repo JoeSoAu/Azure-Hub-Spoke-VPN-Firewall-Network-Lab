@@ -69,16 +69,14 @@ Virtual networks -> Route Tables -> create
 
 we will add the following route (UDR) to the route table
 
-**Destination**: 0.0.0.0/0
-**Next hop type**: Virtual appliance
+**Destination**: 0.0.0.0/0  
+**Next hop type**: Virtual appliance  
 **IP**: 10.0.254.4  
 
 #### Destination: 
-
 We use 0.0.0.0/0 as the destination for traffic to the Internet in this lab, because Azure automatically provides more specific routes for the **local VNet** and **peered VNets**. Therefore, traffic that does not match these internal routes falls to the default route `0.0.0.0/0`, which is typically Internet-bound traffic.
 
 #### Next Hope Type and IP:
-
 By default, Azure routes Internet-bound traffic directly to the Internet using the built-in **Internet** as the next hop type. This means outbound traffic bypasses Azure Firewall, therefore,  we override Azure's default routing by creating  this UDR with next hope type **Virtual appliance** and the **Firewall internal address** 10.0.254.4 as the IP address
 
 ><img src="..\screenshots\34route.jpg" width="70%"/>
@@ -89,12 +87,9 @@ Route table is a independent Azure resource, we need to associtate it to the rel
 ```
 Route tables -> subnet -> associate
 ```
-<img src="..\screenshots\35associate.jpg" width="50%"/>
+><img src="..\screenshots\35associate.jpg" width="50%"/>
 
-Once applied, all outbound traffic from the spoke subnets is redirected
-to Azure Firewall before leaving the virtual network.
-
-> **Insert:** Route Table and Route screenshots
+Once associated, all outbound traffic from the subnet is redirected to Azure Firewall before leaving the virtual network.
 
 ------------------------------------------------------------------------
 
