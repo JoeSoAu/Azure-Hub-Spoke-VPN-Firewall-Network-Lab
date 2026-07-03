@@ -55,9 +55,8 @@ Then create an **Azure firewall** with the parameters shown in the screenshot
 
 A **public IP** is created for the firewall: ***pip-firewall-hub 10.0.254.4***
 
-```HTML
-<img src="..\screenshots\33ip.jpg" width="60%"/>
-```
+><img src="..\screenshots\33ip.jpg" width="60%"/>
+
 
 
 
