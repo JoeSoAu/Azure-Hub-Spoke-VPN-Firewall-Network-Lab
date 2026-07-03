@@ -123,18 +123,18 @@ After traffic is redirected to Azure Firewall in the hub, we need to create **Fi
 
 Firstly，I found Azure Firewall organizes rules using a **three-level hierarchy**. This structure allows related rules to be grouped together, making firewall policies easier to manage.
 
-Firewall Policy
-│
-└── Rule Collection Group
-      │
-      ├── Rule Collection
-      │      ├── Rule
-      │      ├── Rule
-      │      └── Rule
-      │
-      └── Rule Collection
-             ├── Rule
-             └── Rule
+Firewall Policy  
+│  
+└── Rule Collection Group  
+      │  
+      ├── Rule Collection  
+      │      ├── Rule  
+      │      ├── Rule  
+      │      └── Rule  
+      │  
+      └── Rule Collection  
+             ├── Rule  
+             └── Rule   
 
 #### Rule Collection Group
 
