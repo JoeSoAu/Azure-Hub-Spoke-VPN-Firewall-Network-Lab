@@ -172,11 +172,73 @@ This design ensures that only explicitly permitted inter-spoke communication is 
 
 ><img src="..\screenshots\36policy.jpg" width="80%"/>
 
+
+
+This is a common enterprise firewall rule design: specific allow rules first, general deny rules second, and general Internet access rules last. This prevents broad Internet rules from allowing traffic that should be denied.
+
 ------------------------------------------------------------------------
 
 ## Configure VNet Peering for Inter-Spoke Communications
 
+After configuring the Azure Firewall rules, outbound Internet access from all VNets is working correctly -- all Internet-bound traffic is redirected to Azure Firewall, then head to the Internet from the **firewall public IP address**. 
 
+However, Inter-Spoke traffic from Finance to HR spoke VNets is still no-through and requires one more peering setting.
+
+When traffic goes from the Finance spoke to the HR spoke through Azure Firewall, the traffic path is:
+
+```
+Finance Spoke
+    ↓
+Hub VNet / Azure Firewall
+    ↓
+HR Spoke
+```
+
+This traffic is **forwarded traffic**, because the destination of the traffic is not Hub Vnet.
+
+- ### What is  forwarded traffic
+
+In a VNet peering connection, **forwarded traffic** refers to traffic with destination **not the directly peered VNet**. Instead, the packet is sent to the peered VNet because the **next hop** is there (for example, Azure Firewall), and is then forwarded to other destination.
+
+For example, in this lab:
+
+```
+Finance VM
+      │
+      ▼
+Azure Firewall (Hub)
+      │
+      ▼
+    HR VM
+```
+
+The packet is first sent to the Hub VNet because the next hop is Azure Firewall. However, its final destination is the HR VNet rather than the Hub VNet. Therefore, this traffic is considered **forwarded traffic**.
+
+By default, Vnet peering blocks all forwarded traffics. Therefore, to support the traffic flow **Finance → Hub Firewall → HR**, **Allow forwarded traffic** must be enabled only on the peering connections in this path.
+
+1. **Hub → Finance Peering**
+
+Enable:
+
+> **Allow 'vnet-hub' to receive forwarded traffic from 'vnet-spoke-finance'**
+
+This allows the Hub VNet to accept forwarded packets arriving from the Finance spoke.
+
+> <img src="..\screenshots\37forwad1.jpg" width="70%"/>
+
+1. **HR → Hub Peering**
+
+Enable:
+
+> **Allow 'vnet-spoke-hr' to receive forwarded traffic from 'vnet-hub'**
+
+This allows the HR spoke to accept packets forwarded by Azure Firewall.
+
+> <img src="..\screenshots\38forward2.jpg" width="70%"/>
+
+The design of this lab only allows **Finance-to-HR** communication, the reverse forwarding path is not required. Therefore, the opposite forwarding settings are intentionally left disabled, following the **principle of least privilege**.
+
+Once this setting is enabled, Azure Firewall can successfully forward permitted traffic between the Finance and HR spoke VNets while all other inter-spoke traffic continues to be controlled by the firewall policy.
 
 ## Validation
 
