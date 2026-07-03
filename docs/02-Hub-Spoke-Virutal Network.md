@@ -66,11 +66,11 @@ This stage includes the following tasks:
 
 1. **Create the resource group**
    
-       Azure Portal -> resource group-> create
-   
    <img title="" src="../screenshots/1rg.jpg" alt="" width="80%" data-align="center">
 
-2. **Create the Hub VNet / Finance Spoke VNet / Create the HR Spoke VNet**
+---
+
+1. **Create the Hub VNet / Finance Spoke VNet / Create the HR Spoke VNet**
 
 ```
     Azure Portal-> Virtual Networks -> Create
@@ -82,24 +82,17 @@ This stage includes the following tasks:
 
 <img title="" src="../screenshots/2Vnet.jpg" alt="" width="60%" data-align="center">
 
+---
+
 3. **Create hub and spoke subnets**
-   
-       Azure Portal-> Virtual Networks -> vnet-hub-> subnet-> create 
-       
-        subnet-hr-app: 10.1.1.0/24  
-        subnet-hr-data: 10.1.2.0/24
-       
-        subnet-finance -app: 10.2.1.0/24  
-        subnet-finance -data: 10.2.2.0/24  
-       
-        subnet-mgmt: 10.0.1.0/24  
-        subnet-shared: 10.0.2.0/24
    
    - when creating the **spoke subnets**, remember to tick **enable Private subnet (no default outbound access)**. This removes default outbound Internet access for the spoke subnet. In later stages of this lab, Internet-bound traffic from the spoke subnets will be routed to the Azure Firewall in the Hub VNet, enabling centralized security inspection and policy impplimentation.
    
    <img title="" src="../screenshots/3subnets.jpg" alt="" width="80%" data-align="center">
 
-4. **Create three virtual machine**
+---
+
+1. **Create three virtual machine**
    
         vm-hub-win1: 10.0.1.4 (in subnet-hub-mgmt)
         OS: Windows 10 enterprice
@@ -115,11 +108,9 @@ This stage includes the following tasks:
      The **Linux VMs** were created with **SSH key** authentication  
      the **Windows 10 VM** was created with a local **username and password**. 
    
-     This kept the initial deployment simple and ensured that the VMs could be accessed before Microsoft Entra ID login was configured.
+     This kept the initial deployment simple and ensured that the VMs could be accessed before Microsoft Entra ID login was configured.  
 
-
-
-
+---
 
 5. **Create VNet peering between Hub and Finance Spoke / Hub and hr spoke**
 
@@ -128,6 +119,8 @@ This stage includes the following tasks:
 the status appeared connected after 2 hub-spoke peerings are established
 
 <img title="" src="../screenshots/6peer3.jpg" alt="" width="90%" data-align="center">
+
+---
 
 6. Validate IP connectivity between Hub and each spoke
 
