@@ -87,7 +87,7 @@ Route table is a independent Azure resource, we need to associtate it to the rel
 ```
 Route tables -> subnet -> associate
 ```
-><img src="..\screenshots\35associate.jpg" width="50%"/>
+><img src="..\screenshots\35associate.jpg" width="40%"/>
 
 Once associated, all outbound traffic from the subnet is redirected to Azure Firewall before leaving the virtual network.
 
