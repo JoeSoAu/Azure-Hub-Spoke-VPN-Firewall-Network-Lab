@@ -117,7 +117,7 @@ Once associated, all outbound traffic from the subnet is redirected to Azure Fir
 
 ------------------------------------------------------------------------
 
-## 5 Configure Firewall Policy
+## Configure Firewall Policy
 
 After traffic is redirected to Azure Firewall in the hub, we need to create **Firewall Policies** to determine whether the traffic should be permitted or denied.
 
@@ -140,7 +140,7 @@ Firewall Policy
 
 A Rule Collection Group is the highest level of rule organization within a Firewall Policy. It is primarily used to organize related rule collections and define the order in which they are processed.
 
-### Rule Collection
+#### Rule Collection
 
 A Rule Collection contains rules of the **same type**, such as Network Rules or Application Rules. Each Rule Collection has a **single action**, either **Allow** or **Deny**. Allow and Deny rules cannot coexist within the same Rule Collection. If both actions are required, separate Rule Collections must be created
 
@@ -148,11 +148,31 @@ A Rule Collection contains rules of the **same type**, such as Network Rules or 
 
 A Rule defines the actual traffic matching conditions, including **source**, **destination**, **protocol** and **port**. When traffic matches a rule, the configured action is applied.
 
+### Firewall Rules Used in This Lab
 
+In order to accomplish the objectives of Internet bound flow control and the defined one-way Inter-spoke traffic, we defined the following rule collections
 
-> 
+| Priority | Rule Collection                 | Purpose                                                      |
+| -------- | ------------------------------- | ------------------------------------------------------------ |
+| 110      | **rc-allow-finance-to-hr-ssh**  | Allows only the required SSH traffic from the Finance spoke to the HR VM. |
+| 120      | **rc-deny-interspoke**          | Blocks all remaining traffic between the Finance and HR spoke VNets. |
+| 150      | **rc-allow-spokes-to-internet** | Allows outbound Internet access from both spoke VNets.       |
+
+Azure Firewall processes Rule Collections from the lowest priority number to the highest, so we designed the rule collections in this order
+
+1) Check whether the traffic matches the specific SSH allow rule (from Finance to HR).
+2) If not, check whether it is inter-spoke traffic and deny it.
+3) If neither rule matches, allow outbound Internet traffic.
+
+This design ensures that only explicitly permitted inter-spoke communication is allowed, while all other inter-spoke traffic is blocked. At the same time, both spoke VNets keep outbound Internet access through Azure Firewall.
+
+><img src="..\screenshots\36policy.jpg" width="80%"/>
 
 ------------------------------------------------------------------------
+
+## Configure VNet Peering for Inter-Spoke Communications
+
+
 
 ## Validation
 
@@ -170,11 +190,6 @@ inspection are functioning as designed.
 
 ## Summary
 
-Azure Firewall has been deployed as the central security appliance for
-the Hub-Spoke network. User Defined Routes redirect traffic from the
-spoke VNets to the firewall, while Firewall Policies determine whether
-traffic is permitted to continue to its destination.
+Azure Firewall has been deployed as the central security appliance for the Hub-Spoke network. User Defined Routes redirect traffic from the spoke VNets to the firewall, while Firewall Policies determine whether traffic is permitted to continue to its destination.
 
-This centralized security architecture provides the foundation for the
-hybrid connectivity and secure remote administration features
-implemented in the following chapters.
+This centralized security architecture provides the foundation for the hybrid connectivity and secure remote administration features implemented in the following chapters.
