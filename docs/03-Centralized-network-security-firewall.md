@@ -42,20 +42,18 @@ Azure Firewall is deployed inside the Hub VNet. An Azure Firewall needs a dedica
 #### 1 Create a Firewall Subnet in Hub VNet
 The first step is to prepare a firewall subnet in Hub Vnet
 
-IP address: 
+IP address: 10.0.254.0/16
 
-> 10.0.254.4
-
-
+> <img src="..\screenshots\31firewallnet.jpg" width="60%" />
 
 #### 2 Create an Azure Firewall (SKU Standard)
 Then create an **Azure firewall** with the parameters shown in the screenshot
 
 > <img src="..\screenshots\32firewall.jpg" width="50%" />
 
-A **public IP** is created for the firewall: ***pip-firewall-hub 10.0.254.4***
+A **public IP** is created for the firewall: ***pip-firewall-hub***
 
-><img src="..\screenshots\33ip.jpg" width="60%"/>
+><img src="..\screenshots\33ip.jpg" width="70%"/>
 
 
 
