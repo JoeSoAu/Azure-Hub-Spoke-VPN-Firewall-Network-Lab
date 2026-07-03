@@ -10,13 +10,13 @@ This section focuses on the initial network deployment only. Security services s
 
 ## Design Parameters
 
-### Resource Group
+#### Resource Group
 
 | Component      | Name           | Region         |
 | -------------- | -------------- | -------------- |
 | Resource Group | `rg-azure-lab` | Australia East |
 
-### Virtual Networks
+#### Virtual Networks
 
 | VNet                 | Address Space | Purpose                                   |
 | -------------------- | ------------- | ----------------------------------------- |
@@ -24,7 +24,7 @@ This section focuses on the initial network deployment only. Security services s
 | `vnet-spoke-finance` | `10.1.0.0/16` | Finance department workload spoke network |
 | `vnet-spoke-hr`      | `10.2.0.0/16` | HR department workload spoke network      |
 
-### Subnets
+#### Subnets
 
 | VNet                 | Subnet Name           | Address       | Purpose                    |
 | -------------------- | --------------------- | ------------- | -------------------------- |
@@ -37,7 +37,7 @@ This section focuses on the initial network deployment only. Security services s
 
 ---
 
-### Virtual Machines
+#### Virtual Machines
 
 | VM Name            | VNet                 | Subnet               | Private IP | Public IP | Purpose             |
 | ------------------ | -------------------- | -------------------- | ---------- | --------- | ------------------- |
@@ -49,7 +49,7 @@ This section focuses on the initial network deployment only. Security services s
 
 ---
 
-### VNet Peering
+#### VNet Peering
 
 | Peering                           | Direction | Purpose                      |
 | --------------------------------- | --------- | ---------------------------- |
@@ -64,62 +64,101 @@ There is no direct VNet peering between the Finance and HR spoke VNets. This kee
 
 This stage includes the following tasks:
 
-### 1. Create the resource group
-   
-   <img title="" src="../screenshots/1rg.jpg" alt="" width="80%" data-align="center">
+#### 1. Create the resource group
+
+<img title="" src="../screenshots/1rg.jpg" alt="" width="80%" data-align="center">
 
 ---
 
-### 2. Create the Hub VNet / Finance Spoke VNet / Create the HR Spoke VNet
+#### 2. Create the Hub VNet / Finance Spoke VNet / Create the HR Spoke VNet
 
 ```
     Azure Portal-> Virtual Networks -> Create
 ```
 
-        vnet-hub: 10.0.0.0/16  
-        vnet-spoke-hr: 10.1.0.0/16 
-        vnet-spoke-finance: 10.2.0.0/16 
+  **vnet-hub**: 10.0.0.0/16  
+  **vnet-spoke-hr**: 10.1.0.0/16 
+  **vnet-spoke-finance**: 10.2.0.0/16 
 
 <img title="" src="../screenshots/2Vnet.jpg" alt="" width="60%" data-align="center">
 
 ---
 
-### 3. Create hub and spoke subnets
+#### 3. Create hub and spoke subnets
 
-- when creating the **spoke subnets**, remember to tick **enable Private subnet (no default outbound access)**. This removes default outbound Internet access for the spoke subnet. In later stages of this lab, Internet-bound traffic from the spoke subnets will be routed to the Azure Firewall in the Hub VNet, enabling centralized security inspection and policy impplimentation.
+```
+Azure Portal-> Virtual Networks -> vnet-hub-> subnet-> create` 
+```
 
----
+ **subnet-hr-app**: 10.1.1.0/24  
+ **subnet-hr-data**: 10.1.2.0/24
 
-### 4. Create three virtual machine
-   
-        vm-hub-win1: 10.0.1.4 (in subnet-hub-mgmt)
-        OS: Windows 10 enterprice
-       
-        vm-hr-linux1: 10.1.1.4 (in subnet-hr-app) 
-        OS: Ubuntu 24.04 LTS 
-       
-        vm-fiance-linux: 10.2.1.4 (in subnet-finance-app) 
-        OS: Ubuntu 24.04 LTS 
-   
-     When VMs were created, traditional authentication methods were selected.
-   
-     The **Linux VMs** were created with **SSH key** authentication  
-     the **Windows 10 VM** was created with a local **username and password**. 
-   
-     This kept the initial deployment simple and ensured that the VMs could be accessed before Microsoft Entra ID login was configured.  
+ **subnet-finance -app**: 10.2.1.0/24  
+ **subnet-finance -data**: 10.2.2.0/24  
+
+ **subnet-mgmt:** 10.0.1.0/24  
+ **subnet-shared**: 10.0.2.0/24
+
+when creating the **spoke subnets**, remember to tick **enable Private subnet (no default outbound access)**. This removes default outbound Internet access for the spoke subnet. In later stages of this lab, Internet-bound traffic from the spoke subnets will be routed to the Azure Firewall in the Hub VNet, enabling centralized security inspection and policy impplimentation.
 
 ---
 
-### 5. Create VNet peering between Hub and Finance Spoke / Hub and hr spoke
+#### 4. Create three virtual machine
+
+**vm-hub-win**: 
+
+10.0.1.4 (in subnet-hub-mgmt)
+OS: Windows 10 enterprice
+
+**vm-hr-linux**: 
+
+10.1.1.4 (in subnet-hr-app) 
+OS: Ubuntu 24.04 LTS 
+
+**vm-fiance-linux:** 
+
+10.2.1.4 (in subnet-finance-app) 
+OS: Ubuntu 24.04 LTS 
+
+
+
+When VMs were created, traditional authentication methods were selected.
+
+The **Linux VMs** were created with **SSH key** authentication  
+The **Windows 10 VM** was created with a local **username and password**. 
+
+This kept the initial deployment simple and ensured that the VMs could be accessed before Microsoft Entra ID login was configured.  
+
+
+
+#### 5. Create VNet peering between Hub and Finance Spoke / Hub and hr spoke
+
+```
+Azure Portal-> Virtual Networks -> vnet-hub-> Settings-> Peerings-> add 
+```
 
 <img title="" src="../screenshots/4peer1.jpg" alt="" width="60%" data-align="center">
 
-the status appeared connected after 2 hub-spoke peerings are established
+The status appeared connected after 2 hub-spoke peerings are established
 
 <img title="" src="../screenshots/6peer3.jpg" alt="" width="90%" data-align="center">
 
 ---
 
-### 6. Validate IP connectivity between Hub and each spoke
+#### 6. Validate IP connectivity between Hub and each spoke
+
+Use ***ping*** and ***net-connection*** cmdlets to test connection between hub vm and spoke vms
+
+From the Hub VM
+
+```
+ping 10.1.1.4
+```
+
+```
+test-netconnection 10.1.1.4 -port 22
+```
+
+<img title="" src="../screenshots/7peer4.jpg" alt="" width="60%" data-align="center">
 
 At the end of this stage, the base Hub-Spoke network topology is ready. The spoke networks are connected to the Hub, but they are not directly connected to each other.
