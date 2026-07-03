@@ -38,7 +38,7 @@ Azure Firewall is deployed inside the Hub VNet. An Azure Firewall needs a dedica
 
 #### 1 First Create a Firewall Subnet in Hub VNet
 
-> <img src="..\screenshots\31firewallnet.jpg" />
+> <img src="..\screenshots\31firewallnet.jpg" style="zoom:67%;" />
 
 
 
