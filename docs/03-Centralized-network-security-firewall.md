@@ -9,7 +9,7 @@ Rather than allowing each spoke VNet to access the Internet independently, this 
 In this chapter, Azure Firewall is deployed in the Hub VNet. **User Defined Routes (UDRs)** are then configured to redirect outbound traffic from the spoke VNets to the firewall. Finally, **Firewall Policies** are
 created to control Internet access and inter-spoke communication.
 
-><img src="..\images\arch8.jpg" width="60%"/>
+><img src="..\images\arch8.jpg" width="80%"/>
 
 ------------------------------------------------------------------------
 
@@ -39,14 +39,14 @@ Azure Firewall is deployed inside the Hub VNet. An Azure Firewall needs a dedica
 | Firewall SKU       | Standard      |
 
 #### 1 Create a Firewall Subnet in Hub VNet
-
-> <img src="..\screenshots\31firewallnet.jpg" width="60%" />
+The first step is to prepare a firewall subnet in Hub Vnet
+> <img src="..\screenshots\31firewallnet.jpg" width="80%" />
 
 
 
 #### 2 Create an Azure Firewall (SKU Standard)
-
-> <img src="..\screenshots\32firewall.jpg" width="60%" />
+Then create an Azure firewall with the parameters shown in the screenshot
+> <img src="..\screenshots\32firewall.jpg" width="80%" />
 
 
 
