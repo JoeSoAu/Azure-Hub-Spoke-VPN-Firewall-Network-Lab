@@ -1,4 +1,4 @@
-# Build Hub-Spoke Virtual Network Infrastructure
+# 2. Build Hub-Spoke Virtual Network Infrastructure
 
 This section describes the first stage of the Azure Hub-Spoke Network Lab. The objective is to build the base network foundation, including the resource group, virtual networks, subnets, virtual machines and VNet peering connections.
 
@@ -64,13 +64,13 @@ There is no direct VNet peering between the Finance and HR spoke VNets. This kee
 
 This stage includes the following tasks:
 
-#### 1. Create the resource group
+### 1. Create the resource group
 
 <img title="" src="../screenshots/1rg.jpg" alt="" width="80%" data-align="center">
 
 ---
 
-#### 2. Create the Hub VNet / Finance Spoke VNet / Create the HR Spoke VNet
+### 2. Create the Hub VNet / Finance Spoke VNet / Create the HR Spoke VNet
 
 ```
     Azure Portal-> Virtual Networks -> Create
@@ -84,7 +84,7 @@ This stage includes the following tasks:
 
 ---
 
-#### 3. Create hub and spoke subnets
+### 3. Create hub and spoke subnets
 
 ```
 Azure Portal-> Virtual Networks -> vnet-hub-> subnet-> create` 
@@ -103,7 +103,7 @@ when creating the **spoke subnets**, remember to tick **enable Private subnet (n
 
 ---
 
-#### 4. Create three virtual machine
+### 4. Create three virtual machine
 
 **vm-hub-win**: 
 
@@ -127,7 +127,7 @@ The **Windows 10 VM** was created with a local **username and password**.
 
 This kept the initial deployment simple and ensured that the VMs could be accessed before Microsoft Entra ID login was configured.  
 
-#### 5. Create VNet peering between Hub and Finance Spoke / Hub and hr spoke
+### 5. Create VNet peering between Hub and Finance Spoke / Hub and hr spoke
 
 ```
 Azure Portal-> Virtual Networks -> vnet-hub-> Settings-> Peerings-> add 
@@ -144,6 +144,8 @@ Allow 'vnet-hub' to access peered vnet
 
 These options ensure communication go through between both end of the peering
 
+Hub Vnet **<==Peering==>** spoke vnet
+
 <img title="" src="../screenshots/4peer2.jpg" alt="" width="40%" data-align="center">
 
 The status appeared connected after 2 hub-spoke peerings are established
@@ -152,7 +154,7 @@ The status appeared connected after 2 hub-spoke peerings are established
 
 ---
 
-#### 6. Validate IP connectivity between Hub and each spoke
+### 6. Validate IP connectivity between Hub and each spoke
 
 Use ***ping*** and ***net-connection*** cmdlets to test connection between hub vm and spoke vms
 
