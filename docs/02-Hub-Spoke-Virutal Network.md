@@ -119,6 +119,8 @@ This stage includes the following tasks:
 
 
 
+
+
 5. **Create VNet peering between Hub and Finance Spoke / Hub and hr spoke**
 
 <img title="" src="../screenshots/4peer1.jpg" alt="" width="60%" data-align="center">
@@ -127,16 +129,6 @@ the status appeared connected after 2 hub-spoke peerings are established
 
 <img title="" src="../screenshots/6peer3.jpg" alt="" width="90%" data-align="center">
 
-7. Validate IP connectivity between Hub and each spoke
-   
-   After peering between hub and spoke vnet is established, use the powershell cmdlet ***test-connection*** and ***ping*** in the VMs to validate the peering.
-   
-   from vm-hub-win to vm-hr-linux
-   
-       ping 10.11.1.4
-       
-       test-connection 10.1.1.4 -port 22
-   
-   <img title="" src="../screenshots/7peer4.jpg" alt="" width="60%" data-align="center">
+6. Validate IP connectivity between Hub and each spoke
 
 At the end of this stage, the base Hub-Spoke network topology is ready. The spoke networks are connected to the Hub, but they are not directly connected to each other.
