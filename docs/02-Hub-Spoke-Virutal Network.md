@@ -64,13 +64,13 @@ There is no direct VNet peering between the Finance and HR spoke VNets. This kee
 
 This stage includes the following tasks:
 
-1. **Create the resource group**
+### 1. Create the resource group
    
    <img title="" src="../screenshots/1rg.jpg" alt="" width="80%" data-align="center">
 
 ---
 
-1. **Create the Hub VNet / Finance Spoke VNet / Create the HR Spoke VNet**
+### 2. Create the Hub VNet / Finance Spoke VNet / Create the HR Spoke VNet
 
 ```
     Azure Portal-> Virtual Networks -> Create
@@ -84,15 +84,13 @@ This stage includes the following tasks:
 
 ---
 
-3. **Create hub and spoke subnets**
-   
-   - when creating the **spoke subnets**, remember to tick **enable Private subnet (no default outbound access)**. This removes default outbound Internet access for the spoke subnet. In later stages of this lab, Internet-bound traffic from the spoke subnets will be routed to the Azure Firewall in the Hub VNet, enabling centralized security inspection and policy impplimentation.
-   
-   <img title="" src="../screenshots/3subnets.jpg" alt="" width="80%" data-align="center">
+### 3. Create hub and spoke subnets
+
+- when creating the **spoke subnets**, remember to tick **enable Private subnet (no default outbound access)**. This removes default outbound Internet access for the spoke subnet. In later stages of this lab, Internet-bound traffic from the spoke subnets will be routed to the Azure Firewall in the Hub VNet, enabling centralized security inspection and policy impplimentation.
 
 ---
 
-1. **Create three virtual machine**
+### 4. Create three virtual machine
    
         vm-hub-win1: 10.0.1.4 (in subnet-hub-mgmt)
         OS: Windows 10 enterprice
@@ -112,7 +110,7 @@ This stage includes the following tasks:
 
 ---
 
-5. **Create VNet peering between Hub and Finance Spoke / Hub and hr spoke**
+### 5. Create VNet peering between Hub and Finance Spoke / Hub and hr spoke
 
 <img title="" src="../screenshots/4peer1.jpg" alt="" width="60%" data-align="center">
 
@@ -122,6 +120,6 @@ the status appeared connected after 2 hub-spoke peerings are established
 
 ---
 
-6. Validate IP connectivity between Hub and each spoke
+### 6. Validate IP connectivity between Hub and each spoke
 
 At the end of this stage, the base Hub-Spoke network topology is ready. The spoke networks are connected to the Hub, but they are not directly connected to each other.
