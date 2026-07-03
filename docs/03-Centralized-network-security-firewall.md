@@ -117,7 +117,7 @@ Once associated, all outbound traffic from the subnet is redirected to Azure Fir
 
 ------------------------------------------------------------------------
 
-## Configure Firewall Policy
+## 5 Configure Firewall Policy
 
 After traffic is redirected to Azure Firewall in the hub, we need to create **Firewall Policies** to determine whether the traffic should be permitted or denied.
 
