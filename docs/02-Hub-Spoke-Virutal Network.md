@@ -144,7 +144,7 @@ Allow 'vnet-hub' to access peered vnet
 
 These options ensure communication go through between both end of the peering
 
-<img title="" src="../screenshots/4peer2.jpg" alt="" width="20%" data-align="center">
+<img title="" src="../screenshots/4peer2.jpg" alt="" width="60%" data-align="center">
 
 The status appeared connected after 2 hub-spoke peerings are established
 
