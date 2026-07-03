@@ -77,9 +77,9 @@ Virtual networks -> Route Tables -> create
 
 we will add the following route (UDR) to the route table
 
-**Destination**: 0.0.0.0/0  
-**Next hop type**: Virtual appliance  
-**IP**: 10.0.254.4  
+​	**Destination**: 0.0.0.0/0  
+​	**Next hop type**: Virtual appliance  
+​	**IP**: 10.0.254.4  
 
 #### - Destination: 
 We use 0.0.0.0/0 as the destination for traffic to the Internet in this lab, because Azure automatically provides more specific routes for the **local VNet** and **peered VNets**. Therefore, traffic that does not match these internal routes falls to the default route `0.0.0.0/0`, which is typically Internet-bound traffic.
@@ -93,7 +93,9 @@ By default, Azure routes Internet-bound traffic directly to the Internet using t
 
 In order to redirect the defined inter-spoke traffics as following to go through Hub Firewall
 
-​	TCP 22 traffic from Finance VNet (10.2.0.0/16) to HR VNet (10.1.0.0/16) 
+```
+TCP 22 traffic from Finance VNet (10.2.0.0/16) to HR VNet (10.1.0.0/16) 
+```
 
 We need to add a route in the route table of each subnet of Finance VNet
 
@@ -101,7 +103,7 @@ We need to add a route in the route table of each subnet of Finance VNet
 ​	**Next hop type**: Virtual appliance  
 ​	**IP**: 10.0.254.4  
 
-<img src="..\screenshots\34route2.jpg" width="70%"/>
+> <img src="..\screenshots\34route2.jpg" width="70%"/>
 
 ### 4 Associate the route table to the relevant subnet
 
