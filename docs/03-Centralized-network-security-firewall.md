@@ -44,7 +44,7 @@ The first step is to prepare a firewall subnet in Hub Vnet
 
 IP address: 10.0.254.0/16
 
-> <img src="..\screenshots\31firewallnet.jpg" width="60%" />
+> <img src="..\screenshots\31firewallnet.jpg" width="90%" />
 
 #### 2 Create an Azure Firewall (SKU Standard)
 Then create an **Azure firewall** with the parameters shown in the screenshot
