@@ -99,7 +99,7 @@ TCP 22 traffic from Finance VNet (10.2.0.0/16) to HR VNet (10.1.0.0/16)
 
 We need to add a route in the route table of each subnet of Finance VNet
 
-​	**Destination**: 10.1.0.0/16  
+​	**Destination**: 10.1.0.0/16 (HR Spoke VNet)  
 ​	**Next hop type**: Virtual appliance  
 ​	**IP**: 10.0.254.4  
 
@@ -119,12 +119,36 @@ Once associated, all outbound traffic from the subnet is redirected to Azure Fir
 
 ## Configure Firewall Policy
 
-After traffic is redirected to Azure Firewall in the hub, we need to create Firewall Policies to determine whether the traffic should be permitted or denied.
+After traffic is redirected to Azure Firewall in the hub, we need to create **Firewall Policies** to determine whether the traffic should be permitted or denied.
 
-This lab uses Network Rule Collections to allow required outbound
-Internet access and selected inter-spoke communication. Future security
-policies can be managed centrally without modifying individual spoke
-VNets.
+Firstly，I found Azure Firewall organizes rules using a **three-level hierarchy**. This structure allows related rules to be grouped together, making firewall policies easier to manage.
+
+Firewall Policy
+│
+└── Rule Collection Group
+      │
+      ├── Rule Collection
+      │      ├── Rule
+      │      ├── Rule
+      │      └── Rule
+      │
+      └── Rule Collection
+             ├── Rule
+             └── Rule
+
+#### Rule Collection Group
+
+A Rule Collection Group is the highest level of rule organization within a Firewall Policy. It is primarily used to organize related rule collections and define the order in which they are processed.
+
+### Rule Collection
+
+A Rule Collection contains rules of the **same type**, such as Network Rules or Application Rules. Each Rule Collection has a **single action**, either **Allow** or **Deny**. Allow and Deny rules cannot coexist within the same Rule Collection. If both actions are required, separate Rule Collections must be created
+
+#### Rule
+
+A Rule defines the actual traffic matching conditions, including **source**, **destination**, **protocol** and **port**. When traffic matches a rule, the configured action is applied.
+
+
 
 > 
 
