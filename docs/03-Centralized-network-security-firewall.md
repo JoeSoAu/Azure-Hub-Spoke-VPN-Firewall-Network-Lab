@@ -194,7 +194,7 @@ Hub VNet / Azure Firewall
 HR Spoke
 ```
 
-This traffic is **forwarded traffic**, because the destination of the traffic is not Hub Vnet.
+This is a **forwarded traffic**, because the destination of the traffic is not Hub Vnet.
 
 - ### What is  forwarded traffic
 
@@ -224,7 +224,7 @@ Enable:
 
 This allows the Hub VNet to accept forwarded packets arriving from the Finance spoke.
 
-> <img src="..\screenshots\37forwad1.jpg" width="70%"/>
+> <img src="..\screenshots\37forwad1.jpg" width="50%"/>
 
 1. **HR → Hub Peering**
 
@@ -234,7 +234,7 @@ Enable:
 
 This allows the HR spoke to accept packets forwarded by Azure Firewall.
 
-> <img src="..\screenshots\38forward2.jpg" width="70%"/>
+> <img src="..\screenshots\38forward2.jpg" width="50%"/>
 
 The design of this lab only allows **Finance-to-HR** communication, the reverse forwarding path is not required. Therefore, the opposite forwarding settings are intentionally left disabled, following the **principle of least privilege**.
 
