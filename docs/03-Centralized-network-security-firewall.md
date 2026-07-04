@@ -1,4 +1,4 @@
-# 3. Centralized Network Security (Firewall)
+# 3. Centralized Network Security and Traffic Control (Firewall)
 
 ## Overview
 
@@ -304,5 +304,3 @@ After the firewall, UDR and VNet peering configurations above are completed, we 
 ## Summary
 
 Azure Firewall has been deployed as the central security appliance for the Hub-Spoke network. User Defined Routes redirect traffic from the spoke VNets to the firewall, while Firewall Policies determine whether traffic is permitted to continue to its destination.
-
-This centralized security architecture provides the foundation for the hybrid connectivity and secure remote administration features implemented in the following chapters.
