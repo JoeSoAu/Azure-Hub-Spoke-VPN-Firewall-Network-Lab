@@ -203,20 +203,18 @@ In a VNet peering connection, **forwarded traffic** refers to traffic with desti
 For example, in this lab:
 
 ```
-Finance VM
-      │
-      ▼
-Azure Firewall (Hub)
-      │
-      ▼
-    HR VM
+Finance Spoke
+    ↓
+Hub VNet / Azure Firewall
+    ↓
+HR Spoke
 ```
 
 The packet is first sent to the Hub VNet because the next hop is Azure Firewall. However, its final destination is the HR VNet rather than the Hub VNet. Therefore, this traffic is considered **forwarded traffic**.
 
 By default, Vnet peering blocks all forwarded traffics. Therefore, to support the traffic flow **Finance → Hub Firewall → HR**, **Allow forwarded traffic** must be enabled only on the peering connections in this path.
 
-1. **Hub → Finance Peering**
+1. #### **Hub → Finance Peering**
 
 Enable:
 
@@ -226,7 +224,7 @@ This allows the Hub VNet to accept forwarded packets arriving from the Finance s
 
 > <img src="..\screenshots\37forwad1.jpg" width="40%"/>
 
-1. **HR → Hub Peering**
+1. #### **HR → Hub Peering**
 
 Enable:
 
@@ -238,15 +236,25 @@ This allows the HR spoke to accept packets forwarded by Azure Firewall.
 
 The design of this lab only allows **Finance-to-HR** communication, the reverse forwarding path is not required. Therefore, the opposite forwarding settings are intentionally left disabled, following the **principle of least privilege**.
 
-Once this setting is enabled, Azure Firewall can successfully forward permitted traffic between the Finance and HR spoke VNets while all other inter-spoke traffic continues to be controlled by the firewall policy.
+Once this setting is enabled, traffic from Finance VNet can be forwarded to HR VNet through the hub firewall. Then with the firewall rules, only TCP 22 traffic can be forwarded from Finance VNet to HR Vnet finally. 
 
 ## Validation
 
-After the firewall configuration is completed, verify the following:
+After the firewall, UDR and VNet peering configurations above are completed, we can verify the following:
 
--   Internet access from both spoke virtual machines.
--   Traffic is routed through Azure Firewall.
--   Inter-spoke communication follows the configured Firewall Policy.
+- ### Internet access from both spoke virtual machines.
+
+  From a spoke Linux VM, use nc-vz command  to test internet connection
+  ```
+  	nc -vz www.google.com 433
+  ```
+
+  <img title="" src="../screenshots/39cmd1.jpg" alt="" width="90%" data-align="center">
+
+- Traffic is routed through Azure Firewall.
+
+- Inter-spoke communication follows the configured Firewall Policy.
+
 -   Traffic without a matching rule is blocked.
 
 Successful validation confirms that centralized routing and security

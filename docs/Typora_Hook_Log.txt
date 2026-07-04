@@ -1704,3 +1704,643 @@ DwIDAQAB
 ------------------
 [7/4/2026, 3:19:50 AM] [Log] [IPC] .handle("app.sendEvent") result: 
 ------------------
+[7/4/2026, 3:20:34 AM] [Log] [IPC] .invoke("webContents.copy") args: []
+------------------
+[7/4/2026, 3:20:34 AM] [Log] [IPC] .handle("webContents.copy") result: 
+------------------
+[7/4/2026, 3:20:38 AM] [Log] [IPC] .invoke("window.setTitle") args: [null,true]
+------------------
+[7/4/2026, 3:20:38 AM] [Log] [IPC] .handle("window.setTitle") result: 
+------------------
+[7/4/2026, 3:20:42 AM] [Log] [IPC] .invoke("window.updateMenuForIsAlwaysOnTop") args: []
+------------------
+[7/4/2026, 3:20:42 AM] [Log] [IPC] .handle("window.updateMenuForIsAlwaysOnTop") result: 
+------------------
+[7/4/2026, 3:20:42 AM] [Log] [IPC] .invoke("menu.updateCustomZoom") args: []
+------------------
+[7/4/2026, 3:20:42 AM] [Log] [IPC] .handle("menu.updateCustomZoom") result: 
+------------------
+[7/4/2026, 3:20:43 AM] [Log] [IPC] .invoke("window.updateMenuForIsAlwaysOnTop") args: []
+------------------
+[7/4/2026, 3:20:43 AM] [Log] [IPC] .handle("window.updateMenuForIsAlwaysOnTop") result: 
+------------------
+[7/4/2026, 3:20:43 AM] [Log] [IPC] .invoke("menu.updateCustomZoom") args: []
+------------------
+[7/4/2026, 3:20:43 AM] [Log] [IPC] .handle("menu.updateCustomZoom") result: 
+------------------
+[7/4/2026, 3:20:44 AM] [Log] [IPC] .invoke("app.sendEvent") args: ["willSave","D:\\Git\\labs\\Azure-Network\\docs\\03-Centralized-network-security-firewall.md"]
+------------------
+[7/4/2026, 3:20:44 AM] [Log] [IPC] .handle("app.sendEvent") result: 
+------------------
+[7/4/2026, 3:20:44 AM] [Log] [IPC] .invoke("document.setLastSync") args: [1783101044791.7173]
+------------------
+[7/4/2026, 3:20:44 AM] [Log] [IPC] .handle("document.setLastSync") result: 
+------------------
+[7/4/2026, 3:20:44 AM] [Log] [IPC] .invoke("window.setTitle") args: [null,true]
+------------------
+[7/4/2026, 3:20:44 AM] [Log] [IPC] .handle("window.setTitle") result: 
+------------------
+[7/4/2026, 3:20:44 AM] [Log] [IPC] .invoke("window.setTitle") args: [null,false]
+------------------
+[7/4/2026, 3:20:44 AM] [Log] [IPC] .handle("window.setTitle") result: 
+------------------
+[7/4/2026, 3:20:44 AM] [Log] [IPC] .invoke("app.sendEvent") args: ["didSave",{"path":"D:\\Git\\labs\\Azure-Network\\docs\\03-Centralized-network-security-firewall.md","summary":"# 3. Centralized Network Security (Firewall)\n\n## Overview\n\nAfter establishing the Hub-Spoke network topology, the next step is to centralize network traffic control and security configuration using **","lastModifiedDate":1783101044791.7173}]
+------------------
+[7/4/2026, 3:20:44 AM] [Log] [IPC] .handle("app.sendEvent") result: 
+------------------
+[7/4/2026, 3:21:43 AM] [Log] [IPC] .invoke("window.setTitle") args: [null,true]
+------------------
+[7/4/2026, 3:21:43 AM] [Log] [IPC] .handle("window.setTitle") result: 
+------------------
+[7/4/2026, 3:21:51 AM] [Log] [IPC] .invoke("app.sendEvent") args: ["willSave","D:\\Git\\labs\\Azure-Network\\docs\\03-Centralized-network-security-firewall.md"]
+------------------
+[7/4/2026, 3:21:51 AM] [Log] [IPC] .handle("app.sendEvent") result: 
+------------------
+[7/4/2026, 3:21:51 AM] [Log] [IPC] .invoke("document.setLastSync") args: [1783101111891.3972]
+------------------
+[7/4/2026, 3:21:51 AM] [Log] [IPC] .handle("document.setLastSync") result: 
+------------------
+[7/4/2026, 3:21:51 AM] [Log] [IPC] .invoke("window.setTitle") args: [null,true]
+------------------
+[7/4/2026, 3:21:51 AM] [Log] [IPC] .handle("window.setTitle") result: 
+------------------
+[7/4/2026, 3:21:51 AM] [Log] [IPC] .invoke("window.setTitle") args: [null,false]
+------------------
+[7/4/2026, 3:21:51 AM] [Log] [IPC] .handle("window.setTitle") result: 
+------------------
+[7/4/2026, 3:21:51 AM] [Log] [IPC] .invoke("app.sendEvent") args: ["didSave",{"path":"D:\\Git\\labs\\Azure-Network\\docs\\03-Centralized-network-security-firewall.md","summary":"# 3. Centralized Network Security (Firewall)\n\n## Overview\n\nAfter establishing the Hub-Spoke network topology, the next step is to centralize network traffic control and security configuration using **","lastModifiedDate":1783101111891.3972}]
+------------------
+[7/4/2026, 3:21:51 AM] [Log] [IPC] .handle("app.sendEvent") result: 
+------------------
+[7/4/2026, 3:22:37 AM] [Log] [IPC] .invoke("window.setTitle") args: [null,true]
+------------------
+[7/4/2026, 3:22:37 AM] [Log] [IPC] .handle("window.setTitle") result: 
+------------------
+[7/4/2026, 3:23:08 AM] [Log] [IPC] .invoke("window.updateMenuForIsAlwaysOnTop") args: []
+------------------
+[7/4/2026, 3:23:08 AM] [Log] [IPC] .handle("window.updateMenuForIsAlwaysOnTop") result: 
+------------------
+[7/4/2026, 3:23:08 AM] [Log] [IPC] .invoke("menu.updateCustomZoom") args: []
+------------------
+[7/4/2026, 3:23:08 AM] [Log] [IPC] .handle("menu.updateCustomZoom") result: 
+------------------
+[7/4/2026, 3:25:00 AM] [Log] [IPC] .invoke("app.sendEvent") args: ["willSave","D:\\Git\\labs\\Azure-Network\\docs\\03-Centralized-network-security-firewall.md"]
+------------------
+[7/4/2026, 3:25:00 AM] [Log] [IPC] .handle("app.sendEvent") result: 
+------------------
+[7/4/2026, 3:25:00 AM] [Log] [IPC] .invoke("document.setLastSync") args: [1783101300864.3489]
+------------------
+[7/4/2026, 3:25:00 AM] [Log] [IPC] .handle("document.setLastSync") result: 
+------------------
+[7/4/2026, 3:25:00 AM] [Log] [IPC] .invoke("window.setTitle") args: [null,true]
+------------------
+[7/4/2026, 3:25:00 AM] [Log] [IPC] .handle("window.setTitle") result: 
+------------------
+[7/4/2026, 3:25:00 AM] [Log] [IPC] .invoke("window.setTitle") args: [null,false]
+------------------
+[7/4/2026, 3:25:00 AM] [Log] [IPC] .handle("window.setTitle") result: 
+------------------
+[7/4/2026, 3:25:00 AM] [Log] [IPC] .invoke("app.sendEvent") args: ["didSave",{"path":"D:\\Git\\labs\\Azure-Network\\docs\\03-Centralized-network-security-firewall.md","summary":"# 3. Centralized Network Security (Firewall)\n\n## Overview\n\nAfter establishing the Hub-Spoke network topology, the next step is to centralize network traffic control and security configuration using **","lastModifiedDate":1783101300864.3489}]
+------------------
+[7/4/2026, 3:25:00 AM] [Log] [IPC] .handle("app.sendEvent") result: 
+------------------
+[7/4/2026, 3:25:13 AM] [Log] [IPC] .invoke("window.setTitle") args: [null,true]
+------------------
+[7/4/2026, 3:25:13 AM] [Log] [IPC] .handle("window.setTitle") result: 
+------------------
+[7/4/2026, 3:26:01 AM] [Log] [IPC] .invoke("app.sendEvent") args: ["willSave","D:\\Git\\labs\\Azure-Network\\docs\\03-Centralized-network-security-firewall.md"]
+------------------
+[7/4/2026, 3:26:01 AM] [Log] [IPC] .handle("app.sendEvent") result: 
+------------------
+[7/4/2026, 3:26:01 AM] [Log] [IPC] .invoke("document.setLastSync") args: [1783101361313.328]
+------------------
+[7/4/2026, 3:26:01 AM] [Log] [IPC] .handle("document.setLastSync") result: 
+------------------
+[7/4/2026, 3:26:01 AM] [Log] [IPC] .invoke("window.setTitle") args: [null,true]
+------------------
+[7/4/2026, 3:26:01 AM] [Log] [IPC] .handle("window.setTitle") result: 
+------------------
+[7/4/2026, 3:26:01 AM] [Log] [IPC] .invoke("window.setTitle") args: [null,false]
+------------------
+[7/4/2026, 3:26:01 AM] [Log] [IPC] .handle("window.setTitle") result: 
+------------------
+[7/4/2026, 3:26:01 AM] [Log] [IPC] .invoke("app.sendEvent") args: ["didSave",{"path":"D:\\Git\\labs\\Azure-Network\\docs\\03-Centralized-network-security-firewall.md","summary":"# 3. Centralized Network Security (Firewall)\n\n## Overview\n\nAfter establishing the Hub-Spoke network topology, the next step is to centralize network traffic control and security configuration using **","lastModifiedDate":1783101361313.328}]
+------------------
+[7/4/2026, 3:26:01 AM] [Log] [IPC] .handle("app.sendEvent") result: 
+------------------
+[7/4/2026, 3:26:37 AM] [Log] [IPC] .invoke("app.onCloseWin") args: [null]
+------------------
+[7/4/2026, 3:26:37 AM] [Log] [IPC] .handle("app.onCloseWin") result: 
+------------------
+[7/4/2026, 6:03:37 PM] [Log] BrowserWindow created
+------------------
+[7/4/2026, 6:03:37 PM] [Log] BrowserWindow created
+------------------
+[7/4/2026, 6:03:38 PM] [Log] [IPC] .invoke("document.loadData") args: []
+------------------
+[7/4/2026, 6:03:38 PM] [Log] [IPC] .handle("document.loadData") result: "{\"snap\":null,\"filePath\":\"D:\\\\Git\\\\labs\\\\Azure-Network\\\\docs\\\\03-Centralized-network-security-firewall.md\",\"backups\":null,\"shouldReadFromDisk\":false,\"windowCounts\":1}"
+------------------
+[7/4/2026, 6:03:38 PM] [Log] [IPC] .invoke("window.updateMenuForIsAlwaysOnTop") args: []
+------------------
+[7/4/2026, 6:03:38 PM] [Log] [IPC] .handle("window.updateMenuForIsAlwaysOnTop") result: 
+------------------
+[7/4/2026, 6:03:38 PM] [Log] [IPC] .invoke("menu.updateCustomZoom") args: []
+------------------
+[7/4/2026, 6:03:38 PM] [Log] [IPC] .handle("menu.updateCustomZoom") result: 
+------------------
+[7/4/2026, 6:03:38 PM] [Log] [IPC] .invoke("setting.getRecentFiles") args: []
+------------------
+[7/4/2026, 6:03:38 PM] [Log] [IPC] .handle("setting.getRecentFiles") result: {"files":[{"name":"03-Centralized-network-security-firewall.md","path":"D:\\Git\\labs\\Azure-Network\\docs\\03-Centralized-network-security-firewall.md","date":1783154017152},{"name":"02-Hub-Spoke-Virutal Network.md","path":"D:\\Git\\labs\\Azure-Network\\docs\\02-Hub-Spoke-Virutal Network.md","date":1783057616255},{"name":"01-Overview-and-Desgin.md","path":"D:\\Git\\labs\\Azure-Network\\docs\\01-Overview-and-Desgin.md","date":1783057596635},{"name":"README.md","path":"D:\\Git\\labs\\Azure-Hybrid-Cloud\\README.md","date":1781458903599}],"folders":[{"name":"docs","path":"D:\\Git\\labs\\Azure-Network\\docs","date":"2026-07-03T05:41:38.206Z"}]}
+------------------
+[7/4/2026, 6:03:38 PM] [Log] [IPC] .invoke("window.updateMenuForIsAlwaysOnTop") args: []
+------------------
+[7/4/2026, 6:03:38 PM] [Log] [IPC] .handle("window.updateMenuForIsAlwaysOnTop") result: 
+------------------
+[7/4/2026, 6:03:38 PM] [Log] [IPC] .invoke("menu.updateCustomZoom") args: []
+------------------
+[7/4/2026, 6:03:38 PM] [Log] [IPC] .handle("menu.updateCustomZoom") result: 
+------------------
+[7/4/2026, 6:03:38 PM] [Log] [IPC] .invoke("window.setTitle") args: [null,false]
+------------------
+[7/4/2026, 6:03:38 PM] [Log] [IPC] .handle("window.setTitle") result: 
+------------------
+[7/4/2026, 6:03:38 PM] [Log] [IPC] .invoke("theme.setThemeSource") args: ["system"]
+------------------
+[7/4/2026, 6:03:38 PM] [Log] [IPC] .handle("theme.setThemeSource") result: 
+------------------
+[7/4/2026, 6:03:38 PM] [Log] [IPC] .invoke("setting.put") args: ["backgroundColor","#FFFFFF"]
+------------------
+[7/4/2026, 6:03:38 PM] [Log] [IPC] .handle("setting.put") result: 
+------------------
+[7/4/2026, 6:03:38 PM] [Log] [IPC] .invoke("setting.put") args: ["isDarkMode",false]
+------------------
+[7/4/2026, 6:03:38 PM] [Log] [IPC] .handle("setting.put") result: 
+------------------
+[7/4/2026, 6:03:38 PM] [Log] [IPC] .invoke("window.updateMenuForIsAlwaysOnTop") args: []
+------------------
+[7/4/2026, 6:03:38 PM] [Log] [IPC] .handle("window.updateMenuForIsAlwaysOnTop") result: 
+------------------
+[7/4/2026, 6:03:38 PM] [Log] [IPC] .invoke("menu.updateCustomZoom") args: []
+------------------
+[7/4/2026, 6:03:38 PM] [Log] [IPC] .handle("menu.updateCustomZoom") result: 
+------------------
+[7/4/2026, 6:03:38 PM] [Log] [IPC] .invoke("window.checkAsFocus") args: []
+------------------
+[7/4/2026, 6:03:38 PM] [Log] [IPC] .handle("window.checkAsFocus") result: 
+------------------
+[7/4/2026, 6:03:38 PM] [Log] [IPC] .invoke("document.getSnapWithValidation") args: [null]
+------------------
+[7/4/2026, 6:03:38 PM] [Log] [IPC] .handle("document.getSnapWithValidation") result: "{\"snap\":null,\"shouldReadFromDisk\":false}"
+------------------
+[7/4/2026, 6:03:38 PM] [Log] [IPC] .invoke("window.updateMenuForIsAlwaysOnTop") args: []
+------------------
+[7/4/2026, 6:03:38 PM] [Log] [IPC] .handle("window.updateMenuForIsAlwaysOnTop") result: 
+------------------
+[7/4/2026, 6:03:38 PM] [Log] [IPC] .invoke("menu.updateCustomZoom") args: []
+------------------
+[7/4/2026, 6:03:38 PM] [Log] [IPC] .handle("menu.updateCustomZoom") result: 
+------------------
+[7/4/2026, 6:03:38 PM] [Log] [IPC] .invoke("window.checkAsFocus") args: []
+------------------
+[7/4/2026, 6:03:38 PM] [Log] [IPC] .handle("window.checkAsFocus") result: 
+------------------
+[7/4/2026, 6:03:38 PM] [Log] [IPC] .invoke("window.updateMenuForIsAlwaysOnTop") args: []
+------------------
+[7/4/2026, 6:03:38 PM] [Log] [IPC] .handle("window.updateMenuForIsAlwaysOnTop") result: 
+------------------
+[7/4/2026, 6:03:38 PM] [Log] [IPC] .invoke("menu.updateCustomZoom") args: []
+------------------
+[7/4/2026, 6:03:38 PM] [Log] [IPC] .handle("menu.updateCustomZoom") result: 
+------------------
+[7/4/2026, 6:03:38 PM] [Log] [IPC] .invoke("window.checkAsFocus") args: []
+------------------
+[7/4/2026, 6:03:38 PM] [Log] [IPC] .handle("window.checkAsFocus") result: 
+------------------
+[7/4/2026, 6:03:38 PM] [Log] [IPC] .invoke("document.hasDuplicateName") args: ["03-Centralized-network-security-firewall.md"]
+------------------
+[7/4/2026, 6:03:38 PM] [Log] [IPC] .handle("document.hasDuplicateName") result: false
+------------------
+[7/4/2026, 6:03:38 PM] [Log] [IPC] .invoke("document.setLastSync") args: ["2026-07-04T08:33:38.378Z"]
+------------------
+[7/4/2026, 6:03:38 PM] [Log] [IPC] .handle("document.setLastSync") result: 
+------------------
+[7/4/2026, 6:03:38 PM] [Log] [IPC] .invoke("window.updateMenuForIsAlwaysOnTop") args: []
+------------------
+[7/4/2026, 6:03:38 PM] [Log] [IPC] .handle("window.updateMenuForIsAlwaysOnTop") result: 
+------------------
+[7/4/2026, 6:03:38 PM] [Log] [IPC] .invoke("menu.updateCustomZoom") args: []
+------------------
+[7/4/2026, 6:03:38 PM] [Log] [IPC] .handle("menu.updateCustomZoom") result: 
+------------------
+[7/4/2026, 6:03:38 PM] [Log] [IPC] .invoke("window.setTitle") args: ["03-Centralized-network-security-firewall.md - Typora"]
+------------------
+[7/4/2026, 6:03:38 PM] [Log] [IPC] .handle("window.setTitle") result: 
+------------------
+[7/4/2026, 6:03:38 PM] [Log] [IPC] .invoke("window.setTitle") args: [null,false]
+------------------
+[7/4/2026, 6:03:38 PM] [Log] [IPC] .handle("window.setTitle") result: 
+------------------
+[7/4/2026, 6:03:38 PM] [Log] [IPC] .invoke("setting.getDownloadingDicts") args: []
+------------------
+[7/4/2026, 6:03:38 PM] [Log] [IPC] .handle("setting.getDownloadingDicts") result: "[]"
+------------------
+[7/4/2026, 6:03:38 PM] [Log] [IPC] .invoke("setting.getUserDictionaryPath") args: []
+------------------
+[7/4/2026, 6:03:38 PM] [Log] [IPC] .handle("setting.getUserDictionaryPath") result: "C:\\Users\\joest\\AppData\\Roaming\\Typora\\typora-dictionaries"
+------------------
+[7/4/2026, 6:03:38 PM] [Log] [IPC] .invoke("setting.getUserDict") args: []
+------------------
+[7/4/2026, 6:03:38 PM] [Log] [IPC] .handle("setting.getUserDict") result: "{}"
+------------------
+[7/4/2026, 6:03:39 PM] [Log] [IPC] .invoke("setting.getKeyBinding") args: []
+------------------
+[7/4/2026, 6:03:39 PM] [Log] [IPC] .handle("setting.getKeyBinding") result: {"_useLowerCase":true}
+------------------
+[7/4/2026, 6:03:46 PM] [Log] [IPC] .invoke("quit") args: []
+------------------
+[7/4/2026, 6:03:46 PM] [Log] [IPC] .handle("quit") result: 
+------------------
+[7/4/2026, 6:03:46 PM] [Log] [IPC] .invoke("app.onCloseWin") args: [null]
+------------------
+[7/4/2026, 6:03:46 PM] [Log] [IPC] .handle("app.onCloseWin") result: 
+------------------
+[7/4/2026, 6:03:58 PM] [Log] BrowserWindow created
+------------------
+[7/4/2026, 6:03:58 PM] [Log] BrowserWindow created
+------------------
+[7/4/2026, 6:03:59 PM] [Log] [IPC] .invoke("document.loadData") args: []
+------------------
+[7/4/2026, 6:03:59 PM] [Log] [IPC] .handle("document.loadData") result: "{\"snap\":null,\"filePath\":\"D:\\\\Git\\\\labs\\\\Azure-Network\\\\docs\\\\03-Centralized-network-security-firewall.md\",\"backups\":null,\"shouldReadFromDisk\":false,\"windowCounts\":1}"
+------------------
+[7/4/2026, 6:03:59 PM] [Log] [IPC] .invoke("window.updateMenuForIsAlwaysOnTop") args: []
+------------------
+[7/4/2026, 6:03:59 PM] [Log] [IPC] .handle("window.updateMenuForIsAlwaysOnTop") result: 
+------------------
+[7/4/2026, 6:03:59 PM] [Log] [IPC] .invoke("menu.updateCustomZoom") args: []
+------------------
+[7/4/2026, 6:03:59 PM] [Log] [IPC] .handle("menu.updateCustomZoom") result: 
+------------------
+[7/4/2026, 6:03:59 PM] [Log] [IPC] .invoke("setting.getRecentFiles") args: []
+------------------
+[7/4/2026, 6:03:59 PM] [Log] [IPC] .handle("setting.getRecentFiles") result: {"files":[{"name":"03-Centralized-network-security-firewall.md","path":"D:\\Git\\labs\\Azure-Network\\docs\\03-Centralized-network-security-firewall.md","date":1783154038168},{"name":"02-Hub-Spoke-Virutal Network.md","path":"D:\\Git\\labs\\Azure-Network\\docs\\02-Hub-Spoke-Virutal Network.md","date":1783057616255},{"name":"01-Overview-and-Desgin.md","path":"D:\\Git\\labs\\Azure-Network\\docs\\01-Overview-and-Desgin.md","date":1783057596635},{"name":"README.md","path":"D:\\Git\\labs\\Azure-Hybrid-Cloud\\README.md","date":1781458903599}],"folders":[{"name":"docs","path":"D:\\Git\\labs\\Azure-Network\\docs","date":"2026-07-03T05:41:38.206Z"}]}
+------------------
+[7/4/2026, 6:03:59 PM] [Log] [IPC] .invoke("window.updateMenuForIsAlwaysOnTop") args: []
+------------------
+[7/4/2026, 6:03:59 PM] [Log] [IPC] .handle("window.updateMenuForIsAlwaysOnTop") result: 
+------------------
+[7/4/2026, 6:03:59 PM] [Log] [IPC] .invoke("menu.updateCustomZoom") args: []
+------------------
+[7/4/2026, 6:03:59 PM] [Log] [IPC] .handle("menu.updateCustomZoom") result: 
+------------------
+[7/4/2026, 6:03:59 PM] [Log] [IPC] .invoke("window.setTitle") args: [null,false]
+------------------
+[7/4/2026, 6:03:59 PM] [Log] [IPC] .handle("window.setTitle") result: 
+------------------
+[7/4/2026, 6:03:59 PM] [Log] [IPC] .invoke("window.updateMenuForIsAlwaysOnTop") args: []
+------------------
+[7/4/2026, 6:03:59 PM] [Log] [IPC] .handle("window.updateMenuForIsAlwaysOnTop") result: 
+------------------
+[7/4/2026, 6:03:59 PM] [Log] [IPC] .invoke("menu.updateCustomZoom") args: []
+------------------
+[7/4/2026, 6:03:59 PM] [Log] [IPC] .handle("menu.updateCustomZoom") result: 
+------------------
+[7/4/2026, 6:03:59 PM] [Log] [IPC] .invoke("window.checkAsFocus") args: []
+------------------
+[7/4/2026, 6:03:59 PM] [Log] [IPC] .handle("window.checkAsFocus") result: 
+------------------
+[7/4/2026, 6:03:59 PM] [Log] [IPC] .invoke("document.getSnapWithValidation") args: [null]
+------------------
+[7/4/2026, 6:03:59 PM] [Log] [IPC] .handle("document.getSnapWithValidation") result: "{\"snap\":null,\"shouldReadFromDisk\":false}"
+------------------
+[7/4/2026, 6:03:59 PM] [Log] [IPC] .invoke("theme.setThemeSource") args: ["system"]
+------------------
+[7/4/2026, 6:03:59 PM] [Log] [IPC] .handle("theme.setThemeSource") result: 
+------------------
+[7/4/2026, 6:03:59 PM] [Log] [IPC] .invoke("setting.put") args: ["backgroundColor","#FFFFFF"]
+------------------
+[7/4/2026, 6:03:59 PM] [Log] [IPC] .handle("setting.put") result: 
+------------------
+[7/4/2026, 6:03:59 PM] [Log] [IPC] .invoke("setting.put") args: ["isDarkMode",false]
+------------------
+[7/4/2026, 6:03:59 PM] [Log] [IPC] .handle("setting.put") result: 
+------------------
+[7/4/2026, 6:03:59 PM] [Log] [IPC] .invoke("window.updateMenuForIsAlwaysOnTop") args: []
+------------------
+[7/4/2026, 6:03:59 PM] [Log] [IPC] .handle("window.updateMenuForIsAlwaysOnTop") result: 
+------------------
+[7/4/2026, 6:03:59 PM] [Log] [IPC] .invoke("menu.updateCustomZoom") args: []
+------------------
+[7/4/2026, 6:03:59 PM] [Log] [IPC] .handle("menu.updateCustomZoom") result: 
+------------------
+[7/4/2026, 6:03:59 PM] [Log] [IPC] .invoke("window.checkAsFocus") args: []
+------------------
+[7/4/2026, 6:03:59 PM] [Log] [IPC] .handle("window.checkAsFocus") result: 
+------------------
+[7/4/2026, 6:03:59 PM] [Log] [IPC] .invoke("setting.getDownloadingDicts") args: []
+------------------
+[7/4/2026, 6:03:59 PM] [Log] [IPC] .handle("setting.getDownloadingDicts") result: "[]"
+------------------
+[7/4/2026, 6:03:59 PM] [Log] [IPC] .invoke("setting.getUserDictionaryPath") args: []
+------------------
+[7/4/2026, 6:03:59 PM] [Log] [IPC] .handle("setting.getUserDictionaryPath") result: "C:\\Users\\joest\\AppData\\Roaming\\Typora\\typora-dictionaries"
+------------------
+[7/4/2026, 6:03:59 PM] [Log] [IPC] .invoke("setting.getUserDict") args: []
+------------------
+[7/4/2026, 6:03:59 PM] [Log] [IPC] .handle("setting.getUserDict") result: "{}"
+------------------
+[7/4/2026, 6:03:59 PM] [Log] [IPC] .invoke("window.updateMenuForIsAlwaysOnTop") args: []
+------------------
+[7/4/2026, 6:03:59 PM] [Log] [IPC] .handle("window.updateMenuForIsAlwaysOnTop") result: 
+------------------
+[7/4/2026, 6:03:59 PM] [Log] [IPC] .invoke("menu.updateCustomZoom") args: []
+------------------
+[7/4/2026, 6:03:59 PM] [Log] [IPC] .handle("menu.updateCustomZoom") result: 
+------------------
+[7/4/2026, 6:03:59 PM] [Log] [IPC] .invoke("window.checkAsFocus") args: []
+------------------
+[7/4/2026, 6:03:59 PM] [Log] [IPC] .handle("window.checkAsFocus") result: 
+------------------
+[7/4/2026, 6:03:59 PM] [Log] [IPC] .invoke("document.hasDuplicateName") args: ["03-Centralized-network-security-firewall.md"]
+------------------
+[7/4/2026, 6:03:59 PM] [Log] [IPC] .handle("document.hasDuplicateName") result: false
+------------------
+[7/4/2026, 6:03:59 PM] [Log] [IPC] .invoke("document.setLastSync") args: ["2026-07-04T08:33:59.391Z"]
+------------------
+[7/4/2026, 6:03:59 PM] [Log] [IPC] .handle("document.setLastSync") result: 
+------------------
+[7/4/2026, 6:03:59 PM] [Log] [IPC] .invoke("window.updateMenuForIsAlwaysOnTop") args: []
+------------------
+[7/4/2026, 6:03:59 PM] [Log] [IPC] .handle("window.updateMenuForIsAlwaysOnTop") result: 
+------------------
+[7/4/2026, 6:03:59 PM] [Log] [IPC] .invoke("menu.updateCustomZoom") args: []
+------------------
+[7/4/2026, 6:03:59 PM] [Log] [IPC] .handle("menu.updateCustomZoom") result: 
+------------------
+[7/4/2026, 6:03:59 PM] [Log] [IPC] .invoke("window.setTitle") args: ["03-Centralized-network-security-firewall.md - Typora"]
+------------------
+[7/4/2026, 6:03:59 PM] [Log] [IPC] .handle("window.setTitle") result: 
+------------------
+[7/4/2026, 6:03:59 PM] [Log] [IPC] .invoke("window.setTitle") args: [null,false]
+------------------
+[7/4/2026, 6:03:59 PM] [Log] [IPC] .handle("window.setTitle") result: 
+------------------
+[7/4/2026, 6:04:00 PM] [Log] [IPC] .invoke("setting.getKeyBinding") args: []
+------------------
+[7/4/2026, 6:04:00 PM] [Log] [IPC] .handle("setting.getKeyBinding") result: {"_useLowerCase":true}
+------------------
+[7/4/2026, 6:04:40 PM] [Log] [IPC] .invoke("license.machineCode") args: []
+------------------
+[7/4/2026, 6:04:40 PM] [Log] [IPC] .handle("license.machineCode") result: "eyJ2Ijoid2lufDEuMTMuNyIsImkiOiJHT0ljWkxWM2NxIiwibCI6IkpPRVNULVBDIHwgam9lc3QgfCBXaW5kb3dzIn0="
+------------------
+[7/4/2026, 6:05:19 PM] [Log] -------------------------------------------
+------------------
+[7/4/2026, 6:05:19 PM] [Log] crypto.publicDecrypt called
+------------------
+[7/4/2026, 6:05:19 PM] [Log] Key: -----BEGIN PUBLIC KEY-----
+MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA7nVoGCHqIMJyqgALEUrc
+5JJhap0+HtJqzPE04pz4y+nrOmY7/12f3HvZyyoRsxKdXTZbO0wEHFIh0cRqsuaJ
+PyaOOPbA0BsalofIAY3mRhQQ3vSf+rn3g+w0S+udWmKV9DnmJlpWqizFajU4T/E4
+5ZgMNcXt3E1ips32rdbTR0Nnen9PVITvrbJ3l6CI2BFBImZQZ2P8N+LsqfJsqyVV
+wDkt3mHAVxV7FZbfYWG+8FDSuKQHaCmvgAtChx9hwl3J6RekkqDVa6GIV13D23LS
+qdk0Jb521wFJi/V6QAK6SLBiby5gYN6zQQ5RQpjXtR53MwzTdiAzGEuKdOtrY2Me
+DwIDAQAB
+-----END PUBLIC KEY-----
+
+
+------------------
+[7/4/2026, 6:05:19 PM] [Log] Buffer (Hex): 75736572406578616d706c652e636f6d
+------------------
+[7/4/2026, 6:05:19 PM] [Log] BrowserWindow created
+------------------
+[7/4/2026, 6:05:20 PM] [Log] [IPC] .invoke("document.loadData") args: []
+------------------
+[7/4/2026, 6:05:20 PM] [Log] [IPC] .handle("document.loadData") result: "{\"snap\":null,\"filePath\":\"D:\\\\Git\\\\labs\\\\Azure-Network\\\\docs\\\\03-Centralized-network-security-firewall.md\",\"backups\":null,\"shouldReadFromDisk\":false,\"windowCounts\":1}"
+------------------
+[7/4/2026, 6:05:20 PM] [Log] [IPC] .invoke("window.updateMenuForIsAlwaysOnTop") args: []
+------------------
+[7/4/2026, 6:05:20 PM] [Log] [IPC] .handle("window.updateMenuForIsAlwaysOnTop") result: 
+------------------
+[7/4/2026, 6:05:20 PM] [Log] [IPC] .invoke("menu.updateCustomZoom") args: []
+------------------
+[7/4/2026, 6:05:20 PM] [Log] [IPC] .handle("menu.updateCustomZoom") result: 
+------------------
+[7/4/2026, 6:05:20 PM] [Log] [IPC] .invoke("setting.getRecentFiles") args: []
+------------------
+[7/4/2026, 6:05:20 PM] [Log] [IPC] .handle("setting.getRecentFiles") result: {"files":[{"name":"03-Centralized-network-security-firewall.md","path":"D:\\Git\\labs\\Azure-Network\\docs\\03-Centralized-network-security-firewall.md","date":1783154119047},{"name":"02-Hub-Spoke-Virutal Network.md","path":"D:\\Git\\labs\\Azure-Network\\docs\\02-Hub-Spoke-Virutal Network.md","date":1783057616255},{"name":"01-Overview-and-Desgin.md","path":"D:\\Git\\labs\\Azure-Network\\docs\\01-Overview-and-Desgin.md","date":1783057596635},{"name":"README.md","path":"D:\\Git\\labs\\Azure-Hybrid-Cloud\\README.md","date":1781458903599}],"folders":[{"name":"docs","path":"D:\\Git\\labs\\Azure-Network\\docs","date":"2026-07-03T05:41:38.206Z"}]}
+------------------
+[7/4/2026, 6:05:20 PM] [Log] [IPC] .invoke("window.updateMenuForIsAlwaysOnTop") args: []
+------------------
+[7/4/2026, 6:05:20 PM] [Log] [IPC] .handle("window.updateMenuForIsAlwaysOnTop") result: 
+------------------
+[7/4/2026, 6:05:20 PM] [Log] [IPC] .invoke("menu.updateCustomZoom") args: []
+------------------
+[7/4/2026, 6:05:20 PM] [Log] [IPC] .handle("menu.updateCustomZoom") result: 
+------------------
+[7/4/2026, 6:05:20 PM] [Log] [IPC] .invoke("window.setTitle") args: [null,false]
+------------------
+[7/4/2026, 6:05:20 PM] [Log] [IPC] .handle("window.setTitle") result: 
+------------------
+[7/4/2026, 6:05:20 PM] [Log] [IPC] .invoke("theme.setThemeSource") args: ["system"]
+------------------
+[7/4/2026, 6:05:20 PM] [Log] [IPC] .handle("theme.setThemeSource") result: 
+------------------
+[7/4/2026, 6:05:20 PM] [Log] [IPC] .invoke("setting.put") args: ["backgroundColor","#FFFFFF"]
+------------------
+[7/4/2026, 6:05:20 PM] [Log] [IPC] .handle("setting.put") result: 
+------------------
+[7/4/2026, 6:05:20 PM] [Log] [IPC] .invoke("setting.put") args: ["isDarkMode",false]
+------------------
+[7/4/2026, 6:05:20 PM] [Log] [IPC] .handle("setting.put") result: 
+------------------
+[7/4/2026, 6:05:20 PM] [Log] [IPC] .invoke("window.updateMenuForIsAlwaysOnTop") args: []
+------------------
+[7/4/2026, 6:05:20 PM] [Log] [IPC] .handle("window.updateMenuForIsAlwaysOnTop") result: 
+------------------
+[7/4/2026, 6:05:20 PM] [Log] [IPC] .invoke("menu.updateCustomZoom") args: []
+------------------
+[7/4/2026, 6:05:20 PM] [Log] [IPC] .handle("menu.updateCustomZoom") result: 
+------------------
+[7/4/2026, 6:05:20 PM] [Log] [IPC] .invoke("window.checkAsFocus") args: []
+------------------
+[7/4/2026, 6:05:20 PM] [Log] [IPC] .handle("window.checkAsFocus") result: 
+------------------
+[7/4/2026, 6:05:20 PM] [Log] [IPC] .invoke("document.getSnapWithValidation") args: [null]
+------------------
+[7/4/2026, 6:05:20 PM] [Log] [IPC] .handle("document.getSnapWithValidation") result: "{\"snap\":null,\"shouldReadFromDisk\":false}"
+------------------
+[7/4/2026, 6:05:20 PM] [Log] [IPC] .invoke("window.updateMenuForIsAlwaysOnTop") args: []
+------------------
+[7/4/2026, 6:05:20 PM] [Log] [IPC] .handle("window.updateMenuForIsAlwaysOnTop") result: 
+------------------
+[7/4/2026, 6:05:20 PM] [Log] [IPC] .invoke("menu.updateCustomZoom") args: []
+------------------
+[7/4/2026, 6:05:20 PM] [Log] [IPC] .handle("menu.updateCustomZoom") result: 
+------------------
+[7/4/2026, 6:05:20 PM] [Log] [IPC] .invoke("window.checkAsFocus") args: []
+------------------
+[7/4/2026, 6:05:20 PM] [Log] [IPC] .handle("window.checkAsFocus") result: 
+------------------
+[7/4/2026, 6:05:20 PM] [Log] [IPC] .invoke("setting.getDownloadingDicts") args: []
+------------------
+[7/4/2026, 6:05:20 PM] [Log] [IPC] .handle("setting.getDownloadingDicts") result: "[]"
+------------------
+[7/4/2026, 6:05:20 PM] [Log] [IPC] .invoke("setting.getUserDictionaryPath") args: []
+------------------
+[7/4/2026, 6:05:20 PM] [Log] [IPC] .handle("setting.getUserDictionaryPath") result: "C:\\Users\\joest\\AppData\\Roaming\\Typora\\typora-dictionaries"
+------------------
+[7/4/2026, 6:05:20 PM] [Log] [IPC] .invoke("document.hasDuplicateName") args: ["03-Centralized-network-security-firewall.md"]
+------------------
+[7/4/2026, 6:05:20 PM] [Log] [IPC] .handle("document.hasDuplicateName") result: false
+------------------
+[7/4/2026, 6:05:20 PM] [Log] [IPC] .invoke("document.setLastSync") args: ["2026-07-04T08:35:20.340Z"]
+------------------
+[7/4/2026, 6:05:20 PM] [Log] [IPC] .handle("document.setLastSync") result: 
+------------------
+[7/4/2026, 6:05:20 PM] [Log] [IPC] .invoke("window.updateMenuForIsAlwaysOnTop") args: []
+------------------
+[7/4/2026, 6:05:20 PM] [Log] [IPC] .handle("window.updateMenuForIsAlwaysOnTop") result: 
+------------------
+[7/4/2026, 6:05:20 PM] [Log] [IPC] .invoke("menu.updateCustomZoom") args: []
+------------------
+[7/4/2026, 6:05:20 PM] [Log] [IPC] .handle("menu.updateCustomZoom") result: 
+------------------
+[7/4/2026, 6:05:20 PM] [Log] [IPC] .invoke("setting.getUserDict") args: []
+------------------
+[7/4/2026, 6:05:20 PM] [Log] [IPC] .handle("setting.getUserDict") result: "{}"
+------------------
+[7/4/2026, 6:05:20 PM] [Log] [IPC] .invoke("window.setTitle") args: ["03-Centralized-network-security-firewall.md - Typora"]
+------------------
+[7/4/2026, 6:05:20 PM] [Log] [IPC] .handle("window.setTitle") result: 
+------------------
+[7/4/2026, 6:05:20 PM] [Log] [IPC] .invoke("window.setTitle") args: [null,false]
+------------------
+[7/4/2026, 6:05:20 PM] [Log] [IPC] .handle("window.setTitle") result: 
+------------------
+[7/4/2026, 6:05:20 PM] [Log] [IPC] .invoke("window.updateMenuForIsAlwaysOnTop") args: []
+------------------
+[7/4/2026, 6:05:20 PM] [Log] [IPC] .handle("window.updateMenuForIsAlwaysOnTop") result: 
+------------------
+[7/4/2026, 6:05:20 PM] [Log] [IPC] .invoke("menu.updateCustomZoom") args: []
+------------------
+[7/4/2026, 6:05:20 PM] [Log] [IPC] .handle("menu.updateCustomZoom") result: 
+------------------
+[7/4/2026, 6:05:20 PM] [Log] [IPC] .invoke("window.checkAsFocus") args: []
+------------------
+[7/4/2026, 6:05:20 PM] [Log] [IPC] .handle("window.checkAsFocus") result: 
+------------------
+[7/4/2026, 6:05:21 PM] [Log] [IPC] .invoke("setting.getKeyBinding") args: []
+------------------
+[7/4/2026, 6:05:21 PM] [Log] [IPC] .handle("setting.getKeyBinding") result: {"_useLowerCase":true}
+------------------
+[7/4/2026, 6:08:17 PM] [Log] [IPC] .invoke("window.setTitle") args: [null,true]
+------------------
+[7/4/2026, 6:08:17 PM] [Log] [IPC] .handle("window.setTitle") result: 
+------------------
+[7/4/2026, 6:08:21 PM] [Log] [IPC] .invoke("window.updateMenuForIsAlwaysOnTop") args: []
+------------------
+[7/4/2026, 6:08:21 PM] [Log] [IPC] .handle("window.updateMenuForIsAlwaysOnTop") result: 
+------------------
+[7/4/2026, 6:08:21 PM] [Log] [IPC] .invoke("menu.updateCustomZoom") args: []
+------------------
+[7/4/2026, 6:08:21 PM] [Log] [IPC] .handle("menu.updateCustomZoom") result: 
+------------------
+[7/4/2026, 6:10:10 PM] [Log] [IPC] .invoke("window.updateMenuForIsAlwaysOnTop") args: []
+------------------
+[7/4/2026, 6:10:10 PM] [Log] [IPC] .handle("window.updateMenuForIsAlwaysOnTop") result: 
+------------------
+[7/4/2026, 6:10:10 PM] [Log] [IPC] .invoke("menu.updateCustomZoom") args: []
+------------------
+[7/4/2026, 6:10:10 PM] [Log] [IPC] .handle("menu.updateCustomZoom") result: 
+------------------
+[7/4/2026, 6:10:51 PM] [Log] [IPC] .invoke("window.updateMenuForIsAlwaysOnTop") args: []
+------------------
+[7/4/2026, 6:10:51 PM] [Log] [IPC] .handle("window.updateMenuForIsAlwaysOnTop") result: 
+------------------
+[7/4/2026, 6:10:51 PM] [Log] [IPC] .invoke("menu.updateCustomZoom") args: []
+------------------
+[7/4/2026, 6:10:51 PM] [Log] [IPC] .handle("menu.updateCustomZoom") result: 
+------------------
+[7/4/2026, 6:10:55 PM] [Log] [IPC] .invoke("window.updateMenuForIsAlwaysOnTop") args: []
+------------------
+[7/4/2026, 6:10:55 PM] [Log] [IPC] .handle("window.updateMenuForIsAlwaysOnTop") result: 
+------------------
+[7/4/2026, 6:10:55 PM] [Log] [IPC] .invoke("menu.updateCustomZoom") args: []
+------------------
+[7/4/2026, 6:10:55 PM] [Log] [IPC] .handle("menu.updateCustomZoom") result: 
+------------------
+[7/4/2026, 6:10:55 PM] [Log] [IPC] .invoke("window.setInSourceMode") args: [true]
+------------------
+[7/4/2026, 6:10:55 PM] [Log] [IPC] .handle("window.setInSourceMode") result: 
+------------------
+[7/4/2026, 6:10:56 PM] [Log] [IPC] .invoke("window.updateMenuForIsAlwaysOnTop") args: []
+------------------
+[7/4/2026, 6:10:56 PM] [Log] [IPC] .handle("window.updateMenuForIsAlwaysOnTop") result: 
+------------------
+[7/4/2026, 6:10:56 PM] [Log] [IPC] .invoke("menu.updateCustomZoom") args: []
+------------------
+[7/4/2026, 6:10:56 PM] [Log] [IPC] .handle("menu.updateCustomZoom") result: 
+------------------
+[7/4/2026, 6:11:02 PM] [Log] [IPC] .invoke("window.updateMenuForIsAlwaysOnTop") args: []
+------------------
+[7/4/2026, 6:11:02 PM] [Log] [IPC] .handle("window.updateMenuForIsAlwaysOnTop") result: 
+------------------
+[7/4/2026, 6:11:02 PM] [Log] [IPC] .invoke("menu.updateCustomZoom") args: []
+------------------
+[7/4/2026, 6:11:02 PM] [Log] [IPC] .handle("menu.updateCustomZoom") result: 
+------------------
+[7/4/2026, 6:11:26 PM] [Log] [IPC] .invoke("app.sendEvent") args: ["willSave","D:\\Git\\labs\\Azure-Network\\docs\\03-Centralized-network-security-firewall.md"]
+------------------
+[7/4/2026, 6:11:26 PM] [Log] [IPC] .handle("app.sendEvent") result: 
+------------------
+[7/4/2026, 6:11:26 PM] [Log] [IPC] .invoke("document.setLastSync") args: [1783154486376.4163]
+------------------
+[7/4/2026, 6:11:26 PM] [Log] [IPC] .handle("document.setLastSync") result: 
+------------------
+[7/4/2026, 6:11:26 PM] [Log] [IPC] .invoke("window.setTitle") args: [null,true]
+------------------
+[7/4/2026, 6:11:26 PM] [Log] [IPC] .handle("window.setTitle") result: 
+------------------
+[7/4/2026, 6:11:26 PM] [Log] [IPC] .invoke("window.setTitle") args: [null,false]
+------------------
+[7/4/2026, 6:11:26 PM] [Log] [IPC] .handle("window.setTitle") result: 
+------------------
+[7/4/2026, 6:11:26 PM] [Log] [IPC] .invoke("app.sendEvent") args: ["didSave",{"path":"D:\\Git\\labs\\Azure-Network\\docs\\03-Centralized-network-security-firewall.md","summary":"# 3. Centralized Network Security (Firewall)\n\n## Overview\n\nAfter establishing the Hub-Spoke network topology, the next step is to centralize network traffic control and security configuration using **","lastModifiedDate":1783154486376.4163}]
+------------------
+[7/4/2026, 6:11:26 PM] [Log] [IPC] .handle("app.sendEvent") result: 
+------------------
+[7/4/2026, 6:11:28 PM] [Log] [IPC] .invoke("window.setInSourceMode") args: [false]
+------------------
+[7/4/2026, 6:11:28 PM] [Log] [IPC] .handle("window.setInSourceMode") result: 
+------------------
+[7/4/2026, 6:11:29 PM] [Log] [IPC] .invoke("window.updateMenuForIsAlwaysOnTop") args: []
+------------------
+[7/4/2026, 6:11:29 PM] [Log] [IPC] .handle("window.updateMenuForIsAlwaysOnTop") result: 
+------------------
+[7/4/2026, 6:11:29 PM] [Log] [IPC] .invoke("menu.updateCustomZoom") args: []
+------------------
+[7/4/2026, 6:11:29 PM] [Log] [IPC] .handle("menu.updateCustomZoom") result: 
+------------------
+[7/4/2026, 6:13:05 PM] [Log] [IPC] .invoke("window.setTitle") args: [null,true]
+------------------
+[7/4/2026, 6:13:05 PM] [Log] [IPC] .handle("window.setTitle") result: 
+------------------
+[7/4/2026, 6:13:35 PM] [Log] [IPC] .invoke("app.sendEvent") args: ["willSave","D:\\Git\\labs\\Azure-Network\\docs\\03-Centralized-network-security-firewall.md"]
+------------------
+[7/4/2026, 6:13:35 PM] [Log] [IPC] .handle("app.sendEvent") result: 
+------------------
+[7/4/2026, 6:13:35 PM] [Log] [IPC] .invoke("document.setLastSync") args: [1783154615340.135]
+------------------
+[7/4/2026, 6:13:35 PM] [Log] [IPC] .handle("document.setLastSync") result: 
+------------------
+[7/4/2026, 6:13:35 PM] [Log] [IPC] .invoke("window.setTitle") args: [null,true]
+------------------
+[7/4/2026, 6:13:35 PM] [Log] [IPC] .handle("window.setTitle") result: 
+------------------
+[7/4/2026, 6:13:35 PM] [Log] [IPC] .invoke("window.setTitle") args: [null,false]
+------------------
+[7/4/2026, 6:13:35 PM] [Log] [IPC] .handle("window.setTitle") result: 
+------------------
+[7/4/2026, 6:13:35 PM] [Log] [IPC] .invoke("app.sendEvent") args: ["didSave",{"path":"D:\\Git\\labs\\Azure-Network\\docs\\03-Centralized-network-security-firewall.md","summary":"# 3. Centralized Network Security (Firewall)\n\n## Overview\n\nAfter establishing the Hub-Spoke network topology, the next step is to centralize network traffic control and security configuration using **","lastModifiedDate":1783154615340.135}]
+------------------
+[7/4/2026, 6:13:35 PM] [Log] [IPC] .handle("app.sendEvent") result: 
+------------------
