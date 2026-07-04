@@ -244,21 +244,62 @@ After the firewall, UDR and VNet peering configurations above are completed, we 
 
 - ### Internet access from both spoke virtual machines.
 
-  From a spoke Linux VM, use nc-vz command  to test internet connection
+  From a spoke Linux VM, use ***nc-vz*** command  to connect to port 433 of google  to test internet connection
   ```
   	nc -vz www.google.com 433
   ```
 
-  <img title="" src="../screenshots/39cmd1.jpg" alt="" width="90%" data-align="center">
+  <img title="" src="../screenshots/39cmd1.jpg" alt="" width="95%" data-align="center">
 
-- Traffic is routed through Azure Firewall.
+  
 
-- Inter-spoke communication follows the configured Firewall Policy.
+- ### One-way Inter-spoke communication following the configured Firewall Policy.
 
--   Traffic without a matching rule is blocked.
+  In our lab, only inter-spoke traffic of ***TCP 22 from Finance VNet to Hr VNet*** allowed. we use the following command to validate the setting
 
-Successful validation confirms that centralized routing and security
-inspection are functioning as designed.
+  From a Finance Linux use nc command to connect to HR Linux VM on TCP Port 22
+
+  ```
+  	nc -vz 10.1.1.4 22  (IP of HR Linux VM)
+  ```
+
+  <img title="" src="../screenshots/39cmd2.jpg" alt="" width="90%" data-align="center">
+
+  Succeeded result indicates that TCP 22 connection is through from FInance Vnet to HR Vnet
+
+  
+
+  Then ping HR vm to test other traffics
+
+  ```
+  	ping 10.1.1.4
+  ```
+
+  <img title="" src="../screenshots/39cmd3.jpg" alt="" width="90%" data-align="center">
+
+  The result is 100% lost. That means ICMP traffic from Finance VNet to HR VNet is not through.
+
+  The reason is we only allow TCP 22 traffic, other traffics are blocked by the firewall policy and Route table configuration.
+
+  
+
+- ### Traffic blocked from HR VNet to Finance VNet
+
+  by firewall rules and route table configuration, we blocked all traffics from HR VNet to Finance VNet.
+  
+  Now we do validation of the setting.
+  
+  First from HR Linux VM, we do the following test
+  
+  <img title="" src="../screenshots/39cmd7.jpg" alt="" width="90%" data-align="center">
+  
+  
+  
+  <img title="" src="../screenshots/39cmd4.jpg" alt="" width="90%" data-align="center">
+
+​	<img title="" src="../screenshots/39cmd5.jpg" alt="" width="90%" data-align="center">
+
+
 
 ------------------------------------------------------------------------
 

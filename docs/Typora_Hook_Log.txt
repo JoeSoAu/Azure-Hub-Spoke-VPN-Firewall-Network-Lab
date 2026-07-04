@@ -2344,3 +2344,633 @@ DwIDAQAB
 ------------------
 [7/4/2026, 6:13:35 PM] [Log] [IPC] .handle("app.sendEvent") result: 
 ------------------
+[7/4/2026, 6:14:09 PM] [Log] -------------------------------------------
+------------------
+[7/4/2026, 6:14:09 PM] [Log] crypto.publicDecrypt called
+------------------
+[7/4/2026, 6:14:09 PM] [Log] Key: -----BEGIN PUBLIC KEY-----
+MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA7nVoGCHqIMJyqgALEUrc
+5JJhap0+HtJqzPE04pz4y+nrOmY7/12f3HvZyyoRsxKdXTZbO0wEHFIh0cRqsuaJ
+PyaOOPbA0BsalofIAY3mRhQQ3vSf+rn3g+w0S+udWmKV9DnmJlpWqizFajU4T/E4
+5ZgMNcXt3E1ips32rdbTR0Nnen9PVITvrbJ3l6CI2BFBImZQZ2P8N+LsqfJsqyVV
+wDkt3mHAVxV7FZbfYWG+8FDSuKQHaCmvgAtChx9hwl3J6RekkqDVa6GIV13D23LS
+qdk0Jb521wFJi/V6QAK6SLBiby5gYN6zQQ5RQpjXtR53MwzTdiAzGEuKdOtrY2Me
+DwIDAQAB
+-----END PUBLIC KEY-----
+
+
+------------------
+[7/4/2026, 6:14:09 PM] [Log] Buffer (Hex): 75736572406578616d706c652e636f6d
+------------------
+[7/4/2026, 6:15:25 PM] [Log] [IPC] .invoke("window.setTitle") args: [null,true]
+------------------
+[7/4/2026, 6:15:25 PM] [Log] [IPC] .handle("window.setTitle") result: 
+------------------
+[7/4/2026, 6:15:36 PM] [Log] [IPC] .invoke("app.sendEvent") args: ["willSave","D:\\Git\\labs\\Azure-Network\\docs\\03-Centralized-network-security-firewall.md"]
+------------------
+[7/4/2026, 6:15:36 PM] [Log] [IPC] .handle("app.sendEvent") result: 
+------------------
+[7/4/2026, 6:15:36 PM] [Log] [IPC] .invoke("document.setLastSync") args: [1783154736767.9785]
+------------------
+[7/4/2026, 6:15:36 PM] [Log] [IPC] .handle("document.setLastSync") result: 
+------------------
+[7/4/2026, 6:15:36 PM] [Log] [IPC] .invoke("window.setTitle") args: [null,true]
+------------------
+[7/4/2026, 6:15:36 PM] [Log] [IPC] .handle("window.setTitle") result: 
+------------------
+[7/4/2026, 6:15:36 PM] [Log] [IPC] .invoke("window.setTitle") args: [null,false]
+------------------
+[7/4/2026, 6:15:36 PM] [Log] [IPC] .handle("window.setTitle") result: 
+------------------
+[7/4/2026, 6:15:36 PM] [Log] [IPC] .invoke("app.sendEvent") args: ["didSave",{"path":"D:\\Git\\labs\\Azure-Network\\docs\\03-Centralized-network-security-firewall.md","summary":"# 3. Centralized Network Security (Firewall)\n\n## Overview\n\nAfter establishing the Hub-Spoke network topology, the next step is to centralize network traffic control and security configuration using **","lastModifiedDate":1783154736767.9785}]
+------------------
+[7/4/2026, 6:15:36 PM] [Log] [IPC] .handle("app.sendEvent") result: 
+------------------
+[7/4/2026, 6:15:42 PM] [Log] [IPC] .invoke("window.setTitle") args: [null,true]
+------------------
+[7/4/2026, 6:15:42 PM] [Log] [IPC] .handle("window.setTitle") result: 
+------------------
+[7/4/2026, 6:15:48 PM] [Log] [IPC] .invoke("app.sendEvent") args: ["willSave","D:\\Git\\labs\\Azure-Network\\docs\\03-Centralized-network-security-firewall.md"]
+------------------
+[7/4/2026, 6:15:48 PM] [Log] [IPC] .handle("app.sendEvent") result: 
+------------------
+[7/4/2026, 6:15:48 PM] [Log] [IPC] .invoke("document.setLastSync") args: [1783154748191.7397]
+------------------
+[7/4/2026, 6:15:48 PM] [Log] [IPC] .handle("document.setLastSync") result: 
+------------------
+[7/4/2026, 6:15:48 PM] [Log] [IPC] .invoke("window.setTitle") args: [null,true]
+------------------
+[7/4/2026, 6:15:48 PM] [Log] [IPC] .handle("window.setTitle") result: 
+------------------
+[7/4/2026, 6:15:48 PM] [Log] [IPC] .invoke("window.setTitle") args: [null,false]
+------------------
+[7/4/2026, 6:15:48 PM] [Log] [IPC] .handle("window.setTitle") result: 
+------------------
+[7/4/2026, 6:15:48 PM] [Log] [IPC] .invoke("app.sendEvent") args: ["didSave",{"path":"D:\\Git\\labs\\Azure-Network\\docs\\03-Centralized-network-security-firewall.md","summary":"# 3. Centralized Network Security (Firewall)\n\n## Overview\n\nAfter establishing the Hub-Spoke network topology, the next step is to centralize network traffic control and security configuration using **","lastModifiedDate":1783154748191.7397}]
+------------------
+[7/4/2026, 6:15:48 PM] [Log] [IPC] .handle("app.sendEvent") result: 
+------------------
+[7/4/2026, 6:15:57 PM] [Log] [IPC] .invoke("window.setTitle") args: [null,true]
+------------------
+[7/4/2026, 6:15:57 PM] [Log] [IPC] .handle("window.setTitle") result: 
+------------------
+[7/4/2026, 6:15:58 PM] [Log] [IPC] .invoke("app.sendEvent") args: ["willSave","D:\\Git\\labs\\Azure-Network\\docs\\03-Centralized-network-security-firewall.md"]
+------------------
+[7/4/2026, 6:15:58 PM] [Log] [IPC] .handle("app.sendEvent") result: 
+------------------
+[7/4/2026, 6:15:58 PM] [Log] [IPC] .invoke("document.setLastSync") args: [1783154758988.097]
+------------------
+[7/4/2026, 6:15:58 PM] [Log] [IPC] .handle("document.setLastSync") result: 
+------------------
+[7/4/2026, 6:15:58 PM] [Log] [IPC] .invoke("window.setTitle") args: [null,true]
+------------------
+[7/4/2026, 6:15:58 PM] [Log] [IPC] .handle("window.setTitle") result: 
+------------------
+[7/4/2026, 6:15:58 PM] [Log] [IPC] .invoke("window.setTitle") args: [null,false]
+------------------
+[7/4/2026, 6:15:58 PM] [Log] [IPC] .handle("window.setTitle") result: 
+------------------
+[7/4/2026, 6:15:58 PM] [Log] [IPC] .invoke("app.sendEvent") args: ["didSave",{"path":"D:\\Git\\labs\\Azure-Network\\docs\\03-Centralized-network-security-firewall.md","summary":"# 3. Centralized Network Security (Firewall)\n\n## Overview\n\nAfter establishing the Hub-Spoke network topology, the next step is to centralize network traffic control and security configuration using **","lastModifiedDate":1783154758988.097}]
+------------------
+[7/4/2026, 6:15:58 PM] [Log] [IPC] .handle("app.sendEvent") result: 
+------------------
+[7/4/2026, 6:17:01 PM] [Log] [IPC] .invoke("window.setTitle") args: [null,true]
+------------------
+[7/4/2026, 6:17:01 PM] [Log] [IPC] .handle("window.setTitle") result: 
+------------------
+[7/4/2026, 6:17:10 PM] [Log] [IPC] .invoke("window.updateMenuForIsAlwaysOnTop") args: []
+------------------
+[7/4/2026, 6:17:10 PM] [Log] [IPC] .handle("window.updateMenuForIsAlwaysOnTop") result: 
+------------------
+[7/4/2026, 6:17:10 PM] [Log] [IPC] .invoke("menu.updateCustomZoom") args: []
+------------------
+[7/4/2026, 6:17:10 PM] [Log] [IPC] .handle("menu.updateCustomZoom") result: 
+------------------
+[7/4/2026, 6:17:10 PM] [Log] [IPC] .invoke("window.setTitle") args: [null,false]
+------------------
+[7/4/2026, 6:17:10 PM] [Log] [IPC] .handle("window.setTitle") result: 
+------------------
+[7/4/2026, 6:17:11 PM] [Log] [IPC] .invoke("window.updateMenuForIsAlwaysOnTop") args: []
+------------------
+[7/4/2026, 6:17:11 PM] [Log] [IPC] .handle("window.updateMenuForIsAlwaysOnTop") result: 
+------------------
+[7/4/2026, 6:17:11 PM] [Log] [IPC] .invoke("menu.updateCustomZoom") args: []
+------------------
+[7/4/2026, 6:17:11 PM] [Log] [IPC] .handle("menu.updateCustomZoom") result: 
+------------------
+[7/4/2026, 6:17:20 PM] [Log] [IPC] .invoke("window.setTitle") args: [null,true]
+------------------
+[7/4/2026, 6:17:20 PM] [Log] [IPC] .handle("window.setTitle") result: 
+------------------
+[7/4/2026, 6:20:40 PM] [Log] [IPC] .invoke("webContents.copy") args: []
+------------------
+[7/4/2026, 6:20:40 PM] [Log] [IPC] .handle("webContents.copy") result: 
+------------------
+[7/4/2026, 6:20:40 PM] [Log] [IPC] .invoke("webContents.copy") args: []
+------------------
+[7/4/2026, 6:20:40 PM] [Log] [IPC] .handle("webContents.copy") result: 
+------------------
+[7/4/2026, 6:20:46 PM] [Log] [IPC] .invoke("webContents.copy") args: []
+------------------
+[7/4/2026, 6:20:46 PM] [Log] [IPC] .handle("webContents.copy") result: 
+------------------
+[7/4/2026, 6:20:46 PM] [Log] [IPC] .invoke("webContents.copy") args: []
+------------------
+[7/4/2026, 6:20:46 PM] [Log] [IPC] .handle("webContents.copy") result: 
+------------------
+[7/4/2026, 6:21:11 PM] [Log] [IPC] .invoke("window.updateMenuForIsAlwaysOnTop") args: []
+------------------
+[7/4/2026, 6:21:11 PM] [Log] [IPC] .handle("window.updateMenuForIsAlwaysOnTop") result: 
+------------------
+[7/4/2026, 6:21:11 PM] [Log] [IPC] .invoke("menu.updateCustomZoom") args: []
+------------------
+[7/4/2026, 6:21:11 PM] [Log] [IPC] .handle("menu.updateCustomZoom") result: 
+------------------
+[7/4/2026, 6:21:16 PM] [Log] [IPC] .invoke("window.updateMenuForIsAlwaysOnTop") args: []
+------------------
+[7/4/2026, 6:21:16 PM] [Log] [IPC] .handle("window.updateMenuForIsAlwaysOnTop") result: 
+------------------
+[7/4/2026, 6:21:16 PM] [Log] [IPC] .invoke("menu.updateCustomZoom") args: []
+------------------
+[7/4/2026, 6:21:16 PM] [Log] [IPC] .handle("menu.updateCustomZoom") result: 
+------------------
+[7/4/2026, 6:21:16 PM] [Log] [IPC] .invoke("window.setInSourceMode") args: [true]
+------------------
+[7/4/2026, 6:21:16 PM] [Log] [IPC] .handle("window.setInSourceMode") result: 
+------------------
+[7/4/2026, 6:21:16 PM] [Log] [IPC] .invoke("window.updateMenuForIsAlwaysOnTop") args: []
+------------------
+[7/4/2026, 6:21:16 PM] [Log] [IPC] .handle("window.updateMenuForIsAlwaysOnTop") result: 
+------------------
+[7/4/2026, 6:21:16 PM] [Log] [IPC] .invoke("menu.updateCustomZoom") args: []
+------------------
+[7/4/2026, 6:21:16 PM] [Log] [IPC] .handle("menu.updateCustomZoom") result: 
+------------------
+[7/4/2026, 6:21:27 PM] [Log] [IPC] .invoke("app.sendEvent") args: ["willSave","D:\\Git\\labs\\Azure-Network\\docs\\03-Centralized-network-security-firewall.md"]
+------------------
+[7/4/2026, 6:21:27 PM] [Log] [IPC] .handle("app.sendEvent") result: 
+------------------
+[7/4/2026, 6:21:27 PM] [Log] [IPC] .invoke("document.setLastSync") args: [1783155087224.5198]
+------------------
+[7/4/2026, 6:21:27 PM] [Log] [IPC] .handle("document.setLastSync") result: 
+------------------
+[7/4/2026, 6:21:27 PM] [Log] [IPC] .invoke("window.setTitle") args: [null,true]
+------------------
+[7/4/2026, 6:21:27 PM] [Log] [IPC] .handle("window.setTitle") result: 
+------------------
+[7/4/2026, 6:21:27 PM] [Log] [IPC] .invoke("window.setTitle") args: [null,false]
+------------------
+[7/4/2026, 6:21:27 PM] [Log] [IPC] .handle("window.setTitle") result: 
+------------------
+[7/4/2026, 6:21:27 PM] [Log] [IPC] .invoke("app.sendEvent") args: ["didSave",{"path":"D:\\Git\\labs\\Azure-Network\\docs\\03-Centralized-network-security-firewall.md","summary":"# 3. Centralized Network Security (Firewall)\n\n## Overview\n\nAfter establishing the Hub-Spoke network topology, the next step is to centralize network traffic control and security configuration using **","lastModifiedDate":1783155087224.5198}]
+------------------
+[7/4/2026, 6:21:27 PM] [Log] [IPC] .handle("app.sendEvent") result: 
+------------------
+[7/4/2026, 6:21:45 PM] [Log] [IPC] .invoke("window.setTitle") args: [null,true]
+------------------
+[7/4/2026, 6:21:45 PM] [Log] [IPC] .handle("window.setTitle") result: 
+------------------
+[7/4/2026, 6:22:13 PM] [Log] [IPC] .invoke("window.setInSourceMode") args: [false]
+------------------
+[7/4/2026, 6:22:13 PM] [Log] [IPC] .handle("window.setInSourceMode") result: 
+------------------
+[7/4/2026, 6:22:13 PM] [Log] [IPC] .invoke("window.updateMenuForIsAlwaysOnTop") args: []
+------------------
+[7/4/2026, 6:22:13 PM] [Log] [IPC] .handle("window.updateMenuForIsAlwaysOnTop") result: 
+------------------
+[7/4/2026, 6:22:13 PM] [Log] [IPC] .invoke("menu.updateCustomZoom") args: []
+------------------
+[7/4/2026, 6:22:13 PM] [Log] [IPC] .handle("menu.updateCustomZoom") result: 
+------------------
+[7/4/2026, 6:22:14 PM] [Log] [IPC] .invoke("app.sendEvent") args: ["willSave","D:\\Git\\labs\\Azure-Network\\docs\\03-Centralized-network-security-firewall.md"]
+------------------
+[7/4/2026, 6:22:14 PM] [Log] [IPC] .handle("app.sendEvent") result: 
+------------------
+[7/4/2026, 6:22:14 PM] [Log] [IPC] .invoke("document.setLastSync") args: [1783155134391.5984]
+------------------
+[7/4/2026, 6:22:14 PM] [Log] [IPC] .handle("document.setLastSync") result: 
+------------------
+[7/4/2026, 6:22:14 PM] [Log] [IPC] .invoke("window.setTitle") args: [null,true]
+------------------
+[7/4/2026, 6:22:14 PM] [Log] [IPC] .handle("window.setTitle") result: 
+------------------
+[7/4/2026, 6:22:14 PM] [Log] [IPC] .invoke("window.setTitle") args: [null,false]
+------------------
+[7/4/2026, 6:22:14 PM] [Log] [IPC] .handle("window.setTitle") result: 
+------------------
+[7/4/2026, 6:22:14 PM] [Log] [IPC] .invoke("app.sendEvent") args: ["didSave",{"path":"D:\\Git\\labs\\Azure-Network\\docs\\03-Centralized-network-security-firewall.md","summary":"# 3. Centralized Network Security (Firewall)\n\n## Overview\n\nAfter establishing the Hub-Spoke network topology, the next step is to centralize network traffic control and security configuration using **","lastModifiedDate":1783155134391.5984}]
+------------------
+[7/4/2026, 6:22:14 PM] [Log] [IPC] .handle("app.sendEvent") result: 
+------------------
+[7/4/2026, 6:22:16 PM] [Log] [IPC] .invoke("window.setTitle") args: [null,true]
+------------------
+[7/4/2026, 6:22:16 PM] [Log] [IPC] .handle("window.setTitle") result: 
+------------------
+[7/4/2026, 6:22:57 PM] [Log] [IPC] .invoke("app.sendEvent") args: ["willSave","D:\\Git\\labs\\Azure-Network\\docs\\03-Centralized-network-security-firewall.md"]
+------------------
+[7/4/2026, 6:22:57 PM] [Log] [IPC] .handle("app.sendEvent") result: 
+------------------
+[7/4/2026, 6:22:57 PM] [Log] [IPC] .invoke("document.setLastSync") args: [1783155177953.3308]
+------------------
+[7/4/2026, 6:22:57 PM] [Log] [IPC] .handle("document.setLastSync") result: 
+------------------
+[7/4/2026, 6:22:57 PM] [Log] [IPC] .invoke("window.setTitle") args: [null,true]
+------------------
+[7/4/2026, 6:22:57 PM] [Log] [IPC] .handle("window.setTitle") result: 
+------------------
+[7/4/2026, 6:22:57 PM] [Log] [IPC] .invoke("window.setTitle") args: [null,false]
+------------------
+[7/4/2026, 6:22:57 PM] [Log] [IPC] .handle("window.setTitle") result: 
+------------------
+[7/4/2026, 6:22:57 PM] [Log] [IPC] .invoke("app.sendEvent") args: ["didSave",{"path":"D:\\Git\\labs\\Azure-Network\\docs\\03-Centralized-network-security-firewall.md","summary":"# 3. Centralized Network Security (Firewall)\n\n## Overview\n\nAfter establishing the Hub-Spoke network topology, the next step is to centralize network traffic control and security configuration using **","lastModifiedDate":1783155177953.3308}]
+------------------
+[7/4/2026, 6:22:57 PM] [Log] [IPC] .handle("app.sendEvent") result: 
+------------------
+[7/4/2026, 6:23:00 PM] [Log] [IPC] .invoke("app.sendEvent") args: ["willSave","D:\\Git\\labs\\Azure-Network\\docs\\03-Centralized-network-security-firewall.md"]
+------------------
+[7/4/2026, 6:23:00 PM] [Log] [IPC] .handle("app.sendEvent") result: 
+------------------
+[7/4/2026, 6:23:00 PM] [Log] [IPC] .invoke("document.setLastSync") args: [1783155180390.1418]
+------------------
+[7/4/2026, 6:23:00 PM] [Log] [IPC] .handle("document.setLastSync") result: 
+------------------
+[7/4/2026, 6:23:00 PM] [Log] [IPC] .invoke("window.setTitle") args: [null,false]
+------------------
+[7/4/2026, 6:23:00 PM] [Log] [IPC] .handle("window.setTitle") result: 
+------------------
+[7/4/2026, 6:23:00 PM] [Log] [IPC] .invoke("app.sendEvent") args: ["didSave",{"path":"D:\\Git\\labs\\Azure-Network\\docs\\03-Centralized-network-security-firewall.md","summary":"# 3. Centralized Network Security (Firewall)\n\n## Overview\n\nAfter establishing the Hub-Spoke network topology, the next step is to centralize network traffic control and security configuration using **","lastModifiedDate":1783155180390.1418}]
+------------------
+[7/4/2026, 6:23:00 PM] [Log] [IPC] .handle("app.sendEvent") result: 
+------------------
+[7/4/2026, 6:23:28 PM] [Log] [IPC] .invoke("webContents.copy") args: []
+------------------
+[7/4/2026, 6:23:28 PM] [Log] [IPC] .handle("webContents.copy") result: 
+------------------
+[7/4/2026, 6:23:28 PM] [Log] [IPC] .invoke("webContents.copy") args: []
+------------------
+[7/4/2026, 6:23:28 PM] [Log] [IPC] .handle("webContents.copy") result: 
+------------------
+[7/4/2026, 6:23:31 PM] [Log] [IPC] .invoke("window.setTitle") args: [null,true]
+------------------
+[7/4/2026, 6:23:31 PM] [Log] [IPC] .handle("window.setTitle") result: 
+------------------
+[7/4/2026, 6:24:01 PM] [Log] [IPC] .invoke("window.updateMenuForIsAlwaysOnTop") args: []
+------------------
+[7/4/2026, 6:24:01 PM] [Log] [IPC] .handle("window.updateMenuForIsAlwaysOnTop") result: 
+------------------
+[7/4/2026, 6:24:01 PM] [Log] [IPC] .invoke("menu.updateCustomZoom") args: []
+------------------
+[7/4/2026, 6:24:01 PM] [Log] [IPC] .handle("menu.updateCustomZoom") result: 
+------------------
+[7/4/2026, 6:24:02 PM] [Log] [IPC] .invoke("window.updateMenuForIsAlwaysOnTop") args: []
+------------------
+[7/4/2026, 6:24:02 PM] [Log] [IPC] .handle("window.updateMenuForIsAlwaysOnTop") result: 
+------------------
+[7/4/2026, 6:24:02 PM] [Log] [IPC] .invoke("menu.updateCustomZoom") args: []
+------------------
+[7/4/2026, 6:24:02 PM] [Log] [IPC] .handle("menu.updateCustomZoom") result: 
+------------------
+[7/4/2026, 6:25:56 PM] [Log] [IPC] .invoke("app.sendEvent") args: ["willSave","D:\\Git\\labs\\Azure-Network\\docs\\03-Centralized-network-security-firewall.md"]
+------------------
+[7/4/2026, 6:25:56 PM] [Log] [IPC] .handle("app.sendEvent") result: 
+------------------
+[7/4/2026, 6:25:56 PM] [Log] [IPC] .invoke("document.setLastSync") args: [1783155356106.5283]
+------------------
+[7/4/2026, 6:25:56 PM] [Log] [IPC] .handle("document.setLastSync") result: 
+------------------
+[7/4/2026, 6:25:56 PM] [Log] [IPC] .invoke("window.setTitle") args: [null,true]
+------------------
+[7/4/2026, 6:25:56 PM] [Log] [IPC] .handle("window.setTitle") result: 
+------------------
+[7/4/2026, 6:25:56 PM] [Log] [IPC] .invoke("window.setTitle") args: [null,false]
+------------------
+[7/4/2026, 6:25:56 PM] [Log] [IPC] .handle("window.setTitle") result: 
+------------------
+[7/4/2026, 6:25:56 PM] [Log] [IPC] .invoke("app.sendEvent") args: ["didSave",{"path":"D:\\Git\\labs\\Azure-Network\\docs\\03-Centralized-network-security-firewall.md","summary":"# 3. Centralized Network Security (Firewall)\n\n## Overview\n\nAfter establishing the Hub-Spoke network topology, the next step is to centralize network traffic control and security configuration using **","lastModifiedDate":1783155356106.5283}]
+------------------
+[7/4/2026, 6:25:56 PM] [Log] [IPC] .handle("app.sendEvent") result: 
+------------------
+[7/4/2026, 8:29:02 PM] [Log] [IPC] .invoke("window.setTitle") args: [null,true]
+------------------
+[7/4/2026, 8:29:02 PM] [Log] [IPC] .handle("window.setTitle") result: 
+------------------
+[7/4/2026, 8:29:13 PM] [Log] [IPC] .invoke("app.sendEvent") args: ["willSave","D:\\Git\\labs\\Azure-Network\\docs\\03-Centralized-network-security-firewall.md"]
+------------------
+[7/4/2026, 8:29:13 PM] [Log] [IPC] .handle("app.sendEvent") result: 
+------------------
+[7/4/2026, 8:29:13 PM] [Log] [IPC] .invoke("document.setLastSync") args: [1783162753905.7153]
+------------------
+[7/4/2026, 8:29:13 PM] [Log] [IPC] .handle("document.setLastSync") result: 
+------------------
+[7/4/2026, 8:29:13 PM] [Log] [IPC] .invoke("window.setTitle") args: [null,true]
+------------------
+[7/4/2026, 8:29:13 PM] [Log] [IPC] .handle("window.setTitle") result: 
+------------------
+[7/4/2026, 8:29:13 PM] [Log] [IPC] .invoke("window.setTitle") args: [null,false]
+------------------
+[7/4/2026, 8:29:13 PM] [Log] [IPC] .handle("window.setTitle") result: 
+------------------
+[7/4/2026, 8:29:13 PM] [Log] [IPC] .invoke("app.sendEvent") args: ["didSave",{"path":"D:\\Git\\labs\\Azure-Network\\docs\\03-Centralized-network-security-firewall.md","summary":"# 3. Centralized Network Security (Firewall)\n\n## Overview\n\nAfter establishing the Hub-Spoke network topology, the next step is to centralize network traffic control and security configuration using **","lastModifiedDate":1783162753905.7153}]
+------------------
+[7/4/2026, 8:29:13 PM] [Log] [IPC] .handle("app.sendEvent") result: 
+------------------
+[7/4/2026, 8:29:24 PM] [Log] [IPC] .invoke("window.setTitle") args: [null,true]
+------------------
+[7/4/2026, 8:29:24 PM] [Log] [IPC] .handle("window.setTitle") result: 
+------------------
+[7/4/2026, 8:29:29 PM] [Log] [IPC] .invoke("app.sendEvent") args: ["willSave","D:\\Git\\labs\\Azure-Network\\docs\\03-Centralized-network-security-firewall.md"]
+------------------
+[7/4/2026, 8:29:29 PM] [Log] [IPC] .handle("app.sendEvent") result: 
+------------------
+[7/4/2026, 8:29:29 PM] [Log] [IPC] .invoke("document.setLastSync") args: [1783162769598.6511]
+------------------
+[7/4/2026, 8:29:29 PM] [Log] [IPC] .handle("document.setLastSync") result: 
+------------------
+[7/4/2026, 8:29:29 PM] [Log] [IPC] .invoke("window.setTitle") args: [null,true]
+------------------
+[7/4/2026, 8:29:29 PM] [Log] [IPC] .handle("window.setTitle") result: 
+------------------
+[7/4/2026, 8:29:29 PM] [Log] [IPC] .invoke("window.setTitle") args: [null,false]
+------------------
+[7/4/2026, 8:29:29 PM] [Log] [IPC] .handle("window.setTitle") result: 
+------------------
+[7/4/2026, 8:29:29 PM] [Log] [IPC] .invoke("app.sendEvent") args: ["didSave",{"path":"D:\\Git\\labs\\Azure-Network\\docs\\03-Centralized-network-security-firewall.md","summary":"# 3. Centralized Network Security (Firewall)\n\n## Overview\n\nAfter establishing the Hub-Spoke network topology, the next step is to centralize network traffic control and security configuration using **","lastModifiedDate":1783162769598.6511}]
+------------------
+[7/4/2026, 8:29:29 PM] [Log] [IPC] .handle("app.sendEvent") result: 
+------------------
+[7/4/2026, 8:29:33 PM] [Log] [IPC] .invoke("window.setTitle") args: [null,true]
+------------------
+[7/4/2026, 8:29:33 PM] [Log] [IPC] .handle("window.setTitle") result: 
+------------------
+[7/4/2026, 8:29:35 PM] [Log] [IPC] .invoke("window.setTitle") args: [null,false]
+------------------
+[7/4/2026, 8:29:35 PM] [Log] [IPC] .handle("window.setTitle") result: 
+------------------
+[7/4/2026, 8:29:36 PM] [Log] [IPC] .invoke("window.updateMenuForIsAlwaysOnTop") args: []
+------------------
+[7/4/2026, 8:29:36 PM] [Log] [IPC] .handle("window.updateMenuForIsAlwaysOnTop") result: 
+------------------
+[7/4/2026, 8:29:36 PM] [Log] [IPC] .invoke("menu.updateCustomZoom") args: []
+------------------
+[7/4/2026, 8:29:36 PM] [Log] [IPC] .handle("menu.updateCustomZoom") result: 
+------------------
+[7/4/2026, 8:29:50 PM] [Log] [IPC] .invoke("window.setTitle") args: [null,true]
+------------------
+[7/4/2026, 8:29:50 PM] [Log] [IPC] .handle("window.setTitle") result: 
+------------------
+[7/4/2026, 8:30:36 PM] [Log] [IPC] .invoke("app.sendEvent") args: ["willSave","D:\\Git\\labs\\Azure-Network\\docs\\03-Centralized-network-security-firewall.md"]
+------------------
+[7/4/2026, 8:30:36 PM] [Log] [IPC] .handle("app.sendEvent") result: 
+------------------
+[7/4/2026, 8:30:36 PM] [Log] [IPC] .invoke("document.setLastSync") args: [1783162836285.0022]
+------------------
+[7/4/2026, 8:30:36 PM] [Log] [IPC] .handle("document.setLastSync") result: 
+------------------
+[7/4/2026, 8:30:36 PM] [Log] [IPC] .invoke("window.setTitle") args: [null,true]
+------------------
+[7/4/2026, 8:30:36 PM] [Log] [IPC] .handle("window.setTitle") result: 
+------------------
+[7/4/2026, 8:30:36 PM] [Log] [IPC] .invoke("window.setTitle") args: [null,false]
+------------------
+[7/4/2026, 8:30:36 PM] [Log] [IPC] .handle("window.setTitle") result: 
+------------------
+[7/4/2026, 8:30:36 PM] [Log] [IPC] .invoke("app.sendEvent") args: ["didSave",{"path":"D:\\Git\\labs\\Azure-Network\\docs\\03-Centralized-network-security-firewall.md","summary":"# 3. Centralized Network Security (Firewall)\n\n## Overview\n\nAfter establishing the Hub-Spoke network topology, the next step is to centralize network traffic control and security configuration using **","lastModifiedDate":1783162836285.0022}]
+------------------
+[7/4/2026, 8:30:36 PM] [Log] [IPC] .handle("app.sendEvent") result: 
+------------------
+[7/4/2026, 8:42:24 PM] [Log] [IPC] .invoke("window.setTitle") args: [null,true]
+------------------
+[7/4/2026, 8:42:24 PM] [Log] [IPC] .handle("window.setTitle") result: 
+------------------
+[7/4/2026, 8:43:54 PM] [Log] [IPC] .invoke("webContents.copy") args: []
+------------------
+[7/4/2026, 8:43:54 PM] [Log] [IPC] .handle("webContents.copy") result: 
+------------------
+[7/4/2026, 8:44:10 PM] [Log] [IPC] .invoke("app.sendEvent") args: ["willSave","D:\\Git\\labs\\Azure-Network\\docs\\03-Centralized-network-security-firewall.md"]
+------------------
+[7/4/2026, 8:44:10 PM] [Log] [IPC] .handle("app.sendEvent") result: 
+------------------
+[7/4/2026, 8:44:10 PM] [Log] [IPC] .invoke("document.setLastSync") args: [1783163650465.7324]
+------------------
+[7/4/2026, 8:44:10 PM] [Log] [IPC] .handle("document.setLastSync") result: 
+------------------
+[7/4/2026, 8:44:10 PM] [Log] [IPC] .invoke("window.setTitle") args: [null,true]
+------------------
+[7/4/2026, 8:44:10 PM] [Log] [IPC] .handle("window.setTitle") result: 
+------------------
+[7/4/2026, 8:44:10 PM] [Log] [IPC] .invoke("window.setTitle") args: [null,false]
+------------------
+[7/4/2026, 8:44:10 PM] [Log] [IPC] .handle("window.setTitle") result: 
+------------------
+[7/4/2026, 8:44:10 PM] [Log] [IPC] .invoke("app.sendEvent") args: ["didSave",{"path":"D:\\Git\\labs\\Azure-Network\\docs\\03-Centralized-network-security-firewall.md","summary":"# 3. Centralized Network Security (Firewall)\n\n## Overview\n\nAfter establishing the Hub-Spoke network topology, the next step is to centralize network traffic control and security configuration using **","lastModifiedDate":1783163650465.7324}]
+------------------
+[7/4/2026, 8:44:10 PM] [Log] [IPC] .handle("app.sendEvent") result: 
+------------------
+[7/4/2026, 8:44:14 PM] [Log] [IPC] .invoke("app.sendEvent") args: ["willSave","D:\\Git\\labs\\Azure-Network\\docs\\03-Centralized-network-security-firewall.md"]
+------------------
+[7/4/2026, 8:44:14 PM] [Log] [IPC] .handle("app.sendEvent") result: 
+------------------
+[7/4/2026, 8:44:14 PM] [Log] [IPC] .invoke("document.setLastSync") args: [1783163654492.187]
+------------------
+[7/4/2026, 8:44:14 PM] [Log] [IPC] .handle("document.setLastSync") result: 
+------------------
+[7/4/2026, 8:44:14 PM] [Log] [IPC] .invoke("window.setTitle") args: [null,false]
+------------------
+[7/4/2026, 8:44:14 PM] [Log] [IPC] .handle("window.setTitle") result: 
+------------------
+[7/4/2026, 8:44:14 PM] [Log] [IPC] .invoke("app.sendEvent") args: ["didSave",{"path":"D:\\Git\\labs\\Azure-Network\\docs\\03-Centralized-network-security-firewall.md","summary":"# 3. Centralized Network Security (Firewall)\n\n## Overview\n\nAfter establishing the Hub-Spoke network topology, the next step is to centralize network traffic control and security configuration using **","lastModifiedDate":1783163654492.187}]
+------------------
+[7/4/2026, 8:44:14 PM] [Log] [IPC] .handle("app.sendEvent") result: 
+------------------
+[7/4/2026, 8:49:32 PM] [Log] [IPC] .invoke("window.setTitle") args: [null,true]
+------------------
+[7/4/2026, 8:49:32 PM] [Log] [IPC] .handle("window.setTitle") result: 
+------------------
+[7/4/2026, 9:13:03 PM] [Log] [IPC] .invoke("window.updateMenuForIsAlwaysOnTop") args: []
+------------------
+[7/4/2026, 9:13:03 PM] [Log] [IPC] .handle("window.updateMenuForIsAlwaysOnTop") result: 
+------------------
+[7/4/2026, 9:13:03 PM] [Log] [IPC] .invoke("menu.updateCustomZoom") args: []
+------------------
+[7/4/2026, 9:13:03 PM] [Log] [IPC] .handle("menu.updateCustomZoom") result: 
+------------------
+[7/4/2026, 9:13:03 PM] [Log] [IPC] .invoke("window.updateMenuForIsAlwaysOnTop") args: []
+------------------
+[7/4/2026, 9:13:03 PM] [Log] [IPC] .handle("window.updateMenuForIsAlwaysOnTop") result: 
+------------------
+[7/4/2026, 9:13:03 PM] [Log] [IPC] .invoke("menu.updateCustomZoom") args: []
+------------------
+[7/4/2026, 9:13:03 PM] [Log] [IPC] .handle("menu.updateCustomZoom") result: 
+------------------
+[7/4/2026, 9:13:05 PM] [Log] [IPC] .invoke("window.updateMenuForIsAlwaysOnTop") args: []
+------------------
+[7/4/2026, 9:13:05 PM] [Log] [IPC] .handle("window.updateMenuForIsAlwaysOnTop") result: 
+------------------
+[7/4/2026, 9:13:05 PM] [Log] [IPC] .invoke("menu.updateCustomZoom") args: []
+------------------
+[7/4/2026, 9:13:05 PM] [Log] [IPC] .handle("menu.updateCustomZoom") result: 
+------------------
+[7/4/2026, 9:14:04 PM] [Log] [IPC] .invoke("app.sendEvent") args: ["willSave","D:\\Git\\labs\\Azure-Network\\docs\\03-Centralized-network-security-firewall.md"]
+------------------
+[7/4/2026, 9:14:04 PM] [Log] [IPC] .handle("app.sendEvent") result: 
+------------------
+[7/4/2026, 9:14:04 PM] [Log] [IPC] .invoke("document.setLastSync") args: [1783165444542.3264]
+------------------
+[7/4/2026, 9:14:04 PM] [Log] [IPC] .handle("document.setLastSync") result: 
+------------------
+[7/4/2026, 9:14:04 PM] [Log] [IPC] .invoke("window.setTitle") args: [null,true]
+------------------
+[7/4/2026, 9:14:04 PM] [Log] [IPC] .handle("window.setTitle") result: 
+------------------
+[7/4/2026, 9:14:04 PM] [Log] [IPC] .invoke("window.setTitle") args: [null,false]
+------------------
+[7/4/2026, 9:14:04 PM] [Log] [IPC] .handle("window.setTitle") result: 
+------------------
+[7/4/2026, 9:14:04 PM] [Log] [IPC] .invoke("app.sendEvent") args: ["didSave",{"path":"D:\\Git\\labs\\Azure-Network\\docs\\03-Centralized-network-security-firewall.md","summary":"# 3. Centralized Network Security (Firewall)\n\n## Overview\n\nAfter establishing the Hub-Spoke network topology, the next step is to centralize network traffic control and security configuration using **","lastModifiedDate":1783165444542.3264}]
+------------------
+[7/4/2026, 9:14:04 PM] [Log] [IPC] .handle("app.sendEvent") result: 
+------------------
+[7/4/2026, 9:15:05 PM] [Log] [IPC] .invoke("window.setTitle") args: [null,true]
+------------------
+[7/4/2026, 9:15:05 PM] [Log] [IPC] .handle("window.setTitle") result: 
+------------------
+[7/4/2026, 9:16:07 PM] [Log] [IPC] .invoke("app.sendEvent") args: ["willSave","D:\\Git\\labs\\Azure-Network\\docs\\03-Centralized-network-security-firewall.md"]
+------------------
+[7/4/2026, 9:16:07 PM] [Log] [IPC] .handle("app.sendEvent") result: 
+------------------
+[7/4/2026, 9:16:07 PM] [Log] [IPC] .invoke("document.setLastSync") args: [1783165567083.0828]
+------------------
+[7/4/2026, 9:16:07 PM] [Log] [IPC] .handle("document.setLastSync") result: 
+------------------
+[7/4/2026, 9:16:07 PM] [Log] [IPC] .invoke("window.setTitle") args: [null,true]
+------------------
+[7/4/2026, 9:16:07 PM] [Log] [IPC] .handle("window.setTitle") result: 
+------------------
+[7/4/2026, 9:16:07 PM] [Log] [IPC] .invoke("window.setTitle") args: [null,false]
+------------------
+[7/4/2026, 9:16:07 PM] [Log] [IPC] .handle("window.setTitle") result: 
+------------------
+[7/4/2026, 9:16:07 PM] [Log] [IPC] .invoke("app.sendEvent") args: ["didSave",{"path":"D:\\Git\\labs\\Azure-Network\\docs\\03-Centralized-network-security-firewall.md","summary":"# 3. Centralized Network Security (Firewall)\n\n## Overview\n\nAfter establishing the Hub-Spoke network topology, the next step is to centralize network traffic control and security configuration using **","lastModifiedDate":1783165567083.0828}]
+------------------
+[7/4/2026, 9:16:07 PM] [Log] [IPC] .handle("app.sendEvent") result: 
+------------------
+[7/4/2026, 9:16:48 PM] [Log] [IPC] .invoke("window.setTitle") args: [null,true]
+------------------
+[7/4/2026, 9:16:48 PM] [Log] [IPC] .handle("window.setTitle") result: 
+------------------
+[7/4/2026, 9:20:34 PM] [Log] [IPC] .invoke("app.sendEvent") args: ["willSave","D:\\Git\\labs\\Azure-Network\\docs\\03-Centralized-network-security-firewall.md"]
+------------------
+[7/4/2026, 9:20:34 PM] [Log] [IPC] .handle("app.sendEvent") result: 
+------------------
+[7/4/2026, 9:20:34 PM] [Log] [IPC] .invoke("document.setLastSync") args: [1783165834511.8635]
+------------------
+[7/4/2026, 9:20:34 PM] [Log] [IPC] .handle("document.setLastSync") result: 
+------------------
+[7/4/2026, 9:20:34 PM] [Log] [IPC] .invoke("window.setTitle") args: [null,true]
+------------------
+[7/4/2026, 9:20:34 PM] [Log] [IPC] .handle("window.setTitle") result: 
+------------------
+[7/4/2026, 9:20:34 PM] [Log] [IPC] .invoke("window.setTitle") args: [null,false]
+------------------
+[7/4/2026, 9:20:34 PM] [Log] [IPC] .handle("window.setTitle") result: 
+------------------
+[7/4/2026, 9:20:34 PM] [Log] [IPC] .invoke("app.sendEvent") args: ["didSave",{"path":"D:\\Git\\labs\\Azure-Network\\docs\\03-Centralized-network-security-firewall.md","summary":"# 3. Centralized Network Security (Firewall)\n\n## Overview\n\nAfter establishing the Hub-Spoke network topology, the next step is to centralize network traffic control and security configuration using **","lastModifiedDate":1783165834511.8635}]
+------------------
+[7/4/2026, 9:20:34 PM] [Log] [IPC] .handle("app.sendEvent") result: 
+------------------
+[7/4/2026, 9:20:37 PM] [Log] [IPC] .invoke("window.setTitle") args: [null,true]
+------------------
+[7/4/2026, 9:20:37 PM] [Log] [IPC] .handle("window.setTitle") result: 
+------------------
+[7/4/2026, 9:21:56 PM] [Log] [IPC] .invoke("app.sendEvent") args: ["willSave","D:\\Git\\labs\\Azure-Network\\docs\\03-Centralized-network-security-firewall.md"]
+------------------
+[7/4/2026, 9:21:56 PM] [Log] [IPC] .handle("app.sendEvent") result: 
+------------------
+[7/4/2026, 9:21:56 PM] [Log] [IPC] .invoke("document.setLastSync") args: [1783165916271.6443]
+------------------
+[7/4/2026, 9:21:56 PM] [Log] [IPC] .handle("document.setLastSync") result: 
+------------------
+[7/4/2026, 9:21:56 PM] [Log] [IPC] .invoke("window.setTitle") args: [null,true]
+------------------
+[7/4/2026, 9:21:56 PM] [Log] [IPC] .handle("window.setTitle") result: 
+------------------
+[7/4/2026, 9:21:56 PM] [Log] [IPC] .invoke("window.setTitle") args: [null,false]
+------------------
+[7/4/2026, 9:21:56 PM] [Log] [IPC] .handle("window.setTitle") result: 
+------------------
+[7/4/2026, 9:21:56 PM] [Log] [IPC] .invoke("app.sendEvent") args: ["didSave",{"path":"D:\\Git\\labs\\Azure-Network\\docs\\03-Centralized-network-security-firewall.md","summary":"# 3. Centralized Network Security (Firewall)\n\n## Overview\n\nAfter establishing the Hub-Spoke network topology, the next step is to centralize network traffic control and security configuration using **","lastModifiedDate":1783165916271.6443}]
+------------------
+[7/4/2026, 9:21:56 PM] [Log] [IPC] .handle("app.sendEvent") result: 
+------------------
+[7/4/2026, 9:22:16 PM] [Log] [IPC] .invoke("window.setTitle") args: [null,true]
+------------------
+[7/4/2026, 9:22:16 PM] [Log] [IPC] .handle("window.setTitle") result: 
+------------------
+[7/4/2026, 9:22:53 PM] [Log] [IPC] .invoke("window.updateMenuForIsAlwaysOnTop") args: []
+------------------
+[7/4/2026, 9:22:53 PM] [Log] [IPC] .handle("window.updateMenuForIsAlwaysOnTop") result: 
+------------------
+[7/4/2026, 9:22:53 PM] [Log] [IPC] .invoke("menu.updateCustomZoom") args: []
+------------------
+[7/4/2026, 9:22:53 PM] [Log] [IPC] .handle("menu.updateCustomZoom") result: 
+------------------
+[7/4/2026, 9:22:55 PM] [Log] [IPC] .invoke("app.sendEvent") args: ["willSave","D:\\Git\\labs\\Azure-Network\\docs\\03-Centralized-network-security-firewall.md"]
+------------------
+[7/4/2026, 9:22:55 PM] [Log] [IPC] .handle("app.sendEvent") result: 
+------------------
+[7/4/2026, 9:22:55 PM] [Log] [IPC] .invoke("document.setLastSync") args: [1783165975007.952]
+------------------
+[7/4/2026, 9:22:55 PM] [Log] [IPC] .handle("document.setLastSync") result: 
+------------------
+[7/4/2026, 9:22:55 PM] [Log] [IPC] .invoke("window.setTitle") args: [null,true]
+------------------
+[7/4/2026, 9:22:55 PM] [Log] [IPC] .handle("window.setTitle") result: 
+------------------
+[7/4/2026, 9:22:55 PM] [Log] [IPC] .invoke("window.setTitle") args: [null,false]
+------------------
+[7/4/2026, 9:22:55 PM] [Log] [IPC] .handle("window.setTitle") result: 
+------------------
+[7/4/2026, 9:22:55 PM] [Log] [IPC] .invoke("app.sendEvent") args: ["didSave",{"path":"D:\\Git\\labs\\Azure-Network\\docs\\03-Centralized-network-security-firewall.md","summary":"# 3. Centralized Network Security (Firewall)\n\n## Overview\n\nAfter establishing the Hub-Spoke network topology, the next step is to centralize network traffic control and security configuration using **","lastModifiedDate":1783165975007.952}]
+------------------
+[7/4/2026, 9:22:55 PM] [Log] [IPC] .handle("app.sendEvent") result: 
+------------------
+[7/4/2026, 9:23:01 PM] [Log] [IPC] .invoke("window.setTitle") args: [null,true]
+------------------
+[7/4/2026, 9:23:01 PM] [Log] [IPC] .handle("window.setTitle") result: 
+------------------
+[7/4/2026, 9:23:02 PM] [Log] [IPC] .invoke("app.sendEvent") args: ["willSave","D:\\Git\\labs\\Azure-Network\\docs\\03-Centralized-network-security-firewall.md"]
+------------------
+[7/4/2026, 9:23:02 PM] [Log] [IPC] .handle("app.sendEvent") result: 
+------------------
+[7/4/2026, 9:23:02 PM] [Log] [IPC] .invoke("document.setLastSync") args: [1783165982981.9253]
+------------------
+[7/4/2026, 9:23:02 PM] [Log] [IPC] .handle("document.setLastSync") result: 
+------------------
+[7/4/2026, 9:23:02 PM] [Log] [IPC] .invoke("window.setTitle") args: [null,true]
+------------------
+[7/4/2026, 9:23:02 PM] [Log] [IPC] .handle("window.setTitle") result: 
+------------------
+[7/4/2026, 9:23:02 PM] [Log] [IPC] .invoke("window.setTitle") args: [null,false]
+------------------
+[7/4/2026, 9:23:02 PM] [Log] [IPC] .handle("window.setTitle") result: 
+------------------
+[7/4/2026, 9:23:02 PM] [Log] [IPC] .invoke("app.sendEvent") args: ["didSave",{"path":"D:\\Git\\labs\\Azure-Network\\docs\\03-Centralized-network-security-firewall.md","summary":"# 3. Centralized Network Security (Firewall)\n\n## Overview\n\nAfter establishing the Hub-Spoke network topology, the next step is to centralize network traffic control and security configuration using **","lastModifiedDate":1783165982981.9253}]
+------------------
+[7/4/2026, 9:23:02 PM] [Log] [IPC] .handle("app.sendEvent") result: 
+------------------
+[7/4/2026, 9:23:08 PM] [Log] [IPC] .invoke("app.sendEvent") args: ["willSave","D:\\Git\\labs\\Azure-Network\\docs\\03-Centralized-network-security-firewall.md"]
+------------------
+[7/4/2026, 9:23:08 PM] [Log] [IPC] .handle("app.sendEvent") result: 
+------------------
+[7/4/2026, 9:23:08 PM] [Log] [IPC] .invoke("document.setLastSync") args: [1783165988001.7273]
+------------------
+[7/4/2026, 9:23:08 PM] [Log] [IPC] .handle("document.setLastSync") result: 
+------------------
+[7/4/2026, 9:23:08 PM] [Log] [IPC] .invoke("window.setTitle") args: [null,false]
+------------------
+[7/4/2026, 9:23:08 PM] [Log] [IPC] .handle("window.setTitle") result: 
+------------------
+[7/4/2026, 9:23:08 PM] [Log] [IPC] .invoke("app.sendEvent") args: ["didSave",{"path":"D:\\Git\\labs\\Azure-Network\\docs\\03-Centralized-network-security-firewall.md","summary":"# 3. Centralized Network Security (Firewall)\n\n## Overview\n\nAfter establishing the Hub-Spoke network topology, the next step is to centralize network traffic control and security configuration using **","lastModifiedDate":1783165988001.7273}]
+------------------
+[7/4/2026, 9:23:08 PM] [Log] [IPC] .handle("app.sendEvent") result: 
+------------------
