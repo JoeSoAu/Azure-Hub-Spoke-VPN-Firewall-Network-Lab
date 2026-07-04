@@ -293,13 +293,11 @@ After the firewall, UDR and VNet peering configurations above are completed, we 
   
   <img title="" src="../screenshots/39cmd7.jpg" alt="" width="90%" data-align="center">
   
-  
-  
   <img title="" src="../screenshots/39cmd4.jpg" alt="" width="90%" data-align="center">
 
-​	<img title="" src="../screenshots/39cmd5.jpg" alt="" width="90%" data-align="center">
-
-
+  <img title="" src="../screenshots/39cmd5.jpg" alt="" width="80%" data-align="center">
+  
+  The result is: the HR Linux VM can access Internet, but any traffic to Finance failed. That means the inter-spoke traffic from HR Vnet to Finance Vnet are blocked. the objectives have been accomplished.
 
 ------------------------------------------------------------------------
 
