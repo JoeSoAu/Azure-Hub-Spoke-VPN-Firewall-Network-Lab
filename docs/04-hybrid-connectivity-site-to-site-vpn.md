@@ -138,7 +138,7 @@ After the basic configuration of the on-prem endpoint, we can create the Local N
 
 > <img title="" src="../screenshots/43ip2.jpg" alt="" width="50%" data-align="center">
 
-
+<img title="" src="../screenshots/43ipo.jpg" alt="" width="50%" data-align="center">
 
 2) ### Create the Local Virtual Gateway
 
