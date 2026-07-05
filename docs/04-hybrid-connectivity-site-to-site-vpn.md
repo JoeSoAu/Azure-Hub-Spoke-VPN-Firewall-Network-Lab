@@ -132,7 +132,7 @@ After the basic configuration of the on-prem endpoint, we can create the Local N
 
 ​	(1) from an on-prem computer, go to https://whatismyipaddress.com/, it will show your public IP address
 
-> <img title="" src="../screenshots/43ip1.jpg" alt="" width="70%" data-align="center">
+> <img title="" src="../screenshots/43ip1.jpg" alt="" width="80%" data-align="center">
 
 ​	（2）check the public IP of the on-prem gateway router
 
