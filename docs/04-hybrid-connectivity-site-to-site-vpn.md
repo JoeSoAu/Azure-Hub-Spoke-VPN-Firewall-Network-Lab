@@ -287,11 +287,13 @@ Next Hop Type: Virtual Netwrok gateway
 
 > <img title="" src="../screenshots/44route.jpg" alt="" width="50%" data-align="center">
 
-3. ### Test the VPN connection from Azure hub VNet and on-prem VPN server
 
-   After the connection is made, an IPSec VPN Tunnel is established between the Azure Hub and on-prem RRAS Server. We did the testing of the connection as following
 
-   
+After the route to the on-premises network is in place, the Hub VM can successfully ping the on-premises VPN server.
+
+<img title="" src="../screenshots/44ping2.jpg" alt="" width="80%" data-align="center">
+
+
 
 
 ## 4.9 Configure Gateway Transit for Spoke Vnet
