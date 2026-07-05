@@ -273,7 +273,7 @@ Ping 10.0.1.4
 
 we will find it failed to go through
 
-><img title="" src="../screenshots/44ping1.jpg" alt="" width="70%" data-align="center">
+><img title="" src="../screenshots/44ping1.jpg" alt="" width="50%" data-align="center">
 
 That is because the route table in the hub subnet is not yet configured for the route to the on-prem network through the VPN tunnel. As an result, VM in the Hub did not know where to send the response of the ping from on-prem server. we need to add a route in the route table the Hub mgmt subnet, where the VM is located. 
 
@@ -285,7 +285,7 @@ Next Hop Type: Virtual Netwrok gateway
 
 
 
-> <img title="" src="../screenshots/44route.jpg" alt="" width="60%" data-align="center">
+> <img title="" src="../screenshots/44route.jpg" alt="" width="50%" data-align="center">
 
 3. ### Test the VPN connection from Azure hub VNet and on-prem VPN server
 
