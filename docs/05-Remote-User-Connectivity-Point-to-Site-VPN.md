@@ -8,7 +8,7 @@ Unlike Site-to-Site VPN, which connects an entire on-premises network to Azure, 
 
 In this lab, the Point-to-Site VPN connection uses the **OpenVPN protocol**, which is based on **SSL/TLS** **encryption**. OpenVPN is supported by **Azure VPN Client** and enables Microsoft **Entra ID authentication** for secure user access.
 
-> <img title="" src="../images/arch91.jpg" alt="" width="70%" data-align="center">
+> <img title="" src="../images/arch91.jpg" alt="" width="75%" data-align="center">
 
 ### Why OpenVPN?
 
@@ -50,7 +50,7 @@ The client side requires:
 Since the Azure Virtual Network Gateway has already been deployed, only the Point-to-Site VPN settings need to be configured.
 
 ```
-Enter the Virtual network gateway we created -> Point to Site Configuration
+Enter the Virtual network gateway we created -> Point to Site Configuration -> configure Now
 ```
 
 > <img title="" src="../screenshots/p2s1.jpg" alt="" width="70%" data-align="center">
