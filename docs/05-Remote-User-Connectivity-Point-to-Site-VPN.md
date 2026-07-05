@@ -95,15 +95,15 @@ In the lab, we use Windows 11 as the Point-to-Site VPN client.
 
 The Client profile is a XML file that store the parameters of the point-to-site client : **azurevpnconfig.xml**
 
-> <img title="" src="../screenshots/p2s3.jpg" alt="" width="60%" data-align="center">
+><img title="" src="../screenshots/p2s3.jpg" alt="" width="60%" data-align="center">
 
 
 
 ### (3) Run the Azure VPN client in the Windows client computer, then import the client profile
 
-<img title="" src="../screenshots/p2s5.jpg" alt="" width="40%" data-align="center">
+><img title="" src="../screenshots/p2s5.jpg" alt="" width="40%" data-align="center">
 
-<img title="" src="../screenshots/p2s6.jpg" alt="" width="40%" data-align="center">
+><img title="" src="../screenshots/p2s6.jpg" alt="" width="40%" data-align="center">
 
 ```
 Click Connect
@@ -115,7 +115,7 @@ Click Connect
 
 - ### Sign in using Microsoft Entra ID.
 
-  ><img title="" src="../screenshots/p2s8.jpg" alt="" width="40%" data-align="center">
+  ><img title="" src="../screenshots/p2s8.jpg" alt="" width="50%" data-align="center">
 
   
 
@@ -129,21 +129,19 @@ Click Connect
 
 ## 5.5 Validation
 
-After the VPN connection is established:
+After the VPN connection is established, we should verify:
 
-Verify:
+- ### VPN status is **Connected**
 
-- ### VPN status is **Connected**.
-
-  In the Azure Virtual Network Gateway blade, 
+  <img title="" src="../screenshots/p2s9.jpg" alt="" width="50%" data-align="center">
 
 - ### The client receives an IP address from the configured VPN address pool.
 
-  
+  <img title="" src="../screenshots/p2s11.jpg" alt="" width="70%" data-align="center">
 
 - ### Azure virtual machines can be reached.
 
-  
+  <img title="" src="../screenshots/p2s10.jpg" alt="" width="70%" data-align="center">
 
 > **Insert:** Validation screenshots.
 
