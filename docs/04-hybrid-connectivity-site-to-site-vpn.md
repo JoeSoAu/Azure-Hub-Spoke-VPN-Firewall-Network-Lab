@@ -304,7 +304,17 @@ ping 192.168.1.10 （On-prem VPN Server)
 
 ## 4.9 Configure Gateway Transit for Spoke Vnet
 
-Enable Gateway Transit so both spoke VNets can use the Hub VPN Gateway.
+Now, the VPN connection between hub vnet and on-prem RRAS server is established successfully.
+
+However, Spoke Vnets are yet to be configured to use the VPN gateway and VPN tunnel in the hub Vnet.
+
+if we ping on-prem server from the finance vnet VM, it will fail
+
+> <img title="" src="../screenshots/44ping3.jpg" alt="" data-align="center">
+
+In order for the spoke Vnets to use the VPN tunnels in the hub, the first step is enable **Gateway Transit** in each hub-spoke Peering.
+
+
 
 Hub: - Allow gateway transit
 
