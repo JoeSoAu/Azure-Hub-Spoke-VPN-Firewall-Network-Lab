@@ -8,7 +8,7 @@ Unlike Site-to-Site VPN, which connects an entire on-premises network to Azure, 
 
 In this lab, the Point-to-Site VPN connection uses the **OpenVPN protocol**, which is based on **SSL/TLS** **encryption**. OpenVPN is supported by **Azure VPN Client** and enables Microsoft **Entra ID authentication** for secure user access.
 
-> <img src="../images/arch91" width="70%" />
+> <img title="" src="../images/arch91.jpg" alt="" width="80%" data-align="center">
 
 ### Why OpenVPN?
 
