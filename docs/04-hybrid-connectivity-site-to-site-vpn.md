@@ -71,7 +71,7 @@ The first step to build the site-to-site VPN is to create the Azure Virtual Netw
 
 ​		**Enable Active-Active Mode**: Disabled
 
-​		**Public Ip Address**: create a new one -> pip-vpn1
+​		**Public Ip Address**: create a new one -> **pip-vpn1: 20.227.109.199**
 
 ### Active-Active Mode VS Active-Standby Mode
 
@@ -132,7 +132,7 @@ After the basic configuration of the on-prem endpoint, we can create the Local N
 
 ​	(1) from an on-prem computer, go to https://whatismyipaddress.com/, it will show your public IP address
 
-> <img title="" src="../screenshots/43ip1.jpg" alt="" width="80%" data-align="center">
+> <img title="" src="../screenshots/43ip1.jpg" alt="" />
 
 ​	（2）check the public IP of the on-prem gateway router
 
@@ -148,25 +148,13 @@ Azure Portal -> Hybrid Connectivity -> Local Gateway -> create
 
 input the **on-prem public address** and on-prem **private address space**
 
+
+
 > <img title="" src="../screenshots/43local.jpg" alt="" width="50%" data-align="center">
 
 ------------------------------------------------------------------------
 
-## 4.6 Configure Gateway Transit
 
-Enable Gateway Transit so both spoke VNets can use the Hub VPN Gateway.
-
-Hub: - Allow gateway transit
-
-Spokes: - Use remote gateway
-
-> **Insert:** Gateway Transit screenshots.
-
-------------------------------------------------------------------------
-
-> 
-
-------------------------------------------------------------------------
 
 ## 4.8 Create VPN Connection
 
@@ -180,7 +168,17 @@ Network Gateway.
 
 The same PSK must also be configured on the RRAS VPN router.
 
-> **Insert:** VPN Connection screenshot.
+## 4.6 Configure Gateway Transit
+
+Enable Gateway Transit so both spoke VNets can use the Hub VPN Gateway.
+
+Hub: - Allow gateway transit
+
+Spokes: - Use remote gateway
+
+> **Insert:** Gateway Transit screenshots.
+
+
 
 ------------------------------------------------------------------------
 
