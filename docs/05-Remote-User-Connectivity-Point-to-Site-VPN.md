@@ -49,20 +49,21 @@ The client side requires:
 
 ## 5.2 Azure Side Configuration
 
-After authentication, the client joins the Azure virtual network and can securely access resources in the Hub and spoke VNets.
-
 Since the Azure Virtual Network Gateway has already been deployed, only the Point-to-Site VPN settings need to be configured.
 
-Configure the following settings:
+### (1) Enable Point-to-Site VPN on the existing Virtual Network Gateway
 
-- VPN client address pool
+
+
+(2) VPN client address pool
+
+
+
 - Tunnel type: **OpenVPN**
 - Authentication type: **Microsoft Entra ID**
 - Microsoft Entra Tenant
 - Audience
 - Issuer
-
-> **Insert:** Point-to-Site configuration screenshot.
 
 ---
 
