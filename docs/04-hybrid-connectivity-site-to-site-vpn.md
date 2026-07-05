@@ -240,11 +240,24 @@ Right click the interface -> properties ->security
    Right click Demand Dial Interface -> Connect
    ```
 
+From the RRAS Admin tool, we can see the vpn is connected
+
+><img title="" src="../screenshots/44connection2.jpg" alt="" width="90%" data-align="center">
 
 
-​	From the RRAS Admin tool, we can see the vpn is connected
+```
+RRAS -> Server -> IPv4 -> Static Route
+```
+We can see 3 routes have been added to the route table, which represent the 3 VNets of Azure Cloud Endpoint
 
-​	><img title="" src="../screenshots/44connection2.jpg" alt="" width="80%" data-align="center">
+```
+10.0.0.0/16 → Hub
+10.1.0.0/16 → HR Spoke
+10.2.0.0/16 → Finance Spoke
+```
+
+
+><img title="" src="../screenshots/44connection3.jpg" alt="" width="90%" data-align="center">
 
 3. ### Test the VPN connection from Azure hub VNet and on-prem VPN server
 
