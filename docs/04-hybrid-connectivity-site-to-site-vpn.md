@@ -158,6 +158,18 @@ input the **on-prem public address** and on-prem **private address space**
 
 ## 4.8 Create VPN Connection
 
+Now, Both Azure cloud and on-prem endpoint infrastructures are prepared, we can create a IPsec Connection based on them.
+
+1) ### On the Azure Cloud Endpoint
+
+   ```
+   Under the virtual Network Gateway blade -> connections -> create
+   ```
+
+
+
+> <img title="" src="../screenshots/44connection.jpg" alt="" width="70%" data-align="center">
+
 Create the VPN connection between the Azure VPN Gateway and the Local
 Network Gateway.
 
