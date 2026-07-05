@@ -106,15 +106,15 @@ The following ports are forwarded:
 Server Manager → Add roles and features→ Role-based or feature-based installation→ Remote Access→ DirectAccess and VPN (RAS) + Routing→ Install
 ```
 
-> <img title="" src="../screenshots/42rras.jpg" alt="" width="70%" data-align="center">
+> <img title="" src="../screenshots/42rras.jpg" alt="" width="60%" data-align="center">
 
 
 
-2) Configure On-prem Internet Router
+2) ### Configure On-prem Internet Router
 
    Configure virtual Server （Port forwarding) in the on-prem Internet TP-Link Router
 
-   > <img title="" src="../screenshots/42router.jpg" alt="" width="90%" data-align="center">
+   > <img title="" src="../screenshots/42router.jpg" alt="" width="100%" data-align="center">
 
 > **Insert:** RRAS configuration screenshots.
 
