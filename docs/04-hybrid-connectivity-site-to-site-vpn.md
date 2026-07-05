@@ -374,27 +374,18 @@ route add 10.0.0.0 mask 255.255.0.0 192.168.1.10 -p
 route add 10.1.0.0 mask 255.255.0.0 192.168.1.10 -p
 route add 10.2.0.0 mask 255.255.0.0 192.168.1.10 -p
 ```
+
+
+> <img title="" src="../screenshots/44client.jpg" alt="" width="80%" data-align="center">
+
 After these routes are added, the Windows 11 client can send Azure-bound traffic to the RRAS server, and RRAS forwards the traffic through the IPsec VPN tunnel to the Azure VNets.
 
 > <img title="" src="../screenshots/44ping6.jpg" alt="" width="50%" data-align="center">
-
-## 4.11 Validation
-
-Verify:
-
--   VPN tunnel status is Connected.
-    
--   On-premises can reach Azure.
-    
--   Finance and HR spokes can reach the on-premises network.
-    
--   Gateway Transit works correctly.
-    
 
 
 
 ------------------------------------------------------------------------
 
-## 4.12 Summary
+## 4.11 Summary
 
 A Site-to-Site VPN has been established between the on-premises network and Azure using IPsec. The VPN Gateway is centralized in the Hub VNet, while Gateway Transit allows both spoke VNets to share the same VPN connection.
