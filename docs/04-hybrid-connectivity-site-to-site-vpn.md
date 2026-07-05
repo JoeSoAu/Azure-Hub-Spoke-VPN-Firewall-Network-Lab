@@ -37,7 +37,7 @@ The **Azure Cloud** environment consists of:
 
 ## 4.4 Network Diagram
 
-> <img src="../images/arch9.jpg" width="80%" />
+> <img src="../images/arch9.jpg" width="100%" />
 
 ------------------------------------------------------------------------
 
