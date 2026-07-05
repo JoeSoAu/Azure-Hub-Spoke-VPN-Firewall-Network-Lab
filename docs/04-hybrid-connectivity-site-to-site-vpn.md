@@ -132,11 +132,11 @@ After the basic configuration of the on-prem endpoint, we can create the Local N
 
 ​	(1) from an on-prem computer, go to https://whatismyipaddress.com/, it will show your public IP
 
-> <img title="" src="../screenshots/43ip.jpg" alt="" width="60%" data-align="center">
+> <img title="" src="../screenshots/43ip.jpg" alt="" width="70%" data-align="center">
 
 ​	（2）check the public IP of the on-prem gateway router
 
-> <img title="" src="../screenshots/43ip2.jpg" alt="" width="60%" data-align="center">
+> <img title="" src="../screenshots/43ip2.jpg" alt="" width="50%" data-align="center">
 
 
 
@@ -148,7 +148,7 @@ Azure Portal -> Hybrid Connectivity -> Local Gateway -> create
 
 input the **on-prem public address** and on-prem **private address space**
 
-> <img title="" src="../screenshots/43local.jpg" alt="" width="60%" data-align="center">
+> <img title="" src="../screenshots/43local.jpg" alt="" width="50%" data-align="center">
 
 ------------------------------------------------------------------------
 
