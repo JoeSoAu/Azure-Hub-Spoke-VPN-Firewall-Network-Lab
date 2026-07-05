@@ -95,27 +95,27 @@ In the lab, we use Windows 11 as the Point-to-Site VPN client.
 
 The Client profile is a XML file that store the parameters of the point-to-site client : **azurevpnconfig.xml**
 
-> <img title="" src="../screenshots/p2s3.jpg" alt="" width="70%" data-align="center">
+> <img title="" src="../screenshots/p2s3.jpg" alt="" width="60%" data-align="center">
 
 
 
 ### (3) Run the Azure VPN client in the Windows client computer, then import the client profile
 
-<img title="" src="../screenshots/p2s5.jpg" alt="" width="50%" data-align="center">
+<img title="" src="../screenshots/p2s5.jpg" alt="" width="40%" data-align="center">
 
-<img title="" src="../screenshots/p2s6.jpg" alt="" width="50%" data-align="center">
+<img title="" src="../screenshots/p2s6.jpg" alt="" width="40%" data-align="center">
 
 ```
 Click Connect
 ```
 
-<img title="" src="../screenshots/p2s7.jpg" alt="" width="60%" data-align="center">
+><img title="" src="../screenshots/p2s7.jpg" alt="" width="50%" data-align="center">
 
 
 
 - ### Sign in using Microsoft Entra ID.
 
-  <img title="" src="../screenshots/p2s8.jpg" alt="" width="50%" data-align="center">
+  ><img title="" src="../screenshots/p2s8.jpg" alt="" width="40%" data-align="center">
 
   
 
@@ -123,7 +123,7 @@ Click Connect
 
   When Connected shows on the VPN Client windows, it means the Point-to-Site VPN connection is established.
 
-  <img title="" src="../screenshots/p2s9.jpg" alt="" width="60%" data-align="center">
+><img title="" src="../screenshots/p2s9.jpg" alt="" width="50%" data-align="center">
 
 ---
 
