@@ -35,8 +35,6 @@ The Azure side requires the following additional configuration:
 - Configure the **OpenVPN tunnel protocol**.
 - Configure Microsoft **Entra ID authentication**.
 
-
-
 ### \- Client side
 
 The client side requires:
@@ -50,6 +48,12 @@ The client side requires:
 ## 5.2 Azure Side Configuration
 
 Since the Azure Virtual Network Gateway has already been deployed, only the Point-to-Site VPN settings need to be configured.
+
+```
+Enter the Virtual network gateway we created -> Point to Site Configuration
+```
+
+> <img title="" src="../screenshots/p2s1.jpg" alt="" width="70%" data-align="center">
 
 ### (1) Enable Point-to-Site VPN on the existing Virtual Network Gateway
 
