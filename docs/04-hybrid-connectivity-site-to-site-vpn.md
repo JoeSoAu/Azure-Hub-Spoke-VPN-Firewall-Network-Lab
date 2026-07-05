@@ -55,7 +55,11 @@ The first step to build the site-to-site VPN is to create the Azure Virtual Netw
 
 2) ### Create an Azure Gateway
 
+   ```
    Azure Portal -> Hybrid Connectivity -> VPN gateway -> create
+   ```
+
+   
 
    > <img title="" src="../screenshots/41gateway1.jpg" alt="" width="60%" data-align="center">
 
@@ -81,7 +85,7 @@ Due to the Azure trial subscription being limited to a single public IP address 
 
 ------------------------------------------------------------------------
 
-## 4.5 Prepare on-prem endpoint
+## 4.6 Prepare on-prem endpoint
 
 - ### On-premises Network Design
 
@@ -116,7 +120,35 @@ Server Manager → Add roles and features→ Role-based or feature-based install
 
    > <img title="" src="../screenshots/42router.jpg" alt="" width="100%" data-align="center">
 
-> **Insert:** RRAS configuration screenshots.
+
+
+## 4.7 Create Local Network Gateway
+
+After the basic configuration of the on-prem endpoint, we can create the Local Network Gateway representing the on-premises VPN enpoint in Azure endpoint, which is required in setting up the site-to-site VPN Connection.
+
+1) ### Check the on-prem public IP 
+
+​	We need the on-prem endpoint public IP to create the Local Network Gateway. To get the public IP by either way of following 
+
+​	(1) from an on-prem computer, go to https://whatismyipaddress.com/, it will show your public IP
+
+> <img title="" src="../screenshots/43ip.jpg" alt="" width="60%" data-align="center">
+
+​	（2）check the public IP of the on-prem gateway router
+
+> <img title="" src="../screenshots/43ip2.jpg" alt="" width="60%" data-align="center">
+
+
+
+2) ### Create the Local Virtual Gateway
+
+```	
+Azure Portal -> Hybrid Connectivity -> Local Gateway -> create
+```
+
+input the **on-prem public address** and on-prem **private address space**
+
+> <img title="" src="../screenshots/43local.jpg" alt="" width="60%" data-align="center">
 
 ------------------------------------------------------------------------
 
@@ -132,15 +164,7 @@ Spokes: - Use remote gateway
 
 ------------------------------------------------------------------------
 
-## 4.7 Create Local Network Gateway
-
-Create the Local Network Gateway representing the on-premises VPN
-endpoint.
-
--   Public IP address
--   On-premises address space
-
-> **Insert:** Local Network Gateway screenshot.
+> 
 
 ------------------------------------------------------------------------
 
