@@ -1,4 +1,4 @@
-# 5. Point-to-Site VPN
+# 5. Remote User connectivity (Point-to-Site VPN)
 
 ## 5.1 Overview
 
@@ -26,9 +26,9 @@ We select **OpenVPN** because it offers the best balance of security, compatibil
 
 ### Configure Point-to-Site VPN
 
-### \- Azure side
+### \- Azure Gateway side
 
-The Azure side requires the following additional configuration:
+The Azure Gateway side requires the following additional configuration:
 
 - Enable Point-to-Site VPN on the existing Virtual Network Gateway.
 - Configure the VPN client **address pool**.
@@ -45,7 +45,7 @@ The client side requires:
 
 ---
 
-## 5.2 Azure Side Configuration
+## 5.2 Azure Gateway Side Configuration
 
 Since the Azure Virtual Network Gateway has already been deployed, only the Point-to-Site VPN settings need to be configured.
 
@@ -55,19 +55,17 @@ Enter the Virtual network gateway we created -> Point to Site Configuration -> c
 
 > <img title="" src="../screenshots/p2s1.jpg" alt="" width="70%" data-align="center">
 
-### (1) Enable Point-to-Site VPN on the existing Virtual Network Gateway
-
-
-
-(2) VPN client address pool
-
-
+- Address pool: 172.16. 1.0/
 
 - Tunnel type: **OpenVPN**
 - Authentication type: **Microsoft Entra ID**
 - Microsoft Entra Tenant
 - Audience
 - Issuer
+
+
+
+> <img title="" src="../screenshots/p2s2.jpg" alt="" width="70%" data-align="center">
 
 ---
 
