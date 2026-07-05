@@ -130,7 +130,9 @@ After the basic configuration of the on-prem endpoint, we can create the Local N
 
 ​	We need the on-prem endpoint public IP to create the Local Network Gateway. To get the public IP by either way of following 
 
-​	(1) from an on-prem computer, go to https://whatismyipaddress.com/, it will show your public IP
+​	(1) from an on-prem computer, go to https://whatismyipaddress.com/, it will show your public IP address
+
+
 
 > <img title="" src="../screenshots/43ip1.jpg" alt="" width="70%" data-align="center">
 
