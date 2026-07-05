@@ -289,7 +289,13 @@ Next Hop Type: Virtual Netwrok gateway
 
 
 
-After the route to the on-premises network is in place, the Hub VM can successfully ping the on-premises VPN server.
+After the route to the on-premises network is in place, the Hub VM can successfully ping the on-premises VPN server: from hub VM
+
+```
+ping 192.168.1.10 （On-prem VPN Server)
+```
+
+
 
 <img title="" src="../screenshots/44ping2.jpg" alt="" data-align="center">
 
