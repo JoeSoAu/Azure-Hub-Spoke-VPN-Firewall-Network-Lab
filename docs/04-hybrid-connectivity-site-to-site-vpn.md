@@ -259,20 +259,26 @@ We can see 3 routes have been added to the route table, which represent the 3 VN
 
 ><img title="" src="../screenshots/44connection3.jpg" alt="" width="90%" data-align="center">
 
-3. ### Configure Route table of Hub Vnet of Azure end-point
 
-   Up to this point, the VPN tunnel is established between On-prem RRAS Server and Azure VPN gateway in the Hub Vnet.
 
-   However, if we ping the VM in the Hub VNet from the on-prem RRAS server
-   
-   ```
-   Ping 10.0.1.4
-   ```
-   
-   we will find it failed to go through
-   
-   ><img title="" src="../screenshots/44ping1.jpg" alt="" width="70%" data-align="center">
-   
+## 4.9 Configure Route table of Hub Vnet of Azure end-point
+
+Up to this point, the VPN tunnel is established between On-prem RRAS Server and Azure VPN gateway in the Hub Vnet.
+
+However, if we ping the VM in the Hub VNet from the on-prem RRAS server
+
+```
+Ping 10.0.1.4
+```
+
+we will find it failed to go through
+
+><img title="" src="../screenshots/44ping1.jpg" alt="" width="70%" data-align="center">
+
+That is because the route table in the hub subnet is not yet configured for the route to the on-prem network through the VPN tunnel. As an result, VM in the Hub did not know where to send the response of the ping from on-prem server. we need to add a route in the route table the Hub mgmt subnet, where the VM is located. 
+
+> <img title="" src="../screenshots/44route.jpg" alt="" width="60%" data-align="center">
+
 3. ### Test the VPN connection from Azure hub VNet and on-prem VPN server
 
    After the connection is made, an IPSec VPN Tunnel is established between the Azure Hub and on-prem RRAS Server. We did the testing of the connection as following
