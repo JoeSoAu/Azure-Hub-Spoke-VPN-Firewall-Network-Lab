@@ -30,7 +30,7 @@ This lab demonstrates the design and implementation of a compact modern enterpri
 | Document                                                     | Description                                         |
 | ------------------------------------------------------------ | --------------------------------------------------- |
 | [01 - Overview and Design](docs/01-Overview-and-Desgin.md)   | Network design and VNet deployment                  |
-| [02 - Hub-Spoke Virtual Networking](docs/02-Hub-Spoke-Virutal-Network.md) | Preparing Hub-Spoke Network                         |
+| [02 - Hub-Spoke Virtual Networking](docs/02-Hub-Spoke-Virutal-Network.md) | Preparing Hub-Spoke Virtual Networking              |
 | [03 - Centralized Network Security Azure Firewall](docs/03-Centralized-network-security-firewall.md) | Deploy Azure Firewall as central Security Appliance |
 | [04 - Hybrid Connectivity Site-to-site VPN](docs/04-hybrid-connectivity-site-to-site-vpn.md) | Deploy S-S VPN between on-prem and cloud            |
 | [05 - Remote User Connectivity Point-to-site VPN](docs/05-Remote-User-Connectivity-Point-to-Site-VPN.md) | Deploy P-S VPN between remote device and cloud      |

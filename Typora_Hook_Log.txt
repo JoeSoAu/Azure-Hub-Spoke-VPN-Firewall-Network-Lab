@@ -798,3 +798,67 @@ DwIDAQAB
 ------------------
 [7/6/2026, 2:04:21 AM] [Log] [IPC] .handle("app.sendEvent") result: 
 ------------------
+[7/6/2026, 2:05:05 AM] [Log] [IPC] .invoke("window.setInSourceMode") args: [false]
+------------------
+[7/6/2026, 2:05:05 AM] [Log] [IPC] .handle("window.setInSourceMode") result: 
+------------------
+[7/6/2026, 2:05:06 AM] [Log] [IPC] .invoke("window.updateMenuForIsAlwaysOnTop") args: []
+------------------
+[7/6/2026, 2:05:06 AM] [Log] [IPC] .handle("window.updateMenuForIsAlwaysOnTop") result: 
+------------------
+[7/6/2026, 2:05:06 AM] [Log] [IPC] .invoke("menu.updateCustomZoom") args: []
+------------------
+[7/6/2026, 2:05:06 AM] [Log] [IPC] .handle("menu.updateCustomZoom") result: 
+------------------
+[7/6/2026, 2:05:13 AM] [Log] [IPC] .invoke("window.setTitle") args: [null,true]
+------------------
+[7/6/2026, 2:05:13 AM] [Log] [IPC] .handle("window.setTitle") result: 
+------------------
+[7/6/2026, 2:05:24 AM] [Log] [IPC] .invoke("app.sendEvent") args: ["willSave","D:\\Git\\labs\\Azure-Network\\readme.md"]
+------------------
+[7/6/2026, 2:05:24 AM] [Log] [IPC] .handle("app.sendEvent") result: 
+------------------
+[7/6/2026, 2:05:24 AM] [Log] [IPC] .invoke("document.setLastSync") args: [1783269324185.3945]
+------------------
+[7/6/2026, 2:05:24 AM] [Log] [IPC] .handle("document.setLastSync") result: 
+------------------
+[7/6/2026, 2:05:24 AM] [Log] [IPC] .invoke("window.setTitle") args: [null,true]
+------------------
+[7/6/2026, 2:05:24 AM] [Log] [IPC] .handle("window.setTitle") result: 
+------------------
+[7/6/2026, 2:05:24 AM] [Log] [IPC] .invoke("window.setTitle") args: [null,false]
+------------------
+[7/6/2026, 2:05:24 AM] [Log] [IPC] .handle("window.setTitle") result: 
+------------------
+[7/6/2026, 2:05:24 AM] [Log] [IPC] .invoke("app.sendEvent") args: ["didSave",{"path":"D:\\Git\\labs\\Azure-Network\\readme.md","summary":"# Azure Hub-Spoke VPN Firewall Network-Lab\r\n\r\n## Overview\r\n\r\nThis lab demonstrates the design and implementation of a compact modern enterprise Azure Hub-Spoke cloud network using the following Azure ","lastModifiedDate":1783269324185.3945}]
+------------------
+[7/6/2026, 2:05:24 AM] [Log] [IPC] .handle("app.sendEvent") result: 
+------------------
+[7/6/2026, 2:05:28 AM] [Log] [IPC] .invoke("window.setTitle") args: [null,true]
+------------------
+[7/6/2026, 2:05:28 AM] [Log] [IPC] .handle("window.setTitle") result: 
+------------------
+[7/6/2026, 2:05:31 AM] [Log] [IPC] .invoke("app.sendEvent") args: ["willSave","D:\\Git\\labs\\Azure-Network\\readme.md"]
+------------------
+[7/6/2026, 2:05:31 AM] [Log] [IPC] .handle("app.sendEvent") result: 
+------------------
+[7/6/2026, 2:05:31 AM] [Log] [IPC] .invoke("document.setLastSync") args: [1783269331195.8684]
+------------------
+[7/6/2026, 2:05:31 AM] [Log] [IPC] .handle("document.setLastSync") result: 
+------------------
+[7/6/2026, 2:05:31 AM] [Log] [IPC] .invoke("window.setTitle") args: [null,true]
+------------------
+[7/6/2026, 2:05:31 AM] [Log] [IPC] .handle("window.setTitle") result: 
+------------------
+[7/6/2026, 2:05:31 AM] [Log] [IPC] .invoke("window.setTitle") args: [null,false]
+------------------
+[7/6/2026, 2:05:31 AM] [Log] [IPC] .handle("window.setTitle") result: 
+------------------
+[7/6/2026, 2:05:31 AM] [Log] [IPC] .invoke("app.sendEvent") args: ["didSave",{"path":"D:\\Git\\labs\\Azure-Network\\readme.md","summary":"# Azure Hub-Spoke VPN Firewall Network-Lab\r\n\r\n## Overview\r\n\r\nThis lab demonstrates the design and implementation of a compact modern enterprise Azure Hub-Spoke cloud network using the following Azure ","lastModifiedDate":1783269331195.8684}]
+------------------
+[7/6/2026, 2:05:31 AM] [Log] [IPC] .handle("app.sendEvent") result: 
+------------------
+[7/6/2026, 2:07:41 AM] [Log] [IPC] .invoke("app.onCloseWin") args: [null]
+------------------
+[7/6/2026, 2:07:41 AM] [Log] [IPC] .handle("app.onCloseWin") result: 
+------------------
