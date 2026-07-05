@@ -376,6 +376,8 @@ route add 10.2.0.0 mask 255.255.0.0 192.168.1.10 -p
 ```
 
 
+
+
 > <img title="" src="../screenshots/44client.jpg" alt="" width="80%" data-align="center">
 
 After these routes are added, the Windows 11 client can send Azure-bound traffic to the RRAS server, and RRAS forwards the traffic through the IPsec VPN tunnel to the Azure VNets.
