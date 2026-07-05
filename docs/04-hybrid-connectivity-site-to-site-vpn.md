@@ -334,30 +334,67 @@ As a result, the spoke VNets automatically learn that the on-premises network (`
 
 Therefore, **no additional User Defined Route (UDR) is required** for the on-premises network on the spoke subnets.
 
+```
+On-premises Network
+    192.168.1.0/24
+          │
+          ▼
+Hub VPN Gateway
+          │
+   (Gateway Transit)
+          │
+          ▼
+Finance Spoke / HR Spoke
+```
+
 
 
 ## 4.10 Network Settings for on-prem computer client
 
-After the previous steps, both 
+After the previous steps, the vpn connection between on-prem VPN server and all Azure cloud Vnets has been established. However, the on-prem client computer is not yet able to use the VPN tunnel to communicate with cloud Vms.
 
-## 4.9 Validation
+From On-prem Client Windows 11
+
+> <img title="" src="../screenshots/44ping4.jpg" alt="" width="50%" data-align="center">
+
+> <img title="" src="../screenshots/44ping5.jpg" alt="" width="50%" data-align="center">
 
 
+
+The reason is hat the Windows 11 client (192.168.1.194) uses the TP-Link router as its default gateway 192.168.1.1, while the VPN tunnel is established on the Windows RRAS Server 192.168.1.10.
+
+In a typical enterprise environment, the VPN endpoint is usually the VPN router or firewall. In that case, client traffic destined for Azure cloud VNets can be routed to the VPN tunnel automatically by the router.
+
+In this lab, the RRAS server is the VPN endpoint, but it is not the default gateway for the Windows 11 client. Therefore, the client not automatically know that Azure VNet address spaces should be sent to the RRAS server.
+
+In this lab, to solve this issue, as a workaround , we added static routes  on the Windows 11 client so that traffic destined for Azure VNets is forwarded to the RRAS server:
+
+```
+route add 10.0.0.0 mask 255.255.0.0 192.168.1.10 -p
+route add 10.1.0.0 mask 255.255.0.0 192.168.1.10 -p
+route add 10.2.0.0 mask 255.255.0.0 192.168.1.10 -p
+```
+After these routes are added, the Windows 11 client can send Azure-bound traffic to the RRAS server, and RRAS forwards the traffic through the IPsec VPN tunnel to the Azure VNets.
+
+> <img title="" src="../screenshots/44ping5.jpg" alt="" width="50%" data-align="center">
+
+## 4.11 Validation
 
 Verify:
 
 -   VPN tunnel status is Connected.
+    
 -   On-premises can reach Azure.
+    
 -   Finance and HR spokes can reach the on-premises network.
+    
 -   Gateway Transit works correctly.
+    
 
-> **Insert:** Validation screenshots.
+
 
 ------------------------------------------------------------------------
 
-## 4.10 Summary
+## 4.12 Summary
 
-A Site-to-Site VPN has been established between the on-premises network
-and Azure using IPsec. The VPN Gateway is centralized in the Hub VNet,
-while Gateway Transit allows both spoke VNets to share the same VPN
-connection.
+A Site-to-Site VPN has been established between the on-premises network and Azure using IPsec. The VPN Gateway is centralized in the Hub VNet, while Gateway Transit allows both spoke VNets to share the same VPN connection.
