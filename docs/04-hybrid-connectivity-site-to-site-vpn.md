@@ -61,13 +61,13 @@ The first step to build the site-to-site VPN is to create the Azure Virtual Netw
 
    Fill in the following parameters
 
-​	Name: VPN-gateway
+​	**Name**: VPN-gateway
 
-​	SKU: VpnGw1AZ
+​	**SKU**: VpnGw1AZ
 
-​	Enable Active-Active Mode: Disabled
+​	**Enable Active-Active Mode**: Disabled
 
-​	Public Ip Address: create a new one -> pip-vpn1
+​	**Public Ip Address**: create a new one -> pip-vpn1
 
 
 
