@@ -137,26 +137,25 @@ After the VPN connection is established, we should verify:
 
 - ### The client receives an IP address from the configured VPN address pool.
 
+  the result of ipconfig command shows, the client computer receives ip address from the VPN Address pool: ***192.168.10.2***
+
   <img title="" src="../screenshots/p2s11.jpg" alt="" width="70%" data-align="center">
 
 - ### Azure virtual machines can be reached.
+  from the client computer, 
 
+  ping the VM in the Azure Hub Vnet ***10.0.1.4***
+
+  ping the VM in the Finance Spoke Vnet ***10.2.1.4***
+  
+  Both ping are successful
+  
   <img title="" src="../screenshots/p2s10.jpg" alt="" width="70%" data-align="center">
-
-> **Insert:** Validation screenshots.
-
----
-
-## 5.6 Design Notes
-
-This lab uses **Microsoft Entra ID authentication** together with **OpenVPN®** to provide secure remote access without managing local VPN user accounts or certificates.
-
-Because the existing Azure Virtual Network Gateway supports both **Site-to-Site** and **Point-to-Site** VPN simultaneously, a single VPN Gateway can provide hybrid connectivity for branch offices while also supporting secure remote access for roaming users.
 
 ---
 
 ## 5.7 Summary
 
-Point-to-Site VPN extends the existing hybrid network by allowing individual users to securely connect to Azure virtual networks from anywhere.
+Point-to-Site VPN extends the existing hybrid network by allowing individual users to securely connect to Azure virtual networks from outside the offices.
 
-By reusing the existing Azure Virtual Network Gateway and integrating Microsoft Entra ID authentication with the OpenVPN® protocol, this solution provides secure, centralized and scalable remote access without requiring a dedicated VPN appliance.
+By reusing the existing Azure Virtual Network Gateway and integrating Microsoft Entra ID authentication with the OpenVPN protocol, this solution provides secure, centralized and remote access without requiring a dedicated VPN router.
