@@ -114,6 +114,14 @@ Server Manager → Add roles and features→ Role-based or feature-based install
 
 
 
+```
+Server Manager → Tools → Routing and Remote Access
+
+Right click Server Name→ Configure and Enable Routing and Remote AccessCustom configuration → Tick LAN routing + Demand-dial connections → Finish → Start service
+```
+
+> <img title="" src="../screenshots/42rras3.jpg" alt="" width="60%" data-align="center">
+
 2) ### Configure On-prem Internet Router
 
    Configure virtual Server （Port forwarding) in the on-prem Internet TP-Link Router
@@ -161,26 +169,91 @@ input the **on-prem public address** and on-prem **private address space**
 Now, Both Azure cloud and on-prem endpoint infrastructures are prepared, we can create a IPsec Connection based on them.
 
 1) ### On the Azure Cloud Endpoint
-
+   Create a VPN Connection
    ```
    Under the virtual Network Gateway blade -> connections -> create
    ```
 
+​	**Connection Name**:  VPN-Gateway
+
+​	**Local Network Gateway**: lng-onprem
+
+​	**Authentication method**: shared Key (PSK)
+
+​	**IKE Protocol**: IKEv2
+
+​	**Shared Key**: joeso30624700	
+
+- in the lab, we used a preshared key for authentication which is still popular in current enterprise environment. 
 
 
-> <img title="" src="../screenshots/44connection.jpg" alt="" width="70%" data-align="center">
 
-Create the VPN connection between the Azure VPN Gateway and the Local
-Network Gateway.
 
--   Connection type: Site-to-Site (IPsec)
--   Virtual Network Gateway
--   Local Network Gateway
--   Shared Key (PSK)
+> <img title="" src="../screenshots/44connection.jpg" alt="" width="80%" data-align="center">
 
-The same PSK must also be configured on the RRAS VPN router.
 
-## 4.6 Configure Gateway Transit
+
+2) ### On-prem Endpoint
+We need to use "**Demand Dial Interface**" from the RRAS Server to create **IPSec VPN connection** 
+
+  ```
+   Open RRAS -> Server Name -> Network Interface
+   
+   → New Demand-dial Interface : Give it a name like Azure-gateway
+  	Connection type: VPN
+  	VPN type: IKEv2
+  	Destination address: 20.227.109.199 (Azure VPN Gate public IP Address)
+  ```
+
+> <img title="" src="../screenshots/44rras1.jpg" alt="" width="60%" data-align="center">
+
+  
+
+Select `Route IP packets on this interface`
+
+> <img title="" src="../screenshots/44rras2.jpg" alt="" width="80%" data-align="center">
+
+Add the private LAN Address spaces of the Azure Endpoint
+
+```
+10.0.0.0/16 → Hub
+10.1.0.0/16 → HR Spoke
+10.2.0.0/16 → Finance Spoke
+```
+
+> <img title="" src="../screenshots/44rras3.jpg" alt="" width="80%" data-align="center">
+
+After creation of the Interface, fill in the Shared Key for the IPsec Connection
+
+```
+Right click the interface -> properties ->security
+-> tick "Use preshared key for authentication": joeso30624700
+-> Type of VPN: IKEv2
+-> Save
+```
+
+
+
+3. ### Do the connection from on-prem
+
+   ```
+   Right click Demand Dial Interface -> Connect
+   ```
+
+
+
+​	From the RRAS Admin tool, we can see the vpn is connected
+
+​	><img title="" src="../screenshots/44connection2.jpg" alt="" width="80%" data-align="center">
+
+3. ### Test the VPN connection from Azure hub VNet and on-prem VPN server
+
+   After the connection is made, an IPSec VPN Tunnel is established between the Azure Hub and on-prem RRAS Server. We did the testing of the connection as following
+
+   
+
+
+## 4.9 Configure Gateway Transit for Spoke Vnet
 
 Enable Gateway Transit so both spoke VNets can use the Hub VPN Gateway.
 
