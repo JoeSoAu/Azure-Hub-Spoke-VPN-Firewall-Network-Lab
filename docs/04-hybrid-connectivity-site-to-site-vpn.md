@@ -45,29 +45,41 @@ The **Azure Cloud** environment consists of:
 
 The first step to build the site-to-site VPN is to create the Azure Virtual Network Gateway in the Hub VNet.
 
-1) Create a Azure Gateway subnet
+1) ### Create a Azure Gateway subnet
 
-​	To deploy an Azure Virtual Network gateway needs a independent subnet. Since we will deploy the gateway in the hub vnet, we create a new subnet in the hub vnet as following:
+​	To deploy an Azure Virtual Network gateway needs a independent subnet. Since we will deploy the 	gateway in the hub vnet, we create a new subnet in the hub vnet as following:
 
-​	Ip address: 10.0.253.0/26
+​	**Ip address**: 10.0.253.0/26
 
-​	subnet type: Virtual network gateway subnet
+​	**Subnet type**: Gateway subnet
 
-2) Create an Azure Gateway
+2) ### Create an Azure Gateway
 
    Azure Portal -> Hybrid Connectivity -> VPN gateway -> create
 
-   <img title="" src="../screenshots/41gateway1.jpg" alt="" width="70%" data-align="center">
+   > <img title="" src="../screenshots/41gateway1.jpg" alt="" width="60%" data-align="center">
 
-3) 
+   Fill in the following parameters
 
--   Gateway type: VPN
--   VPN type: Route-based
--   SKU
--   Public IP
--   GatewaySubnet
+​	Name: VPN-gateway
 
-> **Insert:** Azure VPN Gateway deployment screenshot.
+​	SKU: VpnGw1AZ
+
+​	Enable Active-Active Mode: Disabled
+
+​	Public Ip Address: create a new one -> pip-vpn1
+
+
+
+> ​	<img title="" src="../screenshots/41gateway2.jpg" alt="" width="70%" data-align="center">
+
+
+
+- ### Active-Active Mode VS Active-Standby Mode
+
+  Due to the Azure trial subscription being limited to a single public IP address for the VPN Gateway, this lab implements an **active-standby VPN** connection. In production deployments, an **active-active VPN** with two public IP addresses is commonly used to improve availability and better resilience against gateway failures.
+
+
 
 ------------------------------------------------------------------------
 
