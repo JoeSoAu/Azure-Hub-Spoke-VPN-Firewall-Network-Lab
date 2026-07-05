@@ -258,3 +258,211 @@ DwIDAQAB
 ------------------
 [7/6/2026, 1:52:24 AM] [Log] [IPC] .handle("app.sendEvent") result: 
 ------------------
+[7/6/2026, 1:52:29 AM] [Log] [IPC] .invoke("setting.removeRecentDocument") args: ["D:\\Git\\labs\\Azure-Network\\.git\\objects\\f0\\tmp_obj_bNeIZK"]
+------------------
+[7/6/2026, 1:52:29 AM] [Log] [IPC] .handle("setting.removeRecentDocument") result: 
+------------------
+[7/6/2026, 1:52:29 AM] [Log] [IPC] .invoke("setting.removeRecentDocument") args: ["D:\\Git\\labs\\Azure-Network\\.git\\objects\\f0\\tmp_obj_bNeIZK"]
+------------------
+[7/6/2026, 1:52:29 AM] [Log] [IPC] .handle("setting.removeRecentDocument") result: 
+------------------
+[7/6/2026, 1:52:29 AM] [Log] [IPC] .invoke("setting.removeRecentDocument") args: ["D:\\Git\\labs\\Azure-Network\\.git\\objects\\f0\\tmp_obj_bNeIZK"]
+------------------
+[7/6/2026, 1:52:29 AM] [Log] [IPC] .handle("setting.removeRecentDocument") result: 
+------------------
+[7/6/2026, 1:52:29 AM] [Log] [IPC] .invoke("setting.removeRecentDocument") args: ["D:\\Git\\labs\\Azure-Network\\.git\\objects\\f0\\tmp_obj_bNeIZK"]
+------------------
+[7/6/2026, 1:52:29 AM] [Log] [IPC] .handle("setting.removeRecentDocument") result: 
+------------------
+[7/6/2026, 1:52:29 AM] [Log] [IPC] .invoke("setting.removeRecentDocument") args: ["D:\\Git\\labs\\Azure-Network\\.git\\objects\\f0\\tmp_obj_bNeIZK"]
+------------------
+[7/6/2026, 1:52:29 AM] [Log] [IPC] .handle("setting.removeRecentDocument") result: 
+------------------
+[7/6/2026, 1:52:29 AM] [Log] [IPC] .invoke("setting.removeRecentDocument") args: ["D:\\Git\\labs\\Azure-Network\\.git\\objects\\f0\\tmp_obj_bNeIZK"]
+------------------
+[7/6/2026, 1:52:29 AM] [Log] [IPC] .handle("setting.removeRecentDocument") result: 
+------------------
+[7/6/2026, 1:52:29 AM] [Log] [IPC] .invoke("setting.removeRecentDocument") args: ["D:\\Git\\labs\\Azure-Network\\.git\\objects\\f0\\tmp_obj_bNeIZK"]
+------------------
+[7/6/2026, 1:52:29 AM] [Log] [IPC] .handle("setting.removeRecentDocument") result: 
+------------------
+[7/6/2026, 1:52:29 AM] [Log] [IPC] .invoke("setting.removeRecentDocument") args: ["D:\\Git\\labs\\Azure-Network\\.git\\objects\\f0\\tmp_obj_bNeIZK"]
+------------------
+[7/6/2026, 1:52:29 AM] [Log] [IPC] .handle("setting.removeRecentDocument") result: 
+------------------
+[7/6/2026, 1:52:53 AM] [Log] -------------------------------------------
+------------------
+[7/6/2026, 1:52:53 AM] [Log] crypto.publicDecrypt called
+------------------
+[7/6/2026, 1:52:53 AM] [Log] Key: -----BEGIN PUBLIC KEY-----
+MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA7nVoGCHqIMJyqgALEUrc
+5JJhap0+HtJqzPE04pz4y+nrOmY7/12f3HvZyyoRsxKdXTZbO0wEHFIh0cRqsuaJ
+PyaOOPbA0BsalofIAY3mRhQQ3vSf+rn3g+w0S+udWmKV9DnmJlpWqizFajU4T/E4
+5ZgMNcXt3E1ips32rdbTR0Nnen9PVITvrbJ3l6CI2BFBImZQZ2P8N+LsqfJsqyVV
+wDkt3mHAVxV7FZbfYWG+8FDSuKQHaCmvgAtChx9hwl3J6RekkqDVa6GIV13D23LS
+qdk0Jb521wFJi/V6QAK6SLBiby5gYN6zQQ5RQpjXtR53MwzTdiAzGEuKdOtrY2Me
+DwIDAQAB
+-----END PUBLIC KEY-----
+
+
+------------------
+[7/6/2026, 1:52:53 AM] [Log] Buffer (Hex): 75736572406578616d706c652e636f6d
+------------------
+[7/6/2026, 1:53:02 AM] [Log] BrowserWindow created
+------------------
+[7/6/2026, 1:53:02 AM] [Log] [IPC] .invoke("document.loadData") args: []
+------------------
+[7/6/2026, 1:53:02 AM] [Log] [IPC] .handle("document.loadData") result: "{\"snap\":null,\"filePath\":\"D:\\\\Git\\\\labs\\\\Azure-Hybrid-Cloud\\\\README.md\",\"backups\":null,\"shouldReadFromDisk\":false,\"windowCounts\":1}"
+------------------
+[7/6/2026, 1:53:02 AM] [Log] [IPC] .invoke("window.updateMenuForIsAlwaysOnTop") args: []
+------------------
+[7/6/2026, 1:53:02 AM] [Log] [IPC] .handle("window.updateMenuForIsAlwaysOnTop") result: 
+------------------
+[7/6/2026, 1:53:02 AM] [Log] [IPC] .invoke("menu.updateCustomZoom") args: []
+------------------
+[7/6/2026, 1:53:02 AM] [Log] [IPC] .handle("menu.updateCustomZoom") result: 
+------------------
+[7/6/2026, 1:53:02 AM] [Log] [IPC] .invoke("setting.getRecentFiles") args: []
+------------------
+[7/6/2026, 1:53:02 AM] [Log] [IPC] .handle("setting.getRecentFiles") result: {"files":[{"name":"README.md","path":"D:\\Git\\labs\\Azure-Hybrid-Cloud\\README.md","date":1783268582088},{"name":"readme.md","path":"D:\\Git\\labs\\Azure-Network\\readme.md","date":1783268043252},{"name":"01-Overview-and-Desgin.md","path":"D:\\Git\\labs\\Azure-Network\\docs\\01-Overview-and-Desgin.md","date":1783267965033},{"name":"05-Remote-User-Connectivity-Point-to-Site-VPN.md","path":"D:\\Git\\labs\\Azure-Network\\docs\\05-Remote-User-Connectivity-Point-to-Site-VPN.md","date":1783256729153},{"name":"03-Centralized-network-security-firewall.md","path":"D:\\Git\\labs\\Azure-Network\\docs\\03-Centralized-network-security-firewall.md","date":1783178750312},{"name":"04-hybrid-connectivity-site-to-site-vpn.md","path":"D:\\Git\\labs\\Azure-Network\\docs\\04-hybrid-connectivity-site-to-site-vpn.md","date":1783178324219},{"name":"02-Hub-Spoke-Virutal Network.md","path":"D:\\Git\\labs\\Azure-Network\\docs\\02-Hub-Spoke-Virutal Network.md","date":1783177819040}],"folders":[{"name":"docs","path":"D:\\Git\\labs\\Azure-Network\\docs","date":"2026-07-03T05:41:38.206Z"}]}
+------------------
+[7/6/2026, 1:53:02 AM] [Log] [IPC] .invoke("window.updateMenuForIsAlwaysOnTop") args: []
+------------------
+[7/6/2026, 1:53:02 AM] [Log] [IPC] .handle("window.updateMenuForIsAlwaysOnTop") result: 
+------------------
+[7/6/2026, 1:53:02 AM] [Log] [IPC] .invoke("menu.updateCustomZoom") args: []
+------------------
+[7/6/2026, 1:53:02 AM] [Log] [IPC] .handle("menu.updateCustomZoom") result: 
+------------------
+[7/6/2026, 1:53:02 AM] [Log] [IPC] .invoke("window.setTitle") args: [null,false]
+------------------
+[7/6/2026, 1:53:02 AM] [Log] [IPC] .handle("window.setTitle") result: 
+------------------
+[7/6/2026, 1:53:02 AM] [Log] [IPC] .invoke("window.updateMenuForIsAlwaysOnTop") args: []
+------------------
+[7/6/2026, 1:53:02 AM] [Log] [IPC] .handle("window.updateMenuForIsAlwaysOnTop") result: 
+------------------
+[7/6/2026, 1:53:02 AM] [Log] [IPC] .invoke("menu.updateCustomZoom") args: []
+------------------
+[7/6/2026, 1:53:02 AM] [Log] [IPC] .handle("menu.updateCustomZoom") result: 
+------------------
+[7/6/2026, 1:53:02 AM] [Log] [IPC] .invoke("window.checkAsFocus") args: []
+------------------
+[7/6/2026, 1:53:02 AM] [Log] [IPC] .handle("window.checkAsFocus") result: 
+------------------
+[7/6/2026, 1:53:02 AM] [Log] [IPC] .invoke("document.getSnapWithValidation") args: [null]
+------------------
+[7/6/2026, 1:53:02 AM] [Log] [IPC] .handle("document.getSnapWithValidation") result: "{\"snap\":null,\"shouldReadFromDisk\":false}"
+------------------
+[7/6/2026, 1:53:02 AM] [Log] [IPC] .invoke("window.updateMenuForIsAlwaysOnTop") args: []
+------------------
+[7/6/2026, 1:53:02 AM] [Log] [IPC] .handle("window.updateMenuForIsAlwaysOnTop") result: 
+------------------
+[7/6/2026, 1:53:02 AM] [Log] [IPC] .invoke("menu.updateCustomZoom") args: []
+------------------
+[7/6/2026, 1:53:02 AM] [Log] [IPC] .handle("menu.updateCustomZoom") result: 
+------------------
+[7/6/2026, 1:53:02 AM] [Log] [IPC] .invoke("window.checkAsFocus") args: []
+------------------
+[7/6/2026, 1:53:02 AM] [Log] [IPC] .handle("window.checkAsFocus") result: 
+------------------
+[7/6/2026, 1:53:02 AM] [Log] [IPC] .invoke("setting.getDownloadingDicts") args: []
+------------------
+[7/6/2026, 1:53:02 AM] [Log] [IPC] .handle("setting.getDownloadingDicts") result: "[]"
+------------------
+[7/6/2026, 1:53:02 AM] [Log] [IPC] .invoke("setting.getUserDictionaryPath") args: []
+------------------
+[7/6/2026, 1:53:02 AM] [Log] [IPC] .handle("setting.getUserDictionaryPath") result: "C:\\Users\\joest\\AppData\\Roaming\\Typora\\typora-dictionaries"
+------------------
+[7/6/2026, 1:53:02 AM] [Log] [IPC] .invoke("setting.getUserDict") args: []
+------------------
+[7/6/2026, 1:53:02 AM] [Log] [IPC] .handle("setting.getUserDict") result: "{}"
+------------------
+[7/6/2026, 1:53:02 AM] [Log] [IPC] .invoke("theme.setThemeSource") args: ["system"]
+------------------
+[7/6/2026, 1:53:02 AM] [Log] [IPC] .handle("theme.setThemeSource") result: 
+------------------
+[7/6/2026, 1:53:02 AM] [Log] [IPC] .invoke("setting.put") args: ["backgroundColor","#FFFFFF"]
+------------------
+[7/6/2026, 1:53:02 AM] [Log] [IPC] .handle("setting.put") result: 
+------------------
+[7/6/2026, 1:53:02 AM] [Log] [IPC] .invoke("setting.put") args: ["isDarkMode",false]
+------------------
+[7/6/2026, 1:53:02 AM] [Log] [IPC] .handle("setting.put") result: 
+------------------
+[7/6/2026, 1:53:02 AM] [Log] [IPC] .invoke("document.hasDuplicateName") args: ["README.md"]
+------------------
+[7/6/2026, 1:53:02 AM] [Log] [IPC] .handle("document.hasDuplicateName") result: false
+------------------
+[7/6/2026, 1:53:02 AM] [Log] [IPC] .invoke("document.setLastSync") args: ["2026-07-05T16:23:02.703Z"]
+------------------
+[7/6/2026, 1:53:02 AM] [Log] [IPC] .handle("document.setLastSync") result: 
+------------------
+[7/6/2026, 1:53:02 AM] [Log] [IPC] .invoke("window.updateMenuForIsAlwaysOnTop") args: []
+------------------
+[7/6/2026, 1:53:02 AM] [Log] [IPC] .handle("window.updateMenuForIsAlwaysOnTop") result: 
+------------------
+[7/6/2026, 1:53:02 AM] [Log] [IPC] .invoke("menu.updateCustomZoom") args: []
+------------------
+[7/6/2026, 1:53:02 AM] [Log] [IPC] .handle("menu.updateCustomZoom") result: 
+------------------
+[7/6/2026, 1:53:02 AM] [Log] [IPC] .invoke("window.setTitle") args: ["README.md - Typora"]
+------------------
+[7/6/2026, 1:53:02 AM] [Log] [IPC] .handle("window.setTitle") result: 
+------------------
+[7/6/2026, 1:53:02 AM] [Log] [IPC] .invoke("window.setTitle") args: [null,false]
+------------------
+[7/6/2026, 1:53:02 AM] [Log] [IPC] .handle("window.setTitle") result: 
+------------------
+[7/6/2026, 1:53:02 AM] [Log] [IPC] .invoke("window.updateMenuForIsAlwaysOnTop") args: []
+------------------
+[7/6/2026, 1:53:02 AM] [Log] [IPC] .handle("window.updateMenuForIsAlwaysOnTop") result: 
+------------------
+[7/6/2026, 1:53:02 AM] [Log] [IPC] .invoke("menu.updateCustomZoom") args: []
+------------------
+[7/6/2026, 1:53:02 AM] [Log] [IPC] .handle("menu.updateCustomZoom") result: 
+------------------
+[7/6/2026, 1:53:02 AM] [Log] [IPC] .invoke("window.checkAsFocus") args: []
+------------------
+[7/6/2026, 1:53:02 AM] [Log] [IPC] .handle("window.checkAsFocus") result: 
+------------------
+[7/6/2026, 1:53:03 AM] [Log] [IPC] .invoke("setting.getKeyBinding") args: []
+------------------
+[7/6/2026, 1:53:03 AM] [Log] [IPC] .handle("setting.getKeyBinding") result: {"_useLowerCase":true}
+------------------
+[7/6/2026, 1:53:15 AM] [Log] [IPC] .invoke("window.updateMenuForIsAlwaysOnTop") args: []
+------------------
+[7/6/2026, 1:53:15 AM] [Log] [IPC] .handle("window.updateMenuForIsAlwaysOnTop") result: 
+------------------
+[7/6/2026, 1:53:15 AM] [Log] [IPC] .invoke("menu.updateCustomZoom") args: []
+------------------
+[7/6/2026, 1:53:15 AM] [Log] [IPC] .handle("menu.updateCustomZoom") result: 
+------------------
+[7/6/2026, 1:53:15 AM] [Log] [IPC] .invoke("window.checkAsFocus") args: []
+------------------
+[7/6/2026, 1:53:15 AM] [Log] [IPC] .handle("window.checkAsFocus") result: 
+------------------
+[7/6/2026, 1:53:19 AM] [Log] [IPC] .invoke("window.setTitle") args: [null,true]
+------------------
+[7/6/2026, 1:53:19 AM] [Log] [IPC] .handle("window.setTitle") result: 
+------------------
+[7/6/2026, 1:53:26 AM] [Log] [IPC] .invoke("app.sendEvent") args: ["willSave","D:\\Git\\labs\\Azure-Network\\readme.md"]
+------------------
+[7/6/2026, 1:53:26 AM] [Log] [IPC] .handle("app.sendEvent") result: 
+------------------
+[7/6/2026, 1:53:26 AM] [Log] [IPC] .invoke("document.setLastSync") args: [1783268606683.5754]
+------------------
+[7/6/2026, 1:53:26 AM] [Log] [IPC] .handle("document.setLastSync") result: 
+------------------
+[7/6/2026, 1:53:26 AM] [Log] [IPC] .invoke("window.setTitle") args: [null,true]
+------------------
+[7/6/2026, 1:53:26 AM] [Log] [IPC] .handle("window.setTitle") result: 
+------------------
+[7/6/2026, 1:53:26 AM] [Log] [IPC] .invoke("window.setTitle") args: [null,false]
+------------------
+[7/6/2026, 1:53:26 AM] [Log] [IPC] .handle("window.setTitle") result: 
+------------------
+[7/6/2026, 1:53:26 AM] [Log] [IPC] .invoke("app.sendEvent") args: ["didSave",{"path":"D:\\Git\\labs\\Azure-Network\\readme.md","summary":"# Azure Hub-Spoke VPN Firewall Network-Lab\r\n\r\n## Overview\r\n\r\nThis lab demonstrates the design and implementation of a compact modern enterprise Azure Hub-Spoke cloud network using the following Azure ","lastModifiedDate":1783268606683.5754}]
+------------------
+[7/6/2026, 1:53:26 AM] [Log] [IPC] .handle("app.sendEvent") result: 
+------------------
