@@ -324,11 +324,25 @@ To enable this design, we need to
 
 \- On the Spoke-to-Hub peering, enable **Use remote gateway**.
 
-><img title="" src="../screenshots/44transit2.jpg" alt="" width="50%" data-align="center">
+><img title="" src="../screenshots/44transit1.jpg" alt="" width="50%" data-align="center">
 
-------------------------------------------------------------------------
+### - Gateway Transit vs UDR
+
+When **Allow gateway transit** is enabled on the Hub VNet peering and **Use remote gateway** is enabled on the spoke VNet peering, Azure automatically propagates the routes learned by the Hub VPN Gateway to the spoke VNets.
+
+As a result, the spoke VNets automatically learn that the on-premises network (`192.168.1.0/24`) is reachable through the Hub VPN Gateway.
+
+Therefore, **no additional User Defined Route (UDR) is required** for the on-premises network on the spoke subnets.
+
+
+
+## 4.10 Network Settings for on-prem computer client
+
+After the previous steps, both 
 
 ## 4.9 Validation
+
+
 
 Verify:
 
