@@ -55,27 +55,33 @@ Enter the Virtual network gateway we created -> Point to Site Configuration -> c
 
 > <img title="" src="../screenshots/p2s1.jpg" alt="" width="70%" data-align="center">
 
-- Address pool: 172.16. 1.0/
+- Address pool: **192.168.10.0/24**
 
 - Tunnel type: **OpenVPN**
 - Authentication type: **Microsoft Entra ID**
-- Microsoft Entra Tenant
-- Audience
-- Issuer
-
-
+- Microsoft Entra Tenant: Enter our Microsoft Entra tenant URL
+- Audience: Use the Azure VPN Client Application ID
+- Issuer: Enter our tenant issuer URL
 
 > <img title="" src="../screenshots/p2s2.jpg" alt="" width="70%" data-align="center">
 
+After input the information above, click **download VPN Client**. This client will be used on client device to make point-to-site VPN connection to Azure Vnets
+
+> <img title="" src="../screenshots/p2s3.jpg" alt="" width="70%" data-align="center">
+
 ---
+
+
 
 ## 5.3 Client Side Configuration
 
-##  Configure Azure VPN Client
+In the lab, we use Windows 11 as the Point-to-Site VPN client.
 
-Download the VPN client profile from the Azure Virtual Network Gateway.
+（1）Install **Azure VPN Client** on the Windows client
 
-Install **Azure VPN Client** on the Windows client, then:
+​	Install Azure VPN Client Using the installation file downloaded in the last step 
+
+​	><img title="" src="../screenshots/p2s4.jpg" alt="" width="20%" data-align="center">
 
 - Import the VPN client profile.
 - Sign in using Microsoft Entra ID.
