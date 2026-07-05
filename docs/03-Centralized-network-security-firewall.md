@@ -1,6 +1,6 @@
 # 3. Centralized Network Security and Traffic Control (Firewall)
 
-## Overview
+## 3.1 Overview
 
 After establishing the Hub-Spoke network topology, the next step is to centralize network traffic control and security configuration using **Azure Firewall,** **User Defined Routes (UDR)** and **Network Security Groups (NSG)**.
 
@@ -21,7 +21,7 @@ created to control Internet access and inter-spoke communication.
 
 ------------------------------------------------------------------------
 
-## Objectives
+## 3.2 Objectives
 
 The objectives of this chapter are to:
 
@@ -36,7 +36,7 @@ The objectives of this chapter are to:
 
 ------------------------------------------------------------------------
 
-## Deploy Azure Firewall
+## 3.3 Deploy Azure Firewall
 
 Azure Firewall is deployed inside the Hub VNet. An Azure Firewall needs a dedicated
 **AzureFirewallSubnet**. Here is the parameters for the Firewall subnet and firewall
@@ -47,14 +47,14 @@ Azure Firewall is deployed inside the Hub VNet. An Azure Firewall needs a dedica
 | Firewall IP        | 10.10.254.4   |
 | Firewall SKU       | Standard      |
 
-### 1 Create a Firewall Subnet in Hub VNet
+### 1）Create a Firewall Subnet in Hub VNet
 The first step is to prepare a firewall subnet in Hub Vnet
 
 IP address: 10.0.254.0/16
 
 > <img src="..\screenshots\31firewallnet.jpg" width="85%" />
 
-### 2 Create an Azure Firewall (SKU Standard)
+### 2） Create an Azure Firewall (SKU Standard)
 Then create an **Azure firewall** with the parameters shown in the screenshot
 
 > <img src="..\screenshots\32firewall.jpg" width="50%" />  
@@ -67,15 +67,15 @@ A **public IP** is created for the firewall: ***pip-firewall-hub***
 
 ------------------------------------------------------------------------
 
-## Configure User Defined Routes(UDR)
+## 3.4 Configure User Defined Routes(UDR)
 
 By default, Azure routes Internet-bound traffic directly to the Internet. To force traffic from all subnets to through Azure Firewall, We need to create User Defined Routes (UDRs) for each subnet.
 
-### 1 create a route table for each subnet
+### 1）create a route table for each subnet
 
 Virtual networks -> Route Tables -> create 
 
-### 2 Add the Internet-firewall route to the route table
+### 2）Add the Internet-firewall route to the route table
 
 we will add the following route (UDR) to the route table
 
@@ -91,7 +91,7 @@ By default, Azure routes Internet-bound traffic directly to the Internet using t
 
 ><img src="..\screenshots\34route.jpg" width="70%"/>
 
-### 3 Add the Inter-spoke route (UDR) to the Route Table of each Spoke subnet
+### 3）Add the Inter-spoke route (UDR) to the Route Table of each Spoke subnet
 
 In order to redirect the defined inter-spoke traffics as following to go through Hub Firewall
 
@@ -107,7 +107,7 @@ We need to add a route in the route table of each subnet of Finance VNet
 
 > <img src="..\screenshots\34route2.jpg" width="70%"/>
 
-### 4 Associate the route table to the relevant subnet
+### 4）Associate the route table to the relevant subnet
 
 Route table is a independent Azure resource, we need to associate it to the relevant subnet after the creation. 
 ```
@@ -119,7 +119,7 @@ Once associated, all outbound traffic from the subnet is redirected to Azure Fir
 
 ------------------------------------------------------------------------
 
-## Configure Firewall Policy
+## 3.5 Configure Firewall Policy
 
 After traffic is redirected to Azure Firewall in the hub, we need to create **Firewall Policies** to determine whether the traffic should be permitted or denied.
 
@@ -178,7 +178,7 @@ This is a common enterprise firewall rule design: specific allow rules first, ge
 
 ------------------------------------------------------------------------
 
-## Configure VNet Peering for Inter-Spoke Communications
+## 3.6 Configure VNet Peering for Inter-Spoke Communications
 
 After configuring the Azure Firewall rules, outbound Internet access from all VNets is working correctly -- all Internet-bound traffic is redirected to Azure Firewall, then head to the Internet from the **firewall public IP address**. 
 
@@ -214,7 +214,7 @@ The packet is first sent to the Hub VNet because the next hop is Azure Firewall.
 
 By default, Vnet peering blocks all forwarded traffics. Therefore, to support the traffic flow **Finance → Hub Firewall → HR**, **Allow forwarded traffic** must be enabled only on the peering connections in this path.
 
-1. #### **Hub → Finance Peering**
+#### 1. **Hub → Finance Peering**
 
 Enable:
 
@@ -224,7 +224,7 @@ This allows the Hub VNet to accept forwarded packets arriving from the Finance s
 
 > <img src="..\screenshots\37forwad1.jpg" width="40%"/>
 
-1. #### **HR → Hub Peering**
+#### 2. **HR → Hub Peering**
 
 Enable:
 
@@ -238,7 +238,7 @@ The design of this lab only allows **Finance-to-HR** communication, the reverse 
 
 Once this setting is enabled, traffic from Finance VNet can be forwarded to HR VNet through the hub firewall. Then with the firewall rules, only TCP 22 traffic can be forwarded from Finance VNet to HR Vnet finally. 
 
-## Validation
+## 3.7 Validation
 
 After the firewall, UDR and VNet peering configurations above are completed, we can verify the following:
 
@@ -301,6 +301,6 @@ After the firewall, UDR and VNet peering configurations above are completed, we 
 
 ------------------------------------------------------------------------
 
-## Summary
+## 3.8 Summary
 
 Azure Firewall has been deployed as the central security appliance for the Hub-Spoke network. User Defined Routes redirect traffic from the spoke VNets to the firewall, while Firewall Policies determine whether traffic is permitted to continue to its destination.

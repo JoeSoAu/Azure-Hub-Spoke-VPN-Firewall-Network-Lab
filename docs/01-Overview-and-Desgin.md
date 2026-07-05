@@ -14,7 +14,7 @@ The objective of this lab is to demonstrate how enterprise Azure networking can 
 
 <img title="" src="../images/arch2.jpg" alt="" width="75%">
 
-## Hub-Spoke Network Design (VNet Peering)
+## Hub-Spoke Network Design (VNet Peering, UDR, NSG)
 
 The Azure cloud network is built using a Hub-Spoke topology, a common architecture for enterprise environments. Instead of connecting every Vnet directly to one another, shared infrastructure and services are centralized in a dedicated Hub VNet, while application VMs are deployed in separate spoke VNets.
 
