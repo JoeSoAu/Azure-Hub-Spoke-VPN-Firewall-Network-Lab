@@ -27,15 +27,15 @@ This lab demonstrates the design and implementation of a compact modern enterpri
 
 ## Documentation
 
-| Document                                                   | Description                                         |
-| ---------------------------------------------------------- | --------------------------------------------------- |
-| [01 - Overview and Design](docs/01-Overview-and-Desgin.md) | Network design and VNet deployment                  |
-| 02 - Hub-Spoke Networking Infrastructure                   | Preparing Hub-Spoke Network                         |
-| 03 - Centralized Network Security (Azure Firewall)         | Deploy Azure Firewall as central Security Appliance |
-| 04 - Hybrid Connectivity Site-to-site VPN                  | Deploy S-S VPN between on-prem and cloud            |
-| 05 - Remote User Connectivity Point-to-site VPN            | Deploy P-S VPN between remote device and cloud      |
-| 06-Bastion                                                 |                                                     |
-| 07 - Troubleshooting                                       | Problems encountered and solutions                  |
+| Document                                                     | Description                                         |
+| ------------------------------------------------------------ | --------------------------------------------------- |
+| [01 - Overview and Design](docs/01-Overview-and-Desgin.md)   | Network design and VNet deployment                  |
+| [02 - Hub-Spoke Networking Infrastructure](docs/02-Hub-Spoke-Virutal Network) | Preparing Hub-Spoke Network                         |
+| [03 - Centralized Network Security (Azure Firewall)](docs/03-Centralized-network-security-firewall.md) | Deploy Azure Firewall as central Security Appliance |
+| [04 - Hybrid Connectivity Site-to-site VPN](docs/04-hybrid-connectivity-site-to-site-vpn.md) | Deploy S-S VPN between on-prem and cloud            |
+| [05 - Remote User Connectivity Point-to-site VPN](docs/05-Remote-User-Connectivity-Point-to-Site-VPN.md) | Deploy P-S VPN between remote device and cloud      |
+| 06-Bastion                                                   |                                                     |
+| 07 - Troubleshooting                                         | Problems encountered and solutions                  |
 
 ---
 
