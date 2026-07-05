@@ -133,13 +133,13 @@ After the VPN connection is established, we should verify:
 
 - ### VPN status is **Connected**
 
-  <img title="" src="../screenshots/p2s9.jpg" alt="" width="50%" data-align="center">
+  > <img title="" src="../screenshots/p2s9.jpg" alt="" width="50%" data-align="center">
 
 - ### The client receives an IP address from the configured VPN address pool.
 
   the result of ipconfig command shows, the client computer receives ip address from the VPN Address pool: ***192.168.10.2***
 
-  <img title="" src="../screenshots/p2s11.jpg" alt="" width="70%" data-align="center">
+  > <img title="" src="../screenshots/p2s11.jpg" alt="" width="70%" data-align="center">
 
 - ### Azure virtual machines can be reached.
   from the client computer, 
@@ -150,7 +150,7 @@ After the VPN connection is established, we should verify:
   
   Both ping are successful
   
-  <img title="" src="../screenshots/p2s10.jpg" alt="" width="70%" data-align="center">
+  > <img title="" src="../screenshots/p2s10.jpg" alt="" width="70%" data-align="center">
 
 ---
 
