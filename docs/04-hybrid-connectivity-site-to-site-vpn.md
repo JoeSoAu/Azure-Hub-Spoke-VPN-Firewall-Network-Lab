@@ -314,15 +314,17 @@ if we ping on-prem server from the finance vnet VM, it will fail
 
 In order for the spoke Vnets to use the VPN tunnels in the hub, the first step is enable **Gateway Transit** in each hub-spoke Peering.
 
+**Gateway Transit** allows spoke VNets to use the VPN Gateway deployed in the Hub VNet. In this lab, the VPN Gateway is created only in the Hub VNet. The Finance and HR spoke VNets do not have their own VPN Gateways. Instead, they use the Hub VPN Gateway through VNet peering to reach the on-premises network.
 
+To enable this design, we need to
 
-Hub: - Allow gateway transit
+\- On the Hub-to-Spoke peering, enable **Allow gateway transit**.
 
-Spokes: - Use remote gateway
+> <img title="" src="../screenshots/44transit1.jpg" alt="" width="50%" data-align="center">
 
-> **Insert:** Gateway Transit screenshots.
+\- On the Spoke-to-Hub peering, enable **Use remote gateway**.
 
-
+><img title="" src="../screenshots/44transit2.jpg" alt="" width="50%" data-align="center">
 
 ------------------------------------------------------------------------
 
