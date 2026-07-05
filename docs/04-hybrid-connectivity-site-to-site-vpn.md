@@ -205,13 +205,13 @@ We need to use "**Demand Dial Interface**" from the RRAS Server to create **IPSe
   	Destination address: 20.227.109.199 (Azure VPN Gate public IP Address)
   ```
 
-> <img title="" src="../screenshots/44rras1.jpg" alt="" width="50%" data-align="center">
+><img title="" src="../screenshots/44rras1.jpg" alt="" width="40%" data-align="center">
 
   
 
 Select `Route IP packets on this interface`
 
-> <img title="" src="../screenshots/44rras2.jpg" alt="" width="70%" data-align="center">
+><img title="" src="../screenshots/44rras2.jpg" alt="" width="60%" data-align="center">
 
 Add the private LAN Address spaces of the Azure Endpoint
 
@@ -221,7 +221,7 @@ Add the private LAN Address spaces of the Azure Endpoint
 10.2.0.0/16 → Finance Spoke
 ```
 
-> <img title="" src="../screenshots/44rras3.jpg" alt="" width="70%" data-align="center">
+><img title="" src="../screenshots/44rras3.jpg" alt="" width="60%" data-align="center">
 
 After creation of the Interface, fill in the Shared Key for the IPsec Connection
 
