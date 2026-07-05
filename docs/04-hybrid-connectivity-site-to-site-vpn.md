@@ -69,30 +69,52 @@ The first step to build the site-to-site VPN is to create the Azure Virtual Netw
 
 ​		**Public Ip Address**: create a new one -> pip-vpn1
 
+### Active-Active Mode VS Active-Standby Mode
+
+Due to the Azure trial subscription being limited to a single public IP address for the VPN Gateway, this lab implements an **active-standby VPN** connection. In production deployments, an **active-active VPN** with two public IP addresses is commonly used to improve availability and better resilience against gateway failures. Therefore, we set the **Active-Active mode to Disabled** here
+
 
 
 > ​	<img title="" src="../screenshots/41gateway2.jpg" alt="" width="70%" data-align="center">
 
 
 
-- ### Active-Active Mode VS Active-Standby Mode
-
-  Due to the Azure trial subscription being limited to a single public IP address for the VPN Gateway, this lab implements an **active-standby VPN** connection. In production deployments, an **active-active VPN** with two public IP addresses is commonly used to improve availability and better resilience against gateway failures.
-
-
-
 ------------------------------------------------------------------------
 
-## 4.5 Configure on-prem endpoint
+## 4.5 Prepare on-prem endpoint
+
+- ### On-premises Network Design
+
+The on-prem environment uses a Windows Server 2022 VM running **Routing and Remote Access Service (RRAS)** as the Site-to-Site VPN endpoint. This server establishes the IPsec tunnel with the Azure VPN Gateway and routes traffic between the local LAN and Azure VNets.
+
+In a production environment, organizations typically use dedicated enterprise VPN routers or firewalls as the VPN endpoint. Since such hardware is not available in this lab, RRAS is used to provide equivalent routing and VPN functionality.
+
+The local network connects to the Internet through a **TP-Link TL-R473G** router. Because the RRAS server is located behind the router on a private IP address (`192.168.1.10`), inbound VPN traffic from Azure cannot reach the RRAS server directly.
+
+To allow Azure VPN Gateway to establish the IPsec tunnel, the TP-Link router is configured with **Virtual Server (Port Forwarding)** rules. These rules forward the required VPN traffic from the router's public IP address to the RRAS server.
+
+The following ports are forwarded:
+
+| Protocol | Port | Purpose                                  |
+| -------- | ---- | ---------------------------------------- |
+| UDP      | 500  | IKE (IPsec first stage )                 |
+| UDP      | 4500 | IPsec NAT Traversal (IPsec second stage) |
+
+1) ### Install RRAS in Windows 2022 Server
+
+```
+Server Manager → Add roles and features→ Role-based or feature-based installation→ Remote Access→ DirectAccess and VPN (RAS) + Routing→ Install
+```
+
+> <img title="" src="../screenshots/42rras.jpg" alt="" width="70%" data-align="center">
 
 
 
-Configure Windows Server 2022 RRAS as the on-premises VPN endpoint.
+2) Configure On-prem Internet Router
 
--   Enable RRAS
--   Configure LAN and WAN interfaces
--   Configure Site-to-Site VPN
--   Configure IPsec settings
+   Configure virtual Server （Port forwarding) in the on-prem Internet TP-Link Router
+
+   > <img title="" src="../screenshots/42router.jpg" alt="" width="90%" data-align="center">
 
 > **Insert:** RRAS configuration screenshots.
 
