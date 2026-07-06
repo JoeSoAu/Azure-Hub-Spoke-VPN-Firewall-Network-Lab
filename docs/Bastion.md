@@ -70,13 +70,17 @@ No VPN connection or public IP of the VM is needed.
 
    > <img title="" src="../screenshots/B01.jpg" alt="" width="80%">
 
-2) 
+2) ### Create a Bastion Host in the subnet
 
-- Standard SKU
-- Public IP attached only to Bastion
-- Native Client enabled
-
-
+    Name: bastion-hub
+    Tier: **Standard**
+    Virtual network: **vnet-hub**
+    Subnet: **AzureBastionSubnet**
+    Public IP: **Create new** -> Public IP name: **pip-bastion-hub**
+    
+><img title="" src="../screenshots/B02.jpg" alt="" width="80%">
+   
+><img title="" src="../screenshots/B03.jpg" alt="" width="80%">
 
 ---
 
