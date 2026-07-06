@@ -38,16 +38,40 @@ This chapter demonstrates how to:
 - Validate secure administration without public IP addresses
 
 ## 6.3 Architecture
+Azure Bastion will be deployed in the **Hub VNet** and serves as the central admin entry point for the entire Hub-Spoke network.
+
+Although the Bastion resource resides only in the Hub VNet, it can serves VMs located in both the Hub and Spoke VNet through VNet peerings. As a result, only **a single Bastion host in the hub VNet** is needed. 
+
+In this lab, a single Azure Bastion deployment provides secure access from remote computers to the following VMs:
+
+- Hub Windows VM
+- HR VNet Linux VM
+- Finance VNet  Linux VM
+
+No VPN connection or public IP of the VM is needed.
 
 > <img title="" src="../images/arch92.jpg" alt="" width="80%">
 
+## 6.4 Deploy Azure Bastion
 
+1) ### Create a Bastion Subnet in the Hub VNet
 
-## 6.3 Deploy Azure Bastion
+   The Bastion Host need to be deployed in a dedicated Bastion subnet in the VNet where it resides.
 
-Describe:
+   So we create a Bastion Subnet first
 
-- AzureBastionSubnet
+   ```
+   vnet-hub → Subnets → + Subnet
+   ```
+
+   Subnet IP range: **10.0.255.0/26**
+
+   Subnet Name: **AzureBastionSubnet** (Can't be changed)
+
+   > <img title="" src="../screenshots/b01.jpg" alt="" width="70%" data-align="center">
+
+2) 
+
 - Standard SKU
 - Public IP attached only to Bastion
 - Native Client enabled
