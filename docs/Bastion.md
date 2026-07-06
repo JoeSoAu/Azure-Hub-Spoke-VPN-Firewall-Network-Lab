@@ -78,9 +78,9 @@ No VPN connection or public IP of the VM is needed.
     Subnet: **AzureBastionSubnet**
     Public IP: **Create new** -> Public IP name: **pip-bastion-hub**
     
-><img title="" src="../screenshots/B02.jpg" alt="" width="80%">
+	><img title="" src="../screenshots/B02.jpg" alt="" width="80%">
    
-><img title="" src="../screenshots/B03.jpg" alt="" width="80%">
+	><img title="" src="../screenshots/B03.jpg" alt="" width="80%">
 
 ---
 
