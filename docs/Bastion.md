@@ -68,7 +68,7 @@ No VPN connection or public IP of the VM is needed.
 
    Subnet Name: **AzureBastionSubnet** (Can't be changed)
 
-   > <img title="" src="../screenshots/b01.jpg" alt="" width="70%">
+   > <img title="" src="../screenshots/B01.jpg" alt="" width="70%">
 
 2) 
 
