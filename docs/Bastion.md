@@ -234,7 +234,7 @@ Requirements
   	VM settings-> Extensions + applications→ Add ->Azure AD SSH Login
   ```
   
-  <img title="" src="../screenshots/B11.jpg" alt="" width="50%" data-align="center">
+  > <img title="" src="../screenshots/B11.jpg" alt="" width="50%" data-align="center">>
   
   2. #### Enable Managed Identity of the VM
   
@@ -250,19 +250,14 @@ Requirements
 
 ## 6.7 Assign VM RBAC Login role to users
 
-Unlike Azure resource permissions, operating system sign-in requires dedicated RBAC roles.
+Owner or Contributor permission does not automatically grant operating system login access to the Linux VM. The VM login role must be assigned separately.
 
-Owner or Contributor permissions alone do not grant login access.
-
-Assign either:
+So we assign to users either:
 
 - Virtual Machine Administrator Login
 - Virtual Machine User Login
 
-
-
-2. #### Assign user the VM Login role
-
+for both Linux VM and Windows VM
 ```
 VM → Access control (IAM) → Add role assignment → choose one the following roles
 Virtual Machine Administrator Login
@@ -280,7 +275,7 @@ Virtual Machine user Login
 
 ## Windows
 
-Demonstrate:
+
 
 - Azure CLI
 - RDP
@@ -324,20 +319,10 @@ Azure Bastion provides secure administrative access without exposing virtual mac
 
 Combined with Microsoft Entra ID authentication and Azure RBAC, the solution delivers centralized identity management, strong authentication and enterprise-grade remote administration while maintaining a private Hub-Spoke architecture.
 
-
-
-============
-
-5. **Configure Entra ID sign-in for VMs**
-   
-   As metioned above, both Linux and Windows VMs were initially deployed using traditional authentication methods. The Linux VMs used SSH key authentication, while the Windows VM used a local administrator account and password.
-   
-   To improve security , user experience and simplify identity management, we change the authentication method to Entra ID
-
-#### Linux VM Entra ID Sign-in Requirements
+#### 
 
 ```
-To use Entra ID authentication for Linux VM sign-in, the following requirements must be met.
+
 ```
 
 | Area             | Requirement                                                                                                                                 |
@@ -347,12 +332,3 @@ To use Entra ID authentication for Linux VM sign-in, the following requirements 
 | Extension Status | The extension status must show **succeeded**. If the status is `Installing`, `Transitioning` or `Failed`, Entra ID SSH login will not work. |
 | RBAC Role        | The Entra user must be assigned role of either `Virtual Machine Administrator Login` or `Virtual Machine User Login`.                       |
 
-- Install Login Extension for Linux VM
-  
-  vm-hr-linux1→settings→ Extensions + applications→ Add→ Azure AD Based SSH Login
-
-![](../screenshots/8linux.jpg)
-
-Owner or Contributor permission does not automatically grant operating system login access to the Linux VM. The VM login role must be assigned separately.
-
-In this lab, `Virtual Machine Administrator Login` is assigned to the lab administrator account for testing.
