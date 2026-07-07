@@ -72,21 +72,21 @@ No VPN connection or public IP of the VM is needed.
 
 2) ### Create a Bastion Host in the subnet
 
-    Name: bastion-hub
-    Tier: **Standard**
-    Virtual network: **vnet-hub**
-    Subnet: **AzureBastionSubnet**
-    Public IP: **Create new** -> Public IP name: **pip-bastion-hub**
+    Name: bastion-hub  
+    Tier: **Standard**  
+    Virtual network: **vnet-hub**  
+    Subnet: **AzureBastionSubnet ** 
+    Public IP: **Create new** -> Public IP name: **pip-bastion-hub**  
     
 	><img title="" src="../screenshots/B02.jpg" alt="" width="80%">
-   
+
 	><img title="" src="../screenshots/B03.jpg" alt="" width="80%">
 
 ---
 
-# Native Client
+## 6.5 Configure Native Client
 
-Azure Bastion supports both browser-based access and Native Client connections.
+Azure Bastion supports both browser-based sessions and Native Client connections. 
 
 Browser-based access launches an RDP or SSH session directly from the Azure portal.
 
@@ -94,11 +94,36 @@ Native Client allows administrators to use their preferred local applications su
 
 - Windows Remote Desktop
 - OpenSSH
-- Visual Studio Code Remote SSH
 
-This lab uses Native Client because it provides a more natural administration experience while still maintaining Bastion security.
+Unlike Point-to-Site VPN, Azure Bastion does not require a dedicated client application. Instead, Native Client uses the  local RDP like Windows Remote Desktop or SSH client like OpenSSH together with Azure CLI to establish a secure connection through the Azure Bastion service.
 
-(Add screenshots)
+In this lab, Azure CLI is used to initiate the connection, while Microsoft Remote Desktop and OpenSSH are used to access the target Windows and Linux VMs.
+
+### Prerequisites
+
+Before using Azure Bastion Native Client, the following requirements must be met.
+
+For Windows VM
+
+\- Remote Desktop (RDP) must be enabled.
+\- Windows Firewall must allow RDP connections.
+
+For Linux VM:
+
+\- SSH service must be running.
+\- SSH access must be permitted by the operating system firewall
+
+In addition, the Network Security Group (NSG) associated with the virtual machine or subnet must allow the required management traffic from Azure Bastion.
+
+
+
+1. ### Enable Native Client Support in Bastion Host
+
+​	In order to use Native Client to make connection to Bastion is to enable the Native Client Support of Bastion Host. 
+
+**Native Client Support**: Enabled
+
+> <img title="" src="../screenshots/B04.jpg" alt="" width="80%">
 
 ---
 
