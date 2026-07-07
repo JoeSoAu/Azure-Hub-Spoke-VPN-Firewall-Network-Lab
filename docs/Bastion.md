@@ -162,7 +162,7 @@ In addition, the Network Security Group (NSG) associated with the virtual machin
 
 >
 
-> <img title="" src="../screenshots/B07.jpg" alt="" width="70%" data-align="center">
+> <img title="" src="../screenshots/B06.jpg" alt="" width="80%" data-align="center">
 
 
 
@@ -314,7 +314,7 @@ az network bastion ssh `
 --target-resource-id "/subscriptions/f0b773a7-3b49-444b-9afc-ecfd7dea41a5/resourceGroups/rg-azure-lab/providers/Microsoft.Compute/virtualMachines/vm-hr-linux1" `
 --auth-type aad
 ```
-
+><img title="" src="../screenshots/B07.jpg" alt="" width="60%" data-align="center">
 
 ---
 
