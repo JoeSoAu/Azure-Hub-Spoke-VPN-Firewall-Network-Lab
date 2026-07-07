@@ -142,58 +142,104 @@ In addition, the Network Security Group (NSG) associated with the virtual machin
    VM -> Properties -> JSON: resource ID
    ```
 
-   > <img title="" src="../screenshots/B05.jpg" alt="" width="70%" data-align="center">
+   > <img title="" src="../screenshots/B05.jpg" alt="" width="80%" data-align="center">
 
-# Upgrade Virtual Machine Authentication
 
-Earlier chapters intentionally used the default authentication methods created during VM deployment.
 
-Linux virtual machines were accessed using SSH key authentication.
+3. ### Launch Native client to make Bastion connection to target VM
 
-The Windows virtual machine used a local administrator account.
+​	For Linux VM, run the following command, using the vm's resource ID we just copied from Azure Portal
 
-This simplified the initial deployment while validating the network infrastructure.
+```
+>az network bastion ssh `
+--name "bastion-hub" `
+--resource-group "rg-azure-lab" `
+--target-resource-id "/subscriptions/f0b773a7-3b49-444b-9afc-ecfd7dea41a5/resourceGroups/rg-azure-lab/providers/Microsoft.Compute/virtualMachines/vm-finance-linux" `
+--auth-type ssh-key `
+--username "joe" `
+--ssh-key "C:\Users\joest\Desktop\Lab-data\vm-linux-key.pem"
+```
 
-After Azure Bastion is operational, authentication is upgraded to Microsoft Entra ID.
+>
 
-Benefits include:
+> <img title="" src="../screenshots/B07.jpg" alt="" width="70%" data-align="center">
+
+
+
+## 6.6 Upgrade VM Authentication to Entra ID Based
+
+We used traditional authentication methods to sign-in the VM through Bastion
+
+- Linux VM : SSH key authentication.
+
+- Windows VM :  User name and password
+
+This simplified the initial deployment while validating the network infrastructure. After Azure Bastion is operational, We upgrade the Anthentication method to Azure Entra ID for the following benifits
 
 - Centralized identity management
 - Multi-Factor Authentication (MFA)
 - Azure RBAC integration
 - No shared administrator passwords
-- Enterprise identity governance
 
 ---
 
-# Configure Windows Entra ID Sign-in
+### 1. Configure Windows Entra ID Sign-in
 
 Requirements
 
+- Azure AD Login-in Extension installed in the VM ( AADLoginForWindows )
 - Enable Login with Microsoft Entra ID
-- Enable System Assigned Managed Identity
-- Assign Virtual Machine Administrator Login role
+- Enable Managed Identity of the VM
+- Assign user the VM Login role
 
-(Add screenshots)
+1) #### Install the Azure AD Login Extension for the Windows VM
 
-Explain how Windows authentication changes from local accounts to Entra ID.
+	```
+	VM settings-> Extensions + applications→ Add ->Azure AD Windows Login
+	```
+
+2. #### Enable Login with Entra ID
+
+   ```
+   In the properties of Windows VM -> tick Login with Microsoft Entra ID
+   ```
+
+   <img title="" src="../screenshots/B10.jpg" alt="" width="90%" data-align="center">
+
+3. #### Enable Managed Identity of the VM
+
+   ```
+   VM -> Seettings -> Identity -> System Assigned: On
+   ```
+
+   <img title="" src="../screenshots/B09.jpg" alt="" width="90%" data-align="center">
+
+   
+
+4. #### Assign user the VM Login role
+
+```
+VM → Access control (IAM) → Add role assignment → choose one the following roles
+Virtual Machine Administrator Login
+Virtual Machine user Login
+```
+
+> <img title="" src="../screenshots/B08.jpg" alt="" width="70%" data-align="center">
+
 
 ---
 
-# Configure Linux Entra ID Sign-in
+### 2. Configure Linux Entra ID Sign-in
 
-Linux requires several additional components.
+Requirements
 
-| Area             | Requirement                                      |
-| ---------------- | ------------------------------------------------ |
-| VM Identity      | System Assigned Managed Identity                 |
-| VM Extension     | AADSSHLoginForLinux                              |
-| Extension Status | Succeeded                                        |
-| RBAC             | Virtual Machine Administrator Login / User Login |
+- Azure AD SSH Login-in Extension installed in the VM
+- Enable VM Managed Identity
+- Assign user the VM Login role
 
-(Add screenshots)
 
-Explain why Linux requires the Azure AD SSH Login extension.
+
+1. 
 
 ---
 
