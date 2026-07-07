@@ -201,6 +201,8 @@ Requirements
 ```
 	VM settings-> Extensions + applications→ Add ->Azure AD Windows Login
 ```
+  ><img title="" src="../screenshots/B14.jpg" alt="" width="70%" data-align="center">
+
 
 2. #### Enable Login with Entra ID
 
@@ -208,7 +210,7 @@ Requirements
    In the properties of Windows VM -> tick Login with Microsoft Entra ID
    ```
 
-   > <img title="" src="../screenshots/B10.jpg" alt="" width="90%" data-align="center">
+   ><img title="" src="../screenshots/B10.jpg" alt="" width="90%" data-align="center">
 
 3. #### Enable Managed Identity of the VM
 
@@ -216,7 +218,7 @@ Requirements
    VM -> Seettings -> Identity -> System Assigned: On
    ```
 
-   > <img title="" src="../screenshots/B09.jpg" alt="" width="90%" data-align="center">
+   ><img title="" src="../screenshots/B09.jpg" alt="" width="90%" data-align="center">
 
    
 
@@ -269,31 +271,33 @@ Virtual Machine user Login
 
 ---
 
----
+## 6.8 Connect Using Azure Bastion Native Client
 
-## Connect Using Azure Bastion Native Client
+The last step is to use **Bastion Connect command** to launch **Native client** to connect to the cloud VM via RDP for Windows or SSH for Linux
 
 ## Windows
 
+```
+az network bastion rdp `
+  --name bastion-hub `
+  --resource-group rg-azure-lab `
+  --target-resource-id "/subscriptions/f0b773a7-3b49-444b-9afc-ecfd7dea41a5/resourceGroups/rg-azure-lab/providers/Microsoft.Compute/virtualMachines/vm-hub-win" `
+  --enable-mfa
 
 
-- Azure CLI
-- RDP
-- --enable-mfa
+```
 
-(Add screenshots)
+> <img title="" src="../screenshots/B12.jpg" alt="" width="80%" data-align="center">
+
+
+When the Authentication Window appears, input your Entra ID credentials to sign in
+> <img title="" src="../screenshots/B13.jpg" alt="" width="70%" data-align="center">
 
 ---
 
 ## Linux
 
-Demonstrate:
 
-- Azure CLI
-- SSH
-- --auth-type AAD
-
-(Add screenshots)
 
 ---
 
