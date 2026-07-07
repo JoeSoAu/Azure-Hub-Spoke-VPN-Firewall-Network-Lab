@@ -188,15 +188,19 @@ This simplified the initial deployment while validating the network infrastructu
 Requirements
 
 - Azure AD Login-in Extension installed in the VM ( AADLoginForWindows )
+
 - Enable Login with Microsoft Entra ID
+
 - Enable Managed Identity of the VM
-- Assign user the VM Login role
 
-1) #### Install the Azure AD Login Extension for the Windows VM
+- Install the Azure AD Login Extension for the Windows VM
 
-	```
+  
+
+1) Install Azure AD Login-in Extension for Windows for the Windows VM
+```
 	VM settings-> Extensions + applications→ Add ->Azure AD Windows Login
-	```
+```
 
 2. #### Enable Login with Entra ID
 
@@ -204,7 +208,7 @@ Requirements
    In the properties of Windows VM -> tick Login with Microsoft Entra ID
    ```
 
-   <img title="" src="../screenshots/B10.jpg" alt="" width="90%" data-align="center">
+   > <img title="" src="../screenshots/B10.jpg" alt="" width="90%" data-align="center">
 
 3. #### Enable Managed Identity of the VM
 
@@ -212,11 +216,52 @@ Requirements
    VM -> Seettings -> Identity -> System Assigned: On
    ```
 
-   <img title="" src="../screenshots/B09.jpg" alt="" width="90%" data-align="center">
+   > <img title="" src="../screenshots/B09.jpg" alt="" width="90%" data-align="center">
 
    
 
-4. #### Assign user the VM Login role
+### 2. Configure Linux Entra ID Sign-in
+
+Requirements
+
+- Azure AD SSH Login-in Extension installed in the VM
+
+- Enable VM Managed Identity
+
+  1) Install Azure AD Login-in Extension for Windows for the Windows VM
+  
+  ```
+  	VM settings-> Extensions + applications→ Add ->Azure AD SSH Login
+  ```
+  
+  <img title="" src="../screenshots/B11.jpg" alt="" width="50%" data-align="center">
+  
+  2. #### Enable Managed Identity of the VM
+  
+     ```
+     VM -> Seettings -> Identity -> System Assigned: On
+     ```
+  
+     > <img title="" src="../screenshots/B09.jpg" alt="" width="90%" data-align="center">
+  
+     
+
+---
+
+## 6.7 Assign VM RBAC Login role to users
+
+Unlike Azure resource permissions, operating system sign-in requires dedicated RBAC roles.
+
+Owner or Contributor permissions alone do not grant login access.
+
+Assign either:
+
+- Virtual Machine Administrator Login
+- Virtual Machine User Login
+
+
+
+2. #### Assign user the VM Login role
 
 ```
 VM → Access control (IAM) → Add role assignment → choose one the following roles
@@ -229,36 +274,9 @@ Virtual Machine user Login
 
 ---
 
-### 2. Configure Linux Entra ID Sign-in
-
-Requirements
-
-- Azure AD SSH Login-in Extension installed in the VM
-- Enable VM Managed Identity
-- Assign user the VM Login role
-
-
-
-1. 
-
 ---
 
-# Configure Azure RBAC
-
-Unlike Azure resource permissions, operating system sign-in requires dedicated RBAC roles.
-
-Owner or Contributor permissions alone do not grant login access.
-
-Assign either:
-
-- Virtual Machine Administrator Login
-- Virtual Machine User Login
-
-(Add screenshots)
-
----
-
-# Connect Using Azure Bastion Native Client
+## Connect Using Azure Bastion Native Client
 
 ## Windows
 
