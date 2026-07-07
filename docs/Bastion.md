@@ -130,7 +130,7 @@ In addition, the Network Security Group (NSG) associated with the virtual machin
 
 **Native Client Support**: Enabled
 
-> <img title="" src="../screenshots/B04.jpg" alt="" width="60%">
+> <img title="" src="../screenshots/B04.jpg" alt="" width="50%">
 
 ---
 
