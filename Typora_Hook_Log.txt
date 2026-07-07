@@ -1050,3 +1050,55 @@ DwIDAQAB
 ------------------
 [7/7/2026, 4:03:47 PM] [Log] [IPC] .handle("app.sendEvent") result: 
 ------------------
+[7/7/2026, 4:03:53 PM] [Log] [IPC] .invoke("setting.removeRecentDocument") args: ["D:\\Git\\labs\\Azure-Network\\.git\\objects\\a5\\tmp_obj_xQNTpc"]
+------------------
+[7/7/2026, 4:03:53 PM] [Log] [IPC] .handle("setting.removeRecentDocument") result: 
+------------------
+[7/7/2026, 4:03:53 PM] [Log] [IPC] .invoke("setting.removeRecentDocument") args: ["D:\\Git\\labs\\Azure-Network\\.git\\objects\\a5\\tmp_obj_xQNTpc"]
+------------------
+[7/7/2026, 4:03:53 PM] [Log] [IPC] .handle("setting.removeRecentDocument") result: 
+------------------
+[7/7/2026, 4:03:53 PM] [Log] [IPC] .invoke("setting.removeRecentDocument") args: ["D:\\Git\\labs\\Azure-Network\\.git\\objects\\a5\\tmp_obj_xQNTpc"]
+------------------
+[7/7/2026, 4:03:53 PM] [Log] [IPC] .handle("setting.removeRecentDocument") result: 
+------------------
+[7/7/2026, 4:03:53 PM] [Log] [IPC] .invoke("setting.removeRecentDocument") args: ["D:\\Git\\labs\\Azure-Network\\.git\\objects\\a5\\tmp_obj_xQNTpc"]
+------------------
+[7/7/2026, 4:03:53 PM] [Log] [IPC] .handle("setting.removeRecentDocument") result: 
+------------------
+[7/7/2026, 4:03:53 PM] [Log] [IPC] .invoke("setting.removeRecentDocument") args: ["D:\\Git\\labs\\Azure-Network\\.git\\objects\\a5\\tmp_obj_xQNTpc"]
+------------------
+[7/7/2026, 4:03:53 PM] [Log] [IPC] .handle("setting.removeRecentDocument") result: 
+------------------
+[7/7/2026, 4:03:53 PM] [Log] [IPC] .invoke("setting.removeRecentDocument") args: ["D:\\Git\\labs\\Azure-Network\\.git\\objects\\a5\\tmp_obj_xQNTpc"]
+------------------
+[7/7/2026, 4:03:53 PM] [Log] [IPC] .handle("setting.removeRecentDocument") result: 
+------------------
+[7/7/2026, 4:03:53 PM] [Log] [IPC] .invoke("setting.removeRecentDocument") args: ["D:\\Git\\labs\\Azure-Network\\.git\\objects\\a5\\tmp_obj_xQNTpc"]
+------------------
+[7/7/2026, 4:03:53 PM] [Log] [IPC] .handle("setting.removeRecentDocument") result: 
+------------------
+[7/7/2026, 4:03:53 PM] [Log] [IPC] .invoke("setting.removeRecentDocument") args: ["D:\\Git\\labs\\Azure-Network\\.git\\objects\\a5\\tmp_obj_xQNTpc"]
+------------------
+[7/7/2026, 4:03:53 PM] [Log] [IPC] .handle("setting.removeRecentDocument") result: 
+------------------
+[7/7/2026, 4:03:53 PM] [Log] [IPC] .invoke("setting.removeRecentDocument") args: ["D:\\Git\\labs\\Azure-Network\\.git\\objects\\a5\\tmp_obj_xQNTpc"]
+------------------
+[7/7/2026, 4:03:53 PM] [Log] [IPC] .handle("setting.removeRecentDocument") result: 
+------------------
+[7/7/2026, 4:04:10 PM] [Log] [IPC] .invoke("app.sendEvent") args: ["willSave","D:\\Git\\labs\\Azure-Network\\readme.md"]
+------------------
+[7/7/2026, 4:04:10 PM] [Log] [IPC] .handle("app.sendEvent") result: 
+------------------
+[7/7/2026, 4:04:10 PM] [Log] [IPC] .invoke("document.setLastSync") args: [1783406050732.202]
+------------------
+[7/7/2026, 4:04:10 PM] [Log] [IPC] .handle("document.setLastSync") result: 
+------------------
+[7/7/2026, 4:04:10 PM] [Log] [IPC] .invoke("window.setTitle") args: [null,false]
+------------------
+[7/7/2026, 4:04:10 PM] [Log] [IPC] .handle("window.setTitle") result: 
+------------------
+[7/7/2026, 4:04:10 PM] [Log] [IPC] .invoke("app.sendEvent") args: ["didSave",{"path":"D:\\Git\\labs\\Azure-Network\\readme.md","summary":"# Azure Hub-Spoke VPN Firewall Network-Lab\r\n\r\n## Overview\r\n\r\nThis lab demonstrates the design and implementation of a compact modern enterprise Azure Hub-Spoke cloud network using the following Azure ","lastModifiedDate":1783406050732.202}]
+------------------
+[7/7/2026, 4:04:10 PM] [Log] [IPC] .handle("app.sendEvent") result: 
+------------------
