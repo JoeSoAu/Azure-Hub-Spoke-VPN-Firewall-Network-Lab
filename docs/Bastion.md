@@ -99,12 +99,12 @@ Unlike Point-to-Site VPN, Azure Bastion does not require a dedicated client appl
 
 Azure Bastion Native Client access is initiated using the Azure CLI **Bastion commands,** which is a extension of Azure CLI. The Bastion command acts as the connection tool. It communicates with the Azure Bastion service and then uses the local **RDP** or **SSH** client to establish the session to the target VM.
 
-Azure CLI
-  └── Bastion command / extension
-        ├── az network bastion rdp
-        └── az network bastion ssh
+Azure CLI  
+  └── Bastion command / extension  
+        ├── az network bastion rdp  
+        └── az network bastion ssh  
               ↓
-        Launch RDP / SSH client
+        Launch RDP / SSH client  
 
 ### Prerequisites
 

@@ -9168,3 +9168,27 @@ DwIDAQAB
 ------------------
 [7/7/2026, 3:55:05 PM] [Log] [IPC] .handle("app.sendEvent") result: 
 ------------------
+[7/7/2026, 3:55:53 PM] [Log] [IPC] .invoke("window.setTitle") args: [null,true]
+------------------
+[7/7/2026, 3:55:53 PM] [Log] [IPC] .handle("window.setTitle") result: 
+------------------
+[7/7/2026, 3:55:59 PM] [Log] [IPC] .invoke("app.sendEvent") args: ["willSave","D:\\Git\\labs\\Azure-Network\\docs\\Bastion.md"]
+------------------
+[7/7/2026, 3:55:59 PM] [Log] [IPC] .handle("app.sendEvent") result: 
+------------------
+[7/7/2026, 3:55:59 PM] [Log] [IPC] .invoke("document.setLastSync") args: [1783405559427.7627]
+------------------
+[7/7/2026, 3:55:59 PM] [Log] [IPC] .handle("document.setLastSync") result: 
+------------------
+[7/7/2026, 3:55:59 PM] [Log] [IPC] .invoke("window.setTitle") args: [null,true]
+------------------
+[7/7/2026, 3:55:59 PM] [Log] [IPC] .handle("window.setTitle") result: 
+------------------
+[7/7/2026, 3:55:59 PM] [Log] [IPC] .invoke("window.setTitle") args: [null,false]
+------------------
+[7/7/2026, 3:55:59 PM] [Log] [IPC] .handle("window.setTitle") result: 
+------------------
+[7/7/2026, 3:55:59 PM] [Log] [IPC] .invoke("app.sendEvent") args: ["didSave",{"path":"D:\\Git\\labs\\Azure-Network\\docs\\Bastion.md","summary":"\r\n\r\n# 06 - Secured Remote Administration - Azure Bastion\r\n\r\n## 6.1 Overview\r\n\r\nIn the previous labs, the Azure Hub-Spoke network, Azure Firewall, Site-to-Site VPN and Point-to-Site VPN were configured","lastModifiedDate":1783405559427.7627}]
+------------------
+[7/7/2026, 3:55:59 PM] [Log] [IPC] .handle("app.sendEvent") result: 
+------------------
