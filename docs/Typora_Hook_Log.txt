@@ -9216,3 +9216,31 @@ DwIDAQAB
 ------------------
 [7/7/2026, 3:57:36 PM] [Log] [IPC] .handle("app.sendEvent") result: 
 ------------------
+[7/7/2026, 3:58:13 PM] [Log] [IPC] .invoke("app.onCloseWin") args: [null]
+------------------
+[7/7/2026, 3:58:13 PM] [Log] [IPC] .handle("app.onCloseWin") result: 
+------------------
+[7/7/2026, 3:58:37 PM] [Log] [IPC] .invoke("window.updateMenuForIsAlwaysOnTop") args: []
+------------------
+[7/7/2026, 3:58:37 PM] [Log] [IPC] .handle("window.updateMenuForIsAlwaysOnTop") result: 
+------------------
+[7/7/2026, 3:58:37 PM] [Log] [IPC] .invoke("menu.updateCustomZoom") args: []
+------------------
+[7/7/2026, 3:58:37 PM] [Log] [IPC] .handle("menu.updateCustomZoom") result: 
+------------------
+[7/7/2026, 3:58:37 PM] [Log] [IPC] .invoke("window.checkAsFocus") args: []
+------------------
+[7/7/2026, 3:58:37 PM] [Log] [IPC] .handle("window.checkAsFocus") result: 
+------------------
+[7/7/2026, 3:58:50 PM] [Log] [IPC] .invoke("document.noOtherWindow") args: []
+------------------
+[7/7/2026, 3:58:50 PM] [Log] [IPC] .handle("document.noOtherWindow") result: true
+------------------
+[7/7/2026, 3:58:52 PM] [Log] [IPC] .invoke("document.setLastSync") args: [-1]
+------------------
+[7/7/2026, 3:58:52 PM] [Log] [IPC] .handle("document.setLastSync") result: 
+------------------
+[7/7/2026, 3:58:52 PM] [Log] [IPC] .invoke("app.onCloseWin") args: [null]
+------------------
+[7/7/2026, 3:58:52 PM] [Log] [IPC] .handle("app.onCloseWin") result: 
+------------------
