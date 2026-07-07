@@ -8496,3 +8496,523 @@ DwIDAQAB
 ------------------
 [7/7/2026, 3:27:55 PM] [Log] [IPC] .handle("app.sendEvent") result: 
 ------------------
+[7/7/2026, 3:31:42 PM] [Log] [IPC] .invoke("window.setTitle") args: [null,true]
+------------------
+[7/7/2026, 3:31:42 PM] [Log] [IPC] .handle("window.setTitle") result: 
+------------------
+[7/7/2026, 3:31:47 PM] [Log] [IPC] .invoke("app.sendEvent") args: ["willSave","D:\\Git\\labs\\Azure-Network\\docs\\Bastion.md"]
+------------------
+[7/7/2026, 3:31:47 PM] [Log] [IPC] .handle("app.sendEvent") result: 
+------------------
+[7/7/2026, 3:31:47 PM] [Log] [IPC] .invoke("document.setLastSync") args: [1783404107797.8435]
+------------------
+[7/7/2026, 3:31:47 PM] [Log] [IPC] .handle("document.setLastSync") result: 
+------------------
+[7/7/2026, 3:31:47 PM] [Log] [IPC] .invoke("window.setTitle") args: [null,true]
+------------------
+[7/7/2026, 3:31:47 PM] [Log] [IPC] .handle("window.setTitle") result: 
+------------------
+[7/7/2026, 3:31:47 PM] [Log] [IPC] .invoke("window.setTitle") args: [null,false]
+------------------
+[7/7/2026, 3:31:47 PM] [Log] [IPC] .handle("window.setTitle") result: 
+------------------
+[7/7/2026, 3:31:47 PM] [Log] [IPC] .invoke("app.sendEvent") args: ["didSave",{"path":"D:\\Git\\labs\\Azure-Network\\docs\\Bastion.md","summary":"\r\n\r\n# 06 - Secured Remote Administration - Azure Bastion\r\n\r\n## 6.1 Overview\r\n\r\nIn the previous labs, the Azure Hub-Spoke network, Azure Firewall, Site-to-Site VPN and Point-to-Site VPN were configured","lastModifiedDate":1783404107797.8435}]
+------------------
+[7/7/2026, 3:31:47 PM] [Log] [IPC] .handle("app.sendEvent") result: 
+------------------
+[7/7/2026, 3:31:57 PM] [Log] [IPC] .invoke("window.setTitle") args: [null,true]
+------------------
+[7/7/2026, 3:31:57 PM] [Log] [IPC] .handle("window.setTitle") result: 
+------------------
+[7/7/2026, 3:32:02 PM] [Log] [IPC] .invoke("window.updateMenuForIsAlwaysOnTop") args: []
+------------------
+[7/7/2026, 3:32:02 PM] [Log] [IPC] .handle("window.updateMenuForIsAlwaysOnTop") result: 
+------------------
+[7/7/2026, 3:32:02 PM] [Log] [IPC] .invoke("menu.updateCustomZoom") args: []
+------------------
+[7/7/2026, 3:32:02 PM] [Log] [IPC] .handle("menu.updateCustomZoom") result: 
+------------------
+[7/7/2026, 3:32:02 PM] [Log] [IPC] .invoke("window.setTitle") args: [null,false]
+------------------
+[7/7/2026, 3:32:02 PM] [Log] [IPC] .handle("window.setTitle") result: 
+------------------
+[7/7/2026, 3:32:03 PM] [Log] [IPC] .invoke("window.updateMenuForIsAlwaysOnTop") args: []
+------------------
+[7/7/2026, 3:32:03 PM] [Log] [IPC] .handle("window.updateMenuForIsAlwaysOnTop") result: 
+------------------
+[7/7/2026, 3:32:03 PM] [Log] [IPC] .invoke("menu.updateCustomZoom") args: []
+------------------
+[7/7/2026, 3:32:03 PM] [Log] [IPC] .handle("menu.updateCustomZoom") result: 
+------------------
+[7/7/2026, 3:32:05 PM] [Log] [IPC] .invoke("window.setTitle") args: [null,true]
+------------------
+[7/7/2026, 3:32:05 PM] [Log] [IPC] .handle("window.setTitle") result: 
+------------------
+[7/7/2026, 3:32:06 PM] [Log] [IPC] .invoke("app.sendEvent") args: ["willSave","D:\\Git\\labs\\Azure-Network\\docs\\Bastion.md"]
+------------------
+[7/7/2026, 3:32:06 PM] [Log] [IPC] .handle("app.sendEvent") result: 
+------------------
+[7/7/2026, 3:32:06 PM] [Log] [IPC] .invoke("document.setLastSync") args: [1783404126536.2588]
+------------------
+[7/7/2026, 3:32:06 PM] [Log] [IPC] .handle("document.setLastSync") result: 
+------------------
+[7/7/2026, 3:32:06 PM] [Log] [IPC] .invoke("window.setTitle") args: [null,true]
+------------------
+[7/7/2026, 3:32:06 PM] [Log] [IPC] .handle("window.setTitle") result: 
+------------------
+[7/7/2026, 3:32:06 PM] [Log] [IPC] .invoke("window.setTitle") args: [null,false]
+------------------
+[7/7/2026, 3:32:06 PM] [Log] [IPC] .handle("window.setTitle") result: 
+------------------
+[7/7/2026, 3:32:06 PM] [Log] [IPC] .invoke("app.sendEvent") args: ["didSave",{"path":"D:\\Git\\labs\\Azure-Network\\docs\\Bastion.md","summary":"\r\n\r\n# 06 - Secured Remote Administration - Azure Bastion\r\n\r\n## 6.1 Overview\r\n\r\nIn the previous labs, the Azure Hub-Spoke network, Azure Firewall, Site-to-Site VPN and Point-to-Site VPN were configured","lastModifiedDate":1783404126536.2588}]
+------------------
+[7/7/2026, 3:32:06 PM] [Log] [IPC] .handle("app.sendEvent") result: 
+------------------
+[7/7/2026, 3:33:27 PM] [Log] [IPC] .invoke("window.setTitle") args: [null,true]
+------------------
+[7/7/2026, 3:33:27 PM] [Log] [IPC] .handle("window.setTitle") result: 
+------------------
+[7/7/2026, 3:33:34 PM] [Log] [IPC] .invoke("app.sendEvent") args: ["willSave","D:\\Git\\labs\\Azure-Network\\docs\\Bastion.md"]
+------------------
+[7/7/2026, 3:33:34 PM] [Log] [IPC] .handle("app.sendEvent") result: 
+------------------
+[7/7/2026, 3:33:34 PM] [Log] [IPC] .invoke("document.setLastSync") args: [1783404214947.292]
+------------------
+[7/7/2026, 3:33:34 PM] [Log] [IPC] .handle("document.setLastSync") result: 
+------------------
+[7/7/2026, 3:33:34 PM] [Log] [IPC] .invoke("window.setTitle") args: [null,true]
+------------------
+[7/7/2026, 3:33:34 PM] [Log] [IPC] .handle("window.setTitle") result: 
+------------------
+[7/7/2026, 3:33:34 PM] [Log] [IPC] .invoke("window.setTitle") args: [null,false]
+------------------
+[7/7/2026, 3:33:34 PM] [Log] [IPC] .handle("window.setTitle") result: 
+------------------
+[7/7/2026, 3:33:34 PM] [Log] [IPC] .invoke("app.sendEvent") args: ["didSave",{"path":"D:\\Git\\labs\\Azure-Network\\docs\\Bastion.md","summary":"\r\n\r\n# 06 - Secured Remote Administration - Azure Bastion\r\n\r\n## 6.1 Overview\r\n\r\nIn the previous labs, the Azure Hub-Spoke network, Azure Firewall, Site-to-Site VPN and Point-to-Site VPN were configured","lastModifiedDate":1783404214947.292}]
+------------------
+[7/7/2026, 3:33:34 PM] [Log] [IPC] .handle("app.sendEvent") result: 
+------------------
+[7/7/2026, 3:35:16 PM] [Log] [IPC] .invoke("window.setTitle") args: [null,true]
+------------------
+[7/7/2026, 3:35:16 PM] [Log] [IPC] .handle("window.setTitle") result: 
+------------------
+[7/7/2026, 3:35:22 PM] [Log] [IPC] .invoke("window.updateMenuForIsAlwaysOnTop") args: []
+------------------
+[7/7/2026, 3:35:22 PM] [Log] [IPC] .handle("window.updateMenuForIsAlwaysOnTop") result: 
+------------------
+[7/7/2026, 3:35:22 PM] [Log] [IPC] .invoke("menu.updateCustomZoom") args: []
+------------------
+[7/7/2026, 3:35:22 PM] [Log] [IPC] .handle("menu.updateCustomZoom") result: 
+------------------
+[7/7/2026, 3:35:23 PM] [Log] [IPC] .invoke("app.sendEvent") args: ["willSave","D:\\Git\\labs\\Azure-Network\\docs\\Bastion.md"]
+------------------
+[7/7/2026, 3:35:23 PM] [Log] [IPC] .handle("app.sendEvent") result: 
+------------------
+[7/7/2026, 3:35:23 PM] [Log] [IPC] .invoke("document.setLastSync") args: [1783404323887.9548]
+------------------
+[7/7/2026, 3:35:23 PM] [Log] [IPC] .handle("document.setLastSync") result: 
+------------------
+[7/7/2026, 3:35:23 PM] [Log] [IPC] .invoke("window.setTitle") args: [null,true]
+------------------
+[7/7/2026, 3:35:23 PM] [Log] [IPC] .handle("window.setTitle") result: 
+------------------
+[7/7/2026, 3:35:23 PM] [Log] [IPC] .invoke("window.setTitle") args: [null,false]
+------------------
+[7/7/2026, 3:35:23 PM] [Log] [IPC] .handle("window.setTitle") result: 
+------------------
+[7/7/2026, 3:35:23 PM] [Log] [IPC] .invoke("app.sendEvent") args: ["didSave",{"path":"D:\\Git\\labs\\Azure-Network\\docs\\Bastion.md","summary":"\r\n\r\n# 06 - Secured Remote Administration - Azure Bastion\r\n\r\n## 6.1 Overview\r\n\r\nIn the previous labs, the Azure Hub-Spoke network, Azure Firewall, Site-to-Site VPN and Point-to-Site VPN were configured","lastModifiedDate":1783404323887.9548}]
+------------------
+[7/7/2026, 3:35:23 PM] [Log] [IPC] .handle("app.sendEvent") result: 
+------------------
+[7/7/2026, 3:35:29 PM] [Log] [IPC] .invoke("window.setTitle") args: [null,true]
+------------------
+[7/7/2026, 3:35:29 PM] [Log] [IPC] .handle("window.setTitle") result: 
+------------------
+[7/7/2026, 3:35:31 PM] [Log] [IPC] .invoke("window.setTitle") args: [null,false]
+------------------
+[7/7/2026, 3:35:31 PM] [Log] [IPC] .handle("window.setTitle") result: 
+------------------
+[7/7/2026, 3:35:32 PM] [Log] [IPC] .invoke("window.updateMenuForIsAlwaysOnTop") args: []
+------------------
+[7/7/2026, 3:35:32 PM] [Log] [IPC] .handle("window.updateMenuForIsAlwaysOnTop") result: 
+------------------
+[7/7/2026, 3:35:32 PM] [Log] [IPC] .invoke("menu.updateCustomZoom") args: []
+------------------
+[7/7/2026, 3:35:32 PM] [Log] [IPC] .handle("menu.updateCustomZoom") result: 
+------------------
+[7/7/2026, 3:35:34 PM] [Log] [IPC] .invoke("window.setTitle") args: [null,true]
+------------------
+[7/7/2026, 3:35:34 PM] [Log] [IPC] .handle("window.setTitle") result: 
+------------------
+[7/7/2026, 3:35:40 PM] [Log] [IPC] .invoke("app.sendEvent") args: ["willSave","D:\\Git\\labs\\Azure-Network\\docs\\Bastion.md"]
+------------------
+[7/7/2026, 3:35:40 PM] [Log] [IPC] .handle("app.sendEvent") result: 
+------------------
+[7/7/2026, 3:35:40 PM] [Log] [IPC] .invoke("document.setLastSync") args: [1783404340846.2422]
+------------------
+[7/7/2026, 3:35:40 PM] [Log] [IPC] .handle("document.setLastSync") result: 
+------------------
+[7/7/2026, 3:35:40 PM] [Log] [IPC] .invoke("window.setTitle") args: [null,true]
+------------------
+[7/7/2026, 3:35:40 PM] [Log] [IPC] .handle("window.setTitle") result: 
+------------------
+[7/7/2026, 3:35:40 PM] [Log] [IPC] .invoke("window.setTitle") args: [null,false]
+------------------
+[7/7/2026, 3:35:40 PM] [Log] [IPC] .handle("window.setTitle") result: 
+------------------
+[7/7/2026, 3:35:40 PM] [Log] [IPC] .invoke("app.sendEvent") args: ["didSave",{"path":"D:\\Git\\labs\\Azure-Network\\docs\\Bastion.md","summary":"\r\n\r\n# 06 - Secured Remote Administration - Azure Bastion\r\n\r\n## 6.1 Overview\r\n\r\nIn the previous labs, the Azure Hub-Spoke network, Azure Firewall, Site-to-Site VPN and Point-to-Site VPN were configured","lastModifiedDate":1783404340846.2422}]
+------------------
+[7/7/2026, 3:35:40 PM] [Log] [IPC] .handle("app.sendEvent") result: 
+------------------
+[7/7/2026, 3:35:46 PM] [Log] [IPC] .invoke("window.updateMenuForIsAlwaysOnTop") args: []
+------------------
+[7/7/2026, 3:35:46 PM] [Log] [IPC] .handle("window.updateMenuForIsAlwaysOnTop") result: 
+------------------
+[7/7/2026, 3:35:46 PM] [Log] [IPC] .invoke("menu.updateCustomZoom") args: []
+------------------
+[7/7/2026, 3:35:46 PM] [Log] [IPC] .handle("menu.updateCustomZoom") result: 
+------------------
+[7/7/2026, 3:35:46 PM] [Log] [IPC] .invoke("window.setInSourceMode") args: [true]
+------------------
+[7/7/2026, 3:35:46 PM] [Log] [IPC] .handle("window.setInSourceMode") result: 
+------------------
+[7/7/2026, 3:35:46 PM] [Log] [IPC] .invoke("window.updateMenuForIsAlwaysOnTop") args: []
+------------------
+[7/7/2026, 3:35:46 PM] [Log] [IPC] .handle("window.updateMenuForIsAlwaysOnTop") result: 
+------------------
+[7/7/2026, 3:35:46 PM] [Log] [IPC] .invoke("menu.updateCustomZoom") args: []
+------------------
+[7/7/2026, 3:35:46 PM] [Log] [IPC] .handle("menu.updateCustomZoom") result: 
+------------------
+[7/7/2026, 3:35:49 PM] [Log] [IPC] .invoke("window.setTitle") args: [null,true]
+------------------
+[7/7/2026, 3:35:49 PM] [Log] [IPC] .handle("window.setTitle") result: 
+------------------
+[7/7/2026, 3:35:50 PM] [Log] [IPC] .invoke("app.sendEvent") args: ["willSave","D:\\Git\\labs\\Azure-Network\\docs\\Bastion.md"]
+------------------
+[7/7/2026, 3:35:50 PM] [Log] [IPC] .handle("app.sendEvent") result: 
+------------------
+[7/7/2026, 3:35:50 PM] [Log] [IPC] .invoke("document.setLastSync") args: [1783404350192.308]
+------------------
+[7/7/2026, 3:35:50 PM] [Log] [IPC] .handle("document.setLastSync") result: 
+------------------
+[7/7/2026, 3:35:50 PM] [Log] [IPC] .invoke("window.setTitle") args: [null,true]
+------------------
+[7/7/2026, 3:35:50 PM] [Log] [IPC] .handle("window.setTitle") result: 
+------------------
+[7/7/2026, 3:35:50 PM] [Log] [IPC] .invoke("window.setTitle") args: [null,false]
+------------------
+[7/7/2026, 3:35:50 PM] [Log] [IPC] .handle("window.setTitle") result: 
+------------------
+[7/7/2026, 3:35:50 PM] [Log] [IPC] .invoke("app.sendEvent") args: ["didSave",{"path":"D:\\Git\\labs\\Azure-Network\\docs\\Bastion.md","summary":"\r\n\r\n# 06 - Secured Remote Administration - Azure Bastion\r\n\r\n## 6.1 Overview\r\n\r\nIn the previous labs, the Azure Hub-Spoke network, Azure Firewall, Site-to-Site VPN and Point-to-Site VPN were configured","lastModifiedDate":1783404350192.308}]
+------------------
+[7/7/2026, 3:35:50 PM] [Log] [IPC] .handle("app.sendEvent") result: 
+------------------
+[7/7/2026, 3:39:56 PM] [Log] [IPC] .invoke("window.setTitle") args: [null,true]
+------------------
+[7/7/2026, 3:39:56 PM] [Log] [IPC] .handle("window.setTitle") result: 
+------------------
+[7/7/2026, 3:40:15 PM] [Log] [IPC] .invoke("window.setInSourceMode") args: [false]
+------------------
+[7/7/2026, 3:40:15 PM] [Log] [IPC] .handle("window.setInSourceMode") result: 
+------------------
+[7/7/2026, 3:40:15 PM] [Log] [IPC] .invoke("window.updateMenuForIsAlwaysOnTop") args: []
+------------------
+[7/7/2026, 3:40:15 PM] [Log] [IPC] .handle("window.updateMenuForIsAlwaysOnTop") result: 
+------------------
+[7/7/2026, 3:40:15 PM] [Log] [IPC] .invoke("menu.updateCustomZoom") args: []
+------------------
+[7/7/2026, 3:40:15 PM] [Log] [IPC] .handle("menu.updateCustomZoom") result: 
+------------------
+[7/7/2026, 3:40:25 PM] [Log] [IPC] .invoke("window.updateMenuForIsAlwaysOnTop") args: []
+------------------
+[7/7/2026, 3:40:25 PM] [Log] [IPC] .handle("window.updateMenuForIsAlwaysOnTop") result: 
+------------------
+[7/7/2026, 3:40:25 PM] [Log] [IPC] .invoke("menu.updateCustomZoom") args: []
+------------------
+[7/7/2026, 3:40:25 PM] [Log] [IPC] .handle("menu.updateCustomZoom") result: 
+------------------
+[7/7/2026, 3:40:25 PM] [Log] [IPC] .invoke("window.setInSourceMode") args: [true]
+------------------
+[7/7/2026, 3:40:25 PM] [Log] [IPC] .handle("window.setInSourceMode") result: 
+------------------
+[7/7/2026, 3:40:26 PM] [Log] [IPC] .invoke("window.updateMenuForIsAlwaysOnTop") args: []
+------------------
+[7/7/2026, 3:40:26 PM] [Log] [IPC] .handle("window.updateMenuForIsAlwaysOnTop") result: 
+------------------
+[7/7/2026, 3:40:26 PM] [Log] [IPC] .invoke("menu.updateCustomZoom") args: []
+------------------
+[7/7/2026, 3:40:26 PM] [Log] [IPC] .handle("menu.updateCustomZoom") result: 
+------------------
+[7/7/2026, 3:41:09 PM] [Log] [IPC] .invoke("window.setInSourceMode") args: [false]
+------------------
+[7/7/2026, 3:41:09 PM] [Log] [IPC] .handle("window.setInSourceMode") result: 
+------------------
+[7/7/2026, 3:41:10 PM] [Log] [IPC] .invoke("window.updateMenuForIsAlwaysOnTop") args: []
+------------------
+[7/7/2026, 3:41:10 PM] [Log] [IPC] .handle("window.updateMenuForIsAlwaysOnTop") result: 
+------------------
+[7/7/2026, 3:41:10 PM] [Log] [IPC] .invoke("menu.updateCustomZoom") args: []
+------------------
+[7/7/2026, 3:41:10 PM] [Log] [IPC] .handle("menu.updateCustomZoom") result: 
+------------------
+[7/7/2026, 3:41:46 PM] [Log] [IPC] .invoke("app.sendEvent") args: ["willSave","D:\\Git\\labs\\Azure-Network\\docs\\Bastion.md"]
+------------------
+[7/7/2026, 3:41:46 PM] [Log] [IPC] .handle("app.sendEvent") result: 
+------------------
+[7/7/2026, 3:41:46 PM] [Log] [IPC] .invoke("document.setLastSync") args: [1783404706973.7578]
+------------------
+[7/7/2026, 3:41:46 PM] [Log] [IPC] .handle("document.setLastSync") result: 
+------------------
+[7/7/2026, 3:41:46 PM] [Log] [IPC] .invoke("window.setTitle") args: [null,true]
+------------------
+[7/7/2026, 3:41:46 PM] [Log] [IPC] .handle("window.setTitle") result: 
+------------------
+[7/7/2026, 3:41:46 PM] [Log] [IPC] .invoke("window.setTitle") args: [null,false]
+------------------
+[7/7/2026, 3:41:46 PM] [Log] [IPC] .handle("window.setTitle") result: 
+------------------
+[7/7/2026, 3:41:46 PM] [Log] [IPC] .invoke("app.sendEvent") args: ["didSave",{"path":"D:\\Git\\labs\\Azure-Network\\docs\\Bastion.md","summary":"\r\n\r\n# 06 - Secured Remote Administration - Azure Bastion\r\n\r\n## 6.1 Overview\r\n\r\nIn the previous labs, the Azure Hub-Spoke network, Azure Firewall, Site-to-Site VPN and Point-to-Site VPN were configured","lastModifiedDate":1783404706973.7578}]
+------------------
+[7/7/2026, 3:41:46 PM] [Log] [IPC] .handle("app.sendEvent") result: 
+------------------
+[7/7/2026, 3:41:51 PM] [Log] [IPC] .invoke("window.setTitle") args: [null,true]
+------------------
+[7/7/2026, 3:41:51 PM] [Log] [IPC] .handle("window.setTitle") result: 
+------------------
+[7/7/2026, 3:41:54 PM] [Log] [IPC] .invoke("app.sendEvent") args: ["willSave","D:\\Git\\labs\\Azure-Network\\docs\\Bastion.md"]
+------------------
+[7/7/2026, 3:41:54 PM] [Log] [IPC] .handle("app.sendEvent") result: 
+------------------
+[7/7/2026, 3:41:54 PM] [Log] [IPC] .invoke("document.setLastSync") args: [1783404714510.239]
+------------------
+[7/7/2026, 3:41:54 PM] [Log] [IPC] .handle("document.setLastSync") result: 
+------------------
+[7/7/2026, 3:41:54 PM] [Log] [IPC] .invoke("window.setTitle") args: [null,true]
+------------------
+[7/7/2026, 3:41:54 PM] [Log] [IPC] .handle("window.setTitle") result: 
+------------------
+[7/7/2026, 3:41:54 PM] [Log] [IPC] .invoke("window.setTitle") args: [null,false]
+------------------
+[7/7/2026, 3:41:54 PM] [Log] [IPC] .handle("window.setTitle") result: 
+------------------
+[7/7/2026, 3:41:54 PM] [Log] [IPC] .invoke("app.sendEvent") args: ["didSave",{"path":"D:\\Git\\labs\\Azure-Network\\docs\\Bastion.md","summary":"\r\n\r\n# 06 - Secured Remote Administration - Azure Bastion\r\n\r\n## 6.1 Overview\r\n\r\nIn the previous labs, the Azure Hub-Spoke network, Azure Firewall, Site-to-Site VPN and Point-to-Site VPN were configured","lastModifiedDate":1783404714510.239}]
+------------------
+[7/7/2026, 3:41:54 PM] [Log] [IPC] .handle("app.sendEvent") result: 
+------------------
+[7/7/2026, 3:41:58 PM] [Log] [IPC] .invoke("window.setTitle") args: [null,true]
+------------------
+[7/7/2026, 3:41:58 PM] [Log] [IPC] .handle("window.setTitle") result: 
+------------------
+[7/7/2026, 3:42:02 PM] [Log] [IPC] .invoke("app.sendEvent") args: ["willSave","D:\\Git\\labs\\Azure-Network\\docs\\Bastion.md"]
+------------------
+[7/7/2026, 3:42:02 PM] [Log] [IPC] .handle("app.sendEvent") result: 
+------------------
+[7/7/2026, 3:42:02 PM] [Log] [IPC] .invoke("document.setLastSync") args: [1783404722337.1362]
+------------------
+[7/7/2026, 3:42:02 PM] [Log] [IPC] .handle("document.setLastSync") result: 
+------------------
+[7/7/2026, 3:42:02 PM] [Log] [IPC] .invoke("window.setTitle") args: [null,true]
+------------------
+[7/7/2026, 3:42:02 PM] [Log] [IPC] .handle("window.setTitle") result: 
+------------------
+[7/7/2026, 3:42:02 PM] [Log] [IPC] .invoke("window.setTitle") args: [null,false]
+------------------
+[7/7/2026, 3:42:02 PM] [Log] [IPC] .handle("window.setTitle") result: 
+------------------
+[7/7/2026, 3:42:02 PM] [Log] [IPC] .invoke("app.sendEvent") args: ["didSave",{"path":"D:\\Git\\labs\\Azure-Network\\docs\\Bastion.md","summary":"\r\n\r\n# 06 - Secured Remote Administration - Azure Bastion\r\n\r\n## 6.1 Overview\r\n\r\nIn the previous labs, the Azure Hub-Spoke network, Azure Firewall, Site-to-Site VPN and Point-to-Site VPN were configured","lastModifiedDate":1783404722337.1362}]
+------------------
+[7/7/2026, 3:42:02 PM] [Log] [IPC] .handle("app.sendEvent") result: 
+------------------
+[7/7/2026, 3:42:07 PM] [Log] [IPC] .invoke("window.updateMenuForIsAlwaysOnTop") args: []
+------------------
+[7/7/2026, 3:42:07 PM] [Log] [IPC] .handle("window.updateMenuForIsAlwaysOnTop") result: 
+------------------
+[7/7/2026, 3:42:07 PM] [Log] [IPC] .invoke("menu.updateCustomZoom") args: []
+------------------
+[7/7/2026, 3:42:07 PM] [Log] [IPC] .handle("menu.updateCustomZoom") result: 
+------------------
+[7/7/2026, 3:42:07 PM] [Log] [IPC] .invoke("window.setInSourceMode") args: [true]
+------------------
+[7/7/2026, 3:42:07 PM] [Log] [IPC] .handle("window.setInSourceMode") result: 
+------------------
+[7/7/2026, 3:42:08 PM] [Log] [IPC] .invoke("window.updateMenuForIsAlwaysOnTop") args: []
+------------------
+[7/7/2026, 3:42:08 PM] [Log] [IPC] .handle("window.updateMenuForIsAlwaysOnTop") result: 
+------------------
+[7/7/2026, 3:42:08 PM] [Log] [IPC] .invoke("menu.updateCustomZoom") args: []
+------------------
+[7/7/2026, 3:42:08 PM] [Log] [IPC] .handle("menu.updateCustomZoom") result: 
+------------------
+[7/7/2026, 3:42:17 PM] [Log] [IPC] .invoke("window.setTitle") args: [null,true]
+------------------
+[7/7/2026, 3:42:17 PM] [Log] [IPC] .handle("window.setTitle") result: 
+------------------
+[7/7/2026, 3:42:19 PM] [Log] [IPC] .invoke("app.sendEvent") args: ["willSave","D:\\Git\\labs\\Azure-Network\\docs\\Bastion.md"]
+------------------
+[7/7/2026, 3:42:19 PM] [Log] [IPC] .handle("app.sendEvent") result: 
+------------------
+[7/7/2026, 3:42:19 PM] [Log] [IPC] .invoke("document.setLastSync") args: [1783404739521.1504]
+------------------
+[7/7/2026, 3:42:19 PM] [Log] [IPC] .handle("document.setLastSync") result: 
+------------------
+[7/7/2026, 3:42:19 PM] [Log] [IPC] .invoke("window.setTitle") args: [null,true]
+------------------
+[7/7/2026, 3:42:19 PM] [Log] [IPC] .handle("window.setTitle") result: 
+------------------
+[7/7/2026, 3:42:19 PM] [Log] [IPC] .invoke("window.setTitle") args: [null,false]
+------------------
+[7/7/2026, 3:42:19 PM] [Log] [IPC] .handle("window.setTitle") result: 
+------------------
+[7/7/2026, 3:42:19 PM] [Log] [IPC] .invoke("app.sendEvent") args: ["didSave",{"path":"D:\\Git\\labs\\Azure-Network\\docs\\Bastion.md","summary":"\r\n\r\n# 06 - Secured Remote Administration - Azure Bastion\r\n\r\n## 6.1 Overview\r\n\r\nIn the previous labs, the Azure Hub-Spoke network, Azure Firewall, Site-to-Site VPN and Point-to-Site VPN were configured","lastModifiedDate":1783404739521.1504}]
+------------------
+[7/7/2026, 3:42:19 PM] [Log] [IPC] .handle("app.sendEvent") result: 
+------------------
+[7/7/2026, 3:42:22 PM] [Log] [IPC] .invoke("window.setTitle") args: [null,true]
+------------------
+[7/7/2026, 3:42:22 PM] [Log] [IPC] .handle("window.setTitle") result: 
+------------------
+[7/7/2026, 3:42:23 PM] [Log] [IPC] .invoke("app.sendEvent") args: ["willSave","D:\\Git\\labs\\Azure-Network\\docs\\Bastion.md"]
+------------------
+[7/7/2026, 3:42:23 PM] [Log] [IPC] .handle("app.sendEvent") result: 
+------------------
+[7/7/2026, 3:42:23 PM] [Log] [IPC] .invoke("document.setLastSync") args: [1783404743957.803]
+------------------
+[7/7/2026, 3:42:23 PM] [Log] [IPC] .handle("document.setLastSync") result: 
+------------------
+[7/7/2026, 3:42:23 PM] [Log] [IPC] .invoke("window.setTitle") args: [null,true]
+------------------
+[7/7/2026, 3:42:23 PM] [Log] [IPC] .handle("window.setTitle") result: 
+------------------
+[7/7/2026, 3:42:23 PM] [Log] [IPC] .invoke("window.setTitle") args: [null,false]
+------------------
+[7/7/2026, 3:42:23 PM] [Log] [IPC] .handle("window.setTitle") result: 
+------------------
+[7/7/2026, 3:42:23 PM] [Log] [IPC] .invoke("app.sendEvent") args: ["didSave",{"path":"D:\\Git\\labs\\Azure-Network\\docs\\Bastion.md","summary":"\r\n\r\n# 06 - Secured Remote Administration - Azure Bastion\r\n\r\n## 6.1 Overview\r\n\r\nIn the previous labs, the Azure Hub-Spoke network, Azure Firewall, Site-to-Site VPN and Point-to-Site VPN were configured","lastModifiedDate":1783404743957.803}]
+------------------
+[7/7/2026, 3:42:23 PM] [Log] [IPC] .handle("app.sendEvent") result: 
+------------------
+[7/7/2026, 3:42:27 PM] [Log] [IPC] .invoke("window.setInSourceMode") args: [false]
+------------------
+[7/7/2026, 3:42:27 PM] [Log] [IPC] .handle("window.setInSourceMode") result: 
+------------------
+[7/7/2026, 3:42:28 PM] [Log] [IPC] .invoke("window.updateMenuForIsAlwaysOnTop") args: []
+------------------
+[7/7/2026, 3:42:28 PM] [Log] [IPC] .handle("window.updateMenuForIsAlwaysOnTop") result: 
+------------------
+[7/7/2026, 3:42:28 PM] [Log] [IPC] .invoke("menu.updateCustomZoom") args: []
+------------------
+[7/7/2026, 3:42:28 PM] [Log] [IPC] .handle("menu.updateCustomZoom") result: 
+------------------
+[7/7/2026, 3:43:22 PM] [Log] [IPC] .invoke("webContents.copy") args: []
+------------------
+[7/7/2026, 3:43:22 PM] [Log] [IPC] .handle("webContents.copy") result: 
+------------------
+[7/7/2026, 3:43:22 PM] [Log] [IPC] .invoke("webContents.copy") args: []
+------------------
+[7/7/2026, 3:43:22 PM] [Log] [IPC] .handle("webContents.copy") result: 
+------------------
+[7/7/2026, 3:44:29 PM] [Log] [IPC] .invoke("window.setTitle") args: [null,true]
+------------------
+[7/7/2026, 3:44:29 PM] [Log] [IPC] .handle("window.setTitle") result: 
+------------------
+[7/7/2026, 3:45:14 PM] [Log] [IPC] .invoke("window.updateMenuForIsAlwaysOnTop") args: []
+------------------
+[7/7/2026, 3:45:14 PM] [Log] [IPC] .handle("window.updateMenuForIsAlwaysOnTop") result: 
+------------------
+[7/7/2026, 3:45:14 PM] [Log] [IPC] .invoke("menu.updateCustomZoom") args: []
+------------------
+[7/7/2026, 3:45:14 PM] [Log] [IPC] .handle("menu.updateCustomZoom") result: 
+------------------
+[7/7/2026, 3:45:14 PM] [Log] [IPC] .invoke("window.setInSourceMode") args: [true]
+------------------
+[7/7/2026, 3:45:14 PM] [Log] [IPC] .handle("window.setInSourceMode") result: 
+------------------
+[7/7/2026, 3:45:15 PM] [Log] [IPC] .invoke("window.updateMenuForIsAlwaysOnTop") args: []
+------------------
+[7/7/2026, 3:45:15 PM] [Log] [IPC] .handle("window.updateMenuForIsAlwaysOnTop") result: 
+------------------
+[7/7/2026, 3:45:15 PM] [Log] [IPC] .invoke("menu.updateCustomZoom") args: []
+------------------
+[7/7/2026, 3:45:15 PM] [Log] [IPC] .handle("menu.updateCustomZoom") result: 
+------------------
+[7/7/2026, 3:45:19 PM] [Log] [IPC] .invoke("app.sendEvent") args: ["willSave","D:\\Git\\labs\\Azure-Network\\docs\\Bastion.md"]
+------------------
+[7/7/2026, 3:45:19 PM] [Log] [IPC] .handle("app.sendEvent") result: 
+------------------
+[7/7/2026, 3:45:19 PM] [Log] [IPC] .invoke("document.setLastSync") args: [1783404919166.9194]
+------------------
+[7/7/2026, 3:45:19 PM] [Log] [IPC] .handle("document.setLastSync") result: 
+------------------
+[7/7/2026, 3:45:19 PM] [Log] [IPC] .invoke("window.setTitle") args: [null,true]
+------------------
+[7/7/2026, 3:45:19 PM] [Log] [IPC] .handle("window.setTitle") result: 
+------------------
+[7/7/2026, 3:45:19 PM] [Log] [IPC] .invoke("window.setTitle") args: [null,false]
+------------------
+[7/7/2026, 3:45:19 PM] [Log] [IPC] .handle("window.setTitle") result: 
+------------------
+[7/7/2026, 3:45:19 PM] [Log] [IPC] .invoke("app.sendEvent") args: ["didSave",{"path":"D:\\Git\\labs\\Azure-Network\\docs\\Bastion.md","summary":"\r\n\r\n# 06 - Secured Remote Administration - Azure Bastion\r\n\r\n## 6.1 Overview\r\n\r\nIn the previous labs, the Azure Hub-Spoke network, Azure Firewall, Site-to-Site VPN and Point-to-Site VPN were configured","lastModifiedDate":1783404919166.9194}]
+------------------
+[7/7/2026, 3:45:19 PM] [Log] [IPC] .handle("app.sendEvent") result: 
+------------------
+[7/7/2026, 3:45:19 PM] [Log] [IPC] .invoke("window.setInSourceMode") args: [false]
+------------------
+[7/7/2026, 3:45:19 PM] [Log] [IPC] .handle("window.setInSourceMode") result: 
+------------------
+[7/7/2026, 3:45:20 PM] [Log] [IPC] .invoke("window.updateMenuForIsAlwaysOnTop") args: []
+------------------
+[7/7/2026, 3:45:20 PM] [Log] [IPC] .handle("window.updateMenuForIsAlwaysOnTop") result: 
+------------------
+[7/7/2026, 3:45:20 PM] [Log] [IPC] .invoke("menu.updateCustomZoom") args: []
+------------------
+[7/7/2026, 3:45:20 PM] [Log] [IPC] .handle("menu.updateCustomZoom") result: 
+------------------
+[7/7/2026, 3:45:42 PM] [Log] [IPC] .invoke("window.setTitle") args: [null,true]
+------------------
+[7/7/2026, 3:45:42 PM] [Log] [IPC] .handle("window.setTitle") result: 
+------------------
+[7/7/2026, 3:45:53 PM] [Log] [IPC] .invoke("app.sendEvent") args: ["willSave","D:\\Git\\labs\\Azure-Network\\docs\\Bastion.md"]
+------------------
+[7/7/2026, 3:45:53 PM] [Log] [IPC] .handle("app.sendEvent") result: 
+------------------
+[7/7/2026, 3:45:53 PM] [Log] [IPC] .invoke("document.setLastSync") args: [1783404953514.6448]
+------------------
+[7/7/2026, 3:45:53 PM] [Log] [IPC] .handle("document.setLastSync") result: 
+------------------
+[7/7/2026, 3:45:53 PM] [Log] [IPC] .invoke("window.setTitle") args: [null,true]
+------------------
+[7/7/2026, 3:45:53 PM] [Log] [IPC] .handle("window.setTitle") result: 
+------------------
+[7/7/2026, 3:45:53 PM] [Log] [IPC] .invoke("window.setTitle") args: [null,false]
+------------------
+[7/7/2026, 3:45:53 PM] [Log] [IPC] .handle("window.setTitle") result: 
+------------------
+[7/7/2026, 3:45:53 PM] [Log] [IPC] .invoke("app.sendEvent") args: ["didSave",{"path":"D:\\Git\\labs\\Azure-Network\\docs\\Bastion.md","summary":"\r\n\r\n# 06 - Secured Remote Administration - Azure Bastion\r\n\r\n## 6.1 Overview\r\n\r\nIn the previous labs, the Azure Hub-Spoke network, Azure Firewall, Site-to-Site VPN and Point-to-Site VPN were configured","lastModifiedDate":1783404953514.6448}]
+------------------
+[7/7/2026, 3:45:53 PM] [Log] [IPC] .handle("app.sendEvent") result: 
+------------------
+[7/7/2026, 3:50:55 PM] [Log] [IPC] .invoke("window.setTitle") args: [null,true]
+------------------
+[7/7/2026, 3:50:55 PM] [Log] [IPC] .handle("window.setTitle") result: 
+------------------
+[7/7/2026, 3:50:56 PM] [Log] [IPC] .invoke("app.sendEvent") args: ["willSave","D:\\Git\\labs\\Azure-Network\\docs\\Bastion.md"]
+------------------
+[7/7/2026, 3:50:56 PM] [Log] [IPC] .handle("app.sendEvent") result: 
+------------------
+[7/7/2026, 3:50:56 PM] [Log] [IPC] .invoke("document.setLastSync") args: [1783405256881.3064]
+------------------
+[7/7/2026, 3:50:56 PM] [Log] [IPC] .handle("document.setLastSync") result: 
+------------------
+[7/7/2026, 3:50:56 PM] [Log] [IPC] .invoke("window.setTitle") args: [null,true]
+------------------
+[7/7/2026, 3:50:56 PM] [Log] [IPC] .handle("window.setTitle") result: 
+------------------
+[7/7/2026, 3:50:56 PM] [Log] [IPC] .invoke("window.setTitle") args: [null,false]
+------------------
+[7/7/2026, 3:50:56 PM] [Log] [IPC] .handle("window.setTitle") result: 
+------------------
+[7/7/2026, 3:50:56 PM] [Log] [IPC] .invoke("app.sendEvent") args: ["didSave",{"path":"D:\\Git\\labs\\Azure-Network\\docs\\Bastion.md","summary":"\r\n\r\n# 06 - Secured Remote Administration - Azure Bastion\r\n\r\n## 6.1 Overview\r\n\r\nIn the previous labs, the Azure Hub-Spoke network, Azure Firewall, Site-to-Site VPN and Point-to-Site VPN were configured","lastModifiedDate":1783405256881.3064}]
+------------------
+[7/7/2026, 3:50:56 PM] [Log] [IPC] .handle("app.sendEvent") result: 
+------------------

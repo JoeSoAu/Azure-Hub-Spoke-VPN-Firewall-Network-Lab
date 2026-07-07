@@ -201,7 +201,7 @@ Requirements
 ```
 	VM settings-> Extensions + applications→ Add ->Azure AD Windows Login
 ```
-  ><img title="" src="../screenshots/B14.jpg" alt="" width="70%" data-align="center">
+  ><img title="" src="../screenshots/B14.jpg" alt="" width="50%" data-align="center">
 
 
 2. #### Enable Login with Entra ID
@@ -251,8 +251,9 @@ Requirements
 ---
 
 ## 6.7 Assign VM RBAC Login role to users
+1. ### VM Login Role
 
-Owner or Contributor permission does not automatically grant operating system login access to the Linux VM. The VM login role must be assigned separately.
+  Owner or Contributor permission does not automatically grant operating system login access to the Linux VM. The VM login role must be assigned separately.
 
 So we assign to users either:
 
@@ -266,10 +267,21 @@ Virtual Machine Administrator Login
 Virtual Machine user Login
 ```
 
-> <img title="" src="../screenshots/B08.jpg" alt="" width="70%" data-align="center">
+><img title="" src="../screenshots/B08.jpg" alt="" width="70%" data-align="center">
+
+2. ### Other Roles
+
+  In addition to assigning either the VM Login role, the follwing Azure RBAC permissions are also required for user login via Bastion Native client
+
+  - **Reader** for the target VM, 
+
+  - **Reader** for the Azure Bastion resource 
+
+  - **Reader** for the VM network interface. 
+
+​	These permissions allow Azure CLI to locate and access the Azure resources required to establish the 	Bastion connection. 
 
 
----
 
 ## 6.8 Connect Using Azure Bastion Native Client
 
@@ -283,8 +295,6 @@ az network bastion rdp `
   --resource-group rg-azure-lab `
   --target-resource-id "/subscriptions/f0b773a7-3b49-444b-9afc-ecfd7dea41a5/resourceGroups/rg-azure-lab/providers/Microsoft.Compute/virtualMachines/vm-hub-win" `
   --enable-mfa
-
-
 ```
 
 > <img title="" src="../screenshots/B12.jpg" alt="" width="80%" data-align="center">
@@ -297,42 +307,23 @@ When the Authentication Window appears, input your Entra ID credentials to sign 
 
 ## Linux
 
+```
+az network bastion ssh `
+--name bastion-hub `
+--resource-group rg-azure-lab `
+--target-resource-id "/subscriptions/f0b773a7-3b49-444b-9afc-ecfd7dea41a5/resourceGroups/rg-azure-lab/providers/Microsoft.Compute/virtualMachines/vm-hr-linux1" `
+--auth-type aad
+```
 
-
----
-
-# Validation
-
-Verify:
-
-- Windows VM has no public IP
-- Linux VMs have no public IP
-- TCP 22 not exposed
-- TCP 3389 not exposed
-- Windows Entra ID login succeeds
-- Linux Entra ID login succeeds
-- Azure RBAC controls OS login permissions
-
-(Add screenshots)
 
 ---
 
 # Summary
 
-Azure Bastion provides secure administrative access without exposing virtual machines directly to the Internet.
+This lab the VM deployed Bastion Service and accomplished the remote access to Hub and Spoke cloud VMs with Bastion Native client and Entra ID authentication.
 
-Combined with Microsoft Entra ID authentication and Azure RBAC, the solution delivers centralized identity management, strong authentication and enterprise-grade remote administration while maintaining a private Hub-Spoke architecture.
+During the implementation, several configuration dependencies were identified. Successful Microsoft Entra ID sign-in required more than simply enabling the feature on the virtual machine. Managed Identity, VM extensions, Azure RBAC assignments and additional Reader permissions were all required before Azure Bastion Native Client could establish a connection successfully.
 
-#### 
+Another key takeaway was understanding the difference between Point-to-Site VPN and Azure Bastion. While both provide secure remote access, Point-to-Site VPN extends the Azure network to the administrator's computer, while Azure Bastion provides secure administrative access to individual VMs without requiring VPN connectivity or public IP addresses.
 
-```
-
-```
-
-| Area             | Requirement                                                                                                                                 |
-| ---------------- | ------------------------------------------------------------------------------------------------------------------------------------------- |
-| VM Identity      | **System assigned managed identity** must be enabled on the Linux VM.                                                                       |
-| VM Extension     | The `AADSSHLoginForLinux` extension must be installed.                                                                                      |
-| Extension Status | The extension status must show **succeeded**. If the status is `Installing`, `Transitioning` or `Failed`, Entra ID SSH login will not work. |
-| RBAC Role        | The Entra user must be assigned role of either `Virtual Machine Administrator Login` or `Virtual Machine User Login`.                       |
-
+Together with the Hub-Spoke architecture, Azure Firewall and VPN connectivity implemented in previous chapters, Azure Bastion completes a secure remote administration solution that resembles an enterprise Azure environment.
