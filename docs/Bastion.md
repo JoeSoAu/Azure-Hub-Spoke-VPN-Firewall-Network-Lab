@@ -97,7 +97,14 @@ Native Client allows administrators to use their preferred local applications su
 
 Unlike Point-to-Site VPN, Azure Bastion does not require a dedicated client application. Instead, Native Client uses the  local RDP like Windows Remote Desktop or SSH client like OpenSSH together with Azure CLI to establish a secure connection through the Azure Bastion service.
 
-In this lab, Azure CLI is used to initiate the connection, while Microsoft Remote Desktop and OpenSSH are used to access the target Windows and Linux VMs.
+Azure Bastion Native Client access is initiated using the Azure CLI **Bastion commands,** which is a extension of Azure CLI. The Bastion command acts as the connection tool. It communicates with the Azure Bastion service and then uses the local **RDP** or **SSH** client to establish the session to the target VM.
+
+Azure CLI
+  └── Bastion command / extension
+        ├── az network bastion rdp
+        └── az network bastion ssh
+              ↓
+        Launch RDP / SSH client
 
 ### Prerequisites
 
@@ -126,6 +133,16 @@ In addition, the Network Security Group (NSG) associated with the virtual machin
 > <img title="" src="../screenshots/B04.jpg" alt="" width="60%">
 
 ---
+
+2. ### Find and copy the Resource ID of the Target VM from Azure Portal
+
+   We need the resource ID of the target VM to make a bastion connection. So we go to Azure Portal to copy the VM resource ID
+
+   ```
+   VM -> Properties -> JSON: resource ID
+   ```
+
+   > <img title="" src="../screenshots/B05.jpg" alt="" width="70%" data-align="center">
 
 # Upgrade Virtual Machine Authentication
 
