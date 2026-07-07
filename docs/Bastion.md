@@ -297,11 +297,11 @@ az network bastion rdp `
   --enable-mfa
 ```
 
-> <img title="" src="../screenshots/B12.jpg" alt="" width="80%" data-align="center">
+> <img title="" src="../screenshots/B12.jpg" alt="" width="90%" data-align="center">
 
 
 When the Authentication Window appears, input your Entra ID credentials to sign in
-> <img title="" src="../screenshots/B13.jpg" alt="" width="70%" data-align="center">
+> <img title="" src="../screenshots/B13.jpg" alt="" width="60%" data-align="center">
 
 ---
 
