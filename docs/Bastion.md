@@ -101,10 +101,10 @@ Azure Bastion Native Client access is initiated using the Azure CLI **Bastion co
 
 Azure CLI  
   └── Bastion command / extension  
-        ├── az network bastion rdp  
-        └── az network bastion ssh  
-              ↓
-        Launch RDP / SSH client  
+        	├── az network bastion rdp  
+        	└── az network bastion ssh  
+              	↓
+      	  Launch RDP / SSH client  
 
 ### Prerequisites
 
