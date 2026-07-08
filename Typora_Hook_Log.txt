@@ -1102,3 +1102,31 @@ DwIDAQAB
 ------------------
 [7/7/2026, 4:04:10 PM] [Log] [IPC] .handle("app.sendEvent") result: 
 ------------------
+[7/7/2026, 4:09:58 PM] [Log] -------------------------------------------
+------------------
+[7/7/2026, 4:09:58 PM] [Log] crypto.publicDecrypt called
+------------------
+[7/7/2026, 4:09:58 PM] [Log] Key: -----BEGIN PUBLIC KEY-----
+MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA7nVoGCHqIMJyqgALEUrc
+5JJhap0+HtJqzPE04pz4y+nrOmY7/12f3HvZyyoRsxKdXTZbO0wEHFIh0cRqsuaJ
+PyaOOPbA0BsalofIAY3mRhQQ3vSf+rn3g+w0S+udWmKV9DnmJlpWqizFajU4T/E4
+5ZgMNcXt3E1ips32rdbTR0Nnen9PVITvrbJ3l6CI2BFBImZQZ2P8N+LsqfJsqyVV
+wDkt3mHAVxV7FZbfYWG+8FDSuKQHaCmvgAtChx9hwl3J6RekkqDVa6GIV13D23LS
+qdk0Jb521wFJi/V6QAK6SLBiby5gYN6zQQ5RQpjXtR53MwzTdiAzGEuKdOtrY2Me
+DwIDAQAB
+-----END PUBLIC KEY-----
+
+
+------------------
+[7/7/2026, 4:09:58 PM] [Log] Buffer (Hex): a8a390dd7bfedb8567725fa39c541a115d0116eefe20e60b47b9883e8a9f3a51ba46d39bf504a8611f7b05db4f42ea93c2e3e4fcd8ab321fb049225360bf9b987d9a09efda3ea3f85f05de7d493e1f490b94a4df52751d04c0c1289a95b4595c0cbc48dff04b7ddc54fafa3471d241ab63b3e93bbc9231d509bafe801c3581bc4ed438a8328de7eeca672ce572129e4ccf342babc905120a948ef52c908c7c525f35e5b71eaee531abb7b618acde4adfb0755d68abef446220fdd8b499098faf50f0c089293702fe53e391753a7ac54a1bf40ac10dc053a54672554b78c14273aea774e8f47495a9243d34ea867e302365f496a43a3d8053ff58ef7efe501fdb
+------------------
+[7/7/2026, 4:09:58 PM] [Log] BrowserWindow created
+------------------
+[7/7/2026, 4:10:06 PM] [Log] [IPC] .invoke("quit") args: []
+------------------
+[7/7/2026, 4:10:06 PM] [Log] [IPC] .handle("quit") result: 
+------------------
+[7/7/2026, 4:10:06 PM] [Log] [IPC] .invoke("app.onCloseWin") args: [null]
+------------------
+[7/7/2026, 4:10:06 PM] [Log] [IPC] .handle("app.onCloseWin") result: 
+------------------
