@@ -1,7 +1,5 @@
 # 07 Troubleshooting
 
-
-
 ## Private Subnet Prevented VM Extension Installation
 
 ### Issue
@@ -21,9 +19,11 @@ To resolve this issue, we temporarily disable the private subnet for the VM subn
 - The Extension package repositories became reachable.
 - The Microsoft Entra ID  extension installed successfully.
 
+The VM will get secured internet access after configure Hub-Spoke+firewall networking infrastruction. The temporary Internet outbound access will be closed after that.
+
 ### Lesson Learned
 
-Removing Public IP addresses does not eliminate the need for outbound Internet access. Private virtual machines still require controlled outbound connectivity for operating system updates, VM extensions, monitoring agents and package installation.
+Security features should be implemented in the correct order. Some Azure services, such as VM extensions, require temporary outbound Internet access during deployment. Once the environment is fully configured with Azure Firewall and centralized outbound routing, direct Internet access can be closed 
 
 ---
 
@@ -88,6 +88,24 @@ This automatically enabled the required system-assigned managed identity and all
 **Login with Microsoft Entra ID** must be enabled during VM deployment if we need to use Entra ID authentication for VM sign-in
 
 ---
+
+## Traffic Did Not Match Azure Firewall Rules
+
+### Issue
+
+Firewall rules appeared to have no effect even though the rules were correctly configured.
+
+### Investigation and Resolution
+
+The reason is the traffic was still using Azure system routes instead of passing through Azure Firewall. 
+
+WE need to configure User Defined Routes (UDRs)  to redirect the required traffic to the Azure Firewall private IP address.
+
+> <img title="" src="../screenshots/t05.jpg" alt="" width="70%" data-align="center">
+
+### Lesson Learned
+
+Azure Firewall only inspects traffic that is explicitly routed through it. Correct firewall rules alone are not sufficient; routing must also be configured correctly.
 
 ## 4. Network Changes Required VM Deallocation
 
