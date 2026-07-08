@@ -1,6 +1,6 @@
-# 07 Troubleshooting
+# 7 Troubleshooting
 
-## Private Subnet Prevented VM Extension Installation
+## 7.1 Private Subnet Prevented VM Extension Installation
 
 ### Issue
 
@@ -10,7 +10,7 @@ When we attempted to install VM Azure AD Login extension for VM in the Spoke Vne
 
 The extension logs showed repeated connection timeouts while attempting to download packages from Microsoft and Ubuntu repositories. The problem was not related to Microsoft Entra ID itself, but to the lack of outbound Internet connectivity.
 
-Then we found The subnet of the VM was set to be a "Private Subnet" for security reason. . However, a private subnet means it has no internet access and the VM can't download the extension without internet access. 
+Then we found The subnet of the VM was set to be a "**Private Subnet**" for security reason. . However, a private subnet means it has no internet access and the VM can't download the extension without internet access. 
 
 > <img title="" src="../screenshots/t04.jpg" alt="" width="60%" data-align="center">
 
@@ -27,7 +27,7 @@ Security features should be implemented in the correct order. Some Azure service
 
 ---
 
-## Azure Bastion Native Client Required Additional RBAC Permissions
+## 7.2 Azure Bastion Native Client Required Additional RBAC Permissions
 
 ### Issue
 
@@ -52,6 +52,10 @@ The VM login role only grants operating system sign-in permission. Azure Bastion
 ### Lesson Learned
 
 Microsoft Entra authentication depends on both operating system login permissions and Azure resource permissions. Following the least privilege principle provides sufficient access without unnecessary  rights.
+
+---
+
+## 7.3 Bastion Connection to Windows VM Failed due to VM Entra ID Join Status
 
 ### Issue
 
@@ -89,7 +93,7 @@ This automatically enabled the required system-assigned managed identity and all
 
 ---
 
-## Traffic Did Not Match Azure Firewall Rules
+## 7.4 Azure Firewall Rules Not Working
 
 ### Issue
 
@@ -107,7 +111,88 @@ WE need to configure User Defined Routes (UDRs)  to redirect the required traffi
 
 Azure Firewall only inspects traffic that is explicitly routed through it. Correct firewall rules alone are not sufficient; routing must also be configured correctly.
 
-## 4. Network Changes Required VM Deallocation
+---
+
+## 7.5 On-premises VPN Router Could Not Establish IKE Negotiation
+
+### Issue
+
+The original design of the VPN lab was to use the on-prem VPN hardware router **TP-Link TL-R473G** as the Site-to-Site IPSec VPN endpoint connecting directly to the Azure VPN Gateway. However, despite multiple configuration attempts, the VPN tunnel could not be established successfully.
+
+### Investigation and Resolution
+
+Although the Azure VPN Gateway was fully deployed and configured, the VPN router showed no incoming VPN connection attempts. This indicated that the IKE negotiation was not even starting, so it was unlikely that the issue was caused by authentication or IPsec settings. After verifying the public IP address, shared key, the router still failed to establish the IPsec stage 1 VPN negotiation.
+
+Rather than continuing to use the router,  I changed to use Windows Server 2022 RRAS  as the on-prem VPN endpoint. After configuring RRAS with compatible IPsec/IKE settings, the Site-to-Site VPN tunnel was established successfully.
+
+### Lesson Learned
+
+Not all VPN devices provide the same level of compatibility with Azure VPN Gateway. Before selecting a VPN appliance for production, it is important to verify that the device is officially supported and capable of meeting Azure VPN requirements.
+
+---
+
+## 7.6 Site-to-Site VPN Failed Due to VPN Protocol Mismatch
+
+### Issue
+
+After changing the On-prem endpoint to Windows Server 2022 RRAS, we found the Site-to-Site VPN tunnel could not be established after the configuration. Windows RRAS repeatedly generated **RemoteAccess Event ID 20111**, indicating that the VPN server was not responding.
+
+> <img title="" src="../screenshots/t06.jpg" alt="" width="70%" data-align="center">
+
+### Investigation and Resolution
+
+After investigation, I found that the VPN protocols configured on each side were different.
+
+- Windows RRAS was configured to use **IKEv2**
+- Azure VPN Gateway connection was configured to use **IKEv1**
+
+Because both VPN endpoints must negotiate using the same IKE protocol, the tunnel negotiation failed before the IPsec connection can be established.
+
+To solve this issue, I change the VPN protocol on Azure Gateway to **IKEv2**. After both VPN endpoints were configured with the same IKE version, the Site-to-Site VPN tunnel was successfully established.
+
+> <img title="" src="../screenshots/t07.jpg" alt="" width="80%" data-align="center">
+
+
+
+### Lesson Learned
+
+When troubleshooting Site-to-Site VPN connectivity, always verify that both VPN endpoints are using compatible VPN protocols and parameters.
+
+---
+
+## 7.7 On-prem Network Could Not Reach Spoke Virtual Machines
+
+### Issue
+
+After the Site-to-Site VPN tunnel was successfully established, the on-prem Windows RRAS Server was unable to reach VMs located in the Spoke VNets.
+
+> <img title="" src="../screenshots/t08.jpg" alt="" width="90%" data-align="center">
+
+### Investigation and Resolution
+
+The VPN tunnel was working correctly, indicating that the problem was not related to VPN connectivity.
+
+Further investigation showed that although the Hub and Spoke VNets were already peered, the peering configuration had not been configured to allow the spoke VNets to use the Hub VPN Gateway. We need to enable Gateway transit in the peering settings
+
+- **Hub VNet:** Allow gateway transit
+
+- **Spoke VNet:** Use remote gateway
+
+  ><img title="" src="../screenshots/t09.jpg" alt="" width="50%" data-align="center">
+
+  ><img title="" src="../screenshots/t10.jpg" alt="" width="50%" data-align="center">
+
+After configured the gateway transit of peering , the on-prem network can  communicate with VM in spoke VNets.
+
+  ><img title="" src="../screenshots/t11.jpg" alt="" width="80%" data-align="center">
+
+### Lesson Learned
+
+VNet peering alone does not automatically allow spoke VNets to use a VPN Gateway located in the Hub VNet. Gateway Transit must be configured on both sides of the peering.
+
+
+
+## 7.8 Network Changes Required VM Deallocation
 
 ### Issue
 
@@ -115,90 +200,8 @@ Certain networking changes appeared to have no effect even after rebooting the v
 
 ### Resolution
 
-Stopping (Deallocate) and starting the virtual machine forced Azure to recreate the underlying compute resources and refresh the networking configuration.
-
-A normal operating system reboot was not sufficient.
+Stopping (Deallocate) and restarting the VM forced Azure to recreate the underlying compute resources and refresh the networking configuration. A normal operating system reboot was not sufficient.
 
 ### Lesson Learned
 
-Some Azure infrastructure changes occur outside the guest operating system. Deallocating the VM should be considered when network configuration changes do not appear to take effect.
-
----
-
-## 5. Azure Bastion Native Client Simplified Microsoft Entra Authentication
-
-### Issue
-
-Traditional Microsoft Entra RDP authentication normally requires the administrator workstation to be Microsoft Entra joined or Hybrid joined.
-
-### Resolution
-
-Azure Bastion Native Client supports modern browser-based authentication by using the `--enable-mfa` parameter.
-
-This allowed Microsoft Entra authentication without requiring the administrator's local computer to be Microsoft Entra joined.
-
-### Lesson Learned
-
-Azure Bastion Native Client simplifies secure remote administration while maintaining Microsoft Entra authentication and multi-factor authentication.
-
----
-
-## 6. Site-to-Site VPN Required Systematic Troubleshooting
-
-### Issue
-
-The Site-to-Site VPN tunnel remained disconnected after deployment.
-
-### Investigation
-
-Instead of changing multiple settings simultaneously, each possible cause was verified individually, including:
-
-- Azure VPN Gateway deployment
-- Local Network Gateway configuration
-- Public IP address
-- Shared key
-- UDP 500 connectivity
-- VPN router listener
-- IPsec/IKE configuration
-
-The issue was eventually traced to IPsec proposal compatibility between Azure VPN Gateway and the on-premises VPN router.
-
-### Resolution
-
-The VPN router was reconfigured to use supported Phase 1 and Phase 2 algorithms compatible with Azure VPN Gateway.
-
-The tunnel established successfully afterwards.
-
-### Lesson Learned
-
-A structured troubleshooting process is often more effective than repeatedly modifying multiple settings without identifying the actual root cause.
-
----
-
-## 7. NAT Gateway Cannot Be Shared Across Peered VNets
-
-### Issue
-
-Initially, it was assumed that a single NAT Gateway in the Hub VNet could provide outbound Internet access for all peered spoke VNets.
-
-### Investigation
-
-NAT Gateway is associated with individual subnets and cannot be shared through VNet Peering.
-
-### Resolution
-
-The lab architecture was updated to use Azure Firewall as the centralized outbound Internet gateway for all spoke VNets.
-
-User Defined Routes (UDRs) redirected outbound traffic from each spoke to the Azure Firewall.
-
-### Lesson Learned
-
-For enterprise Hub-Spoke architectures, centralized outbound Internet access is typically implemented with Azure Firewall rather than a shared NAT Gateway.
-
----
-
-# Summary
-
-This project involved considerably more troubleshooting than initially expected. Most issues were not caused by incorrect configuration, but by understanding how different Azure services interact, including networking, identity, routing and permissions.
-
-The experience gained from diagnosing and resolving these problems provided a much deeper understanding of Azure than simply following deployment guides. More importantly, it reinforced the importance of systematic troubleshooting, verifying assumptions, and isolating problems one component at a time when building enterprise cloud environments.
+Some Azure infrastructure changes take place outside the operating system. Deallocating the VM should be considered when network configuration changes seems not to take effect.

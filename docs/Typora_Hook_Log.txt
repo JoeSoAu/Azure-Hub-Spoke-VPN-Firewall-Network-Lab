@@ -9500,3 +9500,1141 @@ DwIDAQAB
 ------------------
 [7/8/2026, 4:00:22 PM] [Log] [IPC] .handle("license.machineCode") result: "eyJ2Ijoid2lufDEuMTMuNyIsImkiOiJHT0ljWkxWM2NxIiwibCI6IkpPRVNULVBDIHwgam9lc3QgfCBXaW5kb3dzIn0="
 ------------------
+[7/9/2026, 3:31:46 AM] [Log] -------------------------------------------
+------------------
+[7/9/2026, 3:31:46 AM] [Log] crypto.publicDecrypt called
+------------------
+[7/9/2026, 3:31:46 AM] [Log] Key: -----BEGIN PUBLIC KEY-----
+MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA7nVoGCHqIMJyqgALEUrc
+5JJhap0+HtJqzPE04pz4y+nrOmY7/12f3HvZyyoRsxKdXTZbO0wEHFIh0cRqsuaJ
+PyaOOPbA0BsalofIAY3mRhQQ3vSf+rn3g+w0S+udWmKV9DnmJlpWqizFajU4T/E4
+5ZgMNcXt3E1ips32rdbTR0Nnen9PVITvrbJ3l6CI2BFBImZQZ2P8N+LsqfJsqyVV
+wDkt3mHAVxV7FZbfYWG+8FDSuKQHaCmvgAtChx9hwl3J6RekkqDVa6GIV13D23LS
+qdk0Jb521wFJi/V6QAK6SLBiby5gYN6zQQ5RQpjXtR53MwzTdiAzGEuKdOtrY2Me
+DwIDAQAB
+-----END PUBLIC KEY-----
+
+
+------------------
+[7/9/2026, 3:31:46 AM] [Log] Buffer (Hex): 75736572406578616d706c652e636f6d
+------------------
+[7/9/2026, 3:31:46 AM] [Log] BrowserWindow created
+------------------
+[7/9/2026, 3:31:46 AM] [Log] [IPC] .invoke("document.loadData") args: []
+------------------
+[7/9/2026, 3:31:46 AM] [Log] [IPC] .handle("document.loadData") result: "{\"snap\":null,\"filePath\":\"D:\\\\Git\\\\labs\\\\Azure-Network\\\\docs\\\\07-Troubleshooting.md\",\"backups\":null,\"shouldReadFromDisk\":false,\"windowCounts\":1}"
+------------------
+[7/9/2026, 3:31:46 AM] [Log] [IPC] .invoke("window.updateMenuForIsAlwaysOnTop") args: []
+------------------
+[7/9/2026, 3:31:46 AM] [Log] [IPC] .handle("window.updateMenuForIsAlwaysOnTop") result: 
+------------------
+[7/9/2026, 3:31:46 AM] [Log] [IPC] .invoke("menu.updateCustomZoom") args: []
+------------------
+[7/9/2026, 3:31:46 AM] [Log] [IPC] .handle("menu.updateCustomZoom") result: 
+------------------
+[7/9/2026, 3:31:46 AM] [Log] [IPC] .invoke("setting.getRecentFiles") args: []
+------------------
+[7/9/2026, 3:31:46 AM] [Log] [IPC] .handle("setting.getRecentFiles") result: {"files":[{"name":"07-Troubleshooting.md","path":"D:\\Git\\labs\\Azure-Network\\docs\\07-Troubleshooting.md","date":1783533706095},{"name":"readme.md","path":"D:\\Git\\labs\\Azure-Network\\readme.md","date":1783492860395},{"name":"Bastion.md","path":"D:\\Git\\labs\\Azure-Network\\docs\\Bastion.md","date":1783341324751},{"name":"05-Remote-User-Connectivity-Point-to-Site-VPN.md","path":"D:\\Git\\labs\\Azure-Network\\docs\\05-Remote-User-Connectivity-Point-to-Site-VPN.md","date":1783341317169},{"name":"README.md","path":"D:\\Git\\labs\\Azure-Hybrid-Cloud\\README.md","date":1783268582088},{"name":"01-Overview-and-Desgin.md","path":"D:\\Git\\labs\\Azure-Network\\docs\\01-Overview-and-Desgin.md","date":1783267965033},{"name":"03-Centralized-network-security-firewall.md","path":"D:\\Git\\labs\\Azure-Network\\docs\\03-Centralized-network-security-firewall.md","date":1783178750312},{"name":"04-hybrid-connectivity-site-to-site-vpn.md","path":"D:\\Git\\labs\\Azure-Network\\docs\\04-hybrid-connectivity-site-to-site-vpn.md","date":1783178324219},{"name":"02-Hub-Spoke-Virutal Network.md","path":"D:\\Git\\labs\\Azure-Network\\docs\\02-Hub-Spoke-Virutal Network.md","date":1783177819040}],"folders":[{"name":"docs","path":"D:\\Git\\labs\\Azure-Network\\docs","date":"2026-07-03T05:41:38.206Z"}]}
+------------------
+[7/9/2026, 3:31:46 AM] [Log] [IPC] .invoke("window.updateMenuForIsAlwaysOnTop") args: []
+------------------
+[7/9/2026, 3:31:46 AM] [Log] [IPC] .handle("window.updateMenuForIsAlwaysOnTop") result: 
+------------------
+[7/9/2026, 3:31:46 AM] [Log] [IPC] .invoke("menu.updateCustomZoom") args: []
+------------------
+[7/9/2026, 3:31:46 AM] [Log] [IPC] .handle("menu.updateCustomZoom") result: 
+------------------
+[7/9/2026, 3:31:46 AM] [Log] [IPC] .invoke("window.setTitle") args: [null,false]
+------------------
+[7/9/2026, 3:31:46 AM] [Log] [IPC] .handle("window.setTitle") result: 
+------------------
+[7/9/2026, 3:31:46 AM] [Log] [IPC] .invoke("window.updateMenuForIsAlwaysOnTop") args: []
+------------------
+[7/9/2026, 3:31:46 AM] [Log] [IPC] .handle("window.updateMenuForIsAlwaysOnTop") result: 
+------------------
+[7/9/2026, 3:31:46 AM] [Log] [IPC] .invoke("menu.updateCustomZoom") args: []
+------------------
+[7/9/2026, 3:31:46 AM] [Log] [IPC] .handle("menu.updateCustomZoom") result: 
+------------------
+[7/9/2026, 3:31:46 AM] [Log] [IPC] .invoke("window.checkAsFocus") args: []
+------------------
+[7/9/2026, 3:31:46 AM] [Log] [IPC] .handle("window.checkAsFocus") result: 
+------------------
+[7/9/2026, 3:31:46 AM] [Log] [IPC] .invoke("document.getSnapWithValidation") args: [null]
+------------------
+[7/9/2026, 3:31:46 AM] [Log] [IPC] .handle("document.getSnapWithValidation") result: "{\"snap\":null,\"shouldReadFromDisk\":false}"
+------------------
+[7/9/2026, 3:31:46 AM] [Log] [IPC] .invoke("document.hasDuplicateName") args: ["07-Troubleshooting.md"]
+------------------
+[7/9/2026, 3:31:46 AM] [Log] [IPC] .handle("document.hasDuplicateName") result: false
+------------------
+[7/9/2026, 3:31:47 AM] [Log] [IPC] .invoke("document.setLastSync") args: ["2026-07-08T18:01:46.950Z"]
+------------------
+[7/9/2026, 3:31:47 AM] [Log] [IPC] .handle("document.setLastSync") result: 
+------------------
+[7/9/2026, 3:31:47 AM] [Log] [IPC] .invoke("window.updateMenuForIsAlwaysOnTop") args: []
+------------------
+[7/9/2026, 3:31:47 AM] [Log] [IPC] .handle("window.updateMenuForIsAlwaysOnTop") result: 
+------------------
+[7/9/2026, 3:31:47 AM] [Log] [IPC] .invoke("menu.updateCustomZoom") args: []
+------------------
+[7/9/2026, 3:31:47 AM] [Log] [IPC] .handle("menu.updateCustomZoom") result: 
+------------------
+[7/9/2026, 3:31:47 AM] [Log] [IPC] .invoke("window.updateMenuForIsAlwaysOnTop") args: []
+------------------
+[7/9/2026, 3:31:47 AM] [Log] [IPC] .handle("window.updateMenuForIsAlwaysOnTop") result: 
+------------------
+[7/9/2026, 3:31:47 AM] [Log] [IPC] .invoke("menu.updateCustomZoom") args: []
+------------------
+[7/9/2026, 3:31:47 AM] [Log] [IPC] .handle("menu.updateCustomZoom") result: 
+------------------
+[7/9/2026, 3:31:47 AM] [Log] [IPC] .invoke("window.checkAsFocus") args: []
+------------------
+[7/9/2026, 3:31:47 AM] [Log] [IPC] .handle("window.checkAsFocus") result: 
+------------------
+[7/9/2026, 3:31:47 AM] [Log] [IPC] .invoke("window.setTitle") args: [null,false]
+------------------
+[7/9/2026, 3:31:47 AM] [Log] [IPC] .handle("window.setTitle") result: 
+------------------
+[7/9/2026, 3:31:47 AM] [Log] [IPC] .invoke("window.setTitle") args: ["07-Troubleshooting.md - Typora"]
+------------------
+[7/9/2026, 3:31:47 AM] [Log] [IPC] .handle("window.setTitle") result: 
+------------------
+[7/9/2026, 3:31:47 AM] [Log] [IPC] .invoke("window.setTitle") args: [null,false]
+------------------
+[7/9/2026, 3:31:47 AM] [Log] [IPC] .handle("window.setTitle") result: 
+------------------
+[7/9/2026, 3:31:47 AM] [Log] [IPC] .invoke("theme.setThemeSource") args: ["system"]
+------------------
+[7/9/2026, 3:31:47 AM] [Log] [IPC] .handle("theme.setThemeSource") result: 
+------------------
+[7/9/2026, 3:31:47 AM] [Log] [IPC] .invoke("setting.put") args: ["backgroundColor","#FFFFFF"]
+------------------
+[7/9/2026, 3:31:47 AM] [Log] [IPC] .handle("setting.put") result: 
+------------------
+[7/9/2026, 3:31:47 AM] [Log] [IPC] .invoke("setting.put") args: ["isDarkMode",false]
+------------------
+[7/9/2026, 3:31:47 AM] [Log] [IPC] .handle("setting.put") result: 
+------------------
+[7/9/2026, 3:31:47 AM] [Log] [IPC] .invoke("window.updateMenuForIsAlwaysOnTop") args: []
+------------------
+[7/9/2026, 3:31:47 AM] [Log] [IPC] .handle("window.updateMenuForIsAlwaysOnTop") result: 
+------------------
+[7/9/2026, 3:31:47 AM] [Log] [IPC] .invoke("menu.updateCustomZoom") args: []
+------------------
+[7/9/2026, 3:31:47 AM] [Log] [IPC] .handle("menu.updateCustomZoom") result: 
+------------------
+[7/9/2026, 3:31:47 AM] [Log] [IPC] .invoke("window.checkAsFocus") args: []
+------------------
+[7/9/2026, 3:31:47 AM] [Log] [IPC] .handle("window.checkAsFocus") result: 
+------------------
+[7/9/2026, 3:31:47 AM] [Log] [IPC] .invoke("setting.getDownloadingDicts") args: []
+------------------
+[7/9/2026, 3:31:47 AM] [Log] [IPC] .handle("setting.getDownloadingDicts") result: "[]"
+------------------
+[7/9/2026, 3:31:47 AM] [Log] [IPC] .invoke("setting.getUserDictionaryPath") args: []
+------------------
+[7/9/2026, 3:31:47 AM] [Log] [IPC] .handle("setting.getUserDictionaryPath") result: "C:\\Users\\joest\\AppData\\Roaming\\Typora\\typora-dictionaries"
+------------------
+[7/9/2026, 3:31:47 AM] [Log] [IPC] .invoke("setting.getUserDict") args: []
+------------------
+[7/9/2026, 3:31:47 AM] [Log] [IPC] .handle("setting.getUserDict") result: "{}"
+------------------
+[7/9/2026, 3:31:47 AM] [Log] [IPC] .invoke("setting.getKeyBinding") args: []
+------------------
+[7/9/2026, 3:31:47 AM] [Log] [IPC] .handle("setting.getKeyBinding") result: {"_useLowerCase":true}
+------------------
+[7/9/2026, 3:32:01 AM] [Log] [IPC] .invoke("window.setTitle") args: [null,true]
+------------------
+[7/9/2026, 3:32:01 AM] [Log] [IPC] .handle("window.setTitle") result: 
+------------------
+[7/9/2026, 3:37:26 AM] [Log] [IPC] .invoke("webContents.copy") args: []
+------------------
+[7/9/2026, 3:37:26 AM] [Log] [IPC] .handle("webContents.copy") result: 
+------------------
+[7/9/2026, 3:37:26 AM] [Log] [IPC] .invoke("webContents.copy") args: []
+------------------
+[7/9/2026, 3:37:26 AM] [Log] [IPC] .handle("webContents.copy") result: 
+------------------
+[7/9/2026, 3:40:31 AM] [Log] [IPC] .invoke("webContents.copy") args: []
+------------------
+[7/9/2026, 3:40:31 AM] [Log] [IPC] .handle("webContents.copy") result: 
+------------------
+[7/9/2026, 3:40:31 AM] [Log] [IPC] .invoke("webContents.copy") args: []
+------------------
+[7/9/2026, 3:40:31 AM] [Log] [IPC] .handle("webContents.copy") result: 
+------------------
+[7/9/2026, 3:40:36 AM] [Log] -------------------------------------------
+------------------
+[7/9/2026, 3:40:36 AM] [Log] crypto.publicDecrypt called
+------------------
+[7/9/2026, 3:40:36 AM] [Log] Key: -----BEGIN PUBLIC KEY-----
+MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA7nVoGCHqIMJyqgALEUrc
+5JJhap0+HtJqzPE04pz4y+nrOmY7/12f3HvZyyoRsxKdXTZbO0wEHFIh0cRqsuaJ
+PyaOOPbA0BsalofIAY3mRhQQ3vSf+rn3g+w0S+udWmKV9DnmJlpWqizFajU4T/E4
+5ZgMNcXt3E1ips32rdbTR0Nnen9PVITvrbJ3l6CI2BFBImZQZ2P8N+LsqfJsqyVV
+wDkt3mHAVxV7FZbfYWG+8FDSuKQHaCmvgAtChx9hwl3J6RekkqDVa6GIV13D23LS
+qdk0Jb521wFJi/V6QAK6SLBiby5gYN6zQQ5RQpjXtR53MwzTdiAzGEuKdOtrY2Me
+DwIDAQAB
+-----END PUBLIC KEY-----
+
+
+------------------
+[7/9/2026, 3:40:36 AM] [Log] Buffer (Hex): 75736572406578616d706c652e636f6d
+------------------
+[7/9/2026, 3:40:54 AM] [Log] [IPC] .invoke("app.sendEvent") args: ["willSave","D:\\Git\\labs\\Azure-Network\\docs\\07-Troubleshooting.md"]
+------------------
+[7/9/2026, 3:40:54 AM] [Log] [IPC] .handle("app.sendEvent") result: 
+------------------
+[7/9/2026, 3:40:54 AM] [Log] [IPC] .invoke("document.setLastSync") args: [1783534254969.865]
+------------------
+[7/9/2026, 3:40:54 AM] [Log] [IPC] .handle("document.setLastSync") result: 
+------------------
+[7/9/2026, 3:40:54 AM] [Log] [IPC] .invoke("window.setTitle") args: [null,true]
+------------------
+[7/9/2026, 3:40:54 AM] [Log] [IPC] .handle("window.setTitle") result: 
+------------------
+[7/9/2026, 3:40:54 AM] [Log] [IPC] .invoke("window.setTitle") args: [null,false]
+------------------
+[7/9/2026, 3:40:54 AM] [Log] [IPC] .handle("window.setTitle") result: 
+------------------
+[7/9/2026, 3:40:54 AM] [Log] [IPC] .invoke("app.sendEvent") args: ["didSave",{"path":"D:\\Git\\labs\\Azure-Network\\docs\\07-Troubleshooting.md","summary":"# 7 Troubleshooting\r\n\r\n## 7.1 Private Subnet Prevented VM Extension Installation\r\n\r\n### Issue\r\n\r\nWhen we attempted to install VM Azure AD Login extension for VM in the Spoke Vnet, it continued to fail","lastModifiedDate":1783534254969.865}]
+------------------
+[7/9/2026, 3:40:54 AM] [Log] [IPC] .handle("app.sendEvent") result: 
+------------------
+[7/9/2026, 3:43:11 AM] [Log] [IPC] .invoke("window.setTitle") args: [null,true]
+------------------
+[7/9/2026, 3:43:11 AM] [Log] [IPC] .handle("window.setTitle") result: 
+------------------
+[7/9/2026, 3:43:37 AM] [Log] [IPC] .invoke("webContents.cut") args: []
+------------------
+[7/9/2026, 3:43:37 AM] [Log] [IPC] .handle("webContents.cut") result: 
+------------------
+[7/9/2026, 3:43:37 AM] [Log] [IPC] .invoke("webContents.copy") args: []
+------------------
+[7/9/2026, 3:43:37 AM] [Log] [IPC] .handle("webContents.copy") result: 
+------------------
+[7/9/2026, 3:43:37 AM] [Log] [IPC] .invoke("webContents.copy") args: []
+------------------
+[7/9/2026, 3:43:37 AM] [Log] [IPC] .handle("webContents.copy") result: 
+------------------
+[7/9/2026, 3:43:57 AM] [Log] [IPC] .invoke("window.updateMenuForIsAlwaysOnTop") args: []
+------------------
+[7/9/2026, 3:43:57 AM] [Log] [IPC] .handle("window.updateMenuForIsAlwaysOnTop") result: 
+------------------
+[7/9/2026, 3:43:57 AM] [Log] [IPC] .invoke("menu.updateCustomZoom") args: []
+------------------
+[7/9/2026, 3:43:57 AM] [Log] [IPC] .handle("menu.updateCustomZoom") result: 
+------------------
+[7/9/2026, 3:44:02 AM] [Log] [IPC] .invoke("webContents.copy") args: []
+------------------
+[7/9/2026, 3:44:02 AM] [Log] [IPC] .handle("webContents.copy") result: 
+------------------
+[7/9/2026, 3:44:02 AM] [Log] [IPC] .invoke("webContents.copy") args: []
+------------------
+[7/9/2026, 3:44:02 AM] [Log] [IPC] .handle("webContents.copy") result: 
+------------------
+[7/9/2026, 3:44:15 AM] [Log] [IPC] .invoke("app.sendEvent") args: ["willSave","D:\\Git\\labs\\Azure-Network\\docs\\07-Troubleshooting.md"]
+------------------
+[7/9/2026, 3:44:15 AM] [Log] [IPC] .handle("app.sendEvent") result: 
+------------------
+[7/9/2026, 3:44:15 AM] [Log] [IPC] .invoke("document.setLastSync") args: [1783534455569.4248]
+------------------
+[7/9/2026, 3:44:15 AM] [Log] [IPC] .handle("document.setLastSync") result: 
+------------------
+[7/9/2026, 3:44:15 AM] [Log] [IPC] .invoke("window.setTitle") args: [null,true]
+------------------
+[7/9/2026, 3:44:15 AM] [Log] [IPC] .handle("window.setTitle") result: 
+------------------
+[7/9/2026, 3:44:15 AM] [Log] [IPC] .invoke("window.setTitle") args: [null,false]
+------------------
+[7/9/2026, 3:44:15 AM] [Log] [IPC] .handle("window.setTitle") result: 
+------------------
+[7/9/2026, 3:44:15 AM] [Log] [IPC] .invoke("app.sendEvent") args: ["didSave",{"path":"D:\\Git\\labs\\Azure-Network\\docs\\07-Troubleshooting.md","summary":"# 7 Troubleshooting\r\n\r\n## 7.1 Private Subnet Prevented VM Extension Installation\r\n\r\n### Issue\r\n\r\nWhen we attempted to install VM Azure AD Login extension for VM in the Spoke Vnet, it continued to fail","lastModifiedDate":1783534455569.4248}]
+------------------
+[7/9/2026, 3:44:15 AM] [Log] [IPC] .handle("app.sendEvent") result: 
+------------------
+[7/9/2026, 3:44:32 AM] [Log] [IPC] .invoke("webContents.copy") args: []
+------------------
+[7/9/2026, 3:44:32 AM] [Log] [IPC] .handle("webContents.copy") result: 
+------------------
+[7/9/2026, 3:44:32 AM] [Log] [IPC] .invoke("webContents.copy") args: []
+------------------
+[7/9/2026, 3:44:32 AM] [Log] [IPC] .handle("webContents.copy") result: 
+------------------
+[7/9/2026, 3:44:32 AM] [Log] [IPC] .invoke("window.setTitle") args: [null,true]
+------------------
+[7/9/2026, 3:44:32 AM] [Log] [IPC] .handle("window.setTitle") result: 
+------------------
+[7/9/2026, 3:46:50 AM] [Log] [IPC] .invoke("webContents.copy") args: []
+------------------
+[7/9/2026, 3:46:50 AM] [Log] [IPC] .handle("webContents.copy") result: 
+------------------
+[7/9/2026, 3:46:50 AM] [Log] [IPC] .invoke("webContents.copy") args: []
+------------------
+[7/9/2026, 3:46:50 AM] [Log] [IPC] .handle("webContents.copy") result: 
+------------------
+[7/9/2026, 3:47:24 AM] [Log] [IPC] .invoke("webContents.copy") args: []
+------------------
+[7/9/2026, 3:47:24 AM] [Log] [IPC] .handle("webContents.copy") result: 
+------------------
+[7/9/2026, 3:47:24 AM] [Log] [IPC] .invoke("webContents.copy") args: []
+------------------
+[7/9/2026, 3:47:24 AM] [Log] [IPC] .handle("webContents.copy") result: 
+------------------
+[7/9/2026, 3:48:04 AM] [Log] [IPC] .invoke("app.sendEvent") args: ["willSave","D:\\Git\\labs\\Azure-Network\\docs\\07-Troubleshooting.md"]
+------------------
+[7/9/2026, 3:48:04 AM] [Log] [IPC] .handle("app.sendEvent") result: 
+------------------
+[7/9/2026, 3:48:04 AM] [Log] [IPC] .invoke("document.setLastSync") args: [1783534684933.7957]
+------------------
+[7/9/2026, 3:48:04 AM] [Log] [IPC] .handle("document.setLastSync") result: 
+------------------
+[7/9/2026, 3:48:04 AM] [Log] [IPC] .invoke("window.setTitle") args: [null,true]
+------------------
+[7/9/2026, 3:48:04 AM] [Log] [IPC] .handle("window.setTitle") result: 
+------------------
+[7/9/2026, 3:48:04 AM] [Log] [IPC] .invoke("window.setTitle") args: [null,false]
+------------------
+[7/9/2026, 3:48:04 AM] [Log] [IPC] .handle("window.setTitle") result: 
+------------------
+[7/9/2026, 3:48:04 AM] [Log] [IPC] .invoke("app.sendEvent") args: ["didSave",{"path":"D:\\Git\\labs\\Azure-Network\\docs\\07-Troubleshooting.md","summary":"# 7 Troubleshooting\r\n\r\n## 7.1 Private Subnet Prevented VM Extension Installation\r\n\r\n### Issue\r\n\r\nWhen we attempted to install VM Azure AD Login extension for VM in the Spoke Vnet, it continued to fail","lastModifiedDate":1783534684933.7957}]
+------------------
+[7/9/2026, 3:48:04 AM] [Log] [IPC] .handle("app.sendEvent") result: 
+------------------
+[7/9/2026, 3:49:50 AM] [Log] [IPC] .invoke("window.setTitle") args: [null,true]
+------------------
+[7/9/2026, 3:49:50 AM] [Log] [IPC] .handle("window.setTitle") result: 
+------------------
+[7/9/2026, 3:53:07 AM] [Log] [IPC] .invoke("app.sendEvent") args: ["willSave","D:\\Git\\labs\\Azure-Network\\docs\\07-Troubleshooting.md"]
+------------------
+[7/9/2026, 3:53:07 AM] [Log] [IPC] .handle("app.sendEvent") result: 
+------------------
+[7/9/2026, 3:53:07 AM] [Log] [IPC] .invoke("document.setLastSync") args: [1783534987085.3477]
+------------------
+[7/9/2026, 3:53:07 AM] [Log] [IPC] .handle("document.setLastSync") result: 
+------------------
+[7/9/2026, 3:53:07 AM] [Log] [IPC] .invoke("window.setTitle") args: [null,true]
+------------------
+[7/9/2026, 3:53:07 AM] [Log] [IPC] .handle("window.setTitle") result: 
+------------------
+[7/9/2026, 3:53:07 AM] [Log] [IPC] .invoke("window.setTitle") args: [null,false]
+------------------
+[7/9/2026, 3:53:07 AM] [Log] [IPC] .handle("window.setTitle") result: 
+------------------
+[7/9/2026, 3:53:07 AM] [Log] [IPC] .invoke("app.sendEvent") args: ["didSave",{"path":"D:\\Git\\labs\\Azure-Network\\docs\\07-Troubleshooting.md","summary":"# 7 Troubleshooting\r\n\r\n## 7.1 Private Subnet Prevented VM Extension Installation\r\n\r\n### Issue\r\n\r\nWhen we attempted to install VM Azure AD Login extension for VM in the Spoke Vnet, it continued to fail","lastModifiedDate":1783534987085.3477}]
+------------------
+[7/9/2026, 3:53:07 AM] [Log] [IPC] .handle("app.sendEvent") result: 
+------------------
+[7/9/2026, 3:53:11 AM] [Log] [IPC] .invoke("window.setTitle") args: [null,true]
+------------------
+[7/9/2026, 3:53:11 AM] [Log] [IPC] .handle("window.setTitle") result: 
+------------------
+[7/9/2026, 3:53:18 AM] [Log] [IPC] .invoke("app.sendEvent") args: ["willSave","D:\\Git\\labs\\Azure-Network\\docs\\07-Troubleshooting.md"]
+------------------
+[7/9/2026, 3:53:18 AM] [Log] [IPC] .handle("app.sendEvent") result: 
+------------------
+[7/9/2026, 3:53:18 AM] [Log] [IPC] .invoke("document.setLastSync") args: [1783534998194.265]
+------------------
+[7/9/2026, 3:53:18 AM] [Log] [IPC] .handle("document.setLastSync") result: 
+------------------
+[7/9/2026, 3:53:18 AM] [Log] [IPC] .invoke("window.setTitle") args: [null,true]
+------------------
+[7/9/2026, 3:53:18 AM] [Log] [IPC] .handle("window.setTitle") result: 
+------------------
+[7/9/2026, 3:53:18 AM] [Log] [IPC] .invoke("window.setTitle") args: [null,false]
+------------------
+[7/9/2026, 3:53:18 AM] [Log] [IPC] .handle("window.setTitle") result: 
+------------------
+[7/9/2026, 3:53:18 AM] [Log] [IPC] .invoke("app.sendEvent") args: ["didSave",{"path":"D:\\Git\\labs\\Azure-Network\\docs\\07-Troubleshooting.md","summary":"# 7 Troubleshooting\r\n\r\n## 7.1 Private Subnet Prevented VM Extension Installation\r\n\r\n### Issue\r\n\r\nWhen we attempted to install VM Azure AD Login extension for VM in the Spoke Vnet, it continued to fail","lastModifiedDate":1783534998194.265}]
+------------------
+[7/9/2026, 3:53:18 AM] [Log] [IPC] .handle("app.sendEvent") result: 
+------------------
+[7/9/2026, 3:53:37 AM] [Log] [IPC] .invoke("window.setTitle") args: [null,true]
+------------------
+[7/9/2026, 3:53:37 AM] [Log] [IPC] .handle("window.setTitle") result: 
+------------------
+[7/9/2026, 3:56:17 AM] [Log] [IPC] .invoke("app.sendEvent") args: ["willSave","D:\\Git\\labs\\Azure-Network\\docs\\07-Troubleshooting.md"]
+------------------
+[7/9/2026, 3:56:17 AM] [Log] [IPC] .handle("app.sendEvent") result: 
+------------------
+[7/9/2026, 3:56:17 AM] [Log] [IPC] .invoke("document.setLastSync") args: [1783535177990.483]
+------------------
+[7/9/2026, 3:56:17 AM] [Log] [IPC] .handle("document.setLastSync") result: 
+------------------
+[7/9/2026, 3:56:17 AM] [Log] [IPC] .invoke("window.setTitle") args: [null,true]
+------------------
+[7/9/2026, 3:56:17 AM] [Log] [IPC] .handle("window.setTitle") result: 
+------------------
+[7/9/2026, 3:56:17 AM] [Log] [IPC] .invoke("window.setTitle") args: [null,false]
+------------------
+[7/9/2026, 3:56:17 AM] [Log] [IPC] .handle("window.setTitle") result: 
+------------------
+[7/9/2026, 3:56:17 AM] [Log] [IPC] .invoke("app.sendEvent") args: ["didSave",{"path":"D:\\Git\\labs\\Azure-Network\\docs\\07-Troubleshooting.md","summary":"# 7 Troubleshooting\r\n\r\n## 7.1 Private Subnet Prevented VM Extension Installation\r\n\r\n### Issue\r\n\r\nWhen we attempted to install VM Azure AD Login extension for VM in the Spoke Vnet, it continued to fail","lastModifiedDate":1783535177990.483}]
+------------------
+[7/9/2026, 3:56:17 AM] [Log] [IPC] .handle("app.sendEvent") result: 
+------------------
+[7/9/2026, 3:56:54 AM] [Log] [IPC] .invoke("webContents.copy") args: []
+------------------
+[7/9/2026, 3:56:54 AM] [Log] [IPC] .handle("webContents.copy") result: 
+------------------
+[7/9/2026, 3:56:54 AM] [Log] [IPC] .invoke("webContents.copy") args: []
+------------------
+[7/9/2026, 3:56:54 AM] [Log] [IPC] .handle("webContents.copy") result: 
+------------------
+[7/9/2026, 3:56:59 AM] [Log] [IPC] .invoke("window.setTitle") args: [null,true]
+------------------
+[7/9/2026, 3:56:59 AM] [Log] [IPC] .handle("window.setTitle") result: 
+------------------
+[7/9/2026, 3:57:14 AM] [Log] [IPC] .invoke("app.sendEvent") args: ["willSave","D:\\Git\\labs\\Azure-Network\\docs\\07-Troubleshooting.md"]
+------------------
+[7/9/2026, 3:57:14 AM] [Log] [IPC] .handle("app.sendEvent") result: 
+------------------
+[7/9/2026, 3:57:14 AM] [Log] [IPC] .invoke("document.setLastSync") args: [1783535234104.9912]
+------------------
+[7/9/2026, 3:57:14 AM] [Log] [IPC] .handle("document.setLastSync") result: 
+------------------
+[7/9/2026, 3:57:14 AM] [Log] [IPC] .invoke("window.setTitle") args: [null,true]
+------------------
+[7/9/2026, 3:57:14 AM] [Log] [IPC] .handle("window.setTitle") result: 
+------------------
+[7/9/2026, 3:57:14 AM] [Log] [IPC] .invoke("window.setTitle") args: [null,false]
+------------------
+[7/9/2026, 3:57:14 AM] [Log] [IPC] .handle("window.setTitle") result: 
+------------------
+[7/9/2026, 3:57:14 AM] [Log] [IPC] .invoke("app.sendEvent") args: ["didSave",{"path":"D:\\Git\\labs\\Azure-Network\\docs\\07-Troubleshooting.md","summary":"# 7 Troubleshooting\r\n\r\n## 7.1 Private Subnet Prevented VM Extension Installation\r\n\r\n### Issue\r\n\r\nWhen we attempted to install VM Azure AD Login extension for VM in the Spoke Vnet, it continued to fail","lastModifiedDate":1783535234104.9912}]
+------------------
+[7/9/2026, 3:57:14 AM] [Log] [IPC] .handle("app.sendEvent") result: 
+------------------
+[7/9/2026, 3:57:18 AM] [Log] [IPC] .invoke("window.setTitle") args: [null,true]
+------------------
+[7/9/2026, 3:57:18 AM] [Log] [IPC] .handle("window.setTitle") result: 
+------------------
+[7/9/2026, 3:57:20 AM] [Log] [IPC] .invoke("window.setTitle") args: [null,false]
+------------------
+[7/9/2026, 3:57:20 AM] [Log] [IPC] .handle("window.setTitle") result: 
+------------------
+[7/9/2026, 3:57:20 AM] [Log] [IPC] .invoke("window.updateMenuForIsAlwaysOnTop") args: []
+------------------
+[7/9/2026, 3:57:20 AM] [Log] [IPC] .handle("window.updateMenuForIsAlwaysOnTop") result: 
+------------------
+[7/9/2026, 3:57:20 AM] [Log] [IPC] .invoke("menu.updateCustomZoom") args: []
+------------------
+[7/9/2026, 3:57:20 AM] [Log] [IPC] .handle("menu.updateCustomZoom") result: 
+------------------
+[7/9/2026, 3:57:23 AM] [Log] [IPC] .invoke("window.setTitle") args: [null,true]
+------------------
+[7/9/2026, 3:57:23 AM] [Log] [IPC] .handle("window.setTitle") result: 
+------------------
+[7/9/2026, 3:59:04 AM] [Log] [IPC] .invoke("app.sendEvent") args: ["willSave","D:\\Git\\labs\\Azure-Network\\docs\\07-Troubleshooting.md"]
+------------------
+[7/9/2026, 3:59:04 AM] [Log] [IPC] .handle("app.sendEvent") result: 
+------------------
+[7/9/2026, 3:59:04 AM] [Log] [IPC] .invoke("document.setLastSync") args: [1783535344277.3904]
+------------------
+[7/9/2026, 3:59:04 AM] [Log] [IPC] .handle("document.setLastSync") result: 
+------------------
+[7/9/2026, 3:59:04 AM] [Log] [IPC] .invoke("window.setTitle") args: [null,true]
+------------------
+[7/9/2026, 3:59:04 AM] [Log] [IPC] .handle("window.setTitle") result: 
+------------------
+[7/9/2026, 3:59:04 AM] [Log] [IPC] .invoke("window.setTitle") args: [null,false]
+------------------
+[7/9/2026, 3:59:04 AM] [Log] [IPC] .handle("window.setTitle") result: 
+------------------
+[7/9/2026, 3:59:04 AM] [Log] [IPC] .invoke("app.sendEvent") args: ["didSave",{"path":"D:\\Git\\labs\\Azure-Network\\docs\\07-Troubleshooting.md","summary":"# 7 Troubleshooting\r\n\r\n## 7.1 Private Subnet Prevented VM Extension Installation\r\n\r\n### Issue\r\n\r\nWhen we attempted to install VM Azure AD Login extension for VM in the Spoke Vnet, it continued to fail","lastModifiedDate":1783535344277.3904}]
+------------------
+[7/9/2026, 3:59:04 AM] [Log] [IPC] .handle("app.sendEvent") result: 
+------------------
+[7/9/2026, 3:59:52 AM] [Log] [IPC] .invoke("window.setTitle") args: [null,true]
+------------------
+[7/9/2026, 3:59:52 AM] [Log] [IPC] .handle("window.setTitle") result: 
+------------------
+[7/9/2026, 4:00:17 AM] [Log] [IPC] .invoke("app.sendEvent") args: ["willSave","D:\\Git\\labs\\Azure-Network\\docs\\07-Troubleshooting.md"]
+------------------
+[7/9/2026, 4:00:17 AM] [Log] [IPC] .handle("app.sendEvent") result: 
+------------------
+[7/9/2026, 4:00:17 AM] [Log] [IPC] .invoke("document.setLastSync") args: [1783535417854.8093]
+------------------
+[7/9/2026, 4:00:17 AM] [Log] [IPC] .handle("document.setLastSync") result: 
+------------------
+[7/9/2026, 4:00:17 AM] [Log] [IPC] .invoke("window.setTitle") args: [null,true]
+------------------
+[7/9/2026, 4:00:17 AM] [Log] [IPC] .handle("window.setTitle") result: 
+------------------
+[7/9/2026, 4:00:17 AM] [Log] [IPC] .invoke("window.setTitle") args: [null,false]
+------------------
+[7/9/2026, 4:00:17 AM] [Log] [IPC] .handle("window.setTitle") result: 
+------------------
+[7/9/2026, 4:00:17 AM] [Log] [IPC] .invoke("app.sendEvent") args: ["didSave",{"path":"D:\\Git\\labs\\Azure-Network\\docs\\07-Troubleshooting.md","summary":"# 7 Troubleshooting\r\n\r\n## 7.1 Private Subnet Prevented VM Extension Installation\r\n\r\n### Issue\r\n\r\nWhen we attempted to install VM Azure AD Login extension for VM in the Spoke Vnet, it continued to fail","lastModifiedDate":1783535417854.8093}]
+------------------
+[7/9/2026, 4:00:17 AM] [Log] [IPC] .handle("app.sendEvent") result: 
+------------------
+[7/9/2026, 4:00:24 AM] [Log] [IPC] .invoke("window.setTitle") args: [null,true]
+------------------
+[7/9/2026, 4:00:24 AM] [Log] [IPC] .handle("window.setTitle") result: 
+------------------
+[7/9/2026, 4:00:27 AM] [Log] [IPC] .invoke("app.sendEvent") args: ["willSave","D:\\Git\\labs\\Azure-Network\\docs\\07-Troubleshooting.md"]
+------------------
+[7/9/2026, 4:00:27 AM] [Log] [IPC] .handle("app.sendEvent") result: 
+------------------
+[7/9/2026, 4:00:27 AM] [Log] [IPC] .invoke("document.setLastSync") args: [1783535427542.5825]
+------------------
+[7/9/2026, 4:00:27 AM] [Log] [IPC] .handle("document.setLastSync") result: 
+------------------
+[7/9/2026, 4:00:27 AM] [Log] [IPC] .invoke("window.setTitle") args: [null,true]
+------------------
+[7/9/2026, 4:00:27 AM] [Log] [IPC] .handle("window.setTitle") result: 
+------------------
+[7/9/2026, 4:00:27 AM] [Log] [IPC] .invoke("window.setTitle") args: [null,false]
+------------------
+[7/9/2026, 4:00:27 AM] [Log] [IPC] .handle("window.setTitle") result: 
+------------------
+[7/9/2026, 4:00:27 AM] [Log] [IPC] .invoke("app.sendEvent") args: ["didSave",{"path":"D:\\Git\\labs\\Azure-Network\\docs\\07-Troubleshooting.md","summary":"# 7 Troubleshooting\r\n\r\n## 7.1 Private Subnet Prevented VM Extension Installation\r\n\r\n### Issue\r\n\r\nWhen we attempted to install VM Azure AD Login extension for VM in the Spoke Vnet, it continued to fail","lastModifiedDate":1783535427542.5825}]
+------------------
+[7/9/2026, 4:00:27 AM] [Log] [IPC] .handle("app.sendEvent") result: 
+------------------
+[7/9/2026, 4:00:34 AM] [Log] [IPC] .invoke("window.setTitle") args: [null,true]
+------------------
+[7/9/2026, 4:00:34 AM] [Log] [IPC] .handle("window.setTitle") result: 
+------------------
+[7/9/2026, 4:00:38 AM] [Log] [IPC] .invoke("app.sendEvent") args: ["willSave","D:\\Git\\labs\\Azure-Network\\docs\\07-Troubleshooting.md"]
+------------------
+[7/9/2026, 4:00:38 AM] [Log] [IPC] .handle("app.sendEvent") result: 
+------------------
+[7/9/2026, 4:00:38 AM] [Log] [IPC] .invoke("document.setLastSync") args: [1783535438444.1565]
+------------------
+[7/9/2026, 4:00:38 AM] [Log] [IPC] .handle("document.setLastSync") result: 
+------------------
+[7/9/2026, 4:00:38 AM] [Log] [IPC] .invoke("window.setTitle") args: [null,true]
+------------------
+[7/9/2026, 4:00:38 AM] [Log] [IPC] .handle("window.setTitle") result: 
+------------------
+[7/9/2026, 4:00:38 AM] [Log] [IPC] .invoke("window.setTitle") args: [null,false]
+------------------
+[7/9/2026, 4:00:38 AM] [Log] [IPC] .handle("window.setTitle") result: 
+------------------
+[7/9/2026, 4:00:38 AM] [Log] [IPC] .invoke("app.sendEvent") args: ["didSave",{"path":"D:\\Git\\labs\\Azure-Network\\docs\\07-Troubleshooting.md","summary":"# 7 Troubleshooting\r\n\r\n## 7.1 Private Subnet Prevented VM Extension Installation\r\n\r\n### Issue\r\n\r\nWhen we attempted to install VM Azure AD Login extension for VM in the Spoke Vnet, it continued to fail","lastModifiedDate":1783535438444.1565}]
+------------------
+[7/9/2026, 4:00:38 AM] [Log] [IPC] .handle("app.sendEvent") result: 
+------------------
+[7/9/2026, 4:00:50 AM] [Log] [IPC] .invoke("window.setTitle") args: [null,true]
+------------------
+[7/9/2026, 4:00:50 AM] [Log] [IPC] .handle("window.setTitle") result: 
+------------------
+[7/9/2026, 4:00:51 AM] [Log] [IPC] .invoke("app.sendEvent") args: ["willSave","D:\\Git\\labs\\Azure-Network\\docs\\07-Troubleshooting.md"]
+------------------
+[7/9/2026, 4:00:51 AM] [Log] [IPC] .handle("app.sendEvent") result: 
+------------------
+[7/9/2026, 4:00:51 AM] [Log] [IPC] .invoke("document.setLastSync") args: [1783535451668.0676]
+------------------
+[7/9/2026, 4:00:51 AM] [Log] [IPC] .handle("document.setLastSync") result: 
+------------------
+[7/9/2026, 4:00:51 AM] [Log] [IPC] .invoke("window.setTitle") args: [null,true]
+------------------
+[7/9/2026, 4:00:51 AM] [Log] [IPC] .handle("window.setTitle") result: 
+------------------
+[7/9/2026, 4:00:51 AM] [Log] [IPC] .invoke("window.setTitle") args: [null,false]
+------------------
+[7/9/2026, 4:00:51 AM] [Log] [IPC] .handle("window.setTitle") result: 
+------------------
+[7/9/2026, 4:00:51 AM] [Log] [IPC] .invoke("app.sendEvent") args: ["didSave",{"path":"D:\\Git\\labs\\Azure-Network\\docs\\07-Troubleshooting.md","summary":"# 7 Troubleshooting\r\n\r\n## 7.1 Private Subnet Prevented VM Extension Installation\r\n\r\n### Issue\r\n\r\nWhen we attempted to install VM Azure AD Login extension for VM in the Spoke Vnet, it continued to fail","lastModifiedDate":1783535451668.0676}]
+------------------
+[7/9/2026, 4:00:51 AM] [Log] [IPC] .handle("app.sendEvent") result: 
+------------------
+[7/9/2026, 4:00:59 AM] [Log] [IPC] .invoke("window.setTitle") args: [null,true]
+------------------
+[7/9/2026, 4:00:59 AM] [Log] [IPC] .handle("window.setTitle") result: 
+------------------
+[7/9/2026, 4:01:31 AM] [Log] [IPC] .invoke("window.updateMenuForIsAlwaysOnTop") args: []
+------------------
+[7/9/2026, 4:01:31 AM] [Log] [IPC] .handle("window.updateMenuForIsAlwaysOnTop") result: 
+------------------
+[7/9/2026, 4:01:31 AM] [Log] [IPC] .invoke("menu.updateCustomZoom") args: []
+------------------
+[7/9/2026, 4:01:31 AM] [Log] [IPC] .handle("menu.updateCustomZoom") result: 
+------------------
+[7/9/2026, 4:01:38 AM] [Log] [IPC] .invoke("app.sendEvent") args: ["willSave","D:\\Git\\labs\\Azure-Network\\docs\\07-Troubleshooting.md"]
+------------------
+[7/9/2026, 4:01:38 AM] [Log] [IPC] .handle("app.sendEvent") result: 
+------------------
+[7/9/2026, 4:01:38 AM] [Log] [IPC] .invoke("document.setLastSync") args: [1783535498902.0396]
+------------------
+[7/9/2026, 4:01:38 AM] [Log] [IPC] .handle("document.setLastSync") result: 
+------------------
+[7/9/2026, 4:01:38 AM] [Log] [IPC] .invoke("window.setTitle") args: [null,true]
+------------------
+[7/9/2026, 4:01:38 AM] [Log] [IPC] .handle("window.setTitle") result: 
+------------------
+[7/9/2026, 4:01:38 AM] [Log] [IPC] .invoke("window.setTitle") args: [null,false]
+------------------
+[7/9/2026, 4:01:38 AM] [Log] [IPC] .handle("window.setTitle") result: 
+------------------
+[7/9/2026, 4:01:38 AM] [Log] [IPC] .invoke("app.sendEvent") args: ["didSave",{"path":"D:\\Git\\labs\\Azure-Network\\docs\\07-Troubleshooting.md","summary":"# 7 Troubleshooting\r\n\r\n## 7.1 Private Subnet Prevented VM Extension Installation\r\n\r\n### Issue\r\n\r\nWhen we attempted to install VM Azure AD Login extension for VM in the Spoke Vnet, it continued to fail","lastModifiedDate":1783535498902.0396}]
+------------------
+[7/9/2026, 4:01:38 AM] [Log] [IPC] .handle("app.sendEvent") result: 
+------------------
+[7/9/2026, 4:01:49 AM] [Log] [IPC] .invoke("window.setTitle") args: [null,true]
+------------------
+[7/9/2026, 4:01:49 AM] [Log] [IPC] .handle("window.setTitle") result: 
+------------------
+[7/9/2026, 4:01:57 AM] [Log] [IPC] .invoke("app.sendEvent") args: ["willSave","D:\\Git\\labs\\Azure-Network\\docs\\07-Troubleshooting.md"]
+------------------
+[7/9/2026, 4:01:57 AM] [Log] [IPC] .handle("app.sendEvent") result: 
+------------------
+[7/9/2026, 4:01:57 AM] [Log] [IPC] .invoke("document.setLastSync") args: [1783535517157.7024]
+------------------
+[7/9/2026, 4:01:57 AM] [Log] [IPC] .handle("document.setLastSync") result: 
+------------------
+[7/9/2026, 4:01:57 AM] [Log] [IPC] .invoke("window.setTitle") args: [null,true]
+------------------
+[7/9/2026, 4:01:57 AM] [Log] [IPC] .handle("window.setTitle") result: 
+------------------
+[7/9/2026, 4:01:57 AM] [Log] [IPC] .invoke("window.setTitle") args: [null,false]
+------------------
+[7/9/2026, 4:01:57 AM] [Log] [IPC] .handle("window.setTitle") result: 
+------------------
+[7/9/2026, 4:01:57 AM] [Log] [IPC] .invoke("app.sendEvent") args: ["didSave",{"path":"D:\\Git\\labs\\Azure-Network\\docs\\07-Troubleshooting.md","summary":"# 7 Troubleshooting\r\n\r\n## 7.1 Private Subnet Prevented VM Extension Installation\r\n\r\n### Issue\r\n\r\nWhen we attempted to install VM Azure AD Login extension for VM in the Spoke Vnet, it continued to fail","lastModifiedDate":1783535517157.7024}]
+------------------
+[7/9/2026, 4:01:57 AM] [Log] [IPC] .handle("app.sendEvent") result: 
+------------------
+[7/9/2026, 4:18:02 AM] [Log] [IPC] .invoke("window.setTitle") args: [null,true]
+------------------
+[7/9/2026, 4:18:02 AM] [Log] [IPC] .handle("window.setTitle") result: 
+------------------
+[7/9/2026, 4:19:35 AM] [Log] [IPC] .invoke("webContents.copy") args: []
+------------------
+[7/9/2026, 4:19:35 AM] [Log] [IPC] .handle("webContents.copy") result: 
+------------------
+[7/9/2026, 4:19:47 AM] [Log] [IPC] .invoke("app.sendEvent") args: ["willSave","D:\\Git\\labs\\Azure-Network\\docs\\07-Troubleshooting.md"]
+------------------
+[7/9/2026, 4:19:47 AM] [Log] [IPC] .handle("app.sendEvent") result: 
+------------------
+[7/9/2026, 4:19:47 AM] [Log] [IPC] .invoke("document.setLastSync") args: [1783536587520.3855]
+------------------
+[7/9/2026, 4:19:47 AM] [Log] [IPC] .handle("document.setLastSync") result: 
+------------------
+[7/9/2026, 4:19:47 AM] [Log] [IPC] .invoke("window.setTitle") args: [null,true]
+------------------
+[7/9/2026, 4:19:47 AM] [Log] [IPC] .handle("window.setTitle") result: 
+------------------
+[7/9/2026, 4:19:47 AM] [Log] [IPC] .invoke("window.setTitle") args: [null,false]
+------------------
+[7/9/2026, 4:19:47 AM] [Log] [IPC] .handle("window.setTitle") result: 
+------------------
+[7/9/2026, 4:19:47 AM] [Log] [IPC] .invoke("app.sendEvent") args: ["didSave",{"path":"D:\\Git\\labs\\Azure-Network\\docs\\07-Troubleshooting.md","summary":"# 7 Troubleshooting\r\n\r\n## 7.1 Private Subnet Prevented VM Extension Installation\r\n\r\n### Issue\r\n\r\nWhen we attempted to install VM Azure AD Login extension for VM in the Spoke Vnet, it continued to fail","lastModifiedDate":1783536587520.3855}]
+------------------
+[7/9/2026, 4:19:47 AM] [Log] [IPC] .handle("app.sendEvent") result: 
+------------------
+[7/9/2026, 4:19:50 AM] [Log] [IPC] .invoke("webContents.copy") args: []
+------------------
+[7/9/2026, 4:19:50 AM] [Log] [IPC] .handle("webContents.copy") result: 
+------------------
+[7/9/2026, 4:19:50 AM] [Log] [IPC] .invoke("webContents.copy") args: []
+------------------
+[7/9/2026, 4:19:50 AM] [Log] [IPC] .handle("webContents.copy") result: 
+------------------
+[7/9/2026, 4:19:50 AM] [Log] [IPC] .invoke("window.setTitle") args: [null,true]
+------------------
+[7/9/2026, 4:19:50 AM] [Log] [IPC] .handle("window.setTitle") result: 
+------------------
+[7/9/2026, 4:19:57 AM] [Log] [IPC] .invoke("app.sendEvent") args: ["willSave","D:\\Git\\labs\\Azure-Network\\docs\\07-Troubleshooting.md"]
+------------------
+[7/9/2026, 4:19:57 AM] [Log] [IPC] .handle("app.sendEvent") result: 
+------------------
+[7/9/2026, 4:19:57 AM] [Log] [IPC] .invoke("document.setLastSync") args: [1783536597588.6902]
+------------------
+[7/9/2026, 4:19:57 AM] [Log] [IPC] .handle("document.setLastSync") result: 
+------------------
+[7/9/2026, 4:19:57 AM] [Log] [IPC] .invoke("window.setTitle") args: [null,true]
+------------------
+[7/9/2026, 4:19:57 AM] [Log] [IPC] .handle("window.setTitle") result: 
+------------------
+[7/9/2026, 4:19:57 AM] [Log] [IPC] .invoke("window.setTitle") args: [null,false]
+------------------
+[7/9/2026, 4:19:57 AM] [Log] [IPC] .handle("window.setTitle") result: 
+------------------
+[7/9/2026, 4:19:57 AM] [Log] [IPC] .invoke("app.sendEvent") args: ["didSave",{"path":"D:\\Git\\labs\\Azure-Network\\docs\\07-Troubleshooting.md","summary":"# 7 Troubleshooting\r\n\r\n## 7.1 Private Subnet Prevented VM Extension Installation\r\n\r\n### Issue\r\n\r\nWhen we attempted to install VM Azure AD Login extension for VM in the Spoke Vnet, it continued to fail","lastModifiedDate":1783536597588.6902}]
+------------------
+[7/9/2026, 4:19:57 AM] [Log] [IPC] .handle("app.sendEvent") result: 
+------------------
+[7/9/2026, 4:20:29 AM] [Log] [IPC] .invoke("window.setTitle") args: [null,true]
+------------------
+[7/9/2026, 4:20:29 AM] [Log] [IPC] .handle("window.setTitle") result: 
+------------------
+[7/9/2026, 4:22:16 AM] [Log] [IPC] .invoke("webContents.copy") args: []
+------------------
+[7/9/2026, 4:22:16 AM] [Log] [IPC] .handle("webContents.copy") result: 
+------------------
+[7/9/2026, 4:22:16 AM] [Log] [IPC] .invoke("webContents.copy") args: []
+------------------
+[7/9/2026, 4:22:16 AM] [Log] [IPC] .handle("webContents.copy") result: 
+------------------
+[7/9/2026, 4:24:59 AM] [Log] [IPC] .invoke("app.sendEvent") args: ["willSave","D:\\Git\\labs\\Azure-Network\\docs\\07-Troubleshooting.md"]
+------------------
+[7/9/2026, 4:24:59 AM] [Log] [IPC] .handle("app.sendEvent") result: 
+------------------
+[7/9/2026, 4:24:59 AM] [Log] [IPC] .invoke("document.setLastSync") args: [1783536899203.4097]
+------------------
+[7/9/2026, 4:24:59 AM] [Log] [IPC] .handle("document.setLastSync") result: 
+------------------
+[7/9/2026, 4:24:59 AM] [Log] [IPC] .invoke("window.setTitle") args: [null,true]
+------------------
+[7/9/2026, 4:24:59 AM] [Log] [IPC] .handle("window.setTitle") result: 
+------------------
+[7/9/2026, 4:24:59 AM] [Log] [IPC] .invoke("window.setTitle") args: [null,false]
+------------------
+[7/9/2026, 4:24:59 AM] [Log] [IPC] .handle("window.setTitle") result: 
+------------------
+[7/9/2026, 4:24:59 AM] [Log] [IPC] .invoke("app.sendEvent") args: ["didSave",{"path":"D:\\Git\\labs\\Azure-Network\\docs\\07-Troubleshooting.md","summary":"# 7 Troubleshooting\r\n\r\n## 7.1 Private Subnet Prevented VM Extension Installation\r\n\r\n### Issue\r\n\r\nWhen we attempted to install VM Azure AD Login extension for VM in the Spoke Vnet, it continued to fail","lastModifiedDate":1783536899203.4097}]
+------------------
+[7/9/2026, 4:24:59 AM] [Log] [IPC] .handle("app.sendEvent") result: 
+------------------
+[7/9/2026, 4:25:27 AM] [Log] [IPC] .invoke("window.setTitle") args: [null,true]
+------------------
+[7/9/2026, 4:25:27 AM] [Log] [IPC] .handle("window.setTitle") result: 
+------------------
+[7/9/2026, 4:26:05 AM] [Log] [IPC] .invoke("webContents.copy") args: []
+------------------
+[7/9/2026, 4:26:05 AM] [Log] [IPC] .handle("webContents.copy") result: 
+------------------
+[7/9/2026, 4:26:05 AM] [Log] [IPC] .invoke("webContents.copy") args: []
+------------------
+[7/9/2026, 4:26:05 AM] [Log] [IPC] .handle("webContents.copy") result: 
+------------------
+[7/9/2026, 4:26:48 AM] [Log] [IPC] .invoke("app.sendEvent") args: ["willSave","D:\\Git\\labs\\Azure-Network\\docs\\07-Troubleshooting.md"]
+------------------
+[7/9/2026, 4:26:48 AM] [Log] [IPC] .handle("app.sendEvent") result: 
+------------------
+[7/9/2026, 4:26:48 AM] [Log] [IPC] .invoke("document.setLastSync") args: [1783537008263.8884]
+------------------
+[7/9/2026, 4:26:48 AM] [Log] [IPC] .handle("document.setLastSync") result: 
+------------------
+[7/9/2026, 4:26:48 AM] [Log] [IPC] .invoke("window.setTitle") args: [null,true]
+------------------
+[7/9/2026, 4:26:48 AM] [Log] [IPC] .handle("window.setTitle") result: 
+------------------
+[7/9/2026, 4:26:48 AM] [Log] [IPC] .invoke("window.setTitle") args: [null,false]
+------------------
+[7/9/2026, 4:26:48 AM] [Log] [IPC] .handle("window.setTitle") result: 
+------------------
+[7/9/2026, 4:26:48 AM] [Log] [IPC] .invoke("app.sendEvent") args: ["didSave",{"path":"D:\\Git\\labs\\Azure-Network\\docs\\07-Troubleshooting.md","summary":"# 7 Troubleshooting\r\n\r\n## 7.1 Private Subnet Prevented VM Extension Installation\r\n\r\n### Issue\r\n\r\nWhen we attempted to install VM Azure AD Login extension for VM in the Spoke Vnet, it continued to fail","lastModifiedDate":1783537008263.8884}]
+------------------
+[7/9/2026, 4:26:48 AM] [Log] [IPC] .handle("app.sendEvent") result: 
+------------------
+[7/9/2026, 4:27:10 AM] [Log] [IPC] .invoke("window.setTitle") args: [null,true]
+------------------
+[7/9/2026, 4:27:10 AM] [Log] [IPC] .handle("window.setTitle") result: 
+------------------
+[7/9/2026, 4:27:53 AM] [Log] [IPC] .invoke("app.sendEvent") args: ["willSave","D:\\Git\\labs\\Azure-Network\\docs\\07-Troubleshooting.md"]
+------------------
+[7/9/2026, 4:27:53 AM] [Log] [IPC] .handle("app.sendEvent") result: 
+------------------
+[7/9/2026, 4:27:53 AM] [Log] [IPC] .invoke("document.setLastSync") args: [1783537073760.578]
+------------------
+[7/9/2026, 4:27:53 AM] [Log] [IPC] .handle("document.setLastSync") result: 
+------------------
+[7/9/2026, 4:27:53 AM] [Log] [IPC] .invoke("window.setTitle") args: [null,true]
+------------------
+[7/9/2026, 4:27:53 AM] [Log] [IPC] .handle("window.setTitle") result: 
+------------------
+[7/9/2026, 4:27:53 AM] [Log] [IPC] .invoke("window.setTitle") args: [null,false]
+------------------
+[7/9/2026, 4:27:53 AM] [Log] [IPC] .handle("window.setTitle") result: 
+------------------
+[7/9/2026, 4:27:53 AM] [Log] [IPC] .invoke("app.sendEvent") args: ["didSave",{"path":"D:\\Git\\labs\\Azure-Network\\docs\\07-Troubleshooting.md","summary":"# 7 Troubleshooting\r\n\r\n## 7.1 Private Subnet Prevented VM Extension Installation\r\n\r\n### Issue\r\n\r\nWhen we attempted to install VM Azure AD Login extension for VM in the Spoke Vnet, it continued to fail","lastModifiedDate":1783537073760.578}]
+------------------
+[7/9/2026, 4:27:53 AM] [Log] [IPC] .handle("app.sendEvent") result: 
+------------------
+[7/9/2026, 4:27:58 AM] [Log] [IPC] .invoke("window.setTitle") args: [null,true]
+------------------
+[7/9/2026, 4:27:58 AM] [Log] [IPC] .handle("window.setTitle") result: 
+------------------
+[7/9/2026, 4:27:59 AM] [Log] [IPC] .invoke("window.updateMenuForIsAlwaysOnTop") args: []
+------------------
+[7/9/2026, 4:27:59 AM] [Log] [IPC] .handle("window.updateMenuForIsAlwaysOnTop") result: 
+------------------
+[7/9/2026, 4:27:59 AM] [Log] [IPC] .invoke("menu.updateCustomZoom") args: []
+------------------
+[7/9/2026, 4:27:59 AM] [Log] [IPC] .handle("menu.updateCustomZoom") result: 
+------------------
+[7/9/2026, 4:28:00 AM] [Log] [IPC] .invoke("window.updateMenuForIsAlwaysOnTop") args: []
+------------------
+[7/9/2026, 4:28:00 AM] [Log] [IPC] .handle("window.updateMenuForIsAlwaysOnTop") result: 
+------------------
+[7/9/2026, 4:28:00 AM] [Log] [IPC] .invoke("menu.updateCustomZoom") args: []
+------------------
+[7/9/2026, 4:28:00 AM] [Log] [IPC] .handle("menu.updateCustomZoom") result: 
+------------------
+[7/9/2026, 4:28:02 AM] [Log] [IPC] .invoke("window.updateMenuForIsAlwaysOnTop") args: []
+------------------
+[7/9/2026, 4:28:02 AM] [Log] [IPC] .handle("window.updateMenuForIsAlwaysOnTop") result: 
+------------------
+[7/9/2026, 4:28:02 AM] [Log] [IPC] .invoke("menu.updateCustomZoom") args: []
+------------------
+[7/9/2026, 4:28:02 AM] [Log] [IPC] .handle("menu.updateCustomZoom") result: 
+------------------
+[7/9/2026, 4:28:05 AM] [Log] [IPC] .invoke("app.sendEvent") args: ["willSave","D:\\Git\\labs\\Azure-Network\\docs\\07-Troubleshooting.md"]
+------------------
+[7/9/2026, 4:28:05 AM] [Log] [IPC] .handle("app.sendEvent") result: 
+------------------
+[7/9/2026, 4:28:05 AM] [Log] [IPC] .invoke("document.setLastSync") args: [1783537085273.516]
+------------------
+[7/9/2026, 4:28:05 AM] [Log] [IPC] .handle("document.setLastSync") result: 
+------------------
+[7/9/2026, 4:28:05 AM] [Log] [IPC] .invoke("window.setTitle") args: [null,true]
+------------------
+[7/9/2026, 4:28:05 AM] [Log] [IPC] .handle("window.setTitle") result: 
+------------------
+[7/9/2026, 4:28:05 AM] [Log] [IPC] .invoke("window.setTitle") args: [null,false]
+------------------
+[7/9/2026, 4:28:05 AM] [Log] [IPC] .handle("window.setTitle") result: 
+------------------
+[7/9/2026, 4:28:05 AM] [Log] [IPC] .invoke("app.sendEvent") args: ["didSave",{"path":"D:\\Git\\labs\\Azure-Network\\docs\\07-Troubleshooting.md","summary":"# 7 Troubleshooting\r\n\r\n## 7.1 Private Subnet Prevented VM Extension Installation\r\n\r\n### Issue\r\n\r\nWhen we attempted to install VM Azure AD Login extension for VM in the Spoke Vnet, it continued to fail","lastModifiedDate":1783537085273.516}]
+------------------
+[7/9/2026, 4:28:05 AM] [Log] [IPC] .handle("app.sendEvent") result: 
+------------------
+[7/9/2026, 4:28:07 AM] [Log] [IPC] .invoke("window.setTitle") args: [null,true]
+------------------
+[7/9/2026, 4:28:07 AM] [Log] [IPC] .handle("window.setTitle") result: 
+------------------
+[7/9/2026, 4:28:10 AM] [Log] [IPC] .invoke("app.sendEvent") args: ["willSave","D:\\Git\\labs\\Azure-Network\\docs\\07-Troubleshooting.md"]
+------------------
+[7/9/2026, 4:28:10 AM] [Log] [IPC] .handle("app.sendEvent") result: 
+------------------
+[7/9/2026, 4:28:10 AM] [Log] [IPC] .invoke("document.setLastSync") args: [1783537090045.1306]
+------------------
+[7/9/2026, 4:28:10 AM] [Log] [IPC] .handle("document.setLastSync") result: 
+------------------
+[7/9/2026, 4:28:10 AM] [Log] [IPC] .invoke("window.setTitle") args: [null,true]
+------------------
+[7/9/2026, 4:28:10 AM] [Log] [IPC] .handle("window.setTitle") result: 
+------------------
+[7/9/2026, 4:28:10 AM] [Log] [IPC] .invoke("window.setTitle") args: [null,false]
+------------------
+[7/9/2026, 4:28:10 AM] [Log] [IPC] .handle("window.setTitle") result: 
+------------------
+[7/9/2026, 4:28:10 AM] [Log] [IPC] .invoke("app.sendEvent") args: ["didSave",{"path":"D:\\Git\\labs\\Azure-Network\\docs\\07-Troubleshooting.md","summary":"# 7 Troubleshooting\r\n\r\n## 7.1 Private Subnet Prevented VM Extension Installation\r\n\r\n### Issue\r\n\r\nWhen we attempted to install VM Azure AD Login extension for VM in the Spoke Vnet, it continued to fail","lastModifiedDate":1783537090045.1306}]
+------------------
+[7/9/2026, 4:28:10 AM] [Log] [IPC] .handle("app.sendEvent") result: 
+------------------
+[7/9/2026, 4:28:21 AM] [Log] [IPC] .invoke("window.setTitle") args: [null,true]
+------------------
+[7/9/2026, 4:28:21 AM] [Log] [IPC] .handle("window.setTitle") result: 
+------------------
+[7/9/2026, 4:29:03 AM] [Log] [IPC] .invoke("app.sendEvent") args: ["willSave","D:\\Git\\labs\\Azure-Network\\docs\\07-Troubleshooting.md"]
+------------------
+[7/9/2026, 4:29:03 AM] [Log] [IPC] .handle("app.sendEvent") result: 
+------------------
+[7/9/2026, 4:29:03 AM] [Log] [IPC] .invoke("document.setLastSync") args: [1783537143462.0684]
+------------------
+[7/9/2026, 4:29:03 AM] [Log] [IPC] .handle("document.setLastSync") result: 
+------------------
+[7/9/2026, 4:29:03 AM] [Log] [IPC] .invoke("window.setTitle") args: [null,true]
+------------------
+[7/9/2026, 4:29:03 AM] [Log] [IPC] .handle("window.setTitle") result: 
+------------------
+[7/9/2026, 4:29:03 AM] [Log] [IPC] .invoke("window.setTitle") args: [null,false]
+------------------
+[7/9/2026, 4:29:03 AM] [Log] [IPC] .handle("window.setTitle") result: 
+------------------
+[7/9/2026, 4:29:03 AM] [Log] [IPC] .invoke("app.sendEvent") args: ["didSave",{"path":"D:\\Git\\labs\\Azure-Network\\docs\\07-Troubleshooting.md","summary":"# 7 Troubleshooting\r\n\r\n## 7.1 Private Subnet Prevented VM Extension Installation\r\n\r\n### Issue\r\n\r\nWhen we attempted to install VM Azure AD Login extension for VM in the Spoke Vnet, it continued to fail","lastModifiedDate":1783537143462.0684}]
+------------------
+[7/9/2026, 4:29:03 AM] [Log] [IPC] .handle("app.sendEvent") result: 
+------------------
+[7/9/2026, 4:29:27 AM] [Log] [IPC] .invoke("window.setTitle") args: [null,true]
+------------------
+[7/9/2026, 4:29:27 AM] [Log] [IPC] .handle("window.setTitle") result: 
+------------------
+[7/9/2026, 4:29:31 AM] [Log] [IPC] .invoke("app.sendEvent") args: ["willSave","D:\\Git\\labs\\Azure-Network\\docs\\07-Troubleshooting.md"]
+------------------
+[7/9/2026, 4:29:31 AM] [Log] [IPC] .handle("app.sendEvent") result: 
+------------------
+[7/9/2026, 4:29:31 AM] [Log] [IPC] .invoke("document.setLastSync") args: [1783537171756.7812]
+------------------
+[7/9/2026, 4:29:31 AM] [Log] [IPC] .handle("document.setLastSync") result: 
+------------------
+[7/9/2026, 4:29:31 AM] [Log] [IPC] .invoke("window.setTitle") args: [null,true]
+------------------
+[7/9/2026, 4:29:31 AM] [Log] [IPC] .handle("window.setTitle") result: 
+------------------
+[7/9/2026, 4:29:31 AM] [Log] [IPC] .invoke("window.setTitle") args: [null,false]
+------------------
+[7/9/2026, 4:29:31 AM] [Log] [IPC] .handle("window.setTitle") result: 
+------------------
+[7/9/2026, 4:29:31 AM] [Log] [IPC] .invoke("app.sendEvent") args: ["didSave",{"path":"D:\\Git\\labs\\Azure-Network\\docs\\07-Troubleshooting.md","summary":"# 7 Troubleshooting\r\n\r\n## 7.1 Private Subnet Prevented VM Extension Installation\r\n\r\n### Issue\r\n\r\nWhen we attempted to install VM Azure AD Login extension for VM in the Spoke Vnet, it continued to fail","lastModifiedDate":1783537171756.7812}]
+------------------
+[7/9/2026, 4:29:31 AM] [Log] [IPC] .handle("app.sendEvent") result: 
+------------------
+[7/9/2026, 4:29:48 AM] [Log] [IPC] .invoke("window.setTitle") args: [null,true]
+------------------
+[7/9/2026, 4:29:48 AM] [Log] [IPC] .handle("window.setTitle") result: 
+------------------
+[7/9/2026, 4:30:06 AM] [Log] [IPC] .invoke("window.updateMenuForIsAlwaysOnTop") args: []
+------------------
+[7/9/2026, 4:30:06 AM] [Log] [IPC] .handle("window.updateMenuForIsAlwaysOnTop") result: 
+------------------
+[7/9/2026, 4:30:06 AM] [Log] [IPC] .invoke("menu.updateCustomZoom") args: []
+------------------
+[7/9/2026, 4:30:06 AM] [Log] [IPC] .handle("menu.updateCustomZoom") result: 
+------------------
+[7/9/2026, 4:30:06 AM] [Log] [IPC] .invoke("window.setInSourceMode") args: [true]
+------------------
+[7/9/2026, 4:30:06 AM] [Log] [IPC] .handle("window.setInSourceMode") result: 
+------------------
+[7/9/2026, 4:30:07 AM] [Log] [IPC] .invoke("window.updateMenuForIsAlwaysOnTop") args: []
+------------------
+[7/9/2026, 4:30:07 AM] [Log] [IPC] .handle("window.updateMenuForIsAlwaysOnTop") result: 
+------------------
+[7/9/2026, 4:30:07 AM] [Log] [IPC] .invoke("menu.updateCustomZoom") args: []
+------------------
+[7/9/2026, 4:30:07 AM] [Log] [IPC] .handle("menu.updateCustomZoom") result: 
+------------------
+[7/9/2026, 4:30:12 AM] [Log] [IPC] .invoke("app.sendEvent") args: ["willSave","D:\\Git\\labs\\Azure-Network\\docs\\07-Troubleshooting.md"]
+------------------
+[7/9/2026, 4:30:12 AM] [Log] [IPC] .handle("app.sendEvent") result: 
+------------------
+[7/9/2026, 4:30:12 AM] [Log] [IPC] .invoke("document.setLastSync") args: [1783537212388.3855]
+------------------
+[7/9/2026, 4:30:12 AM] [Log] [IPC] .handle("document.setLastSync") result: 
+------------------
+[7/9/2026, 4:30:12 AM] [Log] [IPC] .invoke("window.setTitle") args: [null,true]
+------------------
+[7/9/2026, 4:30:12 AM] [Log] [IPC] .handle("window.setTitle") result: 
+------------------
+[7/9/2026, 4:30:12 AM] [Log] [IPC] .invoke("window.setTitle") args: [null,false]
+------------------
+[7/9/2026, 4:30:12 AM] [Log] [IPC] .handle("window.setTitle") result: 
+------------------
+[7/9/2026, 4:30:12 AM] [Log] [IPC] .invoke("app.sendEvent") args: ["didSave",{"path":"D:\\Git\\labs\\Azure-Network\\docs\\07-Troubleshooting.md","summary":"# 7 Troubleshooting\r\n\r\n## 7.1 Private Subnet Prevented VM Extension Installation\r\n\r\n### Issue\r\n\r\nWhen we attempted to install VM Azure AD Login extension for VM in the Spoke Vnet, it continued to fail","lastModifiedDate":1783537212388.3855}]
+------------------
+[7/9/2026, 4:30:12 AM] [Log] [IPC] .handle("app.sendEvent") result: 
+------------------
+[7/9/2026, 4:30:14 AM] [Log] [IPC] .invoke("window.setTitle") args: [null,true]
+------------------
+[7/9/2026, 4:30:14 AM] [Log] [IPC] .handle("window.setTitle") result: 
+------------------
+[7/9/2026, 4:30:17 AM] [Log] [IPC] .invoke("app.sendEvent") args: ["willSave","D:\\Git\\labs\\Azure-Network\\docs\\07-Troubleshooting.md"]
+------------------
+[7/9/2026, 4:30:17 AM] [Log] [IPC] .handle("app.sendEvent") result: 
+------------------
+[7/9/2026, 4:30:17 AM] [Log] [IPC] .invoke("document.setLastSync") args: [1783537217986.0542]
+------------------
+[7/9/2026, 4:30:17 AM] [Log] [IPC] .handle("document.setLastSync") result: 
+------------------
+[7/9/2026, 4:30:17 AM] [Log] [IPC] .invoke("window.setTitle") args: [null,true]
+------------------
+[7/9/2026, 4:30:17 AM] [Log] [IPC] .handle("window.setTitle") result: 
+------------------
+[7/9/2026, 4:30:17 AM] [Log] [IPC] .invoke("window.setTitle") args: [null,false]
+------------------
+[7/9/2026, 4:30:17 AM] [Log] [IPC] .handle("window.setTitle") result: 
+------------------
+[7/9/2026, 4:30:17 AM] [Log] [IPC] .invoke("app.sendEvent") args: ["didSave",{"path":"D:\\Git\\labs\\Azure-Network\\docs\\07-Troubleshooting.md","summary":"# 7 Troubleshooting\r\n\r\n## 7.1 Private Subnet Prevented VM Extension Installation\r\n\r\n### Issue\r\n\r\nWhen we attempted to install VM Azure AD Login extension for VM in the Spoke Vnet, it continued to fail","lastModifiedDate":1783537217986.0542}]
+------------------
+[7/9/2026, 4:30:17 AM] [Log] [IPC] .handle("app.sendEvent") result: 
+------------------
+[7/9/2026, 4:30:22 AM] [Log] [IPC] .invoke("window.setTitle") args: [null,true]
+------------------
+[7/9/2026, 4:30:22 AM] [Log] [IPC] .handle("window.setTitle") result: 
+------------------
+[7/9/2026, 4:30:30 AM] [Log] [IPC] .invoke("app.sendEvent") args: ["willSave","D:\\Git\\labs\\Azure-Network\\docs\\07-Troubleshooting.md"]
+------------------
+[7/9/2026, 4:30:30 AM] [Log] [IPC] .handle("app.sendEvent") result: 
+------------------
+[7/9/2026, 4:30:30 AM] [Log] [IPC] .invoke("document.setLastSync") args: [1783537230555.2847]
+------------------
+[7/9/2026, 4:30:30 AM] [Log] [IPC] .handle("document.setLastSync") result: 
+------------------
+[7/9/2026, 4:30:30 AM] [Log] [IPC] .invoke("window.setTitle") args: [null,true]
+------------------
+[7/9/2026, 4:30:30 AM] [Log] [IPC] .handle("window.setTitle") result: 
+------------------
+[7/9/2026, 4:30:30 AM] [Log] [IPC] .invoke("window.setTitle") args: [null,false]
+------------------
+[7/9/2026, 4:30:30 AM] [Log] [IPC] .handle("window.setTitle") result: 
+------------------
+[7/9/2026, 4:30:30 AM] [Log] [IPC] .invoke("app.sendEvent") args: ["didSave",{"path":"D:\\Git\\labs\\Azure-Network\\docs\\07-Troubleshooting.md","summary":"# 7 Troubleshooting\r\n\r\n## 7.1 Private Subnet Prevented VM Extension Installation\r\n\r\n### Issue\r\n\r\nWhen we attempted to install VM Azure AD Login extension for VM in the Spoke Vnet, it continued to fail","lastModifiedDate":1783537230555.2847}]
+------------------
+[7/9/2026, 4:30:30 AM] [Log] [IPC] .handle("app.sendEvent") result: 
+------------------
+[7/9/2026, 4:30:31 AM] [Log] [IPC] .invoke("app.sendEvent") args: ["willSave","D:\\Git\\labs\\Azure-Network\\docs\\07-Troubleshooting.md"]
+------------------
+[7/9/2026, 4:30:31 AM] [Log] [IPC] .handle("app.sendEvent") result: 
+------------------
+[7/9/2026, 4:30:31 AM] [Log] [IPC] .invoke("document.setLastSync") args: [1783537231063.4358]
+------------------
+[7/9/2026, 4:30:31 AM] [Log] [IPC] .handle("document.setLastSync") result: 
+------------------
+[7/9/2026, 4:30:31 AM] [Log] [IPC] .invoke("window.setTitle") args: [null,false]
+------------------
+[7/9/2026, 4:30:31 AM] [Log] [IPC] .handle("window.setTitle") result: 
+------------------
+[7/9/2026, 4:30:31 AM] [Log] [IPC] .invoke("app.sendEvent") args: ["didSave",{"path":"D:\\Git\\labs\\Azure-Network\\docs\\07-Troubleshooting.md","summary":"# 7 Troubleshooting\r\n\r\n## 7.1 Private Subnet Prevented VM Extension Installation\r\n\r\n### Issue\r\n\r\nWhen we attempted to install VM Azure AD Login extension for VM in the Spoke Vnet, it continued to fail","lastModifiedDate":1783537231063.4358}]
+------------------
+[7/9/2026, 4:30:31 AM] [Log] [IPC] .handle("app.sendEvent") result: 
+------------------
+[7/9/2026, 4:30:36 AM] [Log] [IPC] .invoke("window.setInSourceMode") args: [false]
+------------------
+[7/9/2026, 4:30:36 AM] [Log] [IPC] .handle("window.setInSourceMode") result: 
+------------------
+[7/9/2026, 4:30:37 AM] [Log] [IPC] .invoke("window.updateMenuForIsAlwaysOnTop") args: []
+------------------
+[7/9/2026, 4:30:37 AM] [Log] [IPC] .handle("window.updateMenuForIsAlwaysOnTop") result: 
+------------------
+[7/9/2026, 4:30:37 AM] [Log] [IPC] .invoke("menu.updateCustomZoom") args: []
+------------------
+[7/9/2026, 4:30:37 AM] [Log] [IPC] .handle("menu.updateCustomZoom") result: 
+------------------
+[7/9/2026, 4:31:05 AM] [Log] [IPC] .invoke("app.sendEvent") args: ["willSave","D:\\Git\\labs\\Azure-Network\\docs\\07-Troubleshooting.md"]
+------------------
+[7/9/2026, 4:31:05 AM] [Log] [IPC] .handle("app.sendEvent") result: 
+------------------
+[7/9/2026, 4:31:05 AM] [Log] [IPC] .invoke("document.setLastSync") args: [1783537265044.2231]
+------------------
+[7/9/2026, 4:31:05 AM] [Log] [IPC] .handle("document.setLastSync") result: 
+------------------
+[7/9/2026, 4:31:05 AM] [Log] [IPC] .invoke("window.setTitle") args: [null,false]
+------------------
+[7/9/2026, 4:31:05 AM] [Log] [IPC] .handle("window.setTitle") result: 
+------------------
+[7/9/2026, 4:31:05 AM] [Log] [IPC] .invoke("app.sendEvent") args: ["didSave",{"path":"D:\\Git\\labs\\Azure-Network\\docs\\07-Troubleshooting.md","summary":"# 7 Troubleshooting\r\n\r\n## 7.1 Private Subnet Prevented VM Extension Installation\r\n\r\n### Issue\r\n\r\nWhen we attempted to install VM Azure AD Login extension for VM in the Spoke Vnet, it continued to fail","lastModifiedDate":1783537265044.2231}]
+------------------
+[7/9/2026, 4:31:05 AM] [Log] [IPC] .handle("app.sendEvent") result: 
+------------------
+[7/9/2026, 4:31:38 AM] [Log] [IPC] .invoke("window.setTitle") args: [null,true]
+------------------
+[7/9/2026, 4:31:38 AM] [Log] [IPC] .handle("window.setTitle") result: 
+------------------
+[7/9/2026, 4:31:39 AM] [Log] [IPC] .invoke("app.sendEvent") args: ["willSave","D:\\Git\\labs\\Azure-Network\\docs\\07-Troubleshooting.md"]
+------------------
+[7/9/2026, 4:31:39 AM] [Log] [IPC] .handle("app.sendEvent") result: 
+------------------
+[7/9/2026, 4:31:39 AM] [Log] [IPC] .invoke("document.setLastSync") args: [1783537299993.5293]
+------------------
+[7/9/2026, 4:31:39 AM] [Log] [IPC] .handle("document.setLastSync") result: 
+------------------
+[7/9/2026, 4:31:39 AM] [Log] [IPC] .invoke("window.setTitle") args: [null,true]
+------------------
+[7/9/2026, 4:31:39 AM] [Log] [IPC] .handle("window.setTitle") result: 
+------------------
+[7/9/2026, 4:31:39 AM] [Log] [IPC] .invoke("window.setTitle") args: [null,false]
+------------------
+[7/9/2026, 4:31:39 AM] [Log] [IPC] .handle("window.setTitle") result: 
+------------------
+[7/9/2026, 4:31:39 AM] [Log] [IPC] .invoke("app.sendEvent") args: ["didSave",{"path":"D:\\Git\\labs\\Azure-Network\\docs\\07-Troubleshooting.md","summary":"# 7 Troubleshooting\r\n\r\n## 7.1 Private Subnet Prevented VM Extension Installation\r\n\r\n### Issue\r\n\r\nWhen we attempted to install VM Azure AD Login extension for VM in the Spoke Vnet, it continued to fail","lastModifiedDate":1783537299993.5293}]
+------------------
+[7/9/2026, 4:31:39 AM] [Log] [IPC] .handle("app.sendEvent") result: 
+------------------
+[7/9/2026, 4:31:53 AM] [Log] [IPC] .invoke("window.setTitle") args: [null,true]
+------------------
+[7/9/2026, 4:31:53 AM] [Log] [IPC] .handle("window.setTitle") result: 
+------------------
+[7/9/2026, 4:31:58 AM] [Log] [IPC] .invoke("window.setTitle") args: [null,false]
+------------------
+[7/9/2026, 4:31:58 AM] [Log] [IPC] .handle("window.setTitle") result: 
+------------------
+[7/9/2026, 4:31:58 AM] [Log] [IPC] .invoke("window.updateMenuForIsAlwaysOnTop") args: []
+------------------
+[7/9/2026, 4:31:58 AM] [Log] [IPC] .handle("window.updateMenuForIsAlwaysOnTop") result: 
+------------------
+[7/9/2026, 4:31:58 AM] [Log] [IPC] .invoke("menu.updateCustomZoom") args: []
+------------------
+[7/9/2026, 4:31:58 AM] [Log] [IPC] .handle("menu.updateCustomZoom") result: 
+------------------
+[7/9/2026, 4:32:00 AM] [Log] [IPC] .invoke("window.setTitle") args: [null,true]
+------------------
+[7/9/2026, 4:32:00 AM] [Log] [IPC] .handle("window.setTitle") result: 
+------------------
+[7/9/2026, 4:32:57 AM] [Log] [IPC] .invoke("app.sendEvent") args: ["willSave","D:\\Git\\labs\\Azure-Network\\docs\\07-Troubleshooting.md"]
+------------------
+[7/9/2026, 4:32:57 AM] [Log] [IPC] .handle("app.sendEvent") result: 
+------------------
+[7/9/2026, 4:32:57 AM] [Log] [IPC] .invoke("document.setLastSync") args: [1783537377199.0122]
+------------------
+[7/9/2026, 4:32:57 AM] [Log] [IPC] .handle("document.setLastSync") result: 
+------------------
+[7/9/2026, 4:32:57 AM] [Log] [IPC] .invoke("window.setTitle") args: [null,true]
+------------------
+[7/9/2026, 4:32:57 AM] [Log] [IPC] .handle("window.setTitle") result: 
+------------------
+[7/9/2026, 4:32:57 AM] [Log] [IPC] .invoke("window.setTitle") args: [null,false]
+------------------
+[7/9/2026, 4:32:57 AM] [Log] [IPC] .handle("window.setTitle") result: 
+------------------
+[7/9/2026, 4:32:57 AM] [Log] [IPC] .invoke("app.sendEvent") args: ["didSave",{"path":"D:\\Git\\labs\\Azure-Network\\docs\\07-Troubleshooting.md","summary":"# 7 Troubleshooting\r\n\r\n## 7.1 Private Subnet Prevented VM Extension Installation\r\n\r\n### Issue\r\n\r\nWhen we attempted to install VM Azure AD Login extension for VM in the Spoke Vnet, it continued to fail","lastModifiedDate":1783537377199.0122}]
+------------------
+[7/9/2026, 4:32:57 AM] [Log] [IPC] .handle("app.sendEvent") result: 
+------------------
+[7/9/2026, 4:33:02 AM] [Log] [IPC] .invoke("window.setTitle") args: [null,true]
+------------------
+[7/9/2026, 4:33:02 AM] [Log] [IPC] .handle("window.setTitle") result: 
+------------------
+[7/9/2026, 4:33:16 AM] [Log] [IPC] .invoke("app.sendEvent") args: ["willSave","D:\\Git\\labs\\Azure-Network\\docs\\07-Troubleshooting.md"]
+------------------
+[7/9/2026, 4:33:16 AM] [Log] [IPC] .handle("app.sendEvent") result: 
+------------------
+[7/9/2026, 4:33:16 AM] [Log] [IPC] .invoke("document.setLastSync") args: [1783537396308.4138]
+------------------
+[7/9/2026, 4:33:16 AM] [Log] [IPC] .handle("document.setLastSync") result: 
+------------------
+[7/9/2026, 4:33:16 AM] [Log] [IPC] .invoke("window.setTitle") args: [null,true]
+------------------
+[7/9/2026, 4:33:16 AM] [Log] [IPC] .handle("window.setTitle") result: 
+------------------
+[7/9/2026, 4:33:16 AM] [Log] [IPC] .invoke("window.setTitle") args: [null,false]
+------------------
+[7/9/2026, 4:33:16 AM] [Log] [IPC] .handle("window.setTitle") result: 
+------------------
+[7/9/2026, 4:33:16 AM] [Log] [IPC] .invoke("app.sendEvent") args: ["didSave",{"path":"D:\\Git\\labs\\Azure-Network\\docs\\07-Troubleshooting.md","summary":"# 7 Troubleshooting\r\n\r\n## 7.1 Private Subnet Prevented VM Extension Installation\r\n\r\n### Issue\r\n\r\nWhen we attempted to install VM Azure AD Login extension for VM in the Spoke Vnet, it continued to fail","lastModifiedDate":1783537396308.4138}]
+------------------
+[7/9/2026, 4:33:16 AM] [Log] [IPC] .handle("app.sendEvent") result: 
+------------------
+[7/9/2026, 4:33:19 AM] [Log] [IPC] .invoke("window.setTitle") args: [null,true]
+------------------
+[7/9/2026, 4:33:19 AM] [Log] [IPC] .handle("window.setTitle") result: 
+------------------
+[7/9/2026, 4:33:21 AM] [Log] [IPC] .invoke("app.sendEvent") args: ["willSave","D:\\Git\\labs\\Azure-Network\\docs\\07-Troubleshooting.md"]
+------------------
+[7/9/2026, 4:33:21 AM] [Log] [IPC] .handle("app.sendEvent") result: 
+------------------
+[7/9/2026, 4:33:21 AM] [Log] [IPC] .invoke("document.setLastSync") args: [1783537401138.6763]
+------------------
+[7/9/2026, 4:33:21 AM] [Log] [IPC] .handle("document.setLastSync") result: 
+------------------
+[7/9/2026, 4:33:21 AM] [Log] [IPC] .invoke("window.setTitle") args: [null,true]
+------------------
+[7/9/2026, 4:33:21 AM] [Log] [IPC] .handle("window.setTitle") result: 
+------------------
+[7/9/2026, 4:33:21 AM] [Log] [IPC] .invoke("window.setTitle") args: [null,false]
+------------------
+[7/9/2026, 4:33:21 AM] [Log] [IPC] .handle("window.setTitle") result: 
+------------------
+[7/9/2026, 4:33:21 AM] [Log] [IPC] .invoke("app.sendEvent") args: ["didSave",{"path":"D:\\Git\\labs\\Azure-Network\\docs\\07-Troubleshooting.md","summary":"# 7 Troubleshooting\r\n\r\n## 7.1 Private Subnet Prevented VM Extension Installation\r\n\r\n### Issue\r\n\r\nWhen we attempted to install VM Azure AD Login extension for VM in the Spoke Vnet, it continued to fail","lastModifiedDate":1783537401138.6763}]
+------------------
+[7/9/2026, 4:33:21 AM] [Log] [IPC] .handle("app.sendEvent") result: 
+------------------
+[7/9/2026, 4:33:36 AM] [Log] [IPC] .invoke("window.setTitle") args: [null,true]
+------------------
+[7/9/2026, 4:33:36 AM] [Log] [IPC] .handle("window.setTitle") result: 
+------------------
+[7/9/2026, 4:33:37 AM] [Log] [IPC] .invoke("app.sendEvent") args: ["willSave","D:\\Git\\labs\\Azure-Network\\docs\\07-Troubleshooting.md"]
+------------------
+[7/9/2026, 4:33:37 AM] [Log] [IPC] .handle("app.sendEvent") result: 
+------------------
+[7/9/2026, 4:33:37 AM] [Log] [IPC] .invoke("document.setLastSync") args: [1783537417761.6545]
+------------------
+[7/9/2026, 4:33:37 AM] [Log] [IPC] .handle("document.setLastSync") result: 
+------------------
+[7/9/2026, 4:33:37 AM] [Log] [IPC] .invoke("window.setTitle") args: [null,true]
+------------------
+[7/9/2026, 4:33:37 AM] [Log] [IPC] .handle("window.setTitle") result: 
+------------------
+[7/9/2026, 4:33:37 AM] [Log] [IPC] .invoke("window.setTitle") args: [null,false]
+------------------
+[7/9/2026, 4:33:37 AM] [Log] [IPC] .handle("window.setTitle") result: 
+------------------
+[7/9/2026, 4:33:37 AM] [Log] [IPC] .invoke("app.sendEvent") args: ["didSave",{"path":"D:\\Git\\labs\\Azure-Network\\docs\\07-Troubleshooting.md","summary":"# 7 Troubleshooting\r\n\r\n## 7.1 Private Subnet Prevented VM Extension Installation\r\n\r\n### Issue\r\n\r\nWhen we attempted to install VM Azure AD Login extension for VM in the Spoke Vnet, it continued to fail","lastModifiedDate":1783537417761.6545}]
+------------------
+[7/9/2026, 4:33:37 AM] [Log] [IPC] .handle("app.sendEvent") result: 
+------------------
