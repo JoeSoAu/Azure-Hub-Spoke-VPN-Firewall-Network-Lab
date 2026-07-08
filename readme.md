@@ -1,4 +1,4 @@
-# Azure Hub-Spoke VPN Firewall Network-Lab
+# Azure Hub-Spoke VPN & Firewall Network Lab
 
 ## Overview
 
@@ -45,7 +45,7 @@ This lab demonstrates the design and implementation of a compact modern enterpri
 
 **Hub VNet**
 
-- Vnets
+- VNets
 
 - Azure Firewall
 
@@ -151,8 +151,3 @@ This lab demonstrates the design and implementation of a compact modern enterpri
 - Hyper-V
 
 - Powershell Cmdlets
-
----
-
-## Troubleshooting
-
