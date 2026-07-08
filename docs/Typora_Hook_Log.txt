@@ -10872,3 +10872,43 @@ DwIDAQAB
 ------------------
 [7/9/2026, 4:42:59 AM] [Log] [IPC] .handle("app.sendEvent") result: 
 ------------------
+[7/9/2026, 4:46:39 AM] [Log] [IPC] .invoke("setting.removeRecentDocument") args: ["D:\\Git\\labs\\Azure-Network\\.git\\objects\\a8\\tmp_obj_p2QRS9"]
+------------------
+[7/9/2026, 4:46:39 AM] [Log] [IPC] .handle("setting.removeRecentDocument") result: 
+------------------
+[7/9/2026, 4:46:39 AM] [Log] [IPC] .invoke("setting.removeRecentDocument") args: ["D:\\Git\\labs\\Azure-Network\\.git\\objects\\a8\\tmp_obj_p2QRS9"]
+------------------
+[7/9/2026, 4:46:39 AM] [Log] [IPC] .handle("setting.removeRecentDocument") result: 
+------------------
+[7/9/2026, 4:46:39 AM] [Log] [IPC] .invoke("setting.removeRecentDocument") args: ["D:\\Git\\labs\\Azure-Network\\.git\\objects\\a8\\tmp_obj_p2QRS9"]
+------------------
+[7/9/2026, 4:46:39 AM] [Log] [IPC] .handle("setting.removeRecentDocument") result: 
+------------------
+[7/9/2026, 4:46:39 AM] [Log] [IPC] .invoke("setting.removeRecentDocument") args: ["D:\\Git\\labs\\Azure-Network\\.git\\objects\\a8\\tmp_obj_p2QRS9"]
+------------------
+[7/9/2026, 4:46:39 AM] [Log] [IPC] .handle("setting.removeRecentDocument") result: 
+------------------
+[7/9/2026, 4:46:39 AM] [Log] [IPC] .invoke("setting.removeRecentDocument") args: ["D:\\Git\\labs\\Azure-Network\\.git\\objects\\a8\\tmp_obj_p2QRS9"]
+------------------
+[7/9/2026, 4:46:39 AM] [Log] [IPC] .handle("setting.removeRecentDocument") result: 
+------------------
+[7/9/2026, 4:46:39 AM] [Log] [IPC] .invoke("setting.removeRecentDocument") args: ["D:\\Git\\labs\\Azure-Network\\.git\\objects\\a8\\tmp_obj_p2QRS9"]
+------------------
+[7/9/2026, 4:46:39 AM] [Log] [IPC] .handle("setting.removeRecentDocument") result: 
+------------------
+[7/9/2026, 4:46:39 AM] [Log] [IPC] .invoke("setting.removeRecentDocument") args: ["D:\\Git\\labs\\Azure-Network\\.git\\objects\\a8\\tmp_obj_p2QRS9"]
+------------------
+[7/9/2026, 4:46:39 AM] [Log] [IPC] .handle("setting.removeRecentDocument") result: 
+------------------
+[7/9/2026, 4:46:39 AM] [Log] [IPC] .invoke("setting.removeRecentDocument") args: ["D:\\Git\\labs\\Azure-Network\\.git\\objects\\a8\\tmp_obj_p2QRS9"]
+------------------
+[7/9/2026, 4:46:39 AM] [Log] [IPC] .handle("setting.removeRecentDocument") result: 
+------------------
+[7/9/2026, 4:46:39 AM] [Log] [IPC] .invoke("setting.removeRecentDocument") args: ["D:\\Git\\labs\\Azure-Network\\.git\\objects\\a8\\tmp_obj_p2QRS9"]
+------------------
+[7/9/2026, 4:46:39 AM] [Log] [IPC] .handle("setting.removeRecentDocument") result: 
+------------------
+[7/9/2026, 4:46:39 AM] [Log] [IPC] .invoke("setting.removeRecentDocument") args: ["D:\\Git\\labs\\Azure-Network\\.git\\objects\\a8\\tmp_obj_p2QRS9"]
+------------------
+[7/9/2026, 4:46:39 AM] [Log] [IPC] .handle("setting.removeRecentDocument") result: 
+------------------
