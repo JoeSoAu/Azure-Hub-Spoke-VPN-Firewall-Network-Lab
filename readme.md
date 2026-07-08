@@ -35,7 +35,7 @@ This lab demonstrates the design and implementation of a compact modern enterpri
 | [04 - Hybrid Connectivity Site-to-site VPN](docs/04-hybrid-connectivity-site-to-site-vpn.md) | Deploy S-S VPN between on-prem and cloud                   |
 | [05 - Remote User Connectivity Point-to-site VPN](docs/05-Remote-User-Connectivity-Point-to-Site-VPN.md) | Deploy P-S VPN between remote device and cloud             |
 | [06 - Secured Remote Administration Bastion](docs/06-Secured-Remote-Administration-Bastion.md) | Deploy Azure Bastion Service for remote access to cloud VM |
-| 07 - Troubleshooting                                         | Problems encountered and solutions                         |
+| 07 - [Troubleshooting](docs/Troubleshooting.md)              | Problems encountered and solutions                         |
 
 ---
 
