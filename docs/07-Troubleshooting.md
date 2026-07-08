@@ -6,23 +6,20 @@
 
 ### Issue
 
-The Linux virtual machine was deployed without a Public IP inside a private subnet. Although Azure Bastion could successfully establish an SSH session, installing the Microsoft Entra ID SSH extension repeatedly failed.
+When we attempted to install VM Azure AD Login extension for VM in the Spoke Vnet, it continued to failed.
 
-### Investigation
+### Investigation and Resolution
 
-The extension logs showed repeated connection timeouts while attempting to download packages from Microsoft and Ubuntu repositories.
+The extension logs showed repeated connection timeouts while attempting to download packages from Microsoft and Ubuntu repositories. The problem was not related to Microsoft Entra ID itself, but to the lack of outbound Internet connectivity.
 
-The problem was not related to Microsoft Entra ID itself, but to the lack of outbound Internet connectivity.
+Then we found The subnet of the VM was set to be a "Private Subnet" for security reason. . However, a private subnet means it has no internet access and the VM can't download the extension without internet access. 
 
-### Resolution
+> <img title="" src="../screenshots/t04.jpg" alt="" width="60%" data-align="center">
 
-A NAT Gateway was deployed and associated with the application subnet.
+To resolve this issue, we temporarily disable the private subnet for the VM subnet. After outbound Internet access was restored:
 
-After outbound Internet access was restored:
-
-- Linux package repositories became reachable.
-- `apt update` completed successfully.
-- The Microsoft Entra ID SSH extension installed successfully.
+- The Extension package repositories became reachable.
+- The Microsoft Entra ID  extension installed successfully.
 
 ### Lesson Learned
 
@@ -38,7 +35,7 @@ When use Bastion Native command to connect to cloud VMs, Microsoft Entra ID auth
 
 Azure CLI returned the following authorization errors 
 
-> <img title="" src="../screenshots/t02.jpg" alt="" width="90%" data-align="center">
+> <img title="" src="../screenshots/t02.jpg" alt="" width="100%" data-align="center">
 
 ### Investigation and Resolution
 
@@ -52,9 +49,9 @@ The VM login role only grants operating system sign-in permission. Azure Bastion
 
 > <img title="" src="../screenshots/t03.jpg" alt="" width="60%" data-align="center">
 
----
+### Lesson Learned
 
-## Microsoft Entra ID Sign-in for Windows Required VM Recreation
+Microsoft Entra authentication depends on both operating system login permissions and Azure resource permissions. Following the least privilege principle provides sufficient access without unnecessary  rights.
 
 ### Issue
 
@@ -88,7 +85,7 @@ This automatically enabled the required system-assigned managed identity and all
 
 ### Lesson Learned
 
-Some Azure features must be enabled during VM deployment. Recreating the VM was simpler and more reliable than attempting to retrofit the configuration afterwards.
+**Login with Microsoft Entra ID** must be enabled during VM deployment if we need to use Entra ID authentication for VM sign-in
 
 ---
 
